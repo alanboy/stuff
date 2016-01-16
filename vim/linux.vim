@@ -40,7 +40,8 @@ set nocompatible
 
  au BufNewFile,BufRead *.man set filetype=xml
  set path=$PWD\**
- set runtimepath^=$VIMRUNTIME/plugin/ctrlp.vim
+ "set runtimepath^=$VIMRUNTIME/plugin/ctrlp.vim
+ set runtimepath^=~/.vim/ctrlp.vim
 
  "  tohtml
  let html_use_css=1 "Use stylesheet instead of inline style
