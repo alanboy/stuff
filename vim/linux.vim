@@ -1,33 +1,32 @@
 set nocompatible
 
 " Use visual bell instead of beeping. The terminal code to display the
-" " visual bell is given with t_vb. When no beep or flash is wanted,
- set vb t_vb=
+" visual bell is given with t_vb. When no beep or flash is wanted,
+set vb t_vb=
 
- "  generic options
- set background=light
- set clipboard=unnamed
- set expandtab
- set guioptions=ic
- set hlsearch
- set ic
- set ignorecase
- set incsearch
- set list
- set listchars=tab:>-,trail:~,eol:$,precedes:<,nbsp:+
- set nobackup
- set noswapfile
- set nowrap
- set number
- set scrolloff=5 " whats this?
- set scrolloff=5 " whats this?
- set sessionoptions+=resize,winpos
- set shiftwidth=4
- set shiftwidth=4
- set smartcase
- set splitright " whats this ?
- set tabstop=4
- set wildmenu
+" generic options
+set background=light
+set clipboard=unnamed
+set expandtab
+set guioptions=ic
+set hlsearch
+set ignorecase
+set incsearch
+set list
+set listchars=tab:>-,trail:~,eol:$,precedes:<,nbsp:+
+set nobackup
+set noswapfile
+set nowrap
+set number
+set scrolloff=5 " whats this?
+set scrolloff=5 " whats this?
+set sessionoptions+=resize,winpos
+set shiftwidth=4
+set shiftwidth=4
+set smartcase
+set splitright " whats this ?
+set tabstop=4
+set wildmenu
 
  colo desert
 
