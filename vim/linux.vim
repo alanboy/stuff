@@ -5,7 +5,7 @@ set nocompatible
 set vb t_vb=
 
 " generic options
-set background=light
+" set background=light
 set clipboard=unnamed
 set expandtab
 set guioptions=ic
@@ -19,9 +19,7 @@ set noswapfile
 set nowrap
 set number
 set scrolloff=5 " whats this?
-set scrolloff=5 " whats this?
 set sessionoptions+=resize,winpos
-set shiftwidth=4
 set shiftwidth=4
 set smartcase
 set splitright " whats this ?
