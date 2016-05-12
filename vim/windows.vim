@@ -4,7 +4,6 @@ behave mswin
 
 " Use visual bell instead of beeping. The terminal code to display the
 " visual bell is given with "t_vb". When no beep or flash is wanted,
-"
 set vb t_vb=
 
 " generic options

@@ -1,4 +1,5 @@
 #!/bin/sh
 
 ln -s  ~/stuff/vim/linux.vim ~/.vimrc
-ln -s  ~/stuff/vim/ctrlp.vim ~/.vim/ctrlp.vim
+mkdir ~/.vim/bundle
+ln -s  ~/stuff/vim/ctrlp.vim ~/.vim/bundle/ctrlp.vim
