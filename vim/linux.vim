@@ -60,20 +60,12 @@ set statusline+=%8*\ %=\ row:%l/%L\ (%03p%%)\             "Rownumber/total (%)
 set statusline+=%9*\ col:%03c\                            "Colnr
 set statusline+=%0*\ \ %m%r%w\ %P\ \                      "Modified? Readonly? Top/bot.
 
- " set vim to chdir for each file
- "if exists(+autochdir)
- "set autochdir
- "else
- "autocmd BufEnter * silent! lcd %:p:h:gs/ /\ /
- "endif
 
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
 
  au BufNewFile,BufRead *.man set filetype=xml
 set path=$PWD\**
-"set runtimepath^=$VIMRUNTIME/plugin/ctrlp.vim
-"set runtimepath^=$VIMRUNTIME\..\bundle\ctrlp.vim
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
  "  tohtml
@@ -96,13 +88,12 @@ set viminfo^=%
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("gui_running")
   set cursorline cursorcolumn
-" set guifont=Droid Sans Mono
   set guioptions=ic
   set guioptions+=e
   set guioptions+=r
   set guioptions+=b
   set lines=45
-  set guitablabel=%F\ %t
+  set guitablabel=%F
 else
   set nocursorline  nocursorcolumn
   set guioptions=ic
