@@ -2,11 +2,8 @@ set nocompatible
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
-" Use visual bell instead of beeping. The terminal code to display the
-" visual bell is given with "t_vb". When no beep or flash is wanted,
-set vb t_vb=
-
 " generic options
+set vb t_vb= " Use visual bell instead of beeping
 set clipboard=unnamed
 set expandtab
 set hlsearch
@@ -28,13 +25,13 @@ set wildmenu " autocomplete vim commands
 set autoread
 set lazyredraw " Don't redraw while executing macros (good performance config) 
 
-colo desert
+
+colo blue
 syntax enable
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Status line
-"""""""""""""""""""""""""""""""""""""""""""""""""""""
-
+" Status line
+"
 hi User0 guifg=#ffffff  guibg=#094afe
 hi User1 guifg=#ffdad8  guibg=#880c0e
 hi User2 guifg=#000000  guibg=#F4905C
@@ -58,27 +55,13 @@ set statusline+=%2*\ %y\                                  "FileType
 set statusline+=%3*\ %{''.(&fenc!=''?&fenc:&enc).''}      "Encoding
 set statusline+=%3*\ %{(&bomb?\",BOM\":\"\")}\            "Encoding2
 set statusline+=%4*\ %{&ff}\                              "FileFormat (dos/unix..) 
-set statusline+=%5*\ %{&spelllang}\%{HighlightSearch()}\  "Spellanguage & Highlight on?
+set statusline+=%5*\ %{&spelllang}\                       "Spellanguage & Highlight on?
 set statusline+=%8*\ %=\ row:%l/%L\ (%03p%%)\             "Rownumber/total (%)
 set statusline+=%9*\ col:%03c\                            "Colnr
 set statusline+=%0*\ \ %m%r%w\ %P\ \                      "Modified? Readonly? Top/bot.
 
-function! HighlightSearch()
-  if &hls
-    return 'H'
-  else
-    return ''
-  endif
-endfunction
-
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
-
-" Now when you open markdown files all fenced code blocks like so:
-" "`javascript
-" alert(0);
-au BufNewFile,BufReadPost *.md set filetype=markdown
-let g:markdown_fenced_languages = ["coffee", "css", "erb=eruby", "javascript", "js=javascript", "json=javascript", "ruby", "sass", "xml", "html"]
 
 " set vim to chdir for each file
 if exists("+autochdir")
@@ -87,13 +70,9 @@ else
   autocmd BufEnter * silent! lcd %:p:h:gs/ /\ /
 endif
 
-au BufNewFile,BufRead *.man set filetype=xml
-set path=$PWD\**
-set runtimepath^=$VIMRUNTIME\..\bundle\ctrlp.vim
-
-" tohtml
+" to html
 let html_use_css=1 "Use stylesheet instead of inline style
-let html_number_lines=0 "don"t show line numbers
+let html_number_lines=0 "don't show line numbers
 let html_no_pre=1
 
 " Return to last edit position when opening files (You want this!)
@@ -105,8 +84,16 @@ autocmd BufReadPost *
 set viminfo^=%
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => UI options
+" CtrlP plugin
+" @todo open all files in new tab
+"
+au BufNewFile,BufRead *.man set filetype=xml
+set path=$PWD\**
+set runtimepath^=$VIMRUNTIME\..\bundle\ctrlp.vim
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" UI options
+"
 if has("gui_running")
   set cursorline cursorcolumn
   set guifont=Lucida_Console:h12:cANSI
@@ -116,6 +103,9 @@ if has("gui_running")
   set guioptions+=b
   set lines=45
   set guitablabel=%F\ %t
+  " Change font with Ctrl Up/Down
+  nmap <C-Up> :let &guifont = substitute(&guifont, ':h\(\d\+\)', '\=":h" . (submatch(1) + 1)', '')<CR><CR>
+  nmap <C-Down> :let &guifont = substitute(&guifont, ':h\(\d\+\)', '\=":h" . (submatch(1) - 1)', '')<CR><CR>
 else
   set nocursorline  nocursorcolumn
   set guioptions=ic
@@ -131,14 +121,14 @@ endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Helper functions
-"""""""""""dvd"""""""""""""""""""""""""""""""""""""""""""""""""""
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Highlight changes from file in source control.
+" Only works with source depot. 
+"
 highlight right_diff guifg=#000000  guibg=#ffff66
-"nnoremap <F8> :silent call GetDate('')<CR>
-nnoremap <F8> : call GetDate()<CR>
-function! GetDate()
+nnoremap <F8> : call HighlightDiff()<CR>
+function! HighlightDiff()
 
     " Source Depot diff program must be diff.exe
     let $SDDIFF = 'diff.exe'
@@ -207,13 +197,13 @@ function! GetDate()
 "    "clearmatches()
 endfunction
 
-
-
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" When editing a file that is RO, try to sd edit
+"
 au FileChangedRO * call SDCheckoutOpt ()
 
 function SDCheckoutOpt ()
-  if (confirm("Checkout", "&Yes\n&No", 1) == 1)
+  if (confirm("sd checkout", "&Yes\n&No", 1) == 1)
    silent call SDCheckout()
   endif
 endfunction
