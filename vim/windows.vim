@@ -1,4 +1,4 @@
-source shared.vim
+source $VIMRUNTIME\..\shared.vim
 
 source $VIMRUNTIME/mswin.vim
 

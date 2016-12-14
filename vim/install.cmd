@@ -23,6 +23,7 @@ IF EXIST "%_VIM_LOCATION%\_vimrc" (
 )
 
 mklink "%_VIM_LOCATION%\_vimrc"  %CD%\windows.vim
+mklink "%_VIM_LOCATION%\shared.vim"  %CD%\shared.vim
 
 
 mkdir "%_VIM_LOCATION%\bundle"
