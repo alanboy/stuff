@@ -1,13 +1,31 @@
 
+setlocal
 rem make sure ctrl.p git submodule has been synced and updated
 
-copy "%ProgramFiles(x86)%\vim\_vimrc" "%ProgramFiles(x86)%\vim\_vimrc.bak"
-del "%ProgramFiles(x86)%\vim\_vimrc"
 
-mklink "%ProgramFiles(x86)%\vim\_vimrc"  %CD%\windows.vim
+SET _VIM_LOCATION=
 
-mkdir "%ProgramFiles(x86)%\vim\bundle"
-mklink /d "%ProgramFiles(x86)%\vim\bundle\ctrlp.vim" %CD%\ctrlp.vim
+IF EXIST "%ProgramFiles(x86)%\vim\_vimrc" ( 
+    SET _VIM_LOCATION=%ProgramFiles(x86)%\vim
+) ELSE (
+    IF EXIST "%ProgramFiles%\vim\_vimrc" ( 
+        SET _VIM_LOCATION=%ProgramFiles%\vim
+    ) ELSE (
+        goto End
+    )
+)
+
+echo Using Vim location: %_VIM_LOCATION%
+
+IF EXIST "%_VIM_LOCATION%\_vimrc" ( 
+    copy "%_VIM_LOCATION%\_vimrc" "%_VIM_LOCATION%\_vimrc.bak"
+    del "%_VIM_LOCATION%\_vimrc"
+)
+
+mklink "%_VIM_LOCATION%\_vimrc"  %CD%\windows.vim
 
 
+mkdir "%_VIM_LOCATION%\bundle"
+mklink /d "%_VIM_LOCATION%\bundle\ctrlp.vim" %CD%\ctrlp.vim
 
+:End
