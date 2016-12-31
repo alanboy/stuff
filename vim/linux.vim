@@ -1,9 +1,4 @@
-source shared.vim
-
-
-
-
-
+source $VIMRUNTIME/shared.vim
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
