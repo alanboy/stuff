@@ -48,6 +48,43 @@ set runtimepath^=$VIMRUNTIME\..\bundle\nerdtree
 """ autocmd BufWrite *.py :call DeleteTrailingWS()
 """ autocmd BufWrite *.coffee :call DeleteTrailingWS()
 
+"" if has("gui_running")
+""   set cursorline cursorcolumn
+""   set guifont=Lucida_Console:h12:cANSI
+""   set lines=45
+""   set guitablabel=%F\ %t
+""   " Change font with Ctrl Up/Down
+""   nmap <C-Up> :let &guifont = substitute(&guifont, ':h\(\d\+\)', '\=":h" . (submatch(1) + 1)', '')<CR><CR>
+""   nmap <C-Down> :let &guifont = substitute(&guifont, ':h\(\d\+\)', '\=":h" . (submatch(1) - 1)', '')<CR><CR>
+"" 
+""   "set guioptions=ic
+""   "set guioptions+=e
+""   "set guioptions+=r
+""   "set guioptions+=b
+""   set guioptions=icpM
+""   if has('win32') || has('win64')
+""     if (v:version == 704 && has("patch393")) || v:version > 704
+""         set renderoptions=type:directx,level:0.75,gamma:1.25,contrast:0.25,
+""                     \geom:1,renmode:5,taamode:1
+""     endif
+""   endif
+"" 
+"" else
+""   set nocursorline  nocursorcolumn
+""   set guioptions=ic
+"" endif
+"" 
+"" 
+"" " Delete trailing white space on save, useful for Python and CoffeeScript ;)
+"" func! DeleteTrailingWS()
+""   exe "normal mz"
+""   %s/\s\+$//ge
+""   exe "normal `z"
+"" endfunc
+"" autocmd BufWrite *.py :call DeleteTrailingWS()
+"" autocmd BufWrite *.coffee :call DeleteTrailingWS()
+"" 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Highlight changes from file in source control.
 " Only works with source depot. 
