@@ -11,26 +11,44 @@ else
   autocmd BufEnter * silent! lcd %:p:h:gs/ /\ /
 endif
 
-
+""" " to html
+""" let html_use_css=1 "Use stylesheet instead of inline style
+""" let html_number_lines=0 "don't show line numbers
+""" let html_no_pre=1
+""" 
+""" au BufNewFile,BufRead *.man set filetype=xml
+""" set path=$PWD\**
+""" 
+""" " Return to last edit position when opening files (You want this!)
+""" autocmd BufReadPost *
+"""      \ if line("'\"") > 0 && line("'\"") <= line("$") |
+"""      \   exe "normal! g`\"" |
+"""      \ endif
+""" " Remember info about open buffers on close
+""" set viminfo^=%
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CtrlP plugin
 " @todo open all files in new tab
 set path=$PWD\**
-set runtimepath^=$VIMRUNTIME\..\bundle\ctrlp.vim
+"
+""" set runtimepath^=$VIMRUNTIME\..\bundle\ctrlp.vim
+""" let g:ctrlp_working_path_mode = 'r'
+""" let g:ctrlp_root_markers = ['wcp', 'cbs']
+""" 
+set runtimepath^=$VIMRUNTIME\..\bundle\nerdtree
+""" 
+""" 
+""" " Delete trailing white space on save, useful for Python and CoffeeScript ;)
+""" func! DeleteTrailingWS()
+"""   exe "normal mz"
+"""   %s/\s\+$//ge
+"""   exe "normal `z"
+""" endfunc
+""" autocmd BufWrite *.py :call DeleteTrailingWS()
+""" autocmd BufWrite *.coffee :call DeleteTrailingWS()
 
-
-" Delete trailing white space on save, useful for Python and CoffeeScript ;)
-func! DeleteTrailingWS()
-  exe "normal mz"
-  %s/\s\+$//ge
-  exe "normal `z"
-endfunc
-autocmd BufWrite *.py :call DeleteTrailingWS()
-autocmd BufWrite *.coffee :call DeleteTrailingWS()
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Highlight changes from file in source control.
 " Only works with source depot. 
 "
