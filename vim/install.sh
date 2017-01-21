@@ -14,3 +14,6 @@ if [ ! -d ~/.vim/bundle ]; then
     ln -s  $PWD/ctrlp.vim ~/.vim/bundle/ctrlp.vim
 fi
 
+if [ ! -f ~/.vim/bundle/nerdtree ]; then
+    ln -s  $PWD/nerdtree  ~/.vim/bundle/nerdtree
+fi
