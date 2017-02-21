@@ -11,6 +11,9 @@ fi
  
 if [ ! -d ~/.vim/bundle ]; then
     mkdir ~/.vim/bundle
+fi
+
+if [ ! -d ~/.vim/bundle/ctrlp.vim ]; then
     ln -s  $PWD/ctrlp.vim ~/.vim/bundle/ctrlp.vim
 fi
 
