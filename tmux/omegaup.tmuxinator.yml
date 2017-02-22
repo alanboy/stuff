@@ -1,0 +1,8 @@
+
+name: omegaup
+root: ~/opt/omegaup/
+
+windows:
+  - editor: vim
+  - git: 
+  - logs: tail -f /var/log/omegaup/omegaup.log

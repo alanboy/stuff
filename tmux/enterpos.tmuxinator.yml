@@ -1,0 +1,10 @@
+name: enterpos
+root: ~/opt/pos=erp
+
+# Runs before everything. Use it to start daemons etc.
+# pre: sudo /etc/rc.d/mysqld start
+
+windows:
+  - editor: vim
+  - git: 
+  - logs: tail -f /var/log/omegaup/omegaup.log
