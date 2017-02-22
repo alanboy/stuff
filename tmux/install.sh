@@ -17,6 +17,6 @@ if [ ! -f ~/.tmuxinator/omegaup.yml ]; then
 fi
 
 if [ ! -f ~/.tmuxinator/enterpos.yml ]; then
-    ln -s  `pwd`/omegaup.enterpos.yml ~/.tmuxinator/enterpos.yml
+    ln -s  `pwd`/enterpos.tmuxinator.yml ~/.tmuxinator/enterpos.yml
 fi
 
