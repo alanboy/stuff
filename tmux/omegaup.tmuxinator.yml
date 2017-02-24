@@ -6,4 +6,5 @@ windows:
   - editor: vim /opt/omegaup/frontend
   - git: git status
   - logs: sudo multitail --mergeall  /var/log/hhvm/error.log /var/log/nginx/error.log /var/log/omegaup/omegaup.log  /opt/omegaup/frontend/tests/controllers/omegaup.log
-  - unittests: cd /opt/omegaup/frontend/tests
+  - unittests: cd /opt/omegaup/stuff && echo ./runtests.sh
+  - npm: yarn run dev
