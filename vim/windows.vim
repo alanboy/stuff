@@ -161,32 +161,3 @@ function! HighlightDiff()
 endfunction
 
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" When editing a file that is RO, try to sd edit
-au FileChangedRO * call SDCheckoutOpt ()
-
-function SDCheckoutOpt ()
-  if (confirm("sd checkout", "&Yes\n&No", 1) == 1)
-   silent call SDCheckout()
-  endif
-endfunction
-
-let s:IgnoreChange=0
-
-function SDCheckout ()
- let s:IgnoreChange=1
- silent! !sd edit %
- set noreadonly
-endfunction
-
-autocmd! FileChangedShell * silent call SDChanged()
-
-function SDChanged ()
- if 1 == s:IgnoreChange
-  let v:fcs_choice=""
-  let s:IgnoreChange=0
- else
-  let v:fcs_choice="ask"
- endif
-endfunction
-
