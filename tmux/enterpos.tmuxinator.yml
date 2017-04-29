@@ -6,9 +6,10 @@ root: /opt/pos-erp
 
 windows:
   - editor: vim /opt/pos-erp/
+  - git: git status
+  - logs: multitail --mergeall  /var/log/apache2/error.log /var/log/mx.caffeina.pos/access.log  /var/log/mysql/error.log
   - tests:
         layout: main-verticalp
         panes:
-            - multitail --mergeall  /var/log/apache2/error.log /var/log/apache2/error.log /var/log/mx.caffeina.pos/access.log  /var/log/apache2/access.log /var/log/mysql/error.log
             - cd /opt/pos-erp/tests/phpunit
-  - git: git status
+            - logs: multitail --mergeall /var/log/apache2/error.log /var/log/mx.caffeina.pos/access.log  /var/log/apache2/access.log /var/log/mysql/error.log
