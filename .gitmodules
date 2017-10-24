@@ -1,6 +1,6 @@
-[submodule "vim/ctrlp.vim"]
-	path = vim/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
-[submodule "vim/nerdtree"]
-	path = vim/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/fzf.vim"]
+	path = vim/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule "vim/fzf"]
+	path = vim/fzf
+	url = https://github.com/junegunn/fzf.git

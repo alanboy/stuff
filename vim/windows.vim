@@ -15,10 +15,10 @@ endif
 """ let html_use_css=1 "Use stylesheet instead of inline style
 """ let html_number_lines=0 "don't show line numbers
 """ let html_no_pre=1
-""" 
+"""
 """ au BufNewFile,BufRead *.man set filetype=xml
 """ set path=$PWD\**
-""" 
+"""
 """ " Return to last edit position when opening files (You want this!)
 """ autocmd BufReadPost *
 """      \ if line("'\"") > 0 && line("'\"") <= line("$") |
@@ -28,69 +28,20 @@ endif
 """ set viminfo^=%
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" CtrlP plugin
-" @todo open all files in new tab
 set path=$PWD\**
-"
-""" set runtimepath^=$VIMRUNTIME\..\bundle\ctrlp.vim
-""" let g:ctrlp_working_path_mode = 'r'
-""" let g:ctrlp_root_markers = ['wcp', 'cbs']
-""" 
-set runtimepath^=$VIMRUNTIME\..\bundle\nerdtree
-""" 
-""" 
-""" " Delete trailing white space on save, useful for Python and CoffeeScript ;)
-""" func! DeleteTrailingWS()
-"""   exe "normal mz"
-"""   %s/\s\+$//ge
-"""   exe "normal `z"
-""" endfunc
-""" autocmd BufWrite *.py :call DeleteTrailingWS()
-""" autocmd BufWrite *.coffee :call DeleteTrailingWS()
 
-"" if has("gui_running")
-""   set cursorline cursorcolumn
-""   set guifont=Lucida_Console:h12:cANSI
-""   set lines=45
-""   set guitablabel=%F\ %t
-""   " Change font with Ctrl Up/Down
-""   nmap <C-Up> :let &guifont = substitute(&guifont, ':h\(\d\+\)', '\=":h" . (submatch(1) + 1)', '')<CR><CR>
-""   nmap <C-Down> :let &guifont = substitute(&guifont, ':h\(\d\+\)', '\=":h" . (submatch(1) - 1)', '')<CR><CR>
-"" 
-""   "set guioptions=ic
-""   "set guioptions+=e
-""   "set guioptions+=r
-""   "set guioptions+=b
-""   set guioptions=icpM
-""   if has('win32') || has('win64')
-""     if (v:version == 704 && has("patch393")) || v:version > 704
-""         set renderoptions=type:directx,level:0.75,gamma:1.25,contrast:0.25,
-""                     \geom:1,renmode:5,taamode:1
-""     endif
-""   endif
-"" 
-"" else
-""   set nocursorline  nocursorcolumn
-""   set guioptions=ic
-"" endif
-"" 
-"" 
-"" " Delete trailing white space on save, useful for Python and CoffeeScript ;)
-"" func! DeleteTrailingWS()
-""   exe "normal mz"
-""   %s/\s\+$//ge
-""   exe "normal `z"
-"" endfunc
-"" autocmd BufWrite *.py :call DeleteTrailingWS()
-"" autocmd BufWrite *.coffee :call DeleteTrailingWS()
-"" 
+source $VIMRUNTIME\..\fzf.vim
+set runtimepath^=$VIMRUNTIME\..\bundle\fzf.vim
+nmap <C-p> :GFiles<CR>
+
+
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Highlight changes from file in source control.
-" Only works with source depot. 
+" Only works with source depot.
 "
 highlight right_diff guifg=#000000  guibg=#ffff66
-nnoremap <F8> : call HighlightDiff()<CR>
 function! HighlightDiff()
 
     " Source Depot diff program must be diff.exe

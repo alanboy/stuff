@@ -12,9 +12,9 @@ IF EXIST "%ProgramFiles(x86)%\vim\_vimrc" (
 ) ELSE (
     IF EXIST "%ProgramFiles%\vim\_vimrc" ( 
         SET _VIM_LOCATION="%ProgramFiles%\vim"
-    	SET _VIM_LOCATION=!_VIM_LOCATION:~1,-1!
+        SET _VIM_LOCATION=!_VIM_LOCATION:~1,-1!
     ) ELSE (
-	echo "Did not find _vimrc, exiting"
+    echo "Did not find _vimrc, exiting"
         goto End
     )
 )
@@ -27,13 +27,11 @@ IF EXIST "%_VIM_LOCATION%\_vimrc" (
     del "%_VIM_LOCATION%\_vimrc"
 )
 
-
-mklink "%_VIM_LOCATION%\_vimrc"  %CD%\windows.vim
-mklink "%_VIM_LOCATION%\shared.vim"  %CD%\shared.vim
-
+mklink "%_VIM_LOCATION%\_vimrc"     %CD%\windows.vim
+mklink "%_VIM_LOCATION%\shared.vim" %CD%\shared.vim
+mklink "%_VIM_LOCATION%\fzf.vim"    %CD%\fzf\plugin\fzf.vim
 
 mkdir "%_VIM_LOCATION%\bundle"
-mklink /d "%_VIM_LOCATION%\bundle\ctrlp.vim" %CD%\ctrlp.vim
-mklink /d "%_VIM_LOCATION%\bundle\nerdtree" %CD%\nerdtree
+mklink /d "%_VIM_LOCATION%\bundle\fzf.vim"   %CD%\fzf.vim
 
 :End

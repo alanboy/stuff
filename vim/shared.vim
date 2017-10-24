@@ -5,7 +5,7 @@ set nocompatible
 " Use visual bell instead of beeping.
 set vb t_vb=
 
-set lazyredraw " Don't redraw while executing macros (good performance config) 
+set lazyredraw " Don't redraw while executing macros (good performance config)
 set autoread
 set clipboard=unnamed
 set expandtab
@@ -64,7 +64,7 @@ set statusline+=%1*\ %<%F\                                "File+path
 set statusline+=%2*\ %y\                                  "FileType
 set statusline+=%3*\ %{''.(&fenc!=''?&fenc:&enc).''}      "Encoding
 set statusline+=%3*\ %{(&bomb?\",BOM\":\"\")}\            "Encoding2
-set statusline+=%4*\ %{&ff}\                              "FileFormat (dos/unix..) 
+set statusline+=%4*\ %{&ff}\                              "FileFormat (dos/unix..)
 set statusline+=%5*\ %{&spelllang}\                       "Spellanguage & Highlight on?
 "set statusline+=%5*\ %{&spelllang}\%{HighlightSearch()}\  "Spellanguage & Highlight on?
 set statusline+=%8*\ %=\ row:%l/%L\ (%03p%%)\             "Rownumber/total (%)
@@ -98,3 +98,14 @@ autocmd BufReadPost *
      \ endif
 " Remember info about open buffers on close
 set viminfo^=%
+
+
+
+" Delete trailing white space on save, useful for Python and CoffeeScript ;)
+func! DeleteTrailingWS()
+  exe "normal mz"
+  %s/\s\+$//ge
+  exe "normal `z"
+endfunc
+
+nnoremap <F8> : call DeleteTrailingWS()<CR>

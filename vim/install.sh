@@ -8,15 +8,15 @@ fi
 if [ ! -f /usr/share/vim/vim74/shared.vim ]; then
     ln -s  $PWD/shared.vim /usr/share/vim/vim74/shared.vim
 fi
- 
+
+if [ ! -f /usr/share/vim/vim74/fzf.vim ]; then
+    ln -s  $PWD/fzf/plugin/fzf.vim /usr/share/vim/vim74/fzf.vim
+fi
+
 if [ ! -d ~/.vim/bundle ]; then
     mkdir ~/.vim/bundle
 fi
 
-if [ ! -d ~/.vim/bundle/ctrlp.vim ]; then
-    ln -s  $PWD/ctrlp.vim ~/.vim/bundle/ctrlp.vim
-fi
-
-if [ ! -f ~/.vim/bundle/nerdtree ]; then
-    ln -s  $PWD/nerdtree  ~/.vim/bundle/nerdtree
+if [ ! -f ~/.vim/bundle/fzf.vim ]; then
+    ln -s  $PWD/fzf.vim  ~/.vim/bundle/fzf.vim
 fi
