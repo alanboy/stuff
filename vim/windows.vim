@@ -1,6 +1,5 @@
 source $VIMRUNTIME\..\shared.vim
-
-source $VIMRUNTIME/mswin.vim
+source $VIMRUNTIME\mswin.vim
 
 behave mswin
 
@@ -11,104 +10,12 @@ else
   autocmd BufEnter * silent! lcd %:p:h:gs/ /\ /
 endif
 
-""" " to html
-""" let html_use_css=1 "Use stylesheet instead of inline style
-""" let html_number_lines=0 "don't show line numbers
-""" let html_no_pre=1
-"""
-""" au BufNewFile,BufRead *.man set filetype=xml
-""" set path=$PWD\**
-"""
-""" " Return to last edit position when opening files (You want this!)
-""" autocmd BufReadPost *
-"""      \ if line("'\"") > 0 && line("'\"") <= line("$") |
-"""      \   exe "normal! g`\"" |
-"""      \ endif
-""" " Remember info about open buffers on close
-""" set viminfo^=%
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set path=$PWD\**
-
-source $VIMRUNTIME\..\fzf.vim
-set runtimepath^=$VIMRUNTIME\..\bundle\fzf.vim
-nmap <C-p> :GFiles<CR>
-
-
+" set path=$PWD\**
+ source $VIMRUNTIME\..\fzf.vim
+ set runtimepath^=$VIMRUNTIME\..\bundle\fzf.vim
+ nmap <C-p> :GFiles<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Highlight changes from file in source control.
-" Only works with source depot.
-"
-highlight right_diff guifg=#000000  guibg=#ffff66
-function! HighlightDiff()
-
-    " Source Depot diff program must be diff.exe
-    let $SDDIFF = 'diff.exe'
-
-    " get the output of sd diff
-    let cmd = 'sd diff ' . expand('%:p')
-    let result = system(cmd)
-
-    " is this file opened for change?
-    if result =~ ".* file(s) not opened on this client."
-         echo "not opened"
-         return
-    endif
-
-    " it is openden. lets parse the diff output
-    let result = substitute(result, '=.*=.', '', 'g')
-
-    " after removint ===== filename ======, if its empty then
-    " it is opened but it has no changes
-    if result == ""
-         echo "no changes"
-        return
-    endif
-
-    let linestohighlight = []
-
-    let splitparts = split(result, "\n")
-    for line in splitparts
-
-        "changed lines
-        " look for lines that have changed:
-        "  6c6
-        "  25,26c25,26
-        if line =~ '^[0-9]\+c[0-9]\+'
-            let lineechanged = matchstr(line, '^[0-9]\+')
-            call add(linestohighlight, lineechanged)
-        endif
-
-        "added lines
-        if line =~ '^[0-9]\+a[0-9]\+'
-            let lineechanged = matchstr(line, '^[0-9]\+')
-            "echo "there is a change in line" . lineechanged
-            call add(linestohighlight, lineechanged)
-            "    " appended code looks like this: 22a23,29
-            "    let appended = split(result, ",")
-            "    let inserted_begin = split(appended[0], "a")[1]
-            "    let inserted_end = appended[1]
-            "    let hlquery = ''
-            "    let c = inserted_begin
-            "    while c <= inserted_end
-            "        let hlquery = hlquery . ('\%' . c . 'l\|')
-            "        let c += 1
-            "    endwhile
-        endif
-
-    endfor
-
-    let hlquery = ''
-    for line in linestohighlight
-        let hlquery = hlquery . ('\%' . line . 'l\|')
-    endfor
-
-    let hlquery = hlquery . 'foooooobar'
-    call matchadd('right_diff', hlquery )
-
-"    "clearmatches()
-endfunction
-
 

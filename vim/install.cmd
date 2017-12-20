@@ -3,7 +3,6 @@ setlocal
 setlocal ENABLEDELAYEDEXPANSION
 rem make sure ctrl.p git submodule has been synced and updated
 
-
 SET _VIM_LOCATION=
 
 IF EXIST "%ProgramFiles(x86)%\vim\_vimrc" ( 
@@ -27,11 +26,41 @@ IF EXIST "%_VIM_LOCATION%\_vimrc" (
     del "%_VIM_LOCATION%\_vimrc"
 )
 
+
 mklink "%_VIM_LOCATION%\_vimrc"     %CD%\windows.vim
 mklink "%_VIM_LOCATION%\shared.vim" %CD%\shared.vim
 mklink "%_VIM_LOCATION%\fzf.vim"    %CD%\fzf\plugin\fzf.vim
-
 mkdir "%_VIM_LOCATION%\bundle"
 mklink /d "%_VIM_LOCATION%\bundle\fzf.vim"   %CD%\fzf.vim
+
+::::::::::::::::::: NEOVIM :::::::::::::::::::::::::::::::::::::::::::::::
+IF NOT EXIST "%LOCALAPPDATA%\nvim\" ( 
+    mkdir "%LOCALAPPDATA%\nvim\"
+)
+
+ 
+mklink "%LOCALAPPDATA%\nvim\init.vim"       %CD%\neovim.init.vim
+
+set _NEOVIM_LOCATION=
+IF EXIST "%ProgramFiles(x86)%\nvim\" ( 
+    SET _NEOVIM_LOCATION="%ProgramFiles(x86)%\nvim"
+    SET _NEOVIM_LOCATION=!_NEOVIM_LOCATION:~1,-1!
+)
+
+echo Using NeoVim location: %_NEOVIM_LOCATION%
+mklink    "%_NEOVIM_LOCATION%\share\nvim\runtime\_vimrc"     %CD%\windows.vim
+
+:: :: Back up oroginal rc file
+:: IF EXIST "%_NEOVIM_LOCATION%\_vimrc" ( 
+::     copy "%_NEOVIM_LOCATION%\_vimrc" "%_NEOVIM_LOCATION%\_vimrc.bak"
+::     del "%_NEOVIM_LOCATION%\_vimrc"
+:: )
+
+
+mklink    "%_NEOVIM_LOCATION%\share\nvim\runtime\_vimrc"     %CD%\windows.vim
+mklink    "%_NEOVIM_LOCATION%\share\nvim\shared.vim" %CD%\shared.vim
+mklink    "%_NEOVIM_LOCATION%\share\nvim\fzf.vim"    %CD%\fzf\plugin\fzf.vim
+mkdir     "%_NEOVIM_LOCATION%\share\nvim\bundle"
+mklink /d "%_NEOVIM_LOCATION%\share\nvim\bundle\fzf.vim"   %CD%\fzf.vim
 
 :End
