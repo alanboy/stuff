@@ -81,6 +81,7 @@ if has("gui_running")
   set guioptions+=b
   set lines=45
   set guitablabel=%F
+  set guifont=Consolas:h13
   "set guitablabel=%F\ %t
   " Change font with Ctrl Up/Down
   nmap <C-Up> :let &guifont = substitute(&guifont, ':h\(\d\+\)', '\=":h" . (submatch(1) + 1)', '')<CR><CR>
