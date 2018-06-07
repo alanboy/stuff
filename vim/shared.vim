@@ -26,6 +26,11 @@ set splitright " whats this ?
 set tabstop=4
 set wildmenu " autocomplete vim commands
 
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
+
 colo desert
 syntax enable
 
