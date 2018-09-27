@@ -16,6 +16,9 @@ endif
  set runtimepath^=$VIMRUNTIME\..\bundle\fzf.vim
  nmap <C-p> :GFiles<CR>
 
+" Vim 8 added a mapping to ctrl-f
+ unmap <C-f>
+ iunmap <C-f>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
