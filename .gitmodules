@@ -4,3 +4,6 @@
 [submodule "vim/fzf"]
 	path = vim/fzf
 	url = https://github.com/junegunn/fzf.git
+[submodule "vim/vim-gitgutter"]
+	path = vim/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git

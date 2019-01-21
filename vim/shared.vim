@@ -1,5 +1,3 @@
-;;
-
 set nocompatible
 
 " Use visual bell instead of beeping.
@@ -71,7 +69,6 @@ set statusline+=%3*\ %{''.(&fenc!=''?&fenc:&enc).''}      "Encoding
 set statusline+=%3*\ %{(&bomb?\",BOM\":\"\")}\            "Encoding2
 set statusline+=%4*\ %{&ff}\                              "FileFormat (dos/unix..)
 set statusline+=%5*\ %{&spelllang}\                       "Spellanguage & Highlight on?
-"set statusline+=%5*\ %{&spelllang}\%{HighlightSearch()}\  "Spellanguage & Highlight on?
 set statusline+=%8*\ %=\ row:%l/%L\ (%03p%%)\             "Rownumber/total (%)
 set statusline+=%9*\ col:%03c\                            "Colnr
 set statusline+=%0*\ \ %m%r%w\ %P\ \                      "Modified? Readonly? Top/bot.
@@ -96,16 +93,14 @@ else
   set guioptions=ic
 endif
 
-
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
      \   exe "normal! g`\"" |
      \ endif
+
 " Remember info about open buffers on close
 set viminfo^=%
-
-
 
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()
@@ -115,3 +110,9 @@ func! DeleteTrailingWS()
 endfunc
 
 nnoremap <F8> : call DeleteTrailingWS()<CR>
+
+
+inoremap <F9> <C-O>za
+nnoremap <F9> za
+onoremap <F9> <C-C>za
+vnoremap <F9> zf

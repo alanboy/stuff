@@ -21,3 +21,5 @@ silent! unmap  <C-F>
 silent! iunmap <C-F>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+set runtimepath^=$VIMRUNTIME\..\bundle\vim-gitgutter
+

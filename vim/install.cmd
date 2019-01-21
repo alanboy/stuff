@@ -32,6 +32,7 @@ mklink "%_VIM_LOCATION%\shared.vim" %CD%\shared.vim
 mklink "%_VIM_LOCATION%\fzf.vim"    %CD%\fzf\plugin\fzf.vim
 mkdir "%_VIM_LOCATION%\bundle"
 mklink /d "%_VIM_LOCATION%\bundle\fzf.vim"   %CD%\fzf.vim
+mklink /d "%_VIM_LOCATION%\bundle\vim-gitgutter"   %CD%\vim-gitgutter
 
 ::::::::::::::::::: NEOVIM :::::::::::::::::::::::::::::::::::::::::::::::
 IF NOT EXIST "%LOCALAPPDATA%\nvim\" ( 
