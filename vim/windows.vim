@@ -19,7 +19,7 @@ nmap <C-p> :GFiles<CR>
 " Vim 8 added a mapping to ctrl-f
 silent! unmap  <C-F>
 silent! iunmap <C-F>
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 
 set runtimepath^=$VIMRUNTIME\..\bundle\vim-gitgutter
 
