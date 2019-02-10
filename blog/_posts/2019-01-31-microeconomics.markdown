@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "microeconomics"
+title: "Microeconomics"
 date: 2019-01-31 08:24:00 -0800
 categories: microeconomics
 ---
@@ -11,11 +11,11 @@ Marginal revenue,
 
 # Elasticity
 
-## Price elasticity of demand:
+# Price elasticity of demand:
 
     E = %d_q / %d_p.
 
-## Income Elasticity of demand:
+# Income Elasticity of demand:
 
     E = %d_q / %d_i.
 
@@ -28,7 +28,7 @@ Imagine the gov. says the income will increase 5% then my delta q will increase 
 
 How responsive are customers to change of income.
 
-## Cross price elasticity of demand (the price of a related good):
+# Cross price elasticity of demand (the price of a related good):
 
     E = %d_q / %d_Pr    where Pr is the price of a related good
 
@@ -48,7 +48,7 @@ What is the price P* that will maximize revenue:
 
 max Total revenue.
 
-Derivative in … is called marginal revenue.
+Derivative in is called marginal revenue.
 
 TR  -> MR = 0
 
@@ -67,6 +67,4 @@ Optimal quantity is going to be 562.21, now we can use it in the price equation 
      E = -1.617 x 347 / 562.21 = -1
 
 This is when the revenue is maximized.
-
-
 

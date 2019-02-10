@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "vim"
+title: "Vim"
 date: 2019-01-25 12:21:00 -0800
 categories: vim
 ---
@@ -8,5 +8,4 @@ categories: vim
 Delete all lines containing "matchingstring":
 
     :g/matchingstring/d
-
 

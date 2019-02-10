@@ -1,3 +1,3 @@
 
-rem bundle exec jekyll serve --incremental 
-bundle exec jekyll serve 
+rem bundle exec jekyll serve --incremental
+bundle exec jekyll serve
