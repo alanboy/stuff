@@ -154,3 +154,16 @@ Inventory costing methods
  * Average cost
 
 
+EDGAR: https://www.sec.gov/edgar/searchedgar/companysearch.html
+
+### Revenue recognition principle
+* Goods and services have been transfered to customers.
+* The appropiate amount of revenue to record is the amount the seller expects to recieve.
+
+
+## Allowance method
+## Inventory cost assumptions (FIFO, LIFO)
+* Merchandisers
+* Manufacturers
+
+## Program cost accounting

@@ -9,3 +9,6 @@ Delete all lines containing "matchingstring":
 
     :g/matchingstring/d
 
+Delete all lines NOT containing "matchingstring":
+
+    :v/matchingstring/d

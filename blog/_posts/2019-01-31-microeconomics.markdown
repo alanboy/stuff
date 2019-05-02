@@ -7,7 +7,7 @@ categories: microeconomics
 
 # Marginal analysis
 
-Marginal revenue, 
+Marginal revenue,
 
 # Elasticity
 
@@ -40,7 +40,7 @@ Related goods can be of two types:
 * Substitute of your product (McDonalds vs BurgerKing)
 * Complementary (Tennis rackets vs Tennis balls)
 
-Any variable in the : `Q = a + bP + cN + dI + cR` can give us an elasticity. 
+Any variable in the : `Q = a + bP + cN + dI + cR` can give us an elasticity.
 
 Set elasticity == -1 or using marginal analysis, take the derivative and equal the equation to zero.
 
