@@ -12,3 +12,8 @@ Delete all lines containing "matchingstring":
 Delete all lines NOT containing "matchingstring":
 
     :v/matchingstring/d
+
+Search by hex code:
+
+    \%x1b
+
