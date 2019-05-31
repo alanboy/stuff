@@ -1,30 +1,26 @@
 ---
 layout: post
-title: "mba-conference-2019"
+title: "MBA conference 2019"
 date: 2019-04-27 08:11:00 -0800
 categories: mba-conference-2019
 ---
 
-Working on weekends
+Gaia Borgias (President)
+CoMotion
+
 Merill Lynch
-
-Matthew P MacMichael, Sr.
-Director
-
-Phil Scott
-Managing Director
-
+Matthew P MacMichael, Sr.  Director
+Phil Scott Managing Director
 monte carlo analysis.
-
 commodity business... its all about price.
 
-think about how you are adding value, if you can add value
+Think about how you are adding value, if you can add value...
 
-sucessful people:
+Sucessful people:
 * Sharing is critical.
-* work hard
-* metrics: to list, what do you want to acomplish today, this week. measure.
-* Nice. really nice people, you want to hang out with them. sense of humar (not work : loner, jerk, )
+* Work hard
+* Metrics: to-do list, what do you want to acomplish today, this week. measure.
+* Nice. Really nice people, you want to hang out with them. sense of humar (not work : loner, jerk, )
     people want to do business with people that they like
 
 Since 1950, stock has not gone significantly
@@ -39,13 +35,7 @@ https://www.amazon.com/dp/B002C949KE/ref=dp-kindle-redirect?_encoding=UTF8&btkr=
 Take away:
 Understanding human bahaviour
 
-Gaia Borgias (President)
-
-CoMotion
-
-
 ## Keynote speaker (CVP Phil Sorgen - Microsoft)
-
 US enterprise sales. National Industry
 The future of modern managemenet. Managing trough transformation . Masive transofrmation changes.
 To be competitive organizations need to transform
@@ -113,61 +103,59 @@ Thesis:
 
         BY HAVING A MANAGEMENT SYSTEM: Scorecard, KPIs, Mature SLA.
 
-
 Urgency Point: SPEED
     5 year dimension:
     10 years ago: Big ate small, today and in the future Fast eats big. In this environment. Always disrupting, always changing.
 
 This is HUGE !!!!
 
-
 ## The future of people
 
-    Top 3 stratigic priorities: People, people, people.
+Top 3 stratigic priorities: People, people, people.
 
-    All things people
-        Kelly Wright: Even Responsible Finance, Fastly, Amperty
-        Darcie Henry: VP of HR for WW Ops Amazon
-        Jennifer Olsen: Founder and CEO Resourceful (UWBothell graduate!!!!) 40 under 40 !
-            https://www.resourcefulhr.com/
-            Already in HR. Power of collaboration, leveraging skills. "Collective leadership."
-        Jovonia Taylor: BCA 767 Chief Program Eng. Boeing.
+All things people
+* Kelly Wright: Even Responsible Finance, Fastly, Amperty
+* Darcie Henry: VP of HR for WW Ops Amazon
+* Jennifer Olsen: Founder and CEO Resourceful (UWBothell graduate!!!!) 40 under 40 !
+  * https://www.resourcefulhr.com/
+  * Already in HR. Power of collaboration, leveraging skills. "Collective leadership."
+* Jovonia Taylor: BCA 767 Chief Program Eng. Boeing.
 
-    People and teams stay curious. Promoting authenticity at work.
+People and teams stay curious. Promoting authenticity at work.
 
-    When you think about the future of people, what comes to mind? What is the future challenge...
-        We need to an era where we can embrace technology.
-        Challenge is to unleash, predict future needs,
-        Unleashing potential
-        How are you developing and retain as leader and manager
-        Collaborative leadership.
+When you think about the future of people, what comes to mind? What is the future challenge...
+    We need to an era where we can embrace technology.
+    Challenge is to unleash, predict future needs,
+    Unleashing potential
+    How are you developing and retain as leader and manager
+    Collaborative leadership.
 
-    Culture changes:
-        Amazon: how do you maintain culture/changes: operate like a bunch of little startups.. choose a culture that aligns to you.
-                amazon has leadership principles. what are they?
-                the customer is always going to be dissatisfied, employees will always want more simplication of choice.
-                experinces employes are having.
+Culture changes:
+    Amazon: how do you maintain culture/changes: operate like a bunch of little startups.. choose a culture that aligns to you.
+            amazon has leadership principles. what are they?
+            the customer is always going to be dissatisfied, employees will always want more simplication of choice.
+            experinces employes are having.
 
-        Resourceful:
-                11 years in operation. (when did she graduate)
-                dynamic collaboration
-                leadership
-                shared commitment (us and clients)
-                write guard-rails, vlaues, for yourself or company.
+    Resourceful:
+            11 years in operation. (when did she graduate)
+            dynamic collaboration
+            leadership
+            shared commitment (us and clients)
+            write guard-rails, vlaues, for yourself or company.
 
-        Boeing:
-                Rewarding leaders that do value diveristy and inclusion.
-                A Personal board of directors.
+    Boeing:
+            Rewarding leaders that do value diveristy and inclusion.
+            A Personal board of directors.
 
-        Authenticity:
-                Invidudual leaders, self awareness.
-                TOOL: "Hidden commitments" read it!
-                What are my hidden commitments? How we want to walk in the world.
+    Authenticity:
+            Invidudual leaders, self awareness.
+            TOOL: "Hidden commitments" read it!
+            What are my hidden commitments? How we want to walk in the world.
 
-        The power of vulnerability, authenticity, TED TALK. Watch.
-        https://www.ted.com/talks/brene_brown_on_vulnerability
+    The power of vulnerability, authenticity, TED TALK. Watch.
+    https://www.ted.com/talks/brene_brown_on_vulnerability
 
-        Managing and training people: only 1 direct report!!!
+    Managing and training people: only 1 direct report!!!
 
     My questions:
         what are the leadership principles

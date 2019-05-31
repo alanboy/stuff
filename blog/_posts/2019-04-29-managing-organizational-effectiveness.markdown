@@ -191,4 +191,14 @@ Creativity is risky, most creative projects fail.
 2. Hamilton, Joan. "Take My Word for It."Stanford Magazine Nov/Dec 2005. https://stanfordmag.org/contents/take-my-word-for-it
 3. Diamond, Jared. "The Curse of QWERTY."Discover April 1, 1997. discovermagazine.com/1997/apr/thecurseofqwerty1099
 
+Build poeple's interest systematically and patiently.
+Attempts to take shortcuts (i.e. disruptive actions without enough credibility) backfire.
+
+Know the poeple you are trying to influence.
+    * Some poople prefer face-to-face interaction, others indirect interaction
+    * Some are more, other less difficult to move between different stages of change.
+
+
+
+
 
