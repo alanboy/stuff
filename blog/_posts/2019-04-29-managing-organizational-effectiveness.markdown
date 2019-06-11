@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Managing Organizational Effectiveness"
+title: "Managing organizational effectiveness"
 date: 2019-04-29 06:10:00 -0800
-categories: managing-organizational-effectiveness
+categories: mba management
 ---
 
 * Knowledge of effective management: Learn management theory that helps you shape and navigate internal structure to be effective in organizations (as member or manager)

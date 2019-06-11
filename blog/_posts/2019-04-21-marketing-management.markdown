@@ -1,10 +1,33 @@
 ---
 layout: post
-title: "marketing-management"
+title: "Marketing management"
 date: 2019-04-21 11:56:00 -0800
-categories: marketing-management
+categories: mba marketing
 ---
 
+## The marketing framework
+* Situation analysis
+ * Customers
+ * Cometitors
+ * Collaborators
+ * Company
+ * Complementors
+ * Context
+* Marketing strategy
+ * Segmentation
+ * Targetting
+ * Positioning
+* Marketing tactics
+ * Product
+ * Price
+ * Place
+ * Promotions
+
+Delight the customer.
+
+PLC => Product Lifecycle
+
+Marketing miopia
 
 inmarket testing: slow, expensive.
 

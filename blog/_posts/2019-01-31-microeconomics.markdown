@@ -2,7 +2,7 @@
 layout: post
 title: "Microeconomics"
 date: 2019-01-31 08:24:00 -0800
-categories: microeconomics
+categories: mba microeconomics
 ---
 
 # Marginal analysis

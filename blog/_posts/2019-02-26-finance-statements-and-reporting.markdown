@@ -2,7 +2,7 @@
 layout: post
 title: "Financial statements and reporting"
 date: 2019-02-26 06:16:00 -0800
-categories: financial
+categories: mba financial
 ---
 
 # What is accounting?
