@@ -19,7 +19,7 @@ Business activities:
 - Operating (day to day activities)
 
 # The four basic financial statements
-- Balance sheet: 
+- Balance sheet:
 - Income statement
 - Statement of stockholders equity:
 - Statement of cash flows:
@@ -118,11 +118,11 @@ Accounting for value - Stephen Penman.
 
 Many transactions happened in 2018. We want to summarize all those and prepare ending balance sheet
 
-We can write that in the income statement. 
+We can write that in the income statement.
 
 Depreciation expense ( debit expense ^ , **accumulated depreciation** is a contra-asset).
 
-With the closing process we get **retained earnings** and that we can put in the balance sheet. 
+With the closing process we get **retained earnings** and that we can put in the balance sheet.
 
 ====
 
@@ -130,7 +130,7 @@ With the closing process we get **retained earnings** and that we can put in the
 
 Economic resources that require sacrifice of ...  benefit.
 
-### Revenue recognition 
+### Revenue recognition
 Revenue recognition => when we can report in the income statement.
 Reporting revenues in the income statement.
 
@@ -177,7 +177,7 @@ The revenue and the expense must be reported in the same period.
 
     2018   1. AR 1000       Rev       1000
        2. Bad debt 50   Allowance 50
- 
+
     2019   3. Allowance 50  AR        50
 
 Let's say the company that was bankrupt we realize we can now collect.
@@ -197,7 +197,7 @@ Let's say the company that was bankrupt we realize we can now collect.
 
 Inventory costs includes the costs to bring an article to usable or salable condition and location.
 
-Actual flow. 
+Actual flow.
 Cost flow. (Assumed flow, based on assumptions)
 
 ### Inventory costing methods ###
@@ -217,9 +217,9 @@ Assumptions of inventory can be LIFO, FIFO, average.
     Begining balance + Purchases - CGS = Ending balance
 
 
-For Merrimack case 8. We need to change the begining balance assumption from LIFO to FIFO. 
+For Merrimack case 8. We need to change the begining balance assumption from LIFO to FIFO.
 
-LIFO reserve, companies need to report the LIFO reserve. 
+LIFO reserve, companies need to report the LIFO reserve.
 
     Begining balance in LIFO = 13.5M
     Begining balance in FIFO = 13.5M + 5.5M = 19M

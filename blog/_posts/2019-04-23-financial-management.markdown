@@ -49,6 +49,8 @@ Expected return on a security (extrememly important)
 
 Forecasting the return on the stick
 
+### Capital Asset Pricing Model
+
 CAPM (7 start)
 Expected return on an individual security:
 
@@ -83,7 +85,7 @@ How do you value a stock.
 Problem #1 in homework.
 
 Stock, present value, of the future cash flows.
-
+FCF = Future Cash Flows
 Div = Divident
 
 All dividends divided by
@@ -189,8 +191,6 @@ MM proposition I & II (with taxes)
 
 Unleavered equity means
 
-
-
 Total Cash flow to investors
 
 Cap structure
@@ -203,7 +203,6 @@ Cap structure
 * Junior
 * Preferred
 * Common stock holders
-
 
 ## Efficient Market Hypothesis and why Delaware?
 
@@ -234,31 +233,35 @@ help rebuild trust in the eurpoean baking sector and increase the resilience of 
 Euroizone debt crisis exposed instability and high liquidity risk.
 
 Multiple IPOS at the same time: signaling
-    
+
 # Digital Realty Trust Case
 
-Real estate ... 
+Real estate ...
 
 V_l = V + Tc * B
 
-Modeling, how much is worth, I ... assumnptions ... 
+Modeling, how much is worth, I ... assumnptions ...
 
 Segregate cashflos from current and expected new leases. Segregate... calculate discount rate for the different ...
 Because of the risk, the current leases are lower discount rate. Future leases calculate future lesase.
 
-Figure out the cashflows of these leases ... for question 2. 
+Figure out the cashflows of these leases ... for question 2.
 
-EBIT = Earning Before Interest and Taxes... 
+EBIT = Earning Before Interest and Taxes...
   + Depreciation (non cash)
  +/- net working capital
 -------------------------------------
 Operating cashflows
 
+
+Net working capital = Accounts Receivable + Sales Equipment Revenue + Prepaid Expenses - Accounts Payable - Deferred Service Revenue - Accrued Liabilities
+Balance Sheet = Current Assets - Current Liabilities
+
 Use last year to determine terminal value, because the model is for 5 years...  Use formula in chpater 6, slide 7.
 
-Laste year is year 5... 
+Laste year is year 5...
 
-Discount BEFI cashflow discount rate discount for 5 years.... 
+Discount BEFI cashflow discount rate discount for 5 years....
 
 discount rate == WAC ????
 
@@ -272,7 +275,7 @@ Jeff Bezos worked in wall street.
 
 Junk bond, also known as a high yeield or speculative bond. Is a d debt security issued by companies or governments.
 
-Pros: 
+Pros:
 
 Earning before interest, Taxes, Deprciation and amortization.
 
@@ -286,14 +289,16 @@ EBITA
 Community adjusted EBITDA
 
 What is BitCoin.
-Staoshi Nakamoto. 
+Staoshi Nakamoto.
 
-Signaling. 
+Signaling.
 
 IPO vs Share Buyback.
 
 Insider activities.
 
 ## Insider transactions
-Yahoo finance, there is a "holders" -> "Insider transactions". 
+Yahoo finance, there is a "holders" -> "Insider transactions".
 
+
+Net Working Capital

@@ -224,3 +224,240 @@ For 60 years, campbells was a loyal ... customer after
 
 GICO-> Garbage In, Garbage Out
 
+
+A.
+Discount pricing
+B.
+?Perceived-value pricing
+C.
+Markup pricing
+D.
+?Auction-type pricing
+E.
+Variable pricing
+
+
+
+
+tactic:
+?Lack-of-demand pricing
+B.
+Anticipatory pricing
+C.
+?Over-demand pricing
+D.
+Hedge pricing
+E.
+Reduction of discounts
+
+
+CMO: 
+Your tasks include: estimating demand, choosing between cost-based and value-based pricing, selecting an initial price for the product based on available cost data, and adjusting the price based on changes in the market
+The first factor to consider in pricing is who your demographic is
+You next move on to estimating demand 
+Now you examine the costs 
+Market Penetration Pricing: Charge a lower price in order to gain market share
+Market Skimming Pricing: Charge a higher price in order to make more profit quickly.
+
+
+
+BCG growth-share matrix approach. 
+
+
+Ieta model ... interest, desire, action...  in e-trade 
+
+learn about : https://www.blueoceanstrategy.com/about-the-authors/
+four actions framework:
+https://www.blueoceanstrategy.com/tools/four-actions-framework/
+
+
+A leverageable advantage is one that a company can use as a springboard to new? advantages; competitive advantage is a? company's ability to perform in one or more ways that competitors cannot or will not match
+
+
+
+Summary:
+
+Segmentation
+Marketing framework !!!!
+Buy behaviour
+
+Marketing framework:
+6cs : customers, complementors, company, competitors, collaborators, context
+
+4ps: product, place/channel/promotion, pricing.
+
+classing example: kim kardashian - pair of flip flops, cristals, $5,000 pair of flip flops.  placebo effects on pricing.... 
+
+customer aquisition, customer retention, profits
+
+Integrated marketing strategy
+* Strategy and tactics be in sync
+* choice of one of 4ps affects the others
+
+Computer program vs product
+
+Ed Oates, Founder of Oracle in "The difference between fog and larry ellision" by mike wilson
+
+Key learnings:
+Core prodct needs to be appealing to targeted customer segment
+monopoli is easy: false loyals
+
+in competitive enfironment products vannot be comstomizd to all customer segments
+- Easy to get freedy and target too many segments with one product
+- word of mouth is missing. prodct lacks the "oomph"
+
+* Need strategies to grow the market
+- pioneering
+- growring the pie: whose job?
+
+Who is responsible for growing the market?
+
+## What CMOs claim marketing does
+
+It;s not an expense but an investment. What is the dialog you need to have?
+
+Boards have neglected marketing
+* Discussions about cusomters are purely anecdotal
+* Need to get in the coversation
+
+Boards spend less thatn 10% of ther time on marketing.
+
+CEO's and Board's attention is dominated by Finance.
+
+Poor marketing strategies -> Destroys shareholder value
+
+Impediments to merges and acquisitionA
+
+Synergy: Synergy is the creation of a whole that is greater than the simple sum of its parts. The term synergy comes from the Attic Greek word s??e???a synergia[1] from synergos, s??e????, meaning "working together".
+
+
+
+Empty chair: the conversation changer... 
+Amazon CEO had an empty chair
+https://www.inc.com/john-koetsier/why-every-amazon-meeting-has-at-least-one-empty-chair.html
+
+### Apostles and Terrorists
+University of michingan database.
+https://blog.startquestion.com/understand-customer-loyalty-with-the-apostle-model-618f50dd7423
+Starbucks Case...
+
+Ref: Heskett et al (1994)
+
+BAlacnce short term vs long term
+- Competitive advantage: destroying standard economic theory
+
+- Createivy: time to think, 15% rule: sabbatical rule 1/7
+
+Marshmallows... story... you can get 1 marshmalleow right now, or two in 15 minutes...
+way more sucesful... am i willing to give up something ()
+https://www.theatlantic.com/family/archive/2018/06/marshmallow-test/561779/
+
+
+
+Campbells soup story.
+
+# Creativity
+
+Creativity: Resource constrained world
+
+
+The alexandria light house
+https://en.wikipedia.org/wiki/Lighthouse_of_Alexandria
+Stratatus....
+
+Childrens Roundabout
+Water prolbem in remotes areas
+
+Edisons Gate:
+https://boards.straightdope.com/sdmb/showthread.php?t=127342
+https://www.innovationinpractice.com/innovation_in_practice/2014/06/innovation-through-task-unification.html
+
+
+DMP: What drives our decisions?
+- Competition or customers
+- Discipline: Easy to get off track, hard to stay focused
+
+Important!::!:!:!:!:! Are you driven by what customers want or by what the competition is doing.
+
+The dominance trap.
+
+"Superior experience" to their customers.
+
+Firms: 80% of believed that they dlieverrd (n=326, firms, bain & co)
+Customers: rated only 8% as delivering this!
+How customers react/think is often different 
+
+### Effort to satisfy customers, emmployees and owners
+a tale of 3 companies, one served the owners, one the customers and the last (and best performant) a combination.
+
+most is driven by employee satisfaction... 
+
+<the virtuous circle slide insert>
+
+"You can count on us to combine a strong quantitavie and analytical culture with a willingness to make bold decisioins. As we do so, we'll start with the customer and work backwards, in our judgement, that is the best way to create shareholder value". Jeff Bezos
+
+
+New management concern: employees & customers.
+- be careful how tyou treat your employees
+- understanding your customers: you are not the customer!!!!
+
+* PRoactive vs. Reactive
+- Think outside the box
+- Framing/Metadecision -> Don't plunge in (Ex: Pepsi & John Sculley)
+https://en.wikipedia.org/wiki/John_Sculley
+
+https://www.amazon.com/Decision-Traps-J-Edward-Russo/dp/0385248350
+
+"The gods must be crazy"
+
+Pepsi, the 2 liter bottle... 
+https://en.wikipedia.org/wiki/Two-liter_bottle .. pepsi.
+
+
+Dont feel compelled to **React** on the Dimension on which you have been attacked.
+
+
+### A new word
+* Competensity:
+- Brings together competition, intensity and competence. 
+
+* Creatrive Destruction
+- Average life of Fortune 500 multinational is only 40-50 years
+(This is why microsoft is re-setting iteself?)
+
+
+Aristotle: "Whom the gods want to destroy, they first send years of success"
+
+Dominance trap...
+
+### A breave new world
+
+* New reality:
+Global standards; non-level playing fields; intense rivalry; winners and losers.
+
+* Constant improvement to stay on top.
+- Those who don't serve (customers) well end up losing
+- Not just distance but the direction
+
+* Intelligence:
+- Learning from our defeats is obvious.
+* enjoy your victories, but learn from -- victories and defeats.!!
+-- "too often we fail to appreciate the reasons for our successes"
+* Lucky: need to be marginally "smarter" than the competition
+
+## Final words
+= Reality of the new flux.
+"If we wait for all the waves to subside before we enter the ocean for a batn, then we will never be able to enter the ocean at all, brave the waves and enter the ocean"
+Ancent tamil proverb
+
+- CEO&F
+
+CEO ===== Customers Employees Owners
+
+CEO&F === Friends and Family
+- Have balance
+- Blend: CEO And 2Fs
+- Great FOE
+
+HAve a fascinatinr journey: don't be agraid to make mistakes, just make sure you learn from them. 
+
