@@ -5,11 +5,15 @@ date: 2019-01-25 12:21:00 -0800
 categories: vim
 ---
 
-Delete all lines containing "matchingstring":
+Delete all lines **containing** "matchingstring":
 
-    :g/matchingstring/d
+    :%g/matchingstring/d
 
-Delete all lines NOT containing "matchingstring":
+Delete all lines **NOT containing** "matchingstring":
+
+    :%g!/matchingstring/d
+
+Notice the `!`.
 
     :v/matchingstring/d
 

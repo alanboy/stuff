@@ -110,6 +110,7 @@ func! DeleteTrailingWS()
 endfunc
 
 nnoremap <F8> : call DeleteTrailingWS()<CR>
+nnoremap <F7> : %s/\\r\\n/\r/<CR>
 
 
 inoremap <F9> <C-O>za
