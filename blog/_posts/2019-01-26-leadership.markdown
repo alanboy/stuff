@@ -41,17 +41,17 @@ You'll get:
 https://en.wikipedia.org/wiki/Theory_X_and_Theory_Y
 
 * Choice: Finding out about shortcomings
-** Wait for cathastrophy to reveal weakness
-** Actively purse accurate self-portrait
-* Choice: Accepting responsabilty
-**Environment
-**Ability
-**Motivation
+  * Wait for catastrophe to reveal weakness
+  * Actively purse accurate self-portrait
+* Choice: Accepting responsibility
+  * Environment
+  * Ability
+  * Motivation
 * Choice: What to do about it.
-**Anticipate situations
-**Compensate
-**Build new strenghts
-**Change self
+  * Anticipate situations
+  * Compensate
+  * Build new strengths
+  * Change self
 
 ### Feedback
 * 360 feedback
@@ -69,8 +69,8 @@ Team Context
 * Team design
 * Team culture
 
-*Ability
-*Motivation
+* Ability
+* Motivation
 * Strategy
 
 Team performance
@@ -82,14 +82,14 @@ Team performance
 Leader takes the position, after developing the members it becomes a member of the team.
 
 * Trust: Believing what you fear happen, wont.
-* Ability: 
+* Ability:
 * Skill: Gained by abilities, can be tought.
 * Motivation:
 * Authority:
-* Power: 
+* Power:
 * Personal Power:
-* * Expertise
-* * referent power
+  * Expertise
+  * referent power
 * Leadership:
 
 Power is the noun, and influence is the verb.
@@ -113,25 +113,24 @@ Power is the noun, and influence is the verb.
 ```
 
 ## Promotions
-* Job1
-* Job2
 
-Learning a skill that you use in your current job is training.
-Learning a skill that will allow you to go from job1 to job2, that's development.
-
+Learning a skill that you use in your current job is **training**.
+Learning a skill that will allow you to go from job 1 to job 2, that's **development**.
 
 What is the Peter Principle
-The Peter Principle is an observation that the tendency in most organizational hierarchies, such as that of a corporation, is for every employee to rise in the hierarchy through promotion until they reach the levels of their respective incompetence. 
+The Peter Principle is an observation that the tendency in most organizational hierarchies, such as that of a corporation, is for every employee to rise in the hierarchy through promotion until they reach the levels of their respective incompetence.
 https://www.investopedia.com/terms/p/peter-principle.asp
 
 ## Leadership styles
-•	Coercive style “Do what I say”, my way or the highway, bullying. Useful only in crisis.
-•	Authoritative style “states overall goal, gives people freedom to choose their own way” style “come with me”, clear vision for people to follow, enthusiasm. Trust. The leader is providing the VISION, follow me! Consistently most effective In most situations.  Proposing solutions but after listening.
-•	Affiliative style “people come first”, building team harmony, creating emotional bonds, relationship. Maintenance roles.
-•	Democratic style “Concensus, input, collective”. Only when the people HAVE the expertise. When the leader is uncertain what to do. The most time consuming.
-•	Pacesetting style “High expectations” already high degrees of skill already exists. They will be able to keep up.
-•	Coaching style: "Helping others to performa at a hight level". Least frquently used. Long term oriented, time consuming.
-        * "When you're up to your neck in alligators, sometimes you forget that your mission is to drain the swamp."
+* Coercive style "Do what I say", my way or the highway, bullying. Useful only in crisis.
+* Authoritative style "states overall goal, gives people freedom to choose their own way" style "come with me", clear vision for people to follow, enthusiasm. Trust. The leader is providing the VISION, follow me! Consistently most effective In most situations.  Proposing solutions but after listening.
+* Affiliative style "people come first", building team harmony, creating emotional bonds, relationship. Maintenance roles.
+* Democratic style "Concensus, input, collective". Only when the people HAVE the expertise. When the leader is uncertain what to do. The most time consuming.
+* Pacesetting style "High expectations" already high degrees of skill already exists. They will be able to keep up.
+* Coaching style: "Helping others to performa at a hight level". Least frquently used. Long term oriented, time consuming.
+
+        "When you're up to your neck in alligators,
+        sometimes you forget that your mission is to drain the swamp."
 
 Authoritative and Affiliative will cover the largest range of situations.
 

@@ -65,7 +65,7 @@ https://hbr.org/2018/02/how-to-collaborate-effectively-if-your-team-is-remote
 
 
 
-Joel used a motor analogy to describe two types of works. Some people have a self-winding internal motor?—?if you leave them alone for two weeks even with no instruction, they will do two weeks worth of work. Other people have motors that need to be wound every day?—?they really benefit from having a daily touchpoint. Both types of workers can be effective, as long as you know what type you are dealing with and work with them appropriately.
+Joel used a motor analogy to describe two types of works. Some people have a self-winding internal motor?Â—?if you leave them alone for two weeks even with no instruction, they will do two weeks worth of work. Other people have motors that need to be wound every day?Â—?they really benefit from having a daily touchpoint. Both types of workers can be effective, as long as you know what type you are dealing with and work with them appropriately.
 
 
 

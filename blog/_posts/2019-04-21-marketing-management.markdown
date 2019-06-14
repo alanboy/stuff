@@ -5,34 +5,55 @@ date: 2019-04-21 11:56:00 -0800
 categories: mba marketing
 ---
 
+Marketing is the process by which individuals and groups obtain what the need and want through creatind and exchanging products and value with others.
+
+Marketing: Sustained delivery of customer satisfaction.
+
+## Marketing management philosophies
+* Production concept: Favor products that are available and highly affordable.
+* Product concept: Favor products that offer the most quality, performance, and innovative features.
+* Selling concept: Favor products only if the company promotes/sells these products.
+* Marketing concept: Focuses on needs/wants of target markets & delivering satisfaction better than competitors.
+* Societal marketing concept: society (human welfare), consumers (want satisfaction), company (profits)
+
+## Evolution of marketing
+1. Product philosophy
+1. Selling philosophy
+1. Marketing philosophy
+
+    "Everything starts with the customer" -Lou Gerstner, CEO of IBM
+
+    "There is only one valid definition of business purpose: to create a customer" -Peter Drucker
+
+    "We don't want to satisfy our customers, we want to delight them." -Jeff Bezos
+
+    "Any business with delighted customers has a sales force they won't have to pay; You don't see them, but they are talking to poeple all the time" -Warren Buffet, 2016
+
+    "Creating shareholder wealth is not the purpose of the business. IT is the reward for creating customer value" -Michael Tracey & Fred Wiersema, FEO magazine
+
 ## The marketing framework
 * Situation analysis
- * Customers
- * Cometitors
- * Collaborators
- * Company
- * Complementors
- * Context
+  * Customers
+  * Competitors
+  * Collaborators
+  * Company
+  * Complementors
+  * Context
 * Marketing strategy
- * Segmentation
- * Targetting
- * Positioning
+  * Segmentation
+  * Targeting
+  * Positioning
 * Marketing tactics
- * Product
- * Price
- * Place
- * Promotions
+  * Product
+  * Price
+  * Place
+  * Promotions
 
 Delight the customer.
-
-PLC => Product Lifecycle
-
+inmarket testing: slow, expensive.
 Marketing miopia
 
-inmarket testing: slow, expensive.
-
 What is our product? What do we supply?
-
 What is our market? (demand) Who do we sell our products to ?
 
 ABC TV Example.
@@ -40,6 +61,8 @@ ABC TV Example.
 Marketing Jobs:
 * 10% The job is to make this exchange process possible (startups)
 * 90% To increase the efficiency of the marketing exchange
+
+## Marketing strategy
 
 ### Demand analysis
 
@@ -78,11 +101,11 @@ Marketing Jobs:
   * Benefit/cost
   * Image
 
-<insert image in notes>
+{insert image in notes}
 
     Market Share = My Sales / Industry Sales
-
     Relative Market Share = My Sales / Competitor Sales
+
 
 [Art and Science of Management](https://www.referenceforbusiness.com/management/A-Bud/The-Art-and-Science-of-Management.html)
 
@@ -117,7 +140,7 @@ Amazon starts with press release + FAQ and works backwards to creat the product 
 
 Amazon workspaces/Smartsheet/Coca-cola freestyle.
 
-<instert story about coca-cola freestyle>
+{instert story about coca-cola freestyle}
 
 Phylosophy of innovation:
 * Who they hire
@@ -144,6 +167,7 @@ Notes:
 * Ownership == Execution (single threaded ownership)
 
 
+### Dominos Pizza 
 
 great delivery company.
 
@@ -153,20 +177,17 @@ you can use negative comments to let you down or use them to excite you.
 
 our pizza had to be significantly better than both of our two main competitors
 
-The problem
+**The problem**
 Customers did not like the pizza. Marketing metrics showed that Domino's Pizza was viewed as a great delivery company. The goal was to be a great pizza company.
 
-The solution
-use customer insights to create entirely new pizza and brand image. It began a two year program to reinvent its brand.
+**The solution**
+Use customer insights to create entirely new pizza and brand image. It began a two year program to reinvent its brand.
 
-Experimental design.
-
+**Experimental design.**
 Marketing metrics is the set of measures that helps marketers quantiry, compare, and interpret their performance.
-
 
 Domino's Pizza produced a series of ads based on telling consumers the truth  about the old Pizza formulation and what changed. The company returned to the focus group that harshly criticized the old product and surprised them with the new and improved pizza.
 "Oh yes we did."
-
 
 First act of the play: "Tell people the truth."
 
@@ -175,7 +196,7 @@ Second act: "Bring the new pizza to those who didn't like it.
 The honesty and transparency that the ads pushed, resulted in them being picked up and discussed in a variety of secondary media srouces, resulting in free media. "Second media plan" = Media you don't pay for.
 
 
-# Consumer Behavior
+## Buyer/Consumer Behavior
 
 Of these, the cultural factors exert the broadest and deepest influence.
 
@@ -203,10 +224,10 @@ Lifestyle: Is a persons pattern of living in the world as expressed in activitie
 
 Perception is the process by which we select, organize, and interpret information inputs to create a meaningful picture of the world.
 
-# Psychological processes
+### Psychological processes
 
 
-Marketing and environmental stimuli enter the consumer's consciousness, and a number of psychological processes combine with certain consumer characteristics to result in the decision processes and purchase decisions. Four key psychological processeslong dash?motivation, ?perception, learning, and memorylong dashfundamentally influence consumer responses
+Marketing and environmental stimuli enter the consumer's consciousness, and a number of psychological processes combine with certain consumer characteristics to result in the decision processes and purchase decisions. Four key psychological processeslong motivation, perception, learning, and memorylong fundamentally influence consumer responses
 
 Consumer responses are influenced by five key major psychological processes:
 
@@ -228,7 +249,7 @@ Frederick Herzberg developed a two-factor theory that distinguishes *dissatisfie
 
 Selective attention:
 
-# Consumer buying process
+### Consumer buying process
 
 The stage? model, which outlines the stages of the? consumer-decision process, is composed of five stages. These are problem? recognition, information? search, evaluation of? alternatives, purchase? decision, and? post-purchase behavior.
 
@@ -251,16 +272,18 @@ BDT has identified many situations in which consumers make seemingly irrational 
 Decision heuristics
 Framing: Mental accounting
 
-## Total Customer Satisfaction
-In general, satisfaction is a person�s feelings of pleasure or disappointment that result from comparing a product or service�s perceived performance (or outcome) to expectations.
+### Total Customer Satisfaction
+In general, satisfaction is a personâs feelings of pleasure or disappointment that result from comparing a product or serviceâs perceived performance (or outcome) to expectations.
 
 Marketing is ultimately the art of attracting and keeping profitable customers. The case for maximizing? long-term customer profitability is captured in the concept of?
  The case for maximizing? long-term customer profitability is captured in the concept of customer lifetime value. It describes the net present value of the stream of future profits expected over the? customer's lifetime purchases.
-Customer lifetime value (CLV) describes the net present value of the stream of future profits expected over the customer�s lifetime purchases
+Customer lifetime value (CLV) describes the net present value of the stream of future profits expected over the customerâs lifetime purchases
+
+https://en.wikipedia.org/wiki/Customer_lifetime_value
 
 There are five key ways a company can use and maximize database? marketing: identifying? prospects, segmenting? customers, deepening customer? loyalty, reactivating customer? purchases, and avoiding customer mistakes.
 
-# Zappos
+### Zappos
 Problem. Primarily focused on word of mouth.
 Darrin Shamo: Senior search engine manager
 Frequent change in consumer behavior.
@@ -278,14 +301,15 @@ Brand vs merchant loyalty.
 Ability to tgrack users at multiple points and channels.
 Put together a model.
 
-# Business and consumer makets
-Consumers are better educated and better informed than? ever, and they have the tools to verify? companies' claims and seek out superior alternatives.? Customer-perceived value is the difference between the prospective? customer's evaluation of all the benefits and all the costs of an offering and the perceived alternatives.? Customer-perceived value is not something that can be tracked this way.
+### Business and consumer makets
+Consumers are better educated and better informed than? ever, and they have the tools to verify? companies' claims and seek out superior alternatives.?
+Customer-perceived value is the difference between the prospective? customer's evaluation of all the benefits and all the costs of an offering and the perceived alternatives.? Customer-perceived value is not something that can be tracked this way.
 
 The business market consists of all organizations that acquire goods and services used in the production of other products or services that are? sold, rented, or supplied to others. The consumer market consists of all organizations that buy or acquire finished products and services.
 
 Business marketing is highly competitive. One of the most critical and fundamental steps in? business-to-business marketing is to create and communicate relevant differentiation from competitors. One of the ways commoditization can be avoided is to differentiate and convince target markets that your product or service is different.
 
-## Business Buying Situations
+### Business Buying Situations
 * Straight rebuy
 * Modified buy
 * New task
@@ -312,18 +336,31 @@ Unilever pioneered serving the locals by providng to the local sensitivities.
 Hindustan Lever (Unilevers Indian subsidiary) leader in
 
 
+## Segmentation, Targetting & Positioning
+
+Define these:
+A.  targeting
+B.  branding
+C.  positioning. Positioning is the act of designing a companyâs offering and image to occupy a distinctive place in the minds of the target market.
+D.  segmentation
+E.  differentiation
+
+The value creation and delivery sequence consists of three phases. In the first phase, choosing the value, marketers segment the market, select the appropriate target, and develop the offeringâs value positioning.
+
+Perceptual maps are visual representations of consumer perceptions and preferences. By overlaying consumer preferences with brandâ perceptions, marketers can revealâ "holes" orâ "openings" that suggest unmet consumer needs and marketing opportunities.
 
 
-# Segmentation (Slaying the Mythical Beast)
+### Segmentation (Slaying the Mythical Beast)
 
-Employing a process of dividing a heterogeneous market into homogenenous subsets of customers -- or segments.
+Employing a process of dividing a heterogeneous market into homogeneous subsets of customers -- or segments.
 
 Demographics: We are not alike!
-The Star belly sneetches had bellies with stars, the plain belly sneetches had non upon thars..."
-The Sneetches by Dr. Seuss
 
-Average JoeLinea
-Traditionally we characerized the market by the needs of this mythical creature. Who or What is this? Does this beast exist?
+    "The Star belly Sneetches had bellies with stars, the plain belly Sneetches had non upon thars..."
+
+Book: [The Sneetches by Dr. Seuss](https://www.amazon.com/dp/B00ESF28YY/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)
+
+Average JoeLinea: Traditionally we characterized the market by the needs of this mythical creature. Who or What is this? Does this beast exist?
 
 ===
 
@@ -340,32 +377,37 @@ Diving a market into groups of potential buyers who have similar:
  * value perceptions
  * purchasing baheaviors
 
-Segments:
- Members are different between segments but similar within.
+### Segments:
+
+Members are different between segments but similar within.
 
 Campbell Soup & Curtis Publishing Co.
-
-Saturday evening post. (THE magazine of the US)
-
-Who are our customres?
-
-Do you know who YOUR customers are?
-
-
-Campbell Soup
 Charles curtis parlor (parlen prize, given by the ... , equivalent of the nobel prize)
+https://en.wikipedia.org/wiki/Curtis_Publishing_Company
+http://trashtidbits.blogspot.com/2008/03/campbell-soup-garbage.html
 
-Princess grace kelly.
+"More than 125 years have passed since advertising pioneer N.W. Ayer conducted the first organized marketing research project in 1879. A second important milestone is the development of marketing research occurred 32 years later, when Charles C. Parlin organized the nation's first commercial research department at Curtis Publishing Co., publisher of The Saturday Evening Post.
+
+Parlin got his start as a marketing researcher by counting soup cans in Philadelphia's garbage. Here is what happened. Parlin, an ad salesman, was trying to convince the Campbell Soup Co. to advertise in The Saturday Evening Post. Campbell Soup resisted, believing that the Post reached primarily working-class readers, who preferred to make their own soup. Campbell Soup marketers were targeting higher income people who could afford to pay for the convenience of soup in a can. To prove Campbell wrong, Parlin began counting soup cans in the garbage collected from different neighborhoods. His research revealed that working-class families bought more canned soup than wealthy households, who had servants to cook for them. Campbell Soup soon became a regular Saturday Evening Post client. It is interesting to note that garbage remains a good source of information for marketing researchers even today. Prior to recent cutbacks in food service, some airlines studied the leftovers from on board meals to determine what to serve passengers."
 
 For 60 years, campbells was a loyal ... customer after
 
+(Source: Boone & Kurtz. Contemporary Marketing, 2006.)
+Saturday evening post. (THE magazine of the US)
+
+Who are our customers?
+
+Do you know who YOUR customers are?
+
+Princess grace kelly (why was this here?)
+
 GICO-> Garbage In, Garbage Out
 
-
+#### Pricing strategies
 A.  Discount pricing
-B.  ?Perceived-value pricing
+B.  Perceived-value pricing
 C.  Markup pricing
-D.  ?Auction-type pricing
+D.  Auction-type pricing
 E.  Variable pricing
 
 Tactic:
@@ -398,42 +440,21 @@ https://www.blueoceanstrategy.com/tools/four-actions-framework/
 
 A leverageable advantage is one that a company can use as a springboard to new? advantages; competitive advantage is a? company's ability to perform in one or more ways that competitors cannot or will not match
 
-
-
-Summary:
-
-Segmentation
-Marketing framework !!!!
-Buy behaviour
-
-Marketing framework:
-6cs : customers, complementors, company, competitors, collaborators, context
-
-4ps: product, place/channel/promotion, pricing.
-
-classing example: kim kardashian - pair of flip flops, cristals, $5,000 pair of flip flops.  placebo effects on pricing....
-
-customer aquisition, customer retention, profits
-
-Integrated marketing strategy
-* Strategy and tactics be in sync
-* choice of one of 4ps affects the others
-
 Computer program vs product
 
-Ed Oates, Founder of Oracle in "The difference between fog and larry ellision" by mike wilson
+["The difference between God and larry ellision" by mike wilson](https://www.amazon.com/Difference-Between-God-Larry-Ellison/dp/0060008768)
+Ed Oates, Founder of Oracle in 
 
-Key learnings:
-Core prodct needs to be appealing to targeted customer segment
-monopoli is easy: false loyals
+## Key learnings
+Core product needs to be appealing to targeted customer segment. Monopoly is easy: false loyals.
 
-in competitive enfironment products vannot be comstomizd to all customer segments
-- Easy to get freedy and target too many segments with one product
-- word of mouth is missing. prodct lacks the "oomph"
+In competitive environment products cannot be customized to all customer segments
+- Easy to get greedy and target too many segments with one product
+- word of mouth is missing. product lacks the "oomph"
 
 * Need strategies to grow the market
 - pioneering
-- growring the pie: whose job?
+- Growing the pie: whose job?
 
 Who is responsible for growing the market?
 
@@ -463,7 +484,7 @@ https://www.inc.com/john-koetsier/why-every-amazon-meeting-has-at-least-one-empt
 
 ### Apostles and Terrorists
 
-["cusomter"](https://designforservice.files.wordpress.com/2008/03/serviceapostle.jpg "")
+![cusomter](https://designforservice.files.wordpress.com/2008/03/serviceapostle.jpg "something")
 
 University of michingan database.
 
@@ -493,18 +514,17 @@ https://www.theatlantic.com/family/archive/2018/06/marshmallow-test/561779/
 If my employees are happy, they will take care of my customers.
 
 Employees unhappy -> Customer dissapointed -> complaints -> employee unhappy ...
-<insert picture from notebook>
+{insert picture from notebook}
 
-Expentancy dicomfformation model
+Expectancy discomformation model
 
-Performance -> discomformation <- expectations
+    Performance -> discomformation <- expectations
+                        |
+                   Satisfied/disatisfied
 
-                |
-            Satisfied/disatisfied
+Deviation from the expectation
 
-Deviation from the expetation
-
-### Dimmensions for customer service
+### Dimensions for customer service
 * Reliability
 * Assurance
 * Tangibles
@@ -531,7 +551,7 @@ Customers -> Cash flows
 Customers are assets
 Not renewing subscriptin = churn
 
-<insert Profit per customer from notebook>
+{insert Profit per customer from notebook}
 
 "Who cares about the numbers, what's the story?"
 
@@ -539,27 +559,21 @@ Not renewing subscriptin = churn
 
     [CLV = m ( n / (1 + i - r) )] - AC
 
-Campbells soup story.
+Platform shifts and network effects
+Internet. The mother of all platform shifts
+How to create network effects?
 
+The endowment effect
 
+{insert story of cup}
 
-## 
-
-Platform shits and network effects
-
-Internet. The mother of all platform shitfts
-How to create network effects
-
-The endownment effect
-
-<insert story of cup>
 Sellers -> $7
 Choosers -> $3
 
-(ONce you own something you value it more)
+(Once you own something you value it more)
 
-Predicatbly irrational.
-Anchorinng -> social security
+Predictably irrational.
+Anchoring -> social security
 Day care problem -> Fine
 Brand strategy. Rationale choice theory.
 * Independence of irrelevant alternatives
@@ -569,16 +583,15 @@ Brand strategy. Rationale choice theory.
 
 Pricing behaviour start PPTX
 
-<Insert head nodding story (tuition)> 
+{Insert head nodding story (tuition)>}
 
-
-## Innovation (5/2)
+## Innovation
 How innovations spread
-Consumer resitsance / adoption
+Consumer resistance / adoption
 Forecasting innovation diffusion
 
 Product life cycle
-<insert graph from notebook>
+{insert graph from notebook}
 
 Crossing the chasm
 Technology adoption life cycle
@@ -596,7 +609,7 @@ Difussion process (show math model)
   * 160, 100 died
 * 1601: Captain Lancaster
   * lemon: 3 ships control group
-* 1747: 
+* 1747:
 * 1795: British
   * Citrous fruit
 
@@ -611,7 +624,7 @@ st = sales at time
 p = coefficient of innovation
 q = coefficient to immitation
 
-<insert graph from notebook>
+{insert graph from notebook}
 (MNFR, demand, surplus, marketing effort)
 
 Radical innovation or discontinuous innovation vs Continuous innovation
@@ -638,11 +651,13 @@ Amazon's empty chair. The customer who can't say anything.
 
 The 9x effect: how many times do i need to visit the cusomter before they....
 
+## Pricing
+
 3 types of pricing methods:
 
 * Cost based pricing: Product -> Cost -> Price -> Value -> Customers
-* Competition  ased pricing
-* Customer based pricing: Percieved value, value pricing
+* Competition based pricing
+* Customer based pricing: Perceived value, value pricing
 
 Price discrimination
 * 1st degree
@@ -688,12 +703,11 @@ Edisons Gate:
 https://boards.straightdope.com/sdmb/showthread.php?t=127342
 https://www.innovationinpractice.com/innovation_in_practice/2014/06/innovation-through-task-unification.html
 
-
 DMP: What drives our decisions?
 - Competition or customers
 - Discipline: Easy to get off track, hard to stay focused
 
-**Important!::!:!:!:!:! Are you driven by what customers want or by what the competition is doing.**
+**Are you driven by what customers want or by what the competition is doing?**
 
 The dominance trap.
 
@@ -708,7 +722,7 @@ a tale of 3 companies, one served the owners, one the customers and the last (an
 
 most is driven by employee satisfaction...
 
-<the virtuous circle slide insert>
+{the virtuous circle slide insert}
 
 "You can count on us to combine a strong quantitavie and analytical culture with a willingness to make bold decisioins. As we do so, we'll start with the customer and work backwards, in our judgement, that is the best way to create shareholder value". Jeff Bezos
 
@@ -764,7 +778,7 @@ Global standards; non-level playing fields; intense rivalry; winners and losers.
 
 Left brain:
 * Analtyic
-* Logic 
+* Logic
 * Lang
 * Science + math
 
@@ -792,4 +806,38 @@ CEO&F === Friends and Family
 
 HAve a fascinatinr journey: don't be agraid to make mistakes, just make sure you learn from them.
 
+Brand Development Index: https://en.wikipedia.org/wiki/Brand_development_index
+Category Development Index: 
 
+Product mix:  width, depth,â length, and consistency dimensions
+
+What is co-branding? Marketers often combine their products with products from other companies in various ways. In co-brandingâalso called dual branding or brand bundlingâtwo or more well-known brands are combined into a joint product or marketed together in some fashion.
+
+Forâ co-branding toâ succeed, the two brands separately must have brand equityâ (adequate brand awareness and a sufficiently positive brandâ image).
+
+
+To organize:
+
+Summary:
+
+Segmentation
+Marketing framework !!!!
+Buy behaviour
+
+Marketing framework:
+6cs : customers, complementors, company, competitors, collaborators, context
+
+4ps: product, place/channel/promotion, pricing.
+
+classing example: kim kardashian - pair of flip flops, cristals, $5,000 pair of flip flops.  placebo effects on pricing....
+
+Customer acquisition, customer retention, profits
+
+Integrated marketing strategy
+* Strategy and tactics be in sync
+* choice of one of 4ps affects the others
+
+PLC => Product Lifecycle
+
+https://marketbusinessnews.com/financial-glossary/five-cs/
+https://hbr.org/1998/11/business-marketing-understand-what-customers-value
