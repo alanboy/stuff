@@ -1,0 +1,9 @@
+---
+layout: post
+title: "doom"
+date: 2019-05-23 02:11:00 -0800
+categories: doom
+---
+
+* arm64 demo
+* http://fabiensanglard.net/doom3/renderer.php
