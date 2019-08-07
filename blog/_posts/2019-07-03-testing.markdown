@@ -1,0 +1,12 @@
+---
+layout: post
+title: "testing"
+date: 2019-07-03 07:16:00 -0800
+categories: testing
+---
+
+* xunit
+* mstest
+* nunit
+
+https://dev.to/hatsrumandcode/net-core-2-why-xunit-and-not-nunit-or-mstest--aei

@@ -24,6 +24,14 @@ Search by hex code:
 
 ## Spelling
 
+To enable spell checking: 
+
+    :set spell spelllang=en_us
+
+To disable spell checkiung: 
+
+    :set nospell
+
 To move to a misspelled word, use `]s` and `[s`.
 
 Suggest a list of alternatives : `z=`.

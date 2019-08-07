@@ -34,6 +34,10 @@ https://www.typescriptlang.org/docs/handbook/jsx.html
 
 ### Algorithmic complexity
 
+## Javascript
+### Var vs Let
+https://www.w3schools.com/js/js_let.asp
+https://codeburst.io/difference-between-let-and-var-in-javascript-537410b2d707
 
 
 
