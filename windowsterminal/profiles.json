@@ -200,7 +200,7 @@
         "requestedTheme" : "system",
         "showTabsInTitlebar" : true,
         "showTerminalTitleInTitlebar" : true,
-        "wordDelimiters" : " ./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}~?\u2502"
+        "wordDelimiters" : " ()\"'-,;<>~!@#$^&*|+=[]{}~?\u2502"
     },
     "profiles" : 
     [
@@ -226,7 +226,7 @@
         {
             "acrylicOpacity" : 0.75,
             "backgroundImage" : "ms-appdata:///roaming/colors.jpg",
-            "backgroundImageOpacity" : 0.5,
+            "backgroundImageOpacity" : 0.25,
             "closeOnExit" : true,
             "colorScheme" : "Solarized Dark",
             "commandline" : "cmd.exe",
