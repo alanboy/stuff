@@ -35,6 +35,18 @@ Set file to UTF8:
     :set fileencoding=utf8
     :w myfilename
 
+Change the line endings when saving a file:
+
+    :w ++ff=dos
+    :w ++ff=mac
+    :w ++ff=unix
+
+Equalize width and height of all windows
+
+    Ctrl+W =
+
 
 Sources:
 https://stackoverflow.com/questions/9310274/how-can-i-use-vim-to-convert-my-file-to-utf8
+https://stackoverflow.com/questions/82726/convert-dos-line-endings-to-linux-line-endings-in-vim
+https://vi.stackexchange.com/questions/514/how-do-i-change-the-current-splits-width-and-height

@@ -24,8 +24,6 @@ set splitright " whats this ?
 set tabstop=4
 set wildmenu " autocomplete vim commands
 
-" Read more: https://www.linux.com/learn/using-spell-checking-vim
-:setlocal spell spelllang=en_us
 
 :command WQ wq
 :command Wq wq
@@ -80,6 +78,10 @@ set statusline+=%0*\ \ %m%r%w\ %P\ \                      "Modified? Readonly? T
 " => UI options
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("gui_running")
+
+  " Read more: https://www.linux.com/learn/using-spell-checking-vim
+  :setlocal spell spelllang=en_us
+
   set cursorline cursorcolumn
   set guioptions=ic
   set guioptions+=r
