@@ -1,0 +1,34 @@
+---
+layout: post
+title: "gmat"
+date: 2019-10-04 07:01:00 -0800
+categories: gmat
+---
+
+Resources and links
+
+https://gmatclub.com/
+https://poetsandquants.com/2014/07/20/my-three-biggest-mistakes-in-prepping-for-the-gmat-exam/
+
+
+Retaking:
+https://gmatclub.com/forum/should-i-retake-the-gmat-232853.html?fl=menu
+
+Error log:
+https://gmatclub.com/forum/importance-of-an-error-log-268428.html
+
+Official guide:
+https://www.amazon.com/dp/1119507677?_encoding=UTF8&SubscriptionId=AKIAI64YCHI5CUFVMXDQ&camp=2025&creative=386001&creativeASIN=1119507677&linkCode=sp1&showDetailTechData=1&tag=mbbo06-20#technical-data
+
+Importance of the first 10 questions:
+https://gmatclub.com/forum/new-format-gmat-prep-software-analysis-and-what-if-scenarios-269682.html
+https://gmatclub.com/forum/gmat-prep-software-analysis-and-what-if-scenarios-146146.html
+
+General guide:
+https://gmatclub.com/forum/gmat-prep-tools-252185.html?fl=menu
+
+====================
+
+Equation guide:
+https://drive.google.com/file/d/0B23Wa5AUrZZ5WjdNeDllei1QNms/view
+
