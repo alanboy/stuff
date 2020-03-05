@@ -1,0 +1,25 @@
+---
+layout: post
+title: "odata"
+date: 2020-01-02 03:38:00 -0800
+categories: odata
+---
+
+Expand
+https://docs.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/using-select-expand-and-value
+
+```
+    GET http://localhost/odata/Categories?$expand=Products
+```
+
+
+http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html#_The_expand_Transformation
+https://help.nintex.com/en-us/insight/OData/HE_CON_ODATAQueryCheatSheet.htm
+https://www.odata.org/documentation/odata-version-2-0/uri-conventions/
+
+https://docs.microsoft.com/en-us/azure/search/search-query-odata-filter
+
+## Creating models 
+https://docs.microsoft.com/en-us/odata/webapi/model-builder-abstract
+
+

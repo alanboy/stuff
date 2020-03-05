@@ -1,0 +1,35 @@
+---
+layout: post
+title: "linters"
+date: 2019-10-29 11:51:00 -0800
+categories: linters
+---
+
+http://www.codemaid.net
+https://www.sonarlint.org/
+
+
+eslint.
+tslint. (this is what we need most likely)
+prettier. (not recommended by martin)
+
+===
+
+airbnb rules for javascript.
+
+run as part of the build.
+
+we should use tslint. does not support cshtml (not supported)
+
+===
+
+logic has to be moved to typescript.
+only populating data should be in scripts inside the csthml
+
+===
+
+flux... learn about it.
+
+1) decide the rules. look at the airbnb guidelines.
+strip some of them out because.
+
