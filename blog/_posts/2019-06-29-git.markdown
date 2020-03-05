@@ -5,5 +5,16 @@ date: 2019-06-29 12:57:00 -0800
 categories: git
 ---
 
+git merge --squash users/alango/authz
+
 http://fabiensanglard.net/git_code_review/diff.php
+
 https://pre-commit.com/
+
+Reset local repository branch to be just like remote repository HEAD
+
+```
+git fetch origin
+git reset --hard origin/master
+```
+
