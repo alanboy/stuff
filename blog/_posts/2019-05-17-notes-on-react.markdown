@@ -1,11 +1,18 @@
 ---
 layout: post
-title: "Notes on react"
+title: "Front-end development"
 date: 2019-05-17 11:06:00 -0800
 categories: react wendevelopment 
 ---
 
+# Angular
 
+## Debugging Angular
+
+https://code.visualstudio.com/docs/nodejs/angular-tutorial
+
+
+# React
 http://buildwithreact.com/tutorial/jsx
 https://babeljs.io/docs/en/next/babel-plugin-transform-react-jsx
 https://babeljs.io/setup#installation
@@ -20,8 +27,6 @@ https://reactjs.org/docs/create-a-new-react-app.html#create-react-app
 https://reactjs.org/docs/introducing-jsx.html
 https://reactjs.org/tutorial/tutorial.html
 https://scottsauber.com/2017/06/10/prettier-format-on-save-never-worry-about-formatting-javascript-again/
-
-
 https://www.linkedin.com/learning/react-js-essential-training-3/accessibility?u=3322
 https://www.npmjs.com/package/prettier
 https://www.npmjs.com/package/watch
@@ -38,8 +43,6 @@ https://www.typescriptlang.org/docs/handbook/jsx.html
 ### Var vs Let
 https://www.w3schools.com/js/js_let.asp
 https://codeburst.io/difference-between-let-and-var-in-javascript-537410b2d707
-
-
 
 ## Architecture
 

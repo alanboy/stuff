@@ -10,3 +10,6 @@ categories: markdown
     - George Washington
     - John Adams
     - Thomas Jefferson
+
+## mermaid
+https://mermaid-js.github.io/mermaid/#/flowchart

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "business-intro"
+title: "Introduction to business"
 date: 2019-06-19 11:06:00 -0800
 categories: business-intro
 ---

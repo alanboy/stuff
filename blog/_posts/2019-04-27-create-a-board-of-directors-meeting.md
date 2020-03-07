@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: "Board of directors meeting"
+title: "Board of directors"
 date: 2019-04-27 08:21:00 -0800
 categories: create-a-board-of-directors-meeting
 ---

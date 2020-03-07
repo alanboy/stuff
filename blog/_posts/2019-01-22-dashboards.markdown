@@ -2,7 +2,7 @@
 layout: post
 title: "JS libraries for building dashboards"
 date: 2019-01-21 23:45:29 -0800
-categories: meta azure devopts github
+categories: meta azure devopts github javascript
 ---
 
 - https://packery.metafizzy.co/
