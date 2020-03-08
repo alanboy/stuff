@@ -2,7 +2,7 @@
 layout: post
 title: "Windows internals"
 date: 2019-06-12 01:09:00 -0800
-categories: windows-internals
+categories: software
 ---
 
 

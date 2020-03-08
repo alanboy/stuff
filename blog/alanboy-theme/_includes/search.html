@@ -1,0 +1,40 @@
+
+<script>
+let data = [
+  {% for post in site.posts %}
+    {
+      "category" : "{{post.categories[0] }}",
+      "title"    : "{{ post.title | strip_html | escape }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "category" : "{{post.categories | join: ', '}}",
+      "tags"     : "{{ post.tags | join: ', ' }}",
+      "date"     : "{{ post.date }}",
+      "discription" : "{{post.description | strip_html | strip_newlines | escape }}",
+      "contents"     : "{{ post.excerpt  | strip_html | strip_newlines | escape }}",
+
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+];
+
+$('.ui.search')
+  .search({
+    source: data,
+    //type: 'category',
+    searchFields: [
+        'title',
+        'category',
+        'contents'
+    ]
+  }) ;
+
+$( document ).ready(function() {
+    $("body").keypress(function(key){
+        //console.log(key.originalEvent.key);
+        //console.log(key.originalEvent.code);
+        if (key.originalEvent.code === 'Slash') {
+            $(".search input").focus();
+        }
+    });
+});
+</script>
+

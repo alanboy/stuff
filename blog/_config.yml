@@ -26,7 +26,7 @@ github_username:  alanboy
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: alanboy-theme
 plugins:
   - jekyll-feed
 

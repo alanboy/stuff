@@ -2,7 +2,7 @@
 layout: post
 title: "statistics"
 date: 2019-10-25 11:25:00 -0800
-categories: statistics
+categories: engineering business
 ---
 
 Chapter 1. Introduction to Statistics

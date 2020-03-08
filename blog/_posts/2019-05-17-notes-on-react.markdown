@@ -2,7 +2,7 @@
 layout: post
 title: "Front-end development"
 date: 2019-05-17 11:06:00 -0800
-categories: react wendevelopment 
+categories: web
 ---
 
 # Angular

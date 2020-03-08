@@ -2,7 +2,7 @@
 layout: post
 title: "react-notes"
 date: 2019-05-23 12:45:00 -0800
-categories: react-notes
+categories: web
 ---
 
 https://www.codementor.io/tamizhvendan/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack-du107r9zr

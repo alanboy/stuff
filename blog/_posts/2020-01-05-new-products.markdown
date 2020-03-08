@@ -2,7 +2,7 @@
 layout: post
 title: "New product marketing"
 date: 2020-01-05 12:40:00 -0800
-categories: mba
+categories: business marketing
 ---
 
 What often causes this lagging behind are two principles of good management taught in business schools: that you should always listen to and respond to the needs of your best customers, and that you should focus investments on those innovations that promise the highest returns. But these two principles, in practice, actually sow the seeds of every successful company's ultimate demise. That's why we call it the innovator's dilemma: doing the right thing is the wrong thing. This dilemma rears its head when a type of innovation that we've termed disruptive technology arises at the low end of the market, in the simplest, most unassuming applications. Explaining this paradox is the purpose of this book.

@@ -2,7 +2,7 @@
 layout: post
 title: "My keyboards guide"
 date: 2019-01-23 11:51:00 -0800
-categories: hardware
+categories: keyboards
 ---
 
 

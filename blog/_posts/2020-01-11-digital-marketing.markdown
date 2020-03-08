@@ -2,7 +2,7 @@
 layout: post
 title: "Framework for Digital Marketing"
 date: 2020-01-11 12:12:00 -0800
-categories: digital-marketing
+categories: business marketing
 ---
 
 ## Framework for Digital Marketing

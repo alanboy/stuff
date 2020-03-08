@@ -2,7 +2,7 @@
 layout: post
 title: "MBA conference 2019"
 date: 2019-04-27 08:11:00 -0800
-categories: mba-conference-2019
+categories: leadership business
 ---
 
 Gaia Borgias (President)

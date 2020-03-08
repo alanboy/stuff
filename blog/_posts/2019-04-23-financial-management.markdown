@@ -2,7 +2,7 @@
 layout: post
 title: "Financial management"
 date: 2019-04-23 08:05:00 -0800
-categories: mba finance
+categories: business
 ---
 
 Financial Management means planning, organizing, directing and controlling the financial activities of the enterprise.

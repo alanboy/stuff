@@ -2,7 +2,7 @@
 layout: post
 title: "git notes"
 date: 2019-06-29 12:57:00 -0800
-categories: git
+categories: git software engineering
 ---
 
 git merge --squash users/alango/authz

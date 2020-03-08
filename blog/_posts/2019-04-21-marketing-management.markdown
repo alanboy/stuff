@@ -2,7 +2,7 @@
 layout: post
 title: "Marketing management"
 date: 2019-04-21 11:56:00 -0800
-categories: mba marketing
+categories: business marketing
 ---
 
 Marketing is the process by which individuals and groups obtain what the need and want through creatind and exchanging products and value with others.
