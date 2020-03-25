@@ -3,6 +3,8 @@ layout: post
 title: "Javascript testing"
 date: 2020-02-12 03:08:00 -0800
 categories: web testing software engineering
+published: false
+description:
 ---
 
 From personal experience, tests are the best way to prevent software defects. I've been on many teams in the past where a small piece of code is updated and the developer manually opens their browser or Postman to verify that it still works. This approach (manual QA)
@@ -193,24 +195,24 @@ https://www.protractortest.org/#/faq
 * https://medium.com/@balramchavan/configure-and-build-angular-application-for-different-environments-7e94a3c0af23
 * https://angular.io/guide/workspace-config
 
-https://scotch.io/tutorials/testing-angular-with-jasmine-and-karma-part-1
-https://www.positronx.io/angular-unit-testing-application-with-jasmine-karma/
-https://dev.to/mustapha/angular-unit-testing-101-with-examples-6mc
-https://stackoverflow.com/questions/59140915/mocking-a-service-in-angular-karma-jasmine-testing
-https://stackoverflow.com/questions/59140915/mocking-a-service-in-angular-karma-jasmine-testing
-https://blog.angulartraining.com/how-to-write-unit-tests-for-angular-code-that-uses-the-httpclient-429fa782eb15
+* https://scotch.io/tutorials/testing-angular-with-jasmine-and-karma-part-1
+* https://www.positronx.io/angular-unit-testing-application-with-jasmine-karma/
+* https://dev.to/mustapha/angular-unit-testing-101-with-examples-6mc
+* https://stackoverflow.com/questions/59140915/mocking-a-service-in-angular-karma-jasmine-testing
+* https://stackoverflow.com/questions/59140915/mocking-a-service-in-angular-karma-jasmine-testing
+* https://blog.angulartraining.com/how-to-write-unit-tests-for-angular-code-that-uses-the-httpclient-429fa782eb15
 
-https://codecraft.tv/courses/angular/unit-testing/components/
-https://www.positronx.io/angular-unit-testing-application-with-jasmine-karma/
-https://blog.realworldfullstack.io/real-world-angular-part-9-unit-testing-c62ba20b1d93
-https://blog.angulartraining.com/how-to-write-unit-tests-for-angular-code-that-uses-the-httpclient-429fa782eb15
-https://dev.to/mustapha/angular-unit-testing-101-with-examples-6mc
-https://dev.to/aurelkurtula/unit-testing-with-jasmine-the-very-basics-74k
-https://medium.com/@kristaps.strals/build-and-test-projects-in-azure-devops-pipelines-745abea273b8
-https://code.visualstudio.com/docs/nodejs/angular-tutorial
+* https://codecraft.tv/courses/angular/unit-testing/components/
+* https://www.positronx.io/angular-unit-testing-application-with-jasmine-karma/
+* https://blog.realworldfullstack.io/real-world-angular-part-9-unit-testing-c62ba20b1d93
+* https://blog.angulartraining.com/how-to-write-unit-tests-for-angular-code-that-uses-the-httpclient-429fa782eb15
+* https://dev.to/mustapha/angular-unit-testing-101-with-examples-6mc
+* https://dev.to/aurelkurtula/unit-testing-with-jasmine-the-very-basics-74k
+* https://medium.com/@kristaps.strals/build-and-test-projects-in-azure-devops-pipelines-745abea273b8
+* https://code.visualstudio.com/docs/nodejs/angular-tutorial
 
-https://blog.ninja-squad.com/2016/03/15/ninja-tips-2-type-your-json-with-typescript/
+* https://blog.ninja-squad.com/2016/03/15/ninja-tips-2-type-your-json-with-typescript/
 
-https://angular.io/guide/dependency-injection-providers
+* https://angular.io/guide/dependency-injection-providers
 
-https://docs.microsoft.com/en-us/rest/api/azure/devops/git/pull%20request%20thread%20comments/create?view=azure-devops-rest-5.1
+* https://docs.microsoft.com/en-us/rest/api/azure/devops/git/pull%20request%20thread%20comments/create?view=azure-devops-rest-5.1

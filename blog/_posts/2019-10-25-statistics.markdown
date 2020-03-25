@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "statistics"
+title: "Statistics"
 date: 2019-10-25 11:25:00 -0800
 categories: engineering business
+published: true
+description:
 ---
 
-Chapter 1. Introduction to Statistics
+## Introduction to Statistics
 What is Business Statistics?
 A collection of procedures and techniques used to convert data into meaningful information in a business environment
 
@@ -19,21 +21,19 @@ Census: An enumeration of the entire set of measurements taken from the whole po
 Parameters: numerical measures, such as an average or a proportion, that are computed from an entire population
 Statistics: numerical measures, such as an average or a proportion, that are computed from a sample selected from a population
 
-Variables and Data Types
-
-
+### Variables and Data Types
 Time-Series: set of consecutive data values observed at successive points in time (e.g. stock price.
 Cross-Sectional: set of data values observed at a fixed point in time (e.g. returns of the top 5 stocks in the S&P500 for the second quarter of 2017)
 
 
-Levels of Data Measurement
+### Levels of Data Measurement
 
-	 Qualitative (categorical) data whose measurement scale is inherently categorical (e.g. marital status, political affiliation, eye color)
-		? Nominal
-		? Ordinal
-	 Quantitative (numerical) measurements whose values are inherently numerical. Can be discrete (e.g. number of children) or continuous (e.g. weight, volume).
-		? Interval
-		? Ratio
+* Qualitative (categorical) data whose measurement scale is inherently categorical (e.g. marital status, political affiliation, eye color)
+  * Nominal
+  * Ordinal
+* Quantitative (numerical) measurements whose values are inherently numerical. Can be discrete (e.g. number of children) or continuous (e.g. weight, volume).
+  * Interval
+  * Ratio
 
 
  * Nominal	no ordering of the cases is implied, arbitrary labels	Zip codes (98072); companys tax identification
@@ -48,10 +48,10 @@ Frequency distribution : shows the number of data observations that fall into sp
 
 Developing Frequency Distribution for Continuous Data
 
-	• Classes must be mutually exclusive. Classes do not overlap.
-	• Classes must be all-inclusive. A set of classes contains all possible data values.
-	• Classes should be of equal width, if possible. The distance between the lowest and the highest possible values in each class is equal for all classes. 
-	• Empty classes should be avoided.
+* Classes must be mutually exclusive. Classes do not overlap.
+* Classes must be all-inclusive. A set of classes contains all possible data values.
+* Classes should be of equal width, if possible. The distance between the lowest and the highest possible values in each class is equal for all classes. 
+* Empty classes should be avoided.
 
 Step 1: Determine the number of classes.
 Step 2: Establish the class width.
@@ -59,13 +59,14 @@ Step 3: Determine the class boundaries for each class.
 Step 4: Determine the class frequency for each class. 
 
 Number of classes:
-	• Rule of thumb: between 5 and 20 classes
-	• 2k ≥ n rule, where k is the number of classes and is defined to be the smallest integer so that2k ≥ n, where n is the number of data values
+	* Rule of thumb: between 5 and 20 classes
+	* 2k ≥ n rule, where k is the number of classes and is defined to be the smallest integer so that2k ≥ n, where n is the number of data values
 
-
+```
 =COUNTIF($B$3:$K$7, "<="&J24 )  - COUNTIF($B$3:$K$7, "<"&I24 )
-Or 
-Data tools and create histogram (the bin is lower than n number)
+```
+
+Or Data tools and create histogram (the bin is lower than n number)
 
 Normal, or bell shaped curve. 
 Asymmetrical, or relatively asymmetrical ("Piles up" in the middle).
@@ -89,14 +90,14 @@ A dot plot graphs each data point, with identical values stacked vertically
 
 Sampling
 Reasons for Sampling
-	• Time and cost effective
-	• For given resources, the sample can broaden the scope of the study
-	• If accessing the entire population is impossible, the sample is the only option
+	* Time and cost effective
+	* For given resources, the sample can broaden the scope of the study
+	* If accessing the entire population is impossible, the sample is the only option
 	
 Reasons for Taking a Census
-	• Eliminate the possibility that a randomly selected sample may not be representative of the population.
-	• Generally NOT an appropriate for gathering data for statistical analysis
-	• To benchmark data for future studies
+	* Eliminate the possibility that a randomly selected sample may not be representative of the population.
+	* Generally NOT an appropriate for gathering data for statistical analysis
+	* To benchmark data for future studies
 The US census ensures that each community gets the right number of representatives in government.
 
 
@@ -134,9 +135,9 @@ Divide population into several “clusters,” each representative of the popula
 
 
 Sampling/Non-sampling Errors
-	• Sampling Error
+	* Sampling Error
 		○ Occurs when the sample is not representative of the population
-	• Non-sampling Error (all other errors)
+	* Non-sampling Error (all other errors)
 		○ Missing data
 		○ Recording errors
 		○ Measurement errors

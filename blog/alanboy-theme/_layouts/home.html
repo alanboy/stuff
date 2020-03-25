@@ -2,81 +2,73 @@
 layout: default
 ---
 
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+{%- if page.title -%}
+  <h1 class="page-heading">{{ page.title }}</h1>
+{%- endif -%}
+
+{{ content }}
+
+{% if site.paginate %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{%- if posts.size > 0 -%}
+  {%- if page.list_title -%}
+    <h2 class="post-list-heading">{{ page.list_title }}</h2>
   {%- endif -%}
 
-  {{ content }}
+  <div class="ui divided items">
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+    {%- for post in posts -%}
+        {% if post.published == true %}
+          <div class="item">
+            <!--
+            <div class="image">
+              <img src="/assets/image.png">
+            </div>
+            -->
+            <div class="content">
+              <a href="{{ post.url | relative_url }}" class="header">{{ post.title | escape }}</a>
+              <div class="meta">
+                <span class="cinema">{{ post.date | date: date_format }}</span>
+              </div>
+              <div class="description">
+                <p>{{ post.description }}</p>
+              </div>
+              <div class="extra">
+                {%- for category in post.categories -%}
+                    <div class="ui label">{{ category }}</div>
+                {%- endfor -%}
+                <!--
+                <div class="ui right floated primary button">
+                  Buy tickets
+                  <i class="right chevron icon"></i>
+                </div>
+                -->
+              </div>
+            </div>
+          </div>
+        {% endif %}
+    {%- endfor -%}
+  </div>
 
   {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
-
-
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-
-    <div class="ui divided items">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-
-      {%- for post in posts -%}
-         <div class="item">
-           <!--
-           <div class="image">
-             <img src="/assets/image.png">
-           </div>
-           -->
-           <div class="content">
-             <a href="{{ post.url | relative_url }}" class="header">{{ post.title | escape }}</a>
-             <div class="meta">
-               <span class="cinema">{{ post.date | date: date_format }}</span>
-             </div>
-             <div class="description">
-               <p>
-                  {{ post.excerpt }}
-                </p>
-             </div>
-             <div class="extra">
-
-               {%- for category in post.categories -%}
-                    <div class="ui label">{{ category }}</div>
-               {%- endfor -%}
-
-                <!--
-               <div class="ui right floated primary button">
-                 Buy tickets
-                 <i class="right chevron icon"></i>
-               </div>
-                -->
-
-             </div>
-           </div>
-         </div>
-      {%- endfor -%}
+    <div class="pager">
+      <ul class="pagination">
+      {%- if paginator.previous_page %}
+      {%- else %}
+        <li><div class="pager-edge"></div></li>
+      {%- endif %}
+        <li><div class="current-page">{{ paginator.page }}</div></li>
+      {%- if paginator.next_page %}
+        <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
+      {%- else %}
+        <li><div class="pager-edge"></div></li>
+      {%- endif %}
+      </ul>
     </div>
-
-
-
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-        {%- else %}
-          <li><div class="pager-edge"></div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge"></div></li>
-        {%- endif %}
-        </ul>
-      </div>
-    {%- endif %}
-
-  {%- endif -%}
-
+  {%- endif %}
+{%- endif -%}

@@ -3,6 +3,8 @@ layout: post
 title: "Marketing management"
 date: 2019-04-21 11:56:00 -0800
 categories: business marketing
+published: true
+description: Marketing is the process by which individuals and groups obtain what the need and want through creatind and exchanging products and value with others.
 ---
 
 Marketing is the process by which individuals and groups obtain what the need and want through creatind and exchanging products and value with others.
@@ -347,7 +349,7 @@ E.  differentiation
 
 The value creation and delivery sequence consists of three phases. In the first phase, choosing the value, marketers segment the market, select the appropriate target, and develop the offeringâs value positioning.
 
-Perceptual maps are visual representations of consumer perceptions and preferences. By overlaying consumer preferences with brandâ perceptions, marketers can revealâ "holes" orâ "openings" that suggest unmet consumer needs and marketing opportunities.
+Perceptual maps are visual representations of consumer perceptions and preferences. By overlaying consumer preferences with brand perceptions, marketers can reveal "holes" or "openings" that suggest unmet consumer needs and marketing opportunities.
 
 
 ### Segmentation (Slaying the Mythical Beast)
@@ -792,6 +794,7 @@ Focus on strategic issues. Focus on market. Competitive ennvironment.
 
 ## Final words
 Reality of the new flux.
+
 "If we wait for all the waves to subside before we enter the ocean for a batn, then we will never be able to enter the ocean at all, brave the waves and enter the ocean"
 Ancent tamil proverb
 
@@ -809,11 +812,11 @@ HAve a fascinatinr journey: don't be agraid to make mistakes, just make sure you
 Brand Development Index: https://en.wikipedia.org/wiki/Brand_development_index
 Category Development Index: 
 
-Product mix:  width, depth,â length, and consistency dimensions
+Product mix:  width, depth, length, and consistency dimensions
 
-What is co-branding? Marketers often combine their products with products from other companies in various ways. In co-brandingâalso called dual branding or brand bundlingâtwo or more well-known brands are combined into a joint product or marketed together in some fashion.
+What is co-branding? Marketers often combine their products with products from other companies in various ways. In co-branding & also called dual branding or brand bundling & two or more well-known brands are combined into a joint product or marketed together in some fashion.
 
-Forâ co-branding toâ succeed, the two brands separately must have brand equityâ (adequate brand awareness and a sufficiently positive brandâ image).
+For co-branding to succeed, the two brands separately must have brand equity (adequate brand awareness and a sufficiently positive brand image).
 
 
 To organize:

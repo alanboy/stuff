@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "git notes"
+title: "Git notes"
 date: 2019-06-29 12:57:00 -0800
-categories: git software engineering
+categories: git software engineering reference
+published: true
+description:
 ---
 
 git merge --squash users/alango/authz
@@ -17,4 +19,3 @@ Reset local repository branch to be just like remote repository HEAD
 git fetch origin
 git reset --hard origin/master
 ```
-

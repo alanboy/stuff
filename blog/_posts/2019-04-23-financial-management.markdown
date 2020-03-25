@@ -3,12 +3,12 @@ layout: post
 title: "Financial management"
 date: 2019-04-23 08:05:00 -0800
 categories: business
+published: true
+description: Financial management means planning, organizing, directing and controlling the financial activities of the enterprise.
 ---
 
-Financial Management means planning, organizing, directing and controlling the financial activities of the enterprise.
+Financial management means planning, organizing, directing and controlling the financial activities of the enterprise.
 
-https://www.investopedia.com/ask/answers/042215/what-are-benefits-company-using-equity-financing-vs-debt-financing.asp
-https://www.investopedia.com/terms/e/equityfinancing.asp
 
 How do you calculate a return?
 
@@ -302,3 +302,9 @@ Yahoo finance, there is a "holders" -> "Insider transactions".
 
 
 Net Working Capital
+
+
+
+## References
+- https://www.investopedia.com/ask/answers/042215/what-are-benefits-company-using-equity-financing-vs-debt-financing.asp
+- https://www.investopedia.com/terms/e/equityfinancing.asp

@@ -3,6 +3,8 @@ layout: post
 title: "JS libraries for building dashboards"
 date: 2019-01-21 23:45:29 -0800
 categories: web
+published: false
+description:
 ---
 
 - https://packery.metafizzy.co/

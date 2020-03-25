@@ -3,9 +3,11 @@ layout: post
 title: "Financial statements and reporting"
 date: 2019-02-26 06:16:00 -0800
 categories: business
+published: true
+description:
 ---
 
-# What is accounting?
+## What is accounting?
 
 Set of methods for producing info for decision making. Reliable and reliable (or auditable).
 
@@ -18,7 +20,7 @@ Business activities:
 - Investing (purchase resources)
 - Operating (day to day activities)
 
-# The four basic financial statements
+## The four basic financial statements
 - Balance sheet:
 - Income statement
 - Statement of stockholders equity:
@@ -61,7 +63,12 @@ Many companies report their own forecasts. The company has more information. Man
 
 Some papers report that outsider analysts are better at forecasting than management forecasts.
 
-    Business strategy -> Operating decisions -> Transactions -> Financial statements
+<div class="mermaid">
+graph LR
+    A[Business strategy] --> B[Operating decisions]
+    B --> C[Transactions]
+    C --> D[Financial statements]
+</div>
 
 Gross profit for Costco is around 10%.
 
@@ -73,7 +80,7 @@ current means that 1 year of business cycle.
 
 The value of a company is comming from operations (finance activities does not add value to the company). Companies cannot add value from financial activities, just from operating activities.
 
-### How stock price is determined
+## How stock price is determined
 Value of a co or stock price is decided by disconuted sum all future expected dividents.
 
 Operating cash flow.
@@ -84,7 +91,7 @@ Operating cash flow.
 
 Because many companies don't do dividends, many professors with `(bSE + NI - div = eSE)`.
 
-### Accounting valuation model
+## Accounting valuation model
 
 Real stock price is computed based on the number of transactions.
 
@@ -93,7 +100,7 @@ Financial assets cannot generate money above interest rate.
 ## Ratios
 ROE => Financial leverage
 
-###The DuPont Model
+## The DuPont Model
 
     ROE = Net Profit Margin * Total asset turnover * Financial leverage
 
@@ -105,7 +112,7 @@ Return on common equite
 
 Accounting for value - Stephen Penman.
 
-## Financia statement
+## Financial statement
 ### Preparing financial statement
 
 ```
@@ -113,7 +120,7 @@ Accounting for value - Stephen Penman.
     |-------------------------------------------|
  12/31                                        12/31
   2017                                         2018
-   B/S                                            eB/S
+   B/S                                         eB/S
 ```
 
 Many transactions happened in 2018. We want to summarize all those and prepare ending balance sheet
@@ -124,9 +131,7 @@ Depreciation expense ( debit expense ^ , **accumulated depreciation** is a contr
 
 With the closing process we get **retained earnings** and that we can put in the balance sheet.
 
-====
-
-##Accounting for Net Sales Revenue
+## Accounting for Net Sales Revenue
 
 Economic resources that require sacrifice of ...  benefit.
 
@@ -135,7 +140,6 @@ Revenue recognition => when we can report in the income statement.
 Reporting revenues in the income statement.
 
 We can do that Realized (cash is collected) or relizable AND earned (product delivered)
-
 
 Account receivable. Is an asset, right to collect cash in the future.
 
@@ -171,7 +175,7 @@ Once it actually happened:
 
     3. Allowance 50    AR 50
 
-**Matching principle**
+## Matching principle ##
 
 The revenue and the expense must be reported in the same period.
 
@@ -185,7 +189,7 @@ Let's say the company that was bankrupt we realize we can now collect.
     4. AR 30  Allowance 30
        Cash 30   AR 30
 
-# Inventory #
+# Inventory
 
 - Merchandisers: WalMart, Costco = Purchase finished goods from suppliers. Ready for re-sale.
   - Finished goods inventory
@@ -200,14 +204,12 @@ Inventory costs includes the costs to bring an article to usable or salable cond
 Actual flow.
 Cost flow. (Assumed flow, based on assumptions)
 
-### Inventory costing methods ###
+## Inventory costing methods ###
 
 - Specific identification (diamonds)
 - First-in, first-out
 - Last-in, first-out
 - Average cost
-
-========
 
 Merrimack Tractors and Mowers
 Cost flows might not be the same as actual flow.
@@ -215,7 +217,6 @@ Assumptions of inventory can be LIFO, FIFO, average.
 
 
     Begining balance + Purchases - CGS = Ending balance
-
 
 For Merrimack case 8. We need to change the begining balance assumption from LIFO to FIFO.
 
@@ -225,19 +226,16 @@ LIFO reserve, companies need to report the LIFO reserve.
     Begining balance in FIFO = 13.5M + 5.5M = 19M
 
 
-
 - Inflation: Prices go up. You want to buy right away because prices will go up.
 - Deflation: Prices go down. If you expect prices to go down then people will NOT buy because they will always wait (to get a cheaper price).
-
 
 Program Cost Accounting
 
 EDGAR: https://www.sec.gov/edgar/searchedgar/companysearch.html
 
-### Revenue recognition principle
+## Revenue recognition principle
 * Goods and services have been transfered to customers.
 * The appropiate amount of revenue to record is the amount the seller expects to recieve.
-
 
 ## Allowance method
 ## Inventory cost assumptions (FIFO, LIFO)

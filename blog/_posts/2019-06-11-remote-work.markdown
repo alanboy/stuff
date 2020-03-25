@@ -3,6 +3,8 @@ layout: post
 title: "Working remotely"
 date: 2019-06-11 02:03:00 -0800
 categories: business engineering
+published: true
+description:
 ---
 
 

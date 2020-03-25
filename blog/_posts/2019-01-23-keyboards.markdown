@@ -2,7 +2,9 @@
 layout: post
 title: "My keyboards guide"
 date: 2019-01-23 11:51:00 -0800
-categories: keyboards
+categories: engineering
+published: true
+description:
 ---
 
 
@@ -13,23 +15,22 @@ categories: keyboards
 
 ## Cherry keyboards
 
-| |      Actuation      |   |
+|          | Actuation     |       |
 |----------|:-------------:|------:|
-| bump+click | blue (50g) | greeen (80g) |
+| bump+click | blue (50g) | *greeen (80g) |
 | bump |    brown (45g)   | clear/white (60g) |
 | no bump | red (45g) | black (60g) |
 
 
-(I like green)
+(*I like green)
 
 # Design your own keys here!
-http://www.wasdkeyboards.com/index.php/products/keycap-set/87-key-cherry-mx-keycap-set.html
-https://support.wasdkeyboards.com/hc/en-us/articles/115009403848-Intro-to-Custom-Layouts
+- http://www.wasdkeyboards.com/index.php/products/keycap-set/87-key-cherry-mx-keycap-set.html
+- https://support.wasdkeyboards.com/hc/en-us/articles/115009403848-Intro-to-Custom-Layouts
 
 ## Buying keyboards
-
-- https://mechanicalkeyboards.com/
-- WASD Keyboards.
+- [mechanicalkeyboards.com](https://mechanicalkeyboards.com/)
+- [WASD Keyboards](https://www.wasdkeyboards.com/) 
 
 ## Keyboard from CodingHorror
 

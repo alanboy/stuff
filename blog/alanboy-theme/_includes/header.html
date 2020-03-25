@@ -20,8 +20,9 @@
             </div>
           </div>
          -->
-          {% for category in site.categories %}
-              <a class="item" href="lll">{{ category[0] }}</a>
+          {% assign sorted_categories = site.categories | sort %}
+          {% for category in sorted_categories %}
+              <a class="item" href="/category/{{ category[0] }}">{{ category[0] }}</a>
           {% endfor %}
 
         </div>

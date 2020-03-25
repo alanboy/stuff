@@ -3,7 +3,12 @@ layout: post
 title: "Vim"
 date: 2019-01-25 12:21:00 -0800
 categories: vim
+published: true
+description:
 ---
+
+## .vimrc
+Location of my [.vimrc in github](https://github.com/alanboy/stuff/tree/master/vim).
 
 ## Searching
 Delete all lines **containing** "matchingstring":

@@ -3,6 +3,8 @@ layout: post
 title: "linters"
 date: 2019-10-29 11:51:00 -0800
 categories: software
+published: false
+description:
 ---
 
 http://www.codemaid.net

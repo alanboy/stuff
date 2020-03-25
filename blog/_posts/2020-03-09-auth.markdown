@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Autentication and Authorization"
+date: 2020-03-09 10:42:00 -0800
+categories: software
+published: false
+description:
+---
+
+## Authentication
+
+## Authorization
+
+## Azure Active Directory
+https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics
+
+

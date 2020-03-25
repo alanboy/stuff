@@ -3,6 +3,9 @@ layout: post
 title: "Front-end development"
 date: 2019-05-17 11:06:00 -0800
 categories: web
+description: "Some notes on markdown"
+published: false
+description:
 ---
 
 # Angular
@@ -10,6 +13,16 @@ categories: web
 ## Debugging Angular
 
 https://code.visualstudio.com/docs/nodejs/angular-tutorial
+
+## AOT vs JIT and Ivy
+
+https://medium.com/js-imaginea/ivy-a-look-at-the-new-render-engine-for-angular-953bf3b4907a
+
+## Components and sharing info
+https://medium.com/better-programming/angular-7-share-component-data-with-other-components-1b91d6f0b93f
+https://fireship.io/lessons/sharing-data-between-angular-components-four-methods/
+https://stackoverflow.com/questions/37587732/how-to-call-another-components-function-in-angular2
+https://angular.io/guide/architecture-components
 
 
 # React
@@ -62,4 +75,118 @@ https://semantic-ui.com/collections/grid.html#/overview
 https://www.npmjs.com/package/semantic-ui-react
 
     npm install semantic-ui-react --save
+
+
+
+
+https://www.codementor.io/tamizhvendan/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack-du107r9zr
+https://www.npmjs.com/package/webpack
+
+https://medium.freecodecamp.org/part-1-react-app-from-scratch-using-webpack-4-562b1d231e75
+https://webpack.js.org/guides/getting-started/
+https://webpack.js.org/concepts/configuration#simple-configuration
+
+
+
+`import React from 'react';` vs `require('React');`
+
+Reading:
+https://signalvnoise.com/posts/3124-give-it-five-minutes
+
+### Pete Hunt: React: Rethinking best practices -- JSConf EU 2013
+https://www.youtube.com/watch?v=x7cQ3mrcKaY
+
+A librarty for creating user interfaces. Renders UI in response to events.
+
+Building components, not templates.
+
+eparation of concerns:
+Reduce couple, increase cohesion.
+
+Templates encourage a poor separation of concerns.
+
+"View model" tightly copules template to display logic.
+
+Display logic and markup are inveitably tightly coupled. Highly cohesive. They both show the UI.
+
+Templates separates **technologies**, not **concerns**.
+
+prototypical inheritance... 
+
+The framework cannot know how to separate your concerns for you. 
+
+Re-Render the entire page on every update.!!! 
+
+https://quotes.yourdictionary.com/author/edsger-w-dijkstra/45532
+
+React componenta are basically just idemponent functions that describe your UI at any point in time, just like a server-rendered app.
+
+
+## Promises, Observables
+
+https://itnext.io/async-and-await-in-javascript-the-extension-to-a-promise-f4e0048964ac
+
+
+RxJS is a library for composing asynchronous and event-based programs by using observable sequences.
+
+
+
+
+https://angular.io/guide/observables
+https://angular.io/guide/http
+https://angular.io/api/common/http/HttpEvent
+https://medium.com/@kevinwkds/angular-observable-81eea33a1aab
+https://www.djamware.com/post/5da31946ae418d042e1aef1d/angular-8-tutorial-observable-and-rxjs-examples
+https://itnext.io/async-and-await-in-javascript-the-extension-to-a-promise-f4e0048964ac
+https://dev.to/mr_bertoli/rxjs-from-scratch-pipeable-operators-1g18
+
+https://stackoverflow.com/questions/37771855/chaining-observables-in-rxjs
+https://stackoverflow.com/questions/37748241/how-to-do-the-chain-sequence-in-rxjs/37748799#37748799
+https://stackoverflow.com/questions/34523338/rxjs-sequence-equivalent-to-promise-then
+
+
+
+
+https://www.codementor.io/tamizhvendan/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack-du107r9zr
+https://www.npmjs.com/package/webpack
+
+https://medium.freecodecamp.org/part-1-react-app-from-scratch-using-webpack-4-562b1d231e75
+https://webpack.js.org/guides/getting-started/
+https://webpack.js.org/concepts/configuration#simple-configuration
+
+
+
+`import React from 'react';` vs `require('React');`
+
+Reading:
+https://signalvnoise.com/posts/3124-give-it-five-minutes
+
+### Pete Hunt: React: Rethinking best practices -- JSConf EU 2013
+https://www.youtube.com/watch?v=x7cQ3mrcKaY
+
+A librarty for creating user interfaces. Renders UI in response to events.
+
+Building components, not templates.
+
+eparation of concerns:
+Reduce couple, increase cohesion.
+
+Templates encourage a poor separation of concerns.
+
+"View model" tightly copules template to display logic.
+
+Display logic and markup are inveitably tightly coupled. Highly cohesive. They both show the UI.
+
+Templates separates **technologies**, not **concerns**.
+
+prototypical inheritance... 
+
+The framework cannot know how to separate your concerns for you. 
+
+Re-Render the entire page on every update.!!! 
+
+https://quotes.yourdictionary.com/author/edsger-w-dijkstra/45532
+
+React componenta are basically just idemponent functions that describe your UI at any point in time, just like a server-rendered app.
+
 

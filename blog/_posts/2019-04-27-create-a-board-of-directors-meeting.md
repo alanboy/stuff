@@ -3,6 +3,8 @@ layout: post
 title: "Board of directors"
 date: 2019-04-27 08:21:00 -0800
 categories: business
+published: false
+description:
 ---
 
 # Preparing for a board of directors meeting

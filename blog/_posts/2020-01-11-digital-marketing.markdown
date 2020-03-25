@@ -3,6 +3,8 @@ layout: post
 title: "Framework for Digital Marketing"
 date: 2020-01-11 12:12:00 -0800
 categories: business marketing
+published: false
+description:
 ---
 
 ## Framework for Digital Marketing
@@ -54,16 +56,16 @@ Continuance
 
 Three questions:
 A webpage is most likely to convert if it provides clear answers to these three questions:
-	• What are you offering?
-	• Why should I pick you?
-	• What do you want me to do next?
+	ï¿½ What are you offering?
+	ï¿½ Why should I pick you?
+	ï¿½ What do you want me to do next?
 
 
 (4) Segments
 
 =====
-• What are you offering?
-	•
-• Why should I pick you?
-• What do you want me to do next?
+ï¿½ What are you offering?
+	ï¿½
+ï¿½ Why should I pick you?
+ï¿½ What do you want me to do next?
 Discount?

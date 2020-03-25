@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Global-Business"
+title: "Global business"
 date: 2019-10-25 03:43:00 -0800
 categories: business
+published: false
+description:
 ---
 
 https://www.inc.com/amp/185441.html

@@ -2,12 +2,16 @@
 layout: post
 title: "Leadership, team process and decision making"
 date: 2019-01-26 01:31:00 -0800
-categories: business leadership
+categories: reference business leadership
+published: true
+description:
 ---
 
+```
 Performance = f(motivation * ability)
 
 ability = [ knowledge, skills, aptitude ];
+```
 
 ## Key elements on team effectivenes
 
@@ -129,8 +133,12 @@ https://www.investopedia.com/terms/p/peter-principle.asp
 * Pacesetting style "High expectations" already high degrees of skill already exists. They will be able to keep up.
 * Coaching style: "Helping others to performa at a hight level". Least frquently used. Long term oriented, time consuming.
 
-        "When you're up to your neck in alligators,
-        sometimes you forget that your mission is to drain the swamp."
+
+```
+"When you're up to your neck in alligators,
+sometimes you forget that your mission is to 
+drain the swamp."
+```
 
 Authoritative and Affiliative will cover the largest range of situations.
 
@@ -139,4 +147,5 @@ https://www.shrm.org/resourcesandtools/tools-and-samples/hr-qa/pages/whatsa9boxg
 
 ## Managerial grid model (robert blake, jane)
 ## Country club management
+
 

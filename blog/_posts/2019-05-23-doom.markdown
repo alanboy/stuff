@@ -3,6 +3,8 @@ layout: post
 title: "doom"
 date: 2019-05-23 02:11:00 -0800
 categories: software
+published: false
+description:
 ---
 
 * arm64 demo

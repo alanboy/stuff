@@ -3,7 +3,691 @@ layout: post
 title: "New product marketing"
 date: 2020-01-05 12:40:00 -0800
 categories: business marketing
+published: false
+description:
 ---
+
+# New Product Management
+
+## The strategic Elements of Product development / Introduction
+
+10 worst products: https://www.youtube.com/watch?v=F2lqRBAXxfc
+
+* Dr. Silver. Inventor of Post-it at 3M.
+* Sir James Dyson
+
+Market research tools:
+* Creativity sessions
+* Tradeoff analyses
+* Contept tests
+* Voice of the customer
+* Alpha and beta testing
+* Test markets
+
+Firms with a global innovation culture:
+* Procter & gamble
+* Apple
+* Ikea
+
+Not all new products are planned:
+* Microwave ovens
+* Aspartame
+* ScotchGard fabric protector
+* Teflon
+* Penicilin
+* X-rays
+* Dynamite
+
+New Products:
+* New to the world products: Inventions that create a whole new market.
+* New to the firm products: Take a firm into a category new to it.
+* Additions to existing product lines: Line extensions and flankers that flesh out the product line in current markets.
+* Improvments and resvisions to existing products (Updates)
+* Cost reductions: New products that provide similar performance, but at a lower cost.
+* Repositionings: Products that are retargeted for a new use, market or application.
+
+> Top innovatorssuch as inten and Gillette stay focused and committed to innovation as a long-term strategic goal. Without such focus, firms can fall back to "tweaking" existing products.
+
+The strategic Elements of Product development :
+* Phase 1: Opportunity identification and selection
+* Phase 2: Concept generation
+* Phase 3: Concept/Project evaluation
+* Phase 4: Development (technical and marketing)
+* Phase 5: Launch
+
+Between the phases, there is always go/no-go decission. 
+
+Gates:
+* Fuzzy gate: Commonly used. this is a "conditional go".
+* Hollow gates: The Go decision is made but **no financial support** is provided.
+
+Third-generation process: A **flexible interpretation** of the basic process, which allows **overlapping** phases and fuzzy gates. This flexibility is important in the development of new to the world products.
+
+## The new product process
+<div class="mermaid">
+graph TB
+    subgraph ProcessPhase
+    OpportunityIdentification
+    ConceptGeneration
+    ConceptEvaluation
+    Development
+    Launch
+    end
+    
+    OpportunityIdentification-->Direction
+    Direction-->ConceptGeneration
+    ConceptGeneration-->InitialReview
+    InitialReview-->ConceptEvaluation
+    ConceptEvaluation-->FullScreen
+    FullScreen-->Development
+    Development-->Progress
+    Progress-->Launch
+    Launch-->MarketTesting
+    MarketTesting-->Retrospect
+
+    subgraph EvaluationTask
+    Direction
+    InitialReview
+    FullScreen
+    Progress
+    MarketTesting
+    Retrospect
+    end
+</div>
+
+Procter & gamble case:
+* Situation assessment
+* PIC recommended a **strategic focus** on products for the face (?) - other opportunities would not be pursued.
+* If already several eye makeup products on the market, they would not immediately launch another. Managemnt called this an "initiative rhythm" for product launch.
+
+> Note: Look at Visions magazine: Connecting Innovators Worldwide at https://www.pdma.org/page/Visions_magazine. PDMA is the number 1 global source of end-to-end product management and product development knowledge, wisdom, experience, and expertise.  PDMA has been advancing product managers and product teams for over 43 years.    We are different from for-profit training and certification companies.  PDMA's membership and body of knowledge is powerful and made up of expert practitioners, academics, teams, chapters, and corporations.  
+
+# Phase 1: Opportunity Identification and Selection
+* Three main streams of activity feed strategic planning for new products:
+  * Ongoing marketing planning.
+  * Ongoing corporate planning.
+  * Special opportunity analysis.
+* From these activities, the opportunities identified can be sorted into four categories:
+  * An underutilized resource
+  * A new resource
+  * An external mandate
+  * An internal mandate
+* The process of creatively recognizing such opportunities is called opportunity identification. Once and opportunity is approved, managers turn to various techniques to guide a new product people in exploiting it. 
+* Product innovation charter
+
+## Before you start
+* Who are you? What do you do?
+* Who are your customers?
+* Demographics?
+* Behaviour traits?
+* What is our core competency?
+* How are we growing?
+* What do we want to do?
+* How much risk are we willing to take?
+* Timing into market?
+
+## Identify new opportunities
+The process of creatively recognizing such opportunities is called opportunity identification. Once an opportunity is approved, managers turn to various techniques to guide a new product people in exploiting it.
+
+* Product platform planning: Build a platform that little products can come of off or take a platform and make an extension. Example: the car industry. Sony with walkman: the basic structure was the same. Boeing: many configurations for the same similar foundation for each airline.
+* Greenfield markets: 
+* Social trends: 
+
+Coroporate strenghts provide direction for the team. New products in this firm will:
+* Use our fine furniture designers (Herman Miller)
+* Gain value by being bottled in our bottling system (Coca-cola)
+* Be for babies and only babies (Gerber)
+* Be for all sports, not just shoes (Nike)
+* Offer genuine value (Lexus)
+
+## The PIC: Why does a firm need a new product strategy?
+Set the guidelines. Points where we want to go. Setgs goals and objectives. It's a construct on how to go forward and build new things.
+It is the new product team's strategy. It is for Products (not processes). It is for innovation. A document specifying the conditions under which a firm will operate. The PIC is not the process, it's the framework.
+
+* To chart the new products teams direction
+* To set the teams goals and objectives.
+* To tell the team how it will play the game.
+
+Most firms do have a PIC, even if they don't call it by that name.  The more detailed and specific the PIC, the higher are the firm's innovation rates. The more specific the corporate mission and senior managment direciton is spelled out in the PIC, the better is the performance of the firms new products.
+
+Purposes:
+* Focus and integrate team effort
+* Permit delegation
+* Establish the size and range of the "sandbox"
+
+
+### Elements of a PIC:
+* Business Background
+    * Key ideas from the situation analysis; special forces such as managerial dictate, reasons for preparing a new PIC at this time.
+    * What is this business about? 
+    * Why does it exist? 
+    * What problem is it trying to solve?
+    * What are your company’s core competencies?
+    * What are your advantages in relation to your target market’s needs, wants, and consumption trends?
+    * What are your company’s marketing capabilities? 
+    * What technology currently exists?
+    * What is available in the market? 
+* Area of focus
+    * At least one clear technology dimmension and one clear market dimension. They must match and have a good potential.
+    * Technology and market drivers that (1) fit and (2) have a good potential 
+* Goals and Objectives Of New Product (MUST BE MEASURABLE):
+    * What the project will accomplish, either shor-term as objectives or longer-term as goals.
+    * profit, growth, market, status
+    * Short Term
+    * Long Term
+* Guidelines 
+    * Any "rules of the road" requirements imposed by the situation or by upper-management. Innovativeness, order of market entry, time/quality/cost, miscellaneous.
+    * Make sure they are specific.
+    * Bugdetary limitations.
+    * Degrees of innovativeness
+      * First to market
+      * Adaptive product
+      * Imitation (emulation)
+    * Timing
+        * Fist
+        * Quick second
+        * Slow
+        * Late
+    * Miscellaneous
+        * Avoidance of competition with certain firms
+        * Recognition of weaknesses
+        * Patentability
+        * Product integrity
+
+### Example of a PIC for iPad
+* Background: 
+* Focus: Technology strenghts include Apple's OS, hardware, applicationa and services, product design and development skills. Marketing requirements include products on the "cutting edge" that offer seamless integration and high performance, yet are intuitive, simple and fun to use.
+* Goals: Revolutionary new products should also be platforms for future products, due to the cost of "really new" product development. New pproducts should occupy the leadership position in the market.
+* Special guidelines: Apple aims to be the best, not necessarily the first, in new product categories.
+* The result: Apple's first "tablet compter", a revolutionary new product seen by many at the time as the "next big thing" No one table computer had established a dmoninant position yet, so Apple could be the standard bearer with the iPad. The plan for the future was to add capabilities and applications to future iPads.
+
+## Product portfolio
+When building a new product, you are not going to build one single product. You want to make sure there is a balance of different types of products:
+
+Objectives of product portfolio development
+* Strategic alignment: Mix of products reflects the PIC
+* Assessing portfolio value: commercial value of products in pipeline is maximized.
+* Project balance: select products that balance the existing product line.
+* Number of projects: in line with resource requirements.
+
+Example of a portfolio diagram at a Hewlett-Packard Division
+![My helpful screenshot](/assets/images/hp1.png)
+
+Portfolio of product types:
+* Disruptive innovation
+* Technology upgrade
+* Product line extension
+* Incremental innovation
+
+Every single innovation does not need to be a break trough innovation.
+
+## Managing breaktrough innovation (new to the world)
+* Incubation stage contrains first to market problems
+  * Tolerate failure but learn from it.
+  * Longer and much more expensive.
+
+* Discovery-driven planning
+  * Forecasts and plans evolve as more information becomes available.
+
+## The role of the serial innovator
+* Mid-level, technical **employees who think and work differently** and follow their own new products process
+* **Critical to firms being able to launch radical innovations**  successfully and repeatedly over a long period of time.
+* Challenge: **Identify, manage, and properly reward the serial innovator**.
+* Can bridte the gap between technology and market, in iterative fashion.
+* Begin by undesrstanding customer problem 
+* Oscillate between customer need and technology solution.
+* Can also bring **market information** 
+
+> Read: Griffin, Price and Vojak, Serial Innovators: How individuals create and deliver Breaktrough innovations.
+
+Spiral development implies **many iterations** between firm and customer. Useful for new-to-the-world products.
+
+Questions: 
+* Products that are inventions and create a whole new market are called:	new-to-the-world products (Correct) | new-to-the-firm products | "flanker" brands | improvised products
+* Identify the phase in the new product development process during which the item first acquires finite form.	The concept generation phase | The development phase (Correct) | The launch phase | The concept or project evaluation phase
+* In the context of opportunity identification and selection, DuPont's discovery of Surlyn, a material with hundreds of potential uses, would fall under which of the following categories?	An underutilized resource | A new resource (Correct) | An external mandate | An internal mandate
+* The _____ comes into play once an opportunity is approved, and managers turn to various techniques to guide new product people in exploiting it.	Concept Novelty Copyright (CNC) | Product Development Mandate (PMC) | Product Innovation Charter (PIC) (Correct) | Concept Ideation Rule (CIR)
+* In which of the following phases of the new products process is the first formal type of assessment done on new product concepts with regard to financial, technical, and marketing criteria?	Concept or project evaluation phase (Correct) | Product development phase | Product launch phase | Concept generation phase
+* What does the PIC NOT usually contain	Background of the company | Goals or objective for the project | Guildelines - rules of the road including budgetary limits | Key stakeholders and responsibilities (Correct) | Area of focus for new product
+When you are evaluating products, what major concept discussed how we address and discuss the risk/reward characteristics of a new product?	Product Portfolio Strategy (Correct) | Market Optimiztion Strategy | Degrees of difficulty | Product Validation Process
+
+
+# Phase 2: Concept generation
+* Create new product ideas, usually called product concepts
+* Problem-find-solve approach.
+* Concept generation
+
+## Creativity and the product concept
+
+What is the problem we are trying to solve?
+
+> If I had an hour to solve a problem and my life depended on it, I would use the first 55 minutes determining the proper questions to ask. Albert E.
+
+> One doesn't just invent a finished product. An idea, yes, or perhaps a rather complete concept. It is important ot spend enough time on the idea-to-concept-to-product issue.
+
+Roadblocks to creativity
+* "Who the hell wants to hear actors talk?"
+* "This 'telephone'
+* "Everything that can be invented has been invented" C.H. Duell, Commissioner, US Office of Patents
+
+Obstancles to Idea generation
+* Group think: We think we are being creative, when in reality we are only coming up with ideas that our group will find acceptable.
+* Targeting error: We keep going back to the same simple demographic targets.
+* Poor customer knowledge: 
+* Complexity: 
+* Lack of empathy: These same managers are also well-educated, high-income individuals accustomed to an upscale lifestyle. They may simply not understand the "typical" customer.
+* Too many cooks: A small new product team works fine, but large companies especially are prone to internal competition for power and influence.
+
+Barriers to firm creativity:
+* Cross-functional diversity: Diversity leads to more creative stimulation but also to problem solving difficulties.
+* Allegiance to functional areas: Team members need to have a stake in the team's success, or won't be loyal to the team.
+* Social cohesion: 
+* Role of top management: Management should encourage the teams to be adventurous.
+
+The role of management in stimulating creativity
+* Recognize individuality
+* Be tolerant to mistakes
+* Be supportive under stress
+* Competitive teams
+* Idea bank of unused ideas for possible reuse
+* Encourage interaction even in how offices are laid out.
+
+Required inputs to the creation process:
+* Form
+* Benefit/need
+* Technology
+
+> Technology permits us to develop a form that provides a benefit.
+
+Some patterns in concept generation:
+* Customer need
+* Firm develops technology
+* Firm envisions form
+
+## A product concept
+A product concept is a verbal or prototype statemtn of :
+* what is going to be changed
+and
+* how the customer stands to gain or loose
+
+You need at least two of the three inputs to have a feasible new product concept, and all three to have a new product.
+
+MEthods for generating new product concepts:
+* Ready-made   
+    * new products employees
+    * end users
+    * resellers, suppliers, vendors
+* Toolkit for user innovation:
+* Crowdsourcing as a Creative source
+    * Open idea solicitation from customers
+    * most likely to generate modest product improvements rather than new-to-the-world products.
+* Lead users as a creative source
+    * They have the best understanding of the problems faced, and can gain from solutions to these problems.
+* Open innovation
+    * Accept that "not all the smart people work for us"
+    * It is not outsorcing! The external sources are viewed as complementary to internal sources os that innovation can be more efficient.
+    * Selecting the best partners is critical
+
+## Finding and Solving Customers’ problems
+
+Problem based concept generation
+
+Probelm analysis: General procedure
+* Determine product or activity category for your study.
+* Identify heavy users
+* Gather set of problems associated with product strategy
+* Sort and rank the problems according to severity or importance
+
+Gethering the problems:
+* internal records (routine contacts with customers)
+* Direct inputs form technical and marketing departments
+* Problem analysis with customers (ask them what are the problems with the current product, not what they want)
+
+The bothersomeness technique of scoring problems:
+
+![My helpful screenshot](/assets/images/petowners.png)
+
+Typical questions fo problem analysis focus groups
+
+Observation and role playing in problem analysis
+
+Problem analysis in action
+
+
+## Scenario analysis
+Extending vs leaping
+* Extending: 
+* Dynamic leap scenario: 
+
+
+Questions:
+* According to the lecture/book, which of the following statements is true of creative people?	
+    * They usually follow reproductive thinking rather than productive thinking. | They tend to be creative throughout their lives and never become uncreative. (Correct) | Their creativity cannot be measured. | They typically cannot benefit from training.
+* In the context of barriers to firm creativity, strong interpersonal ties between team members tend to lead to:
+    * information overload. | more innovative ideas. | weak social cohesion. | lack of creative abrasion. (Correct)
+* Which of the following statements is true of a focus group?
+    * A focus group is designed to yield an exploratory and depth-probing type of discussion. (Correct) | A focus group is often very difficult to set up and is the most expensive method of gathering information. | A focus group makes it difficult for a person to talk about his or her problems when others in the group have already admitted they have problems too. | A focus group, unlike the traditional survey, depends on the power of numbers rather than in-depth discussions.
+* With reference to scenario analysis, in _____ studies, the focus is on what changes must be made between now and then if the leap scenario is to come about.
+    * dynamic leap (Correct) | exploratory | product function | static leap
+* A group ideation technique put forth by Alex Osborn that involves a process where one person presents a thought, another person reacts to it, another person reacts to the reaction, and so on is called _____.
+    * crowdsourcing | brainstorming (Correct) | scenario analysis | role playing
+
+## Solving the problem
+
+Principles of brainstorming:
+* deferral of judgement
+* quantity breeds quality
+
+Rules for a brainstorming session:
+* no criticism allowed
+* Freewheeling -- the wilder the better
+* Nothing should slow the session down.
+* Combination and improvement of ideas
+
+Electronic brainstorming:
+* Supported by GSS (group support sytems) software.
+* can handle larger size groups
+* contributions are projected on screen and also recorded
+
+Online communities
+
+## Analytical attribute approaces: Introduction and Perceptual mapping
+Basic idea: products are made up of attributes -- a feature product change must involve one or more of these attributes.
+
+Theoretical sequence: feature permits a function which provides a benefit.
+
+* Features: What the product consists of.
+* Functions: How a product works. What it does.
+* Benefits: How the product provides satisfaction to the user.
+
+Types of gap analysis:
+* Determinant gap map: produced from managerial **input/judgement** on products)
+* AR (Attribute rating) perceptual gap map: based on attribute **ratings by customers**. You go to customers, and have them evaluate the product.
+* OS (Overall similarities) perceptual map: based on overall **similarities rating by customers**. Some things are hard to define, but if you group product based on these rating, you can start figuring out how similar products are from each other.
+
+
+## Determinant gap map
+![My helpful screenshot](/assets/images/determinant.png)
+
+
+## AR (Attribute rating)
+Consumers have ranked this. This how people percieve the product. PErception does not equal reality. 
+
+## OS (Overall similarities)
+![My helpful screenshot](/assets/images/OverallSimilarities.png)
+
+
+## Data reduction using multivariate analysis
+* Factor analysis: Reduces the original number of attributes to a smaller number of factors, each containing a set of attributes tha "hang together".
+* Cluster analysis: Reduces the original number of respondents to a smaller number of clusters based on their benefits sought, as revealed by their "ideal brand".
+
+All gap mapping is controversial.
+
+> It's aitmed at discovering gaps, not demand. Gaps might exist for a reason.
+
+
+Questions:
+* How are the values in a Determinant Gap Map (as discussed in chapter 6) created?	Manager's judgment call (Correct) | Independent External Group (i.e. Gartner) evaluation | Consumer Likert ratings | Consumer similarity ratings
+* What is NOT defined as kind of attributes that you can quantify in analytical attribute techniques?	Feature | Benefit | Function | Failure (Correct)
+
+# Phase 3: Concept/Project evaluation
+* Before development work can begin on new ideas, they need to be evaluated, screened, sorted out. Screening or pretechnical evaluation. 
+    * Quick looks … to complete discounted cash flows and net present value
+* Full-screen
+* If the decision is to go ahead, the evaluation turns into project evaluation, where we no longer evaluate the idea, but the plan we propose for capitalizing on that idea.
+* Quality Function Deployment (chapter 12)
+* Product description or product definition or product protocol:  Means a kind of agreement between the various groups the various groups before the extensive technical work gets under way. The protocol should, to the extent possible, be benefits the new item is to yield, not the features the new item is to have.
+
+Questions:
+* What is a Pothole evaluation system?	Everything is tentative - just keep going while revising the plans along the way | Identify the damaging problems and only focus on them in the evaluation (Correct) | Put large hurdles late the process that are firm if not passed | Building criteria that gives clues to the success of your project | Evaluate how many small problems / challenges the project faces before going forward
+* What does the A-T-A-R stand for in the ATAR model	Action - Test - Adapt - Repeat | Apple - Tomato - Avocado - Raspberry | Aim - Try - Adapt - Renew | Awareness - Trial - Availability - Repurchase (Correct) | Availability - Test - Activation - Release
+* The assumption behind the use of conjoint analysis is that:	a product can be represented as a set or bundle of attributes. (Correct) | the number of items per purchase is a constant to scale market share. | a product is considered as a whole rather than in discrete attributes. | preferences can be observed by testing of many virtual variations of the same basic concept.
+* True or False: Respondents in a "conjoint research project" need to consciously understand how they rank product attributes.	True | False (Correct)
+
+# Phase 4: Development
+This is the phase during which the item acquires finite form- a tangible good or a specific sequence of resources and activities that will perform an intangible service.  Marketing plan is sketched and gradually fleshed out.
+* Resource Preparation: it may need special training, new reward systems, revisions in the firms usual project review system and special permissions.
+* The major body of effort: The actual development of:
+    * The item or service itself
+    * The marketing plan for it
+    * A business (or financial) plan 
+    * The product (or concept) stream involves industrial design and bench work (goods) or systems design (serivces) , prototypes, product specifications, and so on. It culminates in a product that developers hope is finished: produced, tested, and costed out.
+    * Marketing planners are busy making periodic market scans (to keep up with the changes) and making marketing decisions as early …. First strategic, then tactical.
+* Comprehensive business analysis: The financial analysis is still not firm, but it is good enough to assure managmeent that ithis project will be worthwhile. The financials will gradualy be tightened during the launch phase, and where the actual Go/No Go point is reached varies.
+
+Questions:
+* What tool helps you eliminate many ideas before concept testing even begins?	Concept Envisioning Guide (CEG) | Product Innovation Charter (PIC) (Correct) | Capital Investment Constraint (CIC) | External Market Analysis (EMA)
+* What is NOT a stated purpose of concept testing	Design effective marketing material for campaign (Correct) | Identify poor concepts so they can be eliminated | Estimate the sales or trial rate of the product | Develop the idea and make tradeoffs
+* True or False - Focus groups are not a great tool to use in concept testing because they are not quantitatively robust	True | False (Correct)
+* True or False - A good screening process will eliminate subjective judgement from the evaluation	TRUE | FALSE (Correct)
+* The primary purpose of the full screen is to	obtain the information required for developing the product innovation charter. | develop and test a prototype of the product. | finalize the overall marketing plan for the product. | estimate the feasibility of technical and commercial accomplishments. (Correct)
+* Star Inc. has restricted its budget for developing new products to $20,000. It automatically vetoes a proposed product if the product scores poorly on the factor of budget during the screening process. This factor is known as a _____ factor.	surrogate | culling (Correct) | groupware | level four fiscal
+* Which of the following is an objective of full screening?	To encourage cross-functional communication (Correct) | To generate pro-forma financials | To provide data for the product innovation charter | To add the thoughts of potential users to the set of market data collected
+
+	
+# Phase 5: Launch
+Launch (or commercialization) has described that time 
+Includes last few weeks or months before and after the product is launched.
+Manufacturing is doing a gradual scale-up output. 
+The critical step is to market test, and managers hope any problems discovered are dixable between dress rehearsal and opening night.  (chapter 18)
+
+Questions:
+* In order to calculate the net present value that might be associated with a proposed product, it is necessary to:	create a sales forecast (Correct) | calculate the internal rate of return (IRR) | define the payback period | assess costs
+* Which of the following serves as the basis of many simulated test markets?	The cumulative expenditures curve | The risk or payoff matrix | The A-T-A-R model (Correct) | The decay curve
+* Which of the following forecasting tools is commonly used for durable goods and is based on the diffusion curve of new products through a population?	The A-T-A-R model | Econometric analysis | Multiple regression analysis | The Bass model (Correct)
+* _____ is a technique used by Toyota to get cooperation across functional areas, to speed up integration, and to focus the team.	Wildcatting | The Oobeya Room (Correct) | Preference mapping | The Kaizen technique
+* _ has been defined as a complete set of customer wants and needs, expressed in the customer's language, organized the way the customer thinks about, uses and interacts with the product, and prioritized by the cust. in terms of importance and performance.	Target market | Voice of the customer (Correct) | Product positioning | Product Protocol
+* Engineering characteristics and customer attributes are part of the _____.	VOC grid | HOQ grid (Correct) | PLC grid | TQM grid
+* Question #7  The first general purpose of a product proposal is to:	identify the target audience and the benefits offered to them. (Correct) | specify whether the offering is a tangible product or an intangible service. (Correct) | ensure that all tax payments with regard to the product are paid on time. (Correct) | specify what each department will deliver to the final product that the customer buys. (Correct)
+
+
+
+
+More questions:
+Which of the following is true of market-driven innovation?	The main purpose of design in market-driven innovation is to modify the product so that it meets customer expectations. (Correct) | In market-driven innovation, new meanings and new technologies are pushed forth. | In market-driven innovation, design is of primary importance, and it takes on the leadership role. | The main role of design in market-driven innovation is to modify the product so that it can accommodate the performance characteristics.
+DarkBerry Inc., a cellphone manufacturer, manufactures products that share common design features that make them unique, yet at the same time familiar. All of DarkBerry's cellphones have a sleek appearance and an elegant design. These products can be	described as being designed for the environment. | described as being designed to build or support corporate identity (Correct) | described as being designed for ease of manufacture. | described as being designed for for price promotion.
+_____ are technical people who convert styling into product dimensions or specifications.	Industrial mechanists | Risk incorporators | Design engineers (Correct) | System analysts
+The most heavyweight of the three matrix structures is the:	project matrix structure. (Correct) | functional matrix structure. | balanced matrix structure. | departmental matrix structure.
+In which of the following organizational options does the project manager have the least amount of power?	Project matrix option | Venture option | Functional matrix option | Functional option (Correct)
+Those people who are involved in managing functional clusters comprise the _____ team.	core. (Correct) | ad hoc. | product champions. | extended.
+
+
+## Implementation of strategic plan
+
+The launch cycle
+
+Launch tactic:
+* Promotion
+    * Advertising
+    * Coupons
+    * Publicity
+    * Sampling
+    * Beta test sites
+* Sales and distribution
+    * Shows/demonstrations
+    * Technical support
+    * Distribution structure
+    * Intensity of coverage
+    * Distribution incentives
+* Pricing
+    * Introductory pricing
+    * Price administration
+* Product
+    * Breadth of assortment
+* Timing
+    * Product deletion
+    * Preannoucing
+
+Preannouncement
+* Getting to be popular, and very creatively managed.
+* Far from the old days of "tease the public"
+
+Beachhead: 
+* Refers to the heavy expenditure needed to overcome slaes inertia ("getting the ball rolling")
+* Begins with the annoucement
+
+Launch tming and lean launch:
+* Flexible supply chain system allowing the firm to respond rapidly to sales changes
+* Lean launch gives the firm flexibility in launch timing.
+
+Postponement, refers to delaying finalization of product form and identity until last possible moment. Two categories:
+* Time postponement:
+* Form postponement: lock in product design as late as possible.
+
+Lean lauch: Firm needs good information technology system in place to track sales and replenish raw material and inventory.
+
+Copy strategy statement:
+* Communications tools used at launch will have certain deliverables.
+* The way in which the firm communicates these deliverables to the advertising and promotion creative poeple is the copy strategy statement.
+* Typical contents:
+    * The market segment targeted
+    * The product positioning statement
+    * The communications (promotion) mix
+    * The major copy points to be communicated.
+    * Often stated as attributes (features, functions, benefits) but not limited to these.
+
+Typical examples of copy points:
+* "The provider of this insurance policy is the largest in the world"
+* "This new line of housewares is now available at target"
+* This cellular phone has no geographic limitation"
+
+Motivate distributors:
+* Icrease distributors unit value.
+* Increase distributors unit margin
+* Reduce distributors cost of doing business
+* Change distributors attitude totward the line.
+
+Barriers to trial:
+* Lack of interest in the claim.
+* Comptitive ties.
+* Lack of belief in the claim.
+* Routines
+* Rejecting something negative about product.
+* Cost
+* Complacency
+
+## Market testing
+This is not testing the product or how it lands, its testing what is going on in the market. How well your activities to promote your product are going to work. 
+
+The evaluation of the product together with its marketing plan. 
+
+Product use testing: does this product work as expected.
+Market testing: does our launch, do our marketing activities work as we planned.
+
+
+Two key values obtained from market testing:
+* Solid forecasts of dollar and unit sales volume.
+* Diagnostic information to allow for revising and refining any aspect of the launch.
+
+IT will tell you if there is anything we can do to tweak the launch of the product.
+
+Decide wether to market test:
+* Any special twists on the launch?
+* What information is needed?
+* Costs
+* Nature of marketplace
+* Capability of testing methodologies
+
+
+Types of information that might be lacking:
+* Manufactuing process: can we ramp-up from pilot production to full scale easily?
+* Vendors and resellers: will they do as they have promised in supporting the launch?
+* Servicing infrastructure: adequate?
+* Customers: will they buy and use the product as expected?
+* Cannibalization: waht will be the extend?
+
+### Methods of market testing
+Pseudo Sale:
+
+Speculative Sale: If we make this product available as I have described it, would you buy it?
+
+Simulated test market:
+* Create a false buying situation and observe what the customer does.
+* Follow-up with customer later to assess likely repeat sales.
+* Often used for consumer nondurables.
+
+The test market:
+* Several test market cities are selected
+* Product is sold into those cities in the regular channels and advertised at representative levels in local media.
+* Once used to support the decision whether to launch a product, now more frequently used to determine how best to do so.
+
+Pros and Cons of Test Marketing:
+* Advantages:
+    * Risk reduction
+    * Strategic improvement
+* Disadvantages
+    * Cost
+    * Time (hurt competitive advantage)
+    * Competitor can disrupt test market
+
+
+Patterns of information gained during rollout
+![My helpful screenshot](/assets/images/rollout.png)
+
+# Crossing the Chasm
+
+## The innovations
+Crossing the chasm introduces two kinds of change: disruptive, (or discontinuous), innovation
+gets us to change our behavior or the products we use and sustaining, (or continuous),
+innovation entails steady improvements and upgrades to products that don’t make us change
+our behavior.
+
+## The high tech markets and the Technology Adoption Life Cycle
+
+The book defines a market as a set of actual or potential customers for a given set of products
+or services who have a common set of needs or wants, and who reference each other when
+making a buying decision. If two people buy the same product for the same reason but
+have no way they could reference each other, they are not part of the same market. This is
+extremely useful and it really helps in forming a clear division on our marketing segmentations.
+The book goes into huge detail about the characteristics of each market, and some of the most
+memorable learnings for me were:
+
+* Innovators/Technology enthusiasts seek out novel technology; it’s like a hobby for them. There aren’t many Innovators, and because they’ll try new things, they are important. Other people see them use new things and feel braver themselves about trying them. Innovators pursue new technology products aggressively.
+* Early Adopters/Visionaries are quick to understand the benefits of new technology. Unlike the Innovators, they don’t love technology for its own sake. This group relies on its own intuition and vision to make buying decisions. They are people who find it easy to
+imagine, understand, and appreciate the benefits of new technology. organization to buy into that project.  Visionaries are not looking for improvement; they are looking for a fundamental breakthrough. Technology is important only insomuch as it promises to deliver on this dream.
+* Visionaries represent an opportunity early in a product’s life cycle to generate a burst of revenue and gain exceptional visibility. The opportunity comes with a price tag—a highly demanding customer who will seek to influence your company’s priorities directly and a high-risk project that could end in disappointment for all.
+* Early Majority/Pragmatists are practical-minded consumers. If a product seems useful, this group will try it. The Early Majority are cautious of fads. They want to see well-established references before investing substantially. As individuals, pragmatists held back from using software-as-a-service applications until Salesforce.com made it safe to enter the water. Pragmatists want to buy from proven market leaders because they know that third parties will design supporting products around a market-leading product. That is, market-leading products create an aftermarket that other vendors service. 
+* Late Majority/Conservative consumers wait for something to become well established. They don’t feel confident in their ability to deal with technology and often buy from big companies. Members of the late majority are not comfortable with their ability to handle a
+technology product. Conservatives like to buy preassembled packages, with everything bundled, at a heavily discounted price. The last thing they want to hear is that the software they just bought doesn’t support the home network they have installed. They want high-tech products
+to be like refrigerators—you open the door, the light comes on automatically, your food stays cold, and you don’t have to think about it. The products they understand best are those dedicated to a single function—music, video, email, games. 
+* Laggards/Skeptics are those consumers who, for personal and/or economic reasons, are not looking to buy new technology. These people simply don’t want anything to do with new technology, for any of a variety of reasons. The primary function of high-tech marketing in relation to skeptics is to neutralize their influence. One of the favorite arguments of skeptics is that disruptive innovation of
+any kind rarely fulfill their promises and almost always come with unintended
+consequences.
+
+
+Moving from one market to the other is filled with dilemmas from which there is no escape
+because of mutually conflicting or dependent conditions. To illustrate, because of
+incompatibilities, early adopters do not make good references for the early majority. And
+because of the early majority’s concern not to disrupt their organizations, good references are
+critical to their buying decisions. The only suitable reference for an early majority customer, it
+turns out, is another member of the early majority, but no upstanding member of the early
+majority will buy without first having consulted with several suitable references.
+But the point of greatest danger in the development of a high-tech market lies in making the
+transition from an early market dominated by a few visionary customers to a mainstream market dominated by a large block of customers. It is all the more dangerous because it typically goes
+unrecognized.
+The gap between these two markets is in fact so significant as to warrant being called a chasm,
+and crossing this chasm must be the primary focus of any long-term high-tech marketing
+plan. One of the most important lessons about crossing the chasm is that the task ultimately
+requires achieving an unusual degree of company unity during the crossing period.
+
+## Conclusion
+Even though many readers think the concepts are not new and that the book rather captured
+what had been for them scattered intuitions and rueful learnings and put them into a coherent
+set of frameworks that could be used for future decision making, I see the framework as a
+discontinuous innovation since it changes the way you interact with hight tech markets.
+The classic weaknesses of entrepreneurs—lust after the big score and overconfidence in their
+ability to execute within any given time frame is softened by using a prescribed framework like
+the technology adoption lifecycle.
+
+
+# The innovators dilemma
+
+* What is the dilemma in the book? Technology is evolving faster than the market can adapt and utilize the advances | The things that made you a winner in the past will make you a loser in the future (Correct) | Big companies are at a disadvantage to smaller companies | The innovators in corporations are not the ones making the resource allocation decisions
+* Who really controls the resources in a company? (according to the book) (two answers)	C-Level Suite | Finance organization | Investors (Correct) | Customers (Correct) | Mid-level managers
+* What product did the book focus on as a key illustration of the principles	Computers | Digital Storage (Correct) | Cellular phones | Cars | Publishing industry
+* Which of these products is most likely to be described as disruptive?	A technology that is significantly more advanced than any competing product | A technology that does one thing really well | A technology that is specifically designed for the biggest customers | A very cheap product that is not as sophisticated as the market leader (Correct)
+* What kind of firm is most likely to create disruptive technologies	Very large companies with considerable resources | Large companies in a very competitive market | Small companies in niche markets (Correct) | Small companies building consumer products
+
 
 What often causes this lagging behind are two principles of good management taught in business schools: that you should always listen to and respond to the needs of your best customers, and that you should focus investments on those innovations that promise the highest returns. But these two principles, in practice, actually sow the seeds of every successful company's ultimate demise. That's why we call it the innovator's dilemma: doing the right thing is the wrong thing. This dilemma rears its head when a type of innovation that we've termed disruptive technology arises at the low end of the market, in the simplest, most unassuming applications. Explaining this paradox is the purpose of this book.
 
@@ -57,7 +741,7 @@ inch architecture could provide only 20 MB'and at higher costs. 15 In response t
 
 In response to lukewarm reviews from customers, Seagate's program manager lowered his 3.5-inch sales estimates, and the firm's executives canceled the program. Their reasoning? The markets for 5.25-inch products were larger, and the sales generated by spending the engineering effort on new 5.25-inch products would create'
 
-Seagate finally began shipping 3.5-inch drives in early 1988'the same year in which the performance trajectory of 3.5-inch drives (shown in Figure 1.7) intersected the trajectory of capacity demanded in desktop computers. By that time, the industry had shipped, cumulatively, nearly $750 million in 3.5-inch products. Interestingly, according to industry observers, as of 1991 almost none of Seagate's 3.5-inch products had been sold to manufacturers of portable/laptop/notebook computers. In other words, Seagate's primary customers were still desktop'
+Seagate finally began shipping 3.5-inch drives in early 1988'the same year in which the performance trajectory of 3.5-inch drives (shown in Figure 1.7) intersected the trajectory of capacity demanded in desktop computers. By that time, the industry had shipped, cumulatively, nearly $750 million in 3.5-inch products. Interestingly, according to industry observers, as of 1991 almost none of Seagate's 3.5-inch products had been sold to manufacturers of portable/laptop/notebook computers. In other words, Seagate's primary customers were still gem desktop'
 
 The fear of cannibalizing sales of existing products is often cited as a reason why established firms delay the introduction of new technologies.
 

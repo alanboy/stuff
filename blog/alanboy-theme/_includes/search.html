@@ -9,8 +9,8 @@ let data = [
       "category" : "{{post.categories | join: ', '}}",
       "tags"     : "{{ post.tags | join: ', ' }}",
       "date"     : "{{ post.date }}",
-      "discription" : "{{post.description | strip_html | strip_newlines | escape }}",
-      "contents"     : "{{ post.excerpt  | strip_html | strip_newlines | escape }}",
+      "description" : "{{post.description | strip_html | strip_newlines | escape }}",
+      "contents" : "{{ post.excerpt  | strip_html | strip_newlines | escape }}",
 
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
@@ -19,7 +19,7 @@ let data = [
 $('.ui.search')
   .search({
     source: data,
-    //type: 'category',
+    // type: 'category',
     searchFields: [
         'title',
         'category',
@@ -29,10 +29,9 @@ $('.ui.search')
 
 $( document ).ready(function() {
     $("body").keypress(function(key){
-        //console.log(key.originalEvent.key);
-        //console.log(key.originalEvent.code);
         if (key.originalEvent.code === 'Slash') {
             $(".search input").focus();
+            $(".search input").val("");
         }
     });
 });
