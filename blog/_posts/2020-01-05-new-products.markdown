@@ -7,7 +7,7 @@ published: false
 description:
 ---
 
-# New Product Management
+# New Product Marketing
 
 ## The strategic Elements of Product development / Introduction
 

@@ -36,6 +36,28 @@ description:
 
 - https://blog.codinghorror.com/the-code-keyboard/
 
+
+## Ducky
+https://www.duckychannel.com.tw/en/Ducky-One2-RGB-TKL
+https://www.duckychannel.com.tw/en/Support/Detail/82https://www.reddit.com/r/MechanicalKeyboards/comments/buclhs/ducky_one_2_sf/
+https://www.reddit.com/r/DuckyKeyboard/comments/eeb5t9/ducky_one_2_sf_questions_before_buying/
+
+## Creating custom keyboard
+https://www.youtube.com/watch?v=IKe_hrvYH1M
+
+## More links
+https://www.youtube.com/watch?v=W0FSvTYlggw
+https://www.youtube.com/watch?v=fKpsohmQMwE
+https://www.duckychannel.com.tw/en/Ducky-One2-SF
+https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=5461
+
+meh.
+https://drop.com/buy/drop-ctrl-mechanical-keyboard
+
+
+backlit keycaps:
+https://mechanicalkeyboards.com/shop/index.php?l=product_list&c=335
+
 Thanks to:
 
 - Daniel

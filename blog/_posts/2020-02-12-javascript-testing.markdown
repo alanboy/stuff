@@ -3,7 +3,7 @@ layout: post
 title: "Javascript testing"
 date: 2020-02-12 03:08:00 -0800
 categories: web testing software engineering
-published: false
+published: true
 description:
 ---
 
@@ -174,11 +174,17 @@ When you are testing a compoent and want to mock a service that is provided, use
 ## Spectator
 Spectator helps you get rid of all the boilerplate grunt work, leaving you with readable, sleek and streamlined unit tests.
 
-
 ## Protractor
 and Protractor is intended for end-to-end or integration testing
 https://www.protractortest.org/#/faq
 
+## Selenium
+
+## webdriver-manager
+https://chromedriver.chromium.org/downloads
+```
+ \node_modules\.bin\webdriver-manager.cmd update --chrome  --versions.chrome 80.0.3987.106
+```
 
 
 * https://angular.io/guide/testing

@@ -96,7 +96,7 @@ https://signalvnoise.com/posts/3124-give-it-five-minutes
 ### Pete Hunt: React: Rethinking best practices -- JSConf EU 2013
 https://www.youtube.com/watch?v=x7cQ3mrcKaY
 
-A librarty for creating user interfaces. Renders UI in response to events.
+A library for creating user interfaces. Renders UI in response to events.
 
 Building components, not templates.
 

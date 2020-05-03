@@ -23,6 +23,8 @@ echo layout: post>> %filename%
 echo title: "%1">> %filename%
 echo date: %mydate% %mytime% -0800>> %filename%
 echo categories: %1>> %filename%
+echo published: false>> %filename%
+echo description:>> %filename%
 echo --->> %filename%
 echo.>> %filename%
 echo.>> %filename%

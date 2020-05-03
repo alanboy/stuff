@@ -7,6 +7,8 @@ published: true
 description:
 ---
 
+# Leadership, team process and decision making
+
 ```
 Performance = f(motivation * ability)
 
@@ -147,5 +149,7 @@ https://www.shrm.org/resourcesandtools/tools-and-samples/hr-qa/pages/whatsa9boxg
 
 ## Managerial grid model (robert blake, jane)
 ## Country club management
+
+# Advanced Leadership
 
 

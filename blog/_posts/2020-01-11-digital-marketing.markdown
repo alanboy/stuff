@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Framework for Digital Marketing"
+title: "Digital Marketing"
 date: 2020-01-11 12:12:00 -0800
 categories: business marketing
-published: false
+published: true
 description:
 ---
 
@@ -24,7 +24,6 @@ How can we evaulate successful websites? **Conversions!**
 
 
 How to measure success of the website:
-
 
 Website conventions:
 	Top nav bar
@@ -56,16 +55,14 @@ Continuance
 
 Three questions:
 A webpage is most likely to convert if it provides clear answers to these three questions:
-	� What are you offering?
-	� Why should I pick you?
-	� What do you want me to do next?
+  * What are you offering?
+  * Why should I pick you?
+  * What do you want me to do next?
 
 
 (4) Segments
 
-=====
-� What are you offering?
-	�
-� Why should I pick you?
-� What do you want me to do next?
-Discount?
+* What are you offering?
+* Why should I pick you?
+* What do you want me to do next?
+* Discount?
