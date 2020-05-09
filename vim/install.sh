@@ -14,10 +14,18 @@ if [ ! -f $PathToVim/fzf.vim ]; then
     ln -s  $PWD/fzf/plugin/fzf.vim $PathToVim/fzf.vim
 fi
 
-if [ ! -d ~/.vim/bundle ]; then
-    mkdir ~/.vim/bundle
+if [ ! -d $PathToVim/bundle ]; then
+    mkdir $PathToVim/bundle
 fi
 
-if [ ! -f ~/.vim/bundle/fzf.vim ]; then
-    ln -s  $PWD/fzf.vim  ~/.vim/bundle/fzf.vim
+if [ ! -f $PathToVim/bundle/fzf.vim ]; then
+    ln -s  $PWD/fzf.vim  $PathToVim/bundle/fzf.vim
 fi
+
+## To install fzf correctly:
+echo Installation is not complete, look at this script for 
+echo how to install fzf
+# git submodule update
+# run install inside fzf
+# make fzf avaiable with 
+# sudo ln -s ~/stuff/vim/fzf/bin/fzf /usr/local/bin/
