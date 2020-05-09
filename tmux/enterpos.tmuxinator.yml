@@ -13,3 +13,4 @@ windows:
         panes:
             - cd /opt/pos-erp/tests/phpunit
             - logs: multitail --mergeall /var/log/apache2/error.log /var/log/mx.caffeina.pos/access.log  /var/log/apache2/access.log /var/log/mysql/error.log
+  - jekyll: /opt/pos-erp/build/rebuild-jekyll.sh
