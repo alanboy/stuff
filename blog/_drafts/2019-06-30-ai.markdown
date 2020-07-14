@@ -1,0 +1,102 @@
+---
+layout: post
+title: "ai"
+date: 2019-06-30 08:16:00 -0800
+categories: ai
+---
+
+the general problem solver
+allen newel and herbert simon
+
+physical symbol system hypothesis
+
+
+1980...
+the chinesse room argument
+
+
+combinatorial explosion
+strong aI (strong aI) - does not just apply to one narrow task
+
+weak ai (narrow ai) - narrow task 
+
+
+expert systems...
+
+some refert to this as .. gofai (good old fashined ai)
+they started to dissapear in the 1980s.
+
+you can still find this in planning ai... 
+
+
+heuristic reasoning. 
+
+
+====
+
+machine learning..
+learn the new patterns by itself.
+started shortly after AI conference.
+In 1959 Arthur Samuel created a program that could play checkers
+different frmo... playing against itself to get better.
+
+
+big data/data scientits
+
+without really knowing what you are looking for.
+
+artificial neural netwokrs. tries to mimic the human brain.
+
+neurons connect to one another.
+
+
+artificial network. perceprtrons.
+
+geoff 
+
+deep learning.
+
+
+deep learning and machine learning.
+
+
+machine learning > symbolic reasoning.
+machine learning, feeds on data to learn new things.
+
+
+symbolic reasoning. can work when you have an abstract problem, but know steps to get to the solution.
+machine learning. look for patterns. you dont really know the steps. and you have to look up for larger patterns to come up with the likeliest answer. requires several iterations. 
+artificial neural networks.
+
+
+deep learning, artificial network. put as much data as you can
+
+supervised learning. training set. 
+unsupervised learning.
+
+backprop. backpropagation for errors.
+
+
+regression
+
+
+classify, 
+	(sorting different types of data)
+
+and regression analysis.
+	looking for patterns
+
+
+
+
+natural language processing.
+
+- 
+
+
+machine learning vs data mining.
+ml requires training and frameworks.
+dm uses a broader set of tools without requiring training.
+
+
+does the program require abstract reasoning or detailed pattern matching?
