@@ -31,9 +31,37 @@ Console.WriteLine(responseBody);
 
 ## Calling with POSTMAN
 
-
-
 ## Calling a REST API from PowerShell
+
+## Calling with JavasScript
+
+```js
+function VstsApiRequest(url, method, data) {
+        method = method || "GET";
+        data = data || {};
+
+        const authHeader = "Basic " + btoa(":" + pat);
+        let options = {
+            type: method,
+            url: baseUrl + url,
+            dataType: "json",
+            contentType: "application/json",
+            beforeSend: function(request) {
+                    request.setRequestHeader("Authorization", authHeader);
+                    request.setRequestHeader("Accept", "application/json;api-version=5.1"  );
+                }
+        };
+
+        if (data !== undefined) {
+            options.data = (JSON.stringify(data));
+        }
+
+        return new Promise(
+            function(resolve, reject) {
+                $.ajax(options).done(resolve).fail(reject);
+        })
+    }
+```
 
 ## Posting to a pull request
 https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page
@@ -56,3 +84,11 @@ this has an id and a testcase name:
 
 Now you can upload an attachment:
 https://dev.azure.com/{{organization}}/{{project}}/_apis/test/Runs/4013424/attachments?api-version=5.1-preview.1
+
+## Postman request
+
+Use this pre-request script in postman, and now you'll just need to save your PAT 
+
+```
+pm.collectionVariables.set('authBasicToken', btoa(':'+ pm.collectionVariables.get("pat")))
+```

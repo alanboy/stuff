@@ -1,0 +1,94 @@
+---
+layout: post
+title: "jdb"
+date: 2020-07-13 11:20:00 -0800
+categories: jdb
+published: false
+description:
+---
+
+# Java Debugging with JDB
+
+This is what I am trying to debug:
+
+![](/assets/images/2020-07-13-jdb.markdown/2020-07-13-23-28-36.png)
+
+jdb  ^
+    -classpath bin/swagger-codegen-cli.jar;bin/slim-swagger-codegen-1.0.0.jar   ^
+    io.swagger.codegen.v3.Codegen                                               ^
+    generate                                                                    ^
+    -i enterpos-api.yaml                                                        ^
+    -l enterpos-typescript-angular                                              ^
+    -o generated-code/typescript-angular
+
+
+![](/assets/images/2020-07-13-jdb.markdown/2020-07-13-23-22-04.png)
+
+
+Next, you might want to set some breakpoints:
+
+```
+stop in io.swagger.codegen.v3.templates.HandlebarTemplateEngine.getHandlebars
+```
+
+![](/assets/images/2020-07-13-jdb.markdown/2020-07-13-23-24-31.png)
+
+```
+stop in io.swagger.codegen.v3.Codegen.main
+stop in io.swagger.codegen.v3.templates.HandlebarTemplateEngine.getFullTemplateFile
+stop in io.swagger.codegen.v3.DefaultGenerator.generateModels
+```
+
+Now you run:
+```
+run
+```
+![](/assets/images/2020-07-13-jdb.markdown/2020-07-13-23-25-32.png)
+![](/assets/images/2020-07-13-jdb.markdown/2020-07-13-23-31-05.png)
+
+
+```
+sourcepath C:\Users\alan\Code\swagger-codegen\modules\swagger-codegen\src\main\java\;C:\Users\alan\Code\swagger-codegen-generators\src\main\java\
+```
+```
+main[1] list
+30            return CodegenConstants.HANDLEBARS_TEMPLATE_ENGINE;
+31        }
+32
+33        private com.github.jknack.handlebars.Template getHandlebars(String templateFile) throws IOException {
+34 =>         templateFile = templateFile.replace(".mustache", StringUtils.EMPTY).replace("\\", "/");
+35            String templateDir = config.templateDir().replace(".mustache", StringUtils.EMPTY).replace("\\", "/");
+36            if (templateFile.startsWith(templateDir)) {
+37                templateFile = StringUtils.replaceOnce(templateFile, templateDir, StringUtils.EMPTY);
+38            }
+39            TemplateLoader templateLoader = null;
+main[1] locals
+Method arguments:
+templateFile = "null\model.mustache"
+Local variables:
+main[1]
+```
+
+
+```
+main[1] where
+  [1] io.swagger.codegen.v3.AbstractGenerator.getFullTemplateFile (AbstractGenerator.java:86)
+  [2] io.swagger.codegen.v3.DefaultGenerator.processTemplateToFile (DefaultGenerator.java:794)
+  [3] io.swagger.codegen.v3.DefaultGenerator.generateModels (DefaultGenerator.java:438)
+  [4] io.swagger.codegen.v3.DefaultGenerator.generate (DefaultGenerator.java:779)
+  [5] io.swagger.codegen.v3.Codegen.main (Codegen.java:117)
+main[1] list
+82            //3rd it will check if there's an <embedded template>/libraries/<library> folder containing the file
+83            //4th and last it will assume the file is in <embedded template> folder.
+84
+85            //check the supplied template library folder for the file
+86 =>         final String library = config.getLibrary();
+87            if (StringUtils.isNotEmpty(library)) {
+88                //look for the file in the library subfolder of the supplied template
+89                final String libTemplateFile = buildLibraryFilePath(config.templateDir(), library, templateFile);
+90                if (new File(libTemplateFile).exists()) {
+91                    return libTemplateFile;
+main[1]
+```
+
+

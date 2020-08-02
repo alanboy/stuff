@@ -63,3 +63,7 @@ Sources:
 * https://stackoverflow.com/questions/9310274/how-can-i-use-vim-to-convert-my-file-to-utf8
 * https://stackoverflow.com/questions/82726/convert-dos-line-endings-to-linux-line-endings-in-vim
 * https://vi.stackexchange.com/questions/514/how-do-i-change-the-current-splits-width-and-height
+
+
+The VIM alphabet:
+https://www.youtube.com/watch?v=aAsz359xTd4&list=PLnc_NxpmOxaNqdGvUg8RBi8ZTaZGPdqBD&index=5

@@ -15,7 +15,7 @@ Performance = f(motivation * ability)
 ability = [ knowledge, skills, aptitude ];
 ```
 
-## Key elements on team effectivenes
+## Key elements on team effectiveness
 
 - Participation
 - Influence
@@ -23,7 +23,7 @@ ability = [ knowledge, skills, aptitude ];
  - Cognitive: rationale.
  - Affect: emotional, style, personal
 
-A team culture will evolve wether we do something or not. What gets rewarede and what get punished will affect the culture.
+A team culture will evolve wether we do something or not. What gets rewarded and what get punished will affect the culture.
 
 The managers struggle the most with conflict resolution.
 
@@ -74,7 +74,6 @@ Team Context
 * Org context
 * Team design
 * Team culture
-
 * Ability
 * Motivation
 * Strategy

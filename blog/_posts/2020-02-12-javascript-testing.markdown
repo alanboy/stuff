@@ -27,6 +27,9 @@ Karma is a test runner tool, it creates a browser instance, run tests to provide
 
 The benefit of using Karma is that it can be operated via command line and It refreshes the browser automatically whenever we make even minor changes in our app.
 
+### Selective tests
+I discovered that Jasmine allows you to prefix describe and it methods with an f (for focus?). So, fdescribe and fit. If you use either of these, karma will only run the relevant tests. So, to focus the current file, you can just take the top level describe and change it to fdescribe. Works for my purposes.
+
 ## Jasmine
 Jasmine is a behavior-driven development framework for testing JavaScript code that plays very well with Karma. Similar to Karma, it’s also the recommended testing framework within the Angular documentation as it's setup for you with the Angular CLI. Jasmine is also dependency free and doesn’t require a DOM.
 
@@ -222,3 +225,8 @@ https://chromedriver.chromium.org/downloads
 * https://angular.io/guide/dependency-injection-providers
 
 * https://docs.microsoft.com/en-us/rest/api/azure/devops/git/pull%20request%20thread%20comments/create?view=azure-devops-rest-5.1
+
+https://stackoverflow.com/questions/41132933/running-a-single-test-file
+
+
+https://gist.github.com/julekgwa/28ecfc93f3998b4302e2653bf43ac4ed#working-with-locators

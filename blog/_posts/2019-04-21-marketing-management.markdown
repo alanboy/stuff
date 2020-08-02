@@ -7,6 +7,8 @@ published: true
 description: Marketing is the process by which individuals and groups obtain what the need and want through creatind and exchanging products and value with others.
 ---
 
+## What is marketing?
+
 Marketing is the process by which individuals and groups obtain what the need and want through creatind and exchanging products and value with others.
 
 Marketing: Sustained delivery of customer satisfaction.
@@ -293,7 +295,7 @@ Marketing costs are rising. Don't' understand marketing costs.
 
 The solution.
 Right message, right time.
-Tried to get away from demo targetetting and geo targeting
+Tried to get away from demo targeting and geo targeting
 Instead they allowed them to define the clusters.
 Attracting the right people.
 Ads in search engines?
@@ -303,7 +305,7 @@ Brand vs merchant loyalty.
 Ability to tgrack users at multiple points and channels.
 Put together a model.
 
-### Business and consumer makets
+### Business and consumer markets
 Consumers are better educated and better informed than? ever, and they have the tools to verify? companies' claims and seek out superior alternatives.?
 Customer-perceived value is the difference between the prospective? customer's evaluation of all the benefits and all the costs of an offering and the perceived alternatives.? Customer-perceived value is not something that can be tracked this way.
 

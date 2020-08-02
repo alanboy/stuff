@@ -7,3 +7,6 @@
 [submodule "vim/vim-gitgutter"]
 	path = vim/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "vim\\vim-pathogen"]
+	path = vim\\vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git

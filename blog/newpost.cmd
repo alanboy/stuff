@@ -10,7 +10,7 @@ if /i [%postTitle:~-9%]==[.markdown] (
 For /f "tokens=2-4 delims=/ " %%a in ('date /t') do (set mydate=%%c-%%a-%%b)
 For /f "tokens=1-2 delims=/: " %%a in ('time /t') do (set mytime=%%a:%%b:00)
 
-set filename=%mydate%-%1.markdown
+set filename=_posts/%mydate%-%1.markdown
 
 IF EXIST "%filename%" (
     echo File already exists: %filename%

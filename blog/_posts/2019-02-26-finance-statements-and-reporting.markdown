@@ -4,6 +4,7 @@ title: "Financial statements and reporting"
 date: 2019-02-26 06:16:00 -0800
 categories: business
 published: true
+tags: mba
 description:
 ---
 
@@ -57,9 +58,9 @@ Prior years, same quarter
 
 Financial analysts, market research, specialized in industries, the provide analysts forecasts.
 
-Market expectation in media usually means the mean (analyst concensus) /median of all available forecasts.
+Market expectation in media usually means the mean (analyst consensus) /median of all available forecasts.
 
-Many companies report their own forecasts. The company has more information. Management forescasts means that the companies voluntarily (voluntary disclosure).
+Many companies report their own forecasts. The company has more information. Management forecasts means that the companies voluntarily (voluntary disclosure).
 
 Some papers report that outsider analysts are better at forecasting than management forecasts.
 
@@ -74,14 +75,14 @@ Gross profit for Costco is around 10%.
 
 It is intentional that Costco to have low gross profit.
 
-Current ratio = current assests/current liability.
+Current ratio = current assets/current liability.
 
 current means that 1 year of business cycle.
 
-The value of a company is comming from operations (finance activities does not add value to the company). Companies cannot add value from financial activities, just from operating activities.
+The value of a company is coming from operations (finance activities does not add value to the company). Companies cannot add value from financial activities, just from operating activities.
 
 ## How stock price is determined
-Value of a co or stock price is decided by disconuted sum all future expected dividents.
+Value of a co or stock price is decided by discounted sum all future expected dividends.
 
 Operating cash flow.
 
@@ -139,7 +140,7 @@ Economic resources that require sacrifice of ...  benefit.
 Revenue recognition => when we can report in the income statement.
 Reporting revenues in the income statement.
 
-We can do that Realized (cash is collected) or relizable AND earned (product delivered)
+We can do that Realized (cash is collected) or realizable AND earned (product delivered)
 
 Account receivable. Is an asset, right to collect cash in the future.
 
@@ -216,14 +217,14 @@ Cost flows might not be the same as actual flow.
 Assumptions of inventory can be LIFO, FIFO, average.
 
 
-    Begining balance + Purchases - CGS = Ending balance
+    Beginning balance + Purchases - CGS = Ending balance
 
-For Merrimack case 8. We need to change the begining balance assumption from LIFO to FIFO.
+For Merrimack case 8. We need to change the beginning balance assumption from LIFO to FIFO.
 
 LIFO reserve, companies need to report the LIFO reserve.
 
-    Begining balance in LIFO = 13.5M
-    Begining balance in FIFO = 13.5M + 5.5M = 19M
+    Beginning balance in LIFO = 13.5M
+    Beginning balance in FIFO = 13.5M + 5.5M = 19M
 
 
 - Inflation: Prices go up. You want to buy right away because prices will go up.
@@ -234,10 +235,11 @@ Program Cost Accounting
 EDGAR: https://www.sec.gov/edgar/searchedgar/companysearch.html
 
 ## Revenue recognition principle
-* Goods and services have been transfered to customers.
-* The appropiate amount of revenue to record is the amount the seller expects to recieve.
+* Goods and services have been transferred to customers.
+* The appropriate amount of revenue to record is the amount the seller expects to receive.
 
 ## Allowance method
+
 ## Inventory cost assumptions (FIFO, LIFO)
 * Merchandisers
 * Manufacturers

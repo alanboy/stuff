@@ -7,12 +7,32 @@ published: true
 description:
 ---
 
-git merge --squash users/alango/authz
+## configuration
 
-http://fabiensanglard.net/git_code_review/diff.php
+Asking user and password every time:
+Make sure you are using ssh instead of HTTP protocol. See which one you are using with 
+```
+git config -l
+```
 
-https://pre-commit.com/
+And if you need to update it, do it like this:
+```
+git config remote.origin.url git@github.com:alanboy/project.git
+```
+## submodules
 
+Git submodules
+```
+git submodule update --init --recursive
+```
+
+## reset
+
+Git reset will move the HEAD and/or the branch pointer.
+
+```
+git reset --soft HEAD~5
+```
 Reset local repository branch to be just like remote repository HEAD
 
 ```
@@ -20,7 +40,12 @@ git fetch origin
 git reset --hard origin/master
 ```
 
-Git submodules
-```
-git submodule update --init --recursive
-```
+Note: `HEAD~` means HEAD minus 1 commits, `HEAD~3` means HEAD minus 3 commits.
+
+git merge --squash users/alango/authz
+
+## References
+
+http://fabiensanglard.net/git_code_review/diff.php
+https://github.com/HerCerM/ManualDefinitivoGit/blob/master/Parte2_Profundizando.md
+https://pre-commit.com/

@@ -7,13 +7,50 @@ published: true
 description:
 ---
 
+# Keyboards
 
-## Topre keyboards
+## RealForce
+https://www.realforce.co.jp/en/products/104UB-S_XF11T0/index.html
+https://www.realforce.co.jp/en/products/R2A-US4G-BK/index.html
 
-- Happy Hacking Keyboard 
+https://www.realforce.co.jp/en/products/realforce_rgb/index.html
+REALFORCE RGB / R2A-US4G-BK
+https://www.realforce.co.jp/en/products/R2A-US4G-BK/index.html
+
+REALFORCE 104UB-S
+https://www.realforce.co.jp/en/products/104UB-S_XF11T0/index.html
+
+## Happy Hacking Keyboard 
 
 
-## Cherry keyboards
+## Buying keyboards
+- [mechanicalkeyboards.com](https://mechanicalkeyboards.com/)
+- [WASD Keyboards](https://www.wasdkeyboards.com/) 
+
+## Code keyboard (from CodingHorror)
+
+- https://blog.codinghorror.com/the-code-keyboard/
+
+
+## Ducky One
+
+https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=3537
+
+https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=3537
+https://www.duckychannel.com.tw/en/Ducky-One2-RGB-TKL
+https://www.duckychannel.com.tw/en/Support/Detail/82https://www.reddit.com/r/MechanicalKeyboards/comments/buclhs/ducky_one_2_sf/
+https://www.reddit.com/r/DuckyKeyboard/comments/eeb5t9/ducky_one_2_sf_questions_before_buying/
+
+## Creating custom keyboard
+https://www.youtube.com/watch?v=IKe_hrvYH1M
+
+# Key Switches
+
+https://www.mwave.com.au/blog/2016/11/8/mechanical-keyboard-switches-gaming-vs-typing
+
+## Topre
+
+## Cherry Keys
 
 |          | Actuation     |       |
 |----------|:-------------:|------:|
@@ -22,43 +59,47 @@ description:
 | no bump | red (45g) | black (60g) |
 
 
+https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=6175
+https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=3537
+https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=3619
+
+Cherry MX White
+Cherry MX Brown
+
 (*I like green)
 
-# Design your own keys here!
+
+Ripster Keyboard Science: MrInterface Switch Bag
+https://imgur.com/a/FPcpj
+
+
+https://imgur.com/a/r1BNN
+
+# Key caps
+
+## Design your own keys here!
 - http://www.wasdkeyboards.com/index.php/products/keycap-set/87-key-cherry-mx-keycap-set.html
 - https://support.wasdkeyboards.com/hc/en-us/articles/115009403848-Intro-to-Custom-Layouts
 
-## Buying keyboards
-- [mechanicalkeyboards.com](https://mechanicalkeyboards.com/)
-- [WASD Keyboards](https://www.wasdkeyboards.com/) 
-
-## Keyboard from CodingHorror
-
-- https://blog.codinghorror.com/the-code-keyboard/
-
-
-## Ducky
-https://www.duckychannel.com.tw/en/Ducky-One2-RGB-TKL
-https://www.duckychannel.com.tw/en/Support/Detail/82https://www.reddit.com/r/MechanicalKeyboards/comments/buclhs/ducky_one_2_sf/
-https://www.reddit.com/r/DuckyKeyboard/comments/eeb5t9/ducky_one_2_sf_questions_before_buying/
-
-## Creating custom keyboard
-https://www.youtube.com/watch?v=IKe_hrvYH1M
-
 ## More links
-https://www.youtube.com/watch?v=W0FSvTYlggw
-https://www.youtube.com/watch?v=fKpsohmQMwE
-https://www.duckychannel.com.tw/en/Ducky-One2-SF
-https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=5461
+ - https://www.youtube.com/watch?v=W0FSvTYlggw
+ - https://www.youtube.com/watch?v=fKpsohmQMwE
+ - https://www.duckychannel.com.tw/en/Ducky-One2-SF
+ - https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=5461
 
 meh.
 https://drop.com/buy/drop-ctrl-mechanical-keyboard
 
-
 backlit keycaps:
 https://mechanicalkeyboards.com/shop/index.php?l=product_list&c=335
 
-Thanks to:
+
+## Guides and blog posts
+https://www.penaddict.com/blog/2020/3/11/a-brief-introduction-to-mechanical-keyboard-switches
+
+
+## Thanks to:
 
 - Daniel
 - Joe
+- Joseph

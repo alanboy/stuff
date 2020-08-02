@@ -1,0 +1,14 @@
+---
+layout: post
+title: "tmux"
+date: 2020-05-09 12:17:00 -0800
+categories: tmux
+published: false
+description:
+---
+
+## Resize Panes
+Hold Ctrl-B plus arrows to resize a pane.
+```
+Ctrl-B + <arrow keys>
+```
