@@ -3,7 +3,6 @@ layout: post
 title: "ai"
 date: 2019-06-30 08:16:00 -0800
 categories: ai
-published: false
 ---
 
 the general problem solver

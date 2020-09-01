@@ -89,7 +89,7 @@ Ok, let's actually build some generated code using our new slim code generator.
 
 ```
 java -classpath swagger-codegen-cli.jar;output\slim\target\slim-swagger-codegen-1.0.0.jar  ^
-   io.swagger.codegen.v3.Codegen ^
+   io.swagger.codegen.v3.cli.SwaggerCodegen ^
    generate ^
   -i petstore.yaml ^
   -l slim ^
@@ -188,7 +188,7 @@ call mvn -Dmaven.test.skip=true --file output\slim\pom.xml package
 
 rem Generate code
 java -classpath swagger-codegen-cli.jar;output\slim\target\slim-swagger-codegen-1.0.0.jar  ^
-   io.swagger.codegen.v3.Codegen ^
+   io.swagger.codegen.v3.cli.SwaggerCodegen ^
    generate ^
   -i petstore.yaml ^
   -l slim ^
@@ -243,7 +243,7 @@ We are writing a code gen for swagger 3, there is already support for slim in v2
 this did not work out of the box, so i want to know what are the variables that i have at my disposal, i can do this by adding `-DdebugOperations` to my `generate` command in `run.cmd`:
 
     java -DdebugOperations -classpath swagger-codegen-cli.jar;output\slim\target\slim-swagger-codegen-1.0.0.jar  ^
-       io.swagger.codegen.v3.Codegen ^
+       io.swagger.codegen.v3.cli.SwaggerCodegen ^
        generate ^
       -i petstore.yaml ^
       -l slim ^

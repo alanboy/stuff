@@ -27,12 +27,18 @@ $('.ui.search')
     ]
   }) ;
 
-$( document ).ready(function() {
+$(document).ready(function() {
     $("body").keypress(function(key){
         if (key.originalEvent.code === 'Slash') {
             $(".search input").focus();
-            $(".search input").val("");
         }
+    });
+
+    $(".search input").keyup(() => {
+      let val = $(".search input").val();
+      if (val == '/') {
+        $(".search input").val('');
+      }
     });
 });
 </script>

@@ -24,6 +24,19 @@ https://fireship.io/lessons/sharing-data-between-angular-components-four-methods
 https://stackoverflow.com/questions/37587732/how-to-call-another-components-function-in-angular2
 https://angular.io/guide/architecture-components
 
+# Deployment with Apache
+
+```
+# If an existing asset or directory is requested go to it as it is
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+RewriteRule ^ - [L]
+
+# If the requested resource doesn't exist, use index.html
+RewriteRule ^ /index.html
+```
+https://angular.io/guide/deployment
+https://www.stefanoscerra.it/apache-rewrite-rules-configuration-for-angular/
 
 # React
 http://buildwithreact.com/tutorial/jsx
