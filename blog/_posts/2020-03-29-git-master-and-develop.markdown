@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "git-master-and-develop"
+title: "Branching strategies"
 date: 2020-03-29 06:08:00 -0800
-categories: git-master-and-develop
+categories: software
 published: true
-description:
+description: "Branching strategies have a significant impact on your development process. Different strategies optimize for different projects and team sizes."
 ---
 
 <div class="mermaid">

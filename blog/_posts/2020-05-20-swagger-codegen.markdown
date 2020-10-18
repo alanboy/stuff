@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "swagger-codegen"
+title: "Custom swagger-codegen generators"
 date: 2020-05-20 11:39:00 -0800
-categories: swagger-codegen
+categories: software
 published: true
-description:
+description: "Swagger Codegen can simplify your build process by generating server stubs and client SDKs for any API, defined with the OpenAPI (formerly known as Swagger)."
 ---
 
 # Swagger 3

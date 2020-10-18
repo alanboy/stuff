@@ -2,9 +2,9 @@
 layout: post
 title: "Azure DevOps"
 date: 2020-03-09 10:22:00 -0800
-categories: azuredevops
+categories: software
 published: true
-description:
+description: "The Azure DevOps has a very rich REST API that allows you to integrate your business practices with it."
 ---
 
 1. Create a new PAT

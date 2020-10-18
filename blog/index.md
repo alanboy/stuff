@@ -2,6 +2,7 @@
 layout: home
 ---
 
-# alanboy.net
+# Alan Gonzalez
 
-I write about software development and business. These are my reference notes as well as some thoughts.
+I write about software engineering and business.
+

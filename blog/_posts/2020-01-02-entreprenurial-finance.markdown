@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Entreprenurial finance"
+title: "Entrepreneurial finance"
 date: 2020-01-02 03:19:00 -0800
-categories: entreprenurial business
+categories: business entrepreneurship
 published: false
 description:
 ---

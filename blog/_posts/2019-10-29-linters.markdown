@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "linters"
+title: "Linting source code"
 date: 2019-10-29 11:51:00 -0800
 categories: software
 published: false

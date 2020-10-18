@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Javascript testing"
+title: "Javascript Testing"
 date: 2020-02-12 03:08:00 -0800
-categories: web testing software engineering
+categories: software engineering testing
 published: true
-description:
+description: ""
 ---
 
 From personal experience, tests are the best way to prevent software defects. I've been on many teams in the past where a small piece of code is updated and the developer manually opens their browser or Postman to verify that it still works. This approach (manual QA)

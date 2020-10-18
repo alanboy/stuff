@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "jdb"
+title: "The Java Debugger - jdb"
 date: 2020-07-13 11:20:00 -0800
 categories: jdb
-published: false
-description:
+published: true
+description: The Java Debugger, jdb, is a simple command-line debugger for Java classes. 
 ---
 
 # Java Debugging with JDB

@@ -4,7 +4,7 @@ title: "Statistics"
 date: 2019-10-25 11:25:00 -0800
 categories: engineering business
 published: true
-tags: mba
+tags: business
 description:
 ---
 

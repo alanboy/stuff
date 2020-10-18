@@ -2,7 +2,7 @@
 layout: post
 title: "Leadership, team process and decision making"
 date: 2019-01-26 01:31:00 -0800
-categories: reference business leadership
+categories: business leadership
 published: true
 description:
 ---
