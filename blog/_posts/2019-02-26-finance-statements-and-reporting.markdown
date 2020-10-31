@@ -21,6 +21,18 @@ Business activities:
 - Investing (purchase resources)
 - Operating (day to day activities)
 
+## Fixed costs and variable costs
+
+### Fixed cost
+
+### Variable costs
+
+
+* **Gross Profit** Total revenue minus the cost of making product/providing service
+* **Net Profit** Gross Profit minus sales, administrative and general expenses (SG&A)
+
+
+
 ## The four basic financial statements
 - Balance sheet:
 - Income statement
