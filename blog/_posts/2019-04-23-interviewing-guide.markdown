@@ -65,3 +65,9 @@ https://www.interviewbit.com/courses/programming/topics/arrays/
 
 <div style="display:none" >
 </div>
+
+## Topics
+
+https://en.wikipedia.org/wiki/Modular_exponentiation
+Kadane sub-array problem.
+https://en.wikipedia.org/wiki/Maximum_subarray_problem

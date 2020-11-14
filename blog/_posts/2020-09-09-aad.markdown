@@ -1,0 +1,21 @@
+---
+layout: post
+title: "aad"
+date: 2020-09-09 08:56:00 -0800
+categories: aad
+published: false
+description:
+---
+
+## Getting a token
+
+Request Type: POST
+Request URL: https://login.microsoftonline.com/{{TenantID}}/oauth2/v2.0/token
+Body Type: x-www-form-urlencoded
+Body Key/Value Pairs:
+grant_type = client_credentials
+client_id = {{ClientID}}
+client_secret = {{ClientSecret}}
+scope = https://graph.microsoft.com/.default
+
+

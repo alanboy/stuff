@@ -34,7 +34,39 @@ Money tends to flow to where opportunity is.
 
 10 slides, 20 minutes, 30pt font.
 
+# Legal structure
+## Sole propiertoship
+Simple tax structure, personal tax returns 
+legal extension of YOU! your personal risks 
+
+## Partnerships
+Identical to sole propiertoship in terms of legal liabilities.
+
+## Corporations
+Limit personal liabilities. Corporations bear the legal responsabilities not the owners.
+
+C-Corporations, flexible for investors.
+
+Double taxation.
+
+Some have create "Pass-throught corporations" 
+S corporations and LLCs (US) 
+
+Passes to owners and share-holders.
+
+## Articles of corporations
+
+We are story tellers
+Storytelling is what connects us to our humanity. It is what links us to our past, and provides a glimpse into our future. Since humans first walked the earth, they have told stories, before even the written word or oral language. Through cave drawings and over fires, humans have told stories as a way to shape our existence. Things happen to us -- the elements of a story -- but as humans, we have unique perspectives, which shape how a story is relayed. Storytellers learned early on that people like to hear stories with a beginning, a middle, and an end. We seem to be drawn to stories that have characters that look like us -- or at least share characteristics we can relate to. We also desire to be drawn into the storytelling, and enjoy when a story builds up to a thrilling climax, followed by a satisfying conclusion. We want to use our imaginations, and sometimes don't, and prefer to passively have a story told to us. Many of us enjoy being moved by a story, either emotionally, or viscerally, like in a good action film. [1]
+
 # Public speaking
+## Providing a promise upfront
+https://youtu.be/Unzc731iCUY?t=2326
+
+## Ispiration can come from people who are passionate about what they are talking.
+
+## How to think
+
 
 ## How to start
 * Joke? Not recommended.
@@ -211,7 +243,6 @@ slogan:
 corporation
 llc
 
-================================================
 
 -Patents
 -Copyrights
@@ -228,3 +259,5 @@ llc
 * https://www.youtube.com/watch?v=Xcsp0486olY&ab_channel=MITOpenCourseWare
 * https://www.youtube.com/watch?v=u4ZoJKF_VuA&feature=emb_logo&ab_channel=TEDxTalks
 * https://www.facebook.com/media/set/?vanity=FosterMSEntre&set=a.303165770174669
+
+[1] https://www.quora.com/Why-is-storytelling-important-What-would-you-say-to-inspire-provoke-or-dissuade-young-storytellers
