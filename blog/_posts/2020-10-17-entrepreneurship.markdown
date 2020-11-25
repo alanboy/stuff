@@ -12,7 +12,7 @@ description:
 2 types of entrepreneurship
 
 IDE. Innovation Driven Entrepreneurship
-SME. Small 
+SME. Small
 
 # Business plan
 
@@ -51,7 +51,7 @@ People are predictably irrational.
 
 # Sales
 
-If you are speaking, you are selling. 
+If you are speaking, you are selling.
 
 Good salespeople solve customers' problems.
 
@@ -61,7 +61,7 @@ Solution vs a Product.
 
 Genuine desire to help people.
 
-Pushy over-agressive... sales is a noble profession. 
+Pushy over-agressive... sales is a noble profession.
 
 * Rejection
 * Failure
@@ -89,9 +89,9 @@ Mindset self-evaluation:
 
 The mind of the buyer:
 
-Think about the position of the buyer, by positioning yourelf when you are the one in the buyers seat. People buy from people they trust, they trust people they like, and thye like people they connect with. 
+Think about the position of the buyer, by positioning yourelf when you are the one in the buyers seat. People buy from people they trust, they trust people they like, and thye like people they connect with.
 
-Don't launch too early into the "pitch" presentation; you by-pass the customers trust process, it send the brain into a mode of skepticism and judgement. 
+Don't launch too early into the "pitch" presentation; you by-pass the customers trust process, it send the brain into a mode of skepticism and judgement.
 
 * Safety
 * Connection
@@ -134,7 +134,7 @@ Buying motivators:
 * Price
 * Value (benefit vs price)
 * Quality
-* Self-preservation. Highly emotional. 
+* Self-preservation. Highly emotional.
 * Social pressure
 
 ### The barriers to change
@@ -164,6 +164,62 @@ How
 * Variable cost
 
 ## Funding
+
+# Raw notes
+
+teach the panel something new about the
+product or market.
+
+something that the rest of the panel does not know.
+
+walk the user over the experience...
+
+you are the expert at whatever you are doing in your company.
+
+you need to have a hook. in the first 15-20 seconds of
+what you are saying.
+- start with a question
+- start wiht a statistic
+the more creative you can get with you won product, the better.\
+don't take it too far... make sure there is a connection between that
+and the product...
+tie it back in the final to your hook... in that final question of
+why should someone else
+
+
+the ones that were really interesteing, INTERESTING problem.... as well
+as interesteing solution!!!!! they articulate interesting solutins, but
+not interesting problem.
+
+traction. very early idea stage... walk ttrough the user experience.
+
+Easy mistakes:
+-areticulate what problem are you solving, and the solution.
+-people have more traction than they think they have; not showing the user experience. Show it!!!
+-showing that the solution is achievable.
+-end: if i took a picture in the final second, it should be a picture of you smiling holding your product. dont make it to complex... to hard to memorize.
+-not high energy!!!!
+
+
+slogan:
+- catchy
+- memorable
+- delivering with confidence.
+
+
+
+corporation
+llc
+
+================================================
+
+-Patents
+-Copyrights
+-Trademakrs
+-Trade secrets
+
+
+
 
 ### References
 * https://www.reddit.com/r/startups/comments/jgikzo/how_i_failed_6_sideprojects_in_10_months/

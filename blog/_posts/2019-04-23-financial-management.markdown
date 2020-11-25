@@ -20,11 +20,11 @@ Sock fund
 Bond fund
 
 ### Systematic risk
-Cannot be diversifie. Economy, inflation, interest rates, etc..
+Cannot be diversify. Economy, inflation, interest rates, etc..
 
-### Un systematic risk (non systmatic)
-RYou can diversify. Risk factors affect a limite number of assets.
-Inlucdes labor strikes, part shortages.
+### Un systematic risk (non systematic)
+RYou can diversify. Risk factors affect a limited number of assets.
+Includes labor strikes, part shortages.
 
 Total risk
  * systematic
@@ -45,7 +45,7 @@ Microsoft has a huge treasury department.
 
 ## Single factor pricing model
 
-Expected return on a security (extrememly important)
+Expected return on a security (extremely important)
 
 Forecasting the return on the stick
 
@@ -265,19 +265,19 @@ Discount BEFI cashflow discount rate discount for 5 years....
 
 discount rate == WAC ????
 
-Green Thumb Insustries
-* 100+ years of entreprenurial expertise
+Green Thumb Industries
+* 100+ years of entrepreneurial expertise
 * Commitment to safety and quality
 * 11 manufacturing facilities
 * 71 retail locations
 
 Jeff Bezos worked in wall street.
 
-Junk bond, also known as a high yeield or speculative bond. Is a d debt security issued by companies or governments.
+Junk bond, also known as a high yield or speculative bond. Is a d debt security issued by companies or governments.
 
 Pros:
 
-Earning before interest, Taxes, Deprciation and amortization.
+Earning before interest, Taxes, Depreciation and amortization.
 
 Net Income
 + Interest expense

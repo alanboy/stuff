@@ -2,7 +2,8 @@
 layout: post
 title: "New Product Management"
 date: 2020-01-05 12:40:00 -0800
-categories: business marketing innovation
+tags: business marketing innovation
+categories: business
 published: true
 description:
 ---
@@ -13,6 +14,57 @@ The strategic elements of product development, Opportunity identification and se
 
 # New Product Management
 
+## 
+Outputs vs Outcomes
+
+Outome: 
+Chagne in hum beh that creates customer and business value
+
+
+Most good ideas failed to deliver real value due to uncertainty
+will the buy it?
+can they use it?
+
+
+if features dont measure progress
+
+## Features
+* dont intidate value
+
+
+
+## Business impact
+* indicate value
+* lagging indicator
+* outside our span of control
+
+
+## changes in behaviour
+* leading indicator
+* indicate value
+* within our span of control
+
+## CHEC-K Framework
+1) Map out business impact
+    What is the high level impact you are trying to achieve? Ex. Increase revenue
+    Who are the actors whose behaviours will change? Ex. Busy professionals, Shoppers, Suppliers
+    What behaviours can we encourage 
+    What can we do with our product to create these changes thourhg behaviours
+
+2) Frame your future hypothesis
+3) Test your hypothesis
+4) Empower your team
+
+
+Features -> Change in behaviours
+Feature -> Hypothesis
+Ship -> Experiment
+Single -> Collective
+
+Unknown -> Known
+
+![](/assets/images/2020-01-05-new-products.markdown/2020-11-05-13-22-44.png)
+
 ## The strategic Elements of Product development
 
 Between the phases, there is always go/no-go decision. These decisions are called gates, the gates can be:
@@ -20,6 +72,8 @@ Between the phases, there is always go/no-go decision. These decisions are calle
 * Hollow gates: The Go decision is made but **no financial support** is provided.
 
 Third-generation process: A **flexible interpretation** of the basic process, which allows **overlapping** phases and fuzzy gates. This flexibility is important in the development of new to the world products.
+
+
 
 <div class="mermaid">
 graph TB

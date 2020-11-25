@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "How this blog works"
+description: 
 date:   2019-01-20 23:45:29 -0800
-categories: azure
+categories: engineering
 tags: azure
 published: true
 ---

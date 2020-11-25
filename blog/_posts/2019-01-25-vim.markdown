@@ -2,7 +2,7 @@
 layout: post
 title: "Vim"
 date: 2019-01-25 12:21:00 -0800
-categories: vim
+categories: engineering
 published: true
 description:
 ---

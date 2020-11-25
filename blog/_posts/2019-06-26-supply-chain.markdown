@@ -1,11 +1,20 @@
 ---
 layout: post
-title: "supply-chain"
+title: "Supply Chain"
 date: 2019-06-26 12:44:00 -0800
-categories: supply-chain
+categories: business 
+published: false
 ---
-https://www.youtube.com/watch?v=8kOA8nCGif0
-https://www.ibm.com/analytics/supply-chain-planning?cm_mmc=Search_Google-_-Hybrid+Cloud_Business+Analytics-_-WW_NA-_-supply%20chain%20management%20software_e&cm_mmca1=000000OE&cm_mmca2=10009554&cm_mmca7=9052182&cm_mmca8=kwd-90512174&cm_mmca9=_k_Cj0KCQjwjMfoBRDDARIsAMUjNZpzeNVIVCtR3g6m3qhnHw_h1kOqqfysT-fcNNJ9sp3BRvg3invi3AcaAj3JEALw_wcB_k_&cm_mmca10=338706961866&cm_mmca11=e&gclid=Cj0KCQjwjMfoBRDDARIsAMUjNZpzeNVIVCtR3g6m3qhnHw_h1kOqqfysT-fcNNJ9sp3BRvg3invi3AcaAj3JEALw_wcB
-https://blog.procurify.com/2014/12/17/brief-history-modern-supply-chain-management-supply-chain-management-best-practices/
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2sVq0QlT-74" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jYnsNHDXiaI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Resources
+* https://www.youtube.com/watch?v=OQDhTtDgir0
+* https://www.youtube.com/watch?v=8kOA8nCGif0
+* https://blog.procurify.com/2014/12/17/brief-history-modern-supply-chain-management-supply-chain-management-best-practices/
 
 

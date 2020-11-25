@@ -2,7 +2,7 @@
 layout: post
 title: "Influence - Robert B. Cialdini"
 date: 2019-06-10 08:46:00 -0800
-categories: business marketing
+categories: book
 published: false
 description:
 ---

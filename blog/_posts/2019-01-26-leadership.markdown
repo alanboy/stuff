@@ -1,11 +1,15 @@
 ---
 layout: post
-title: "Leadership, team process and decision making"
+title: "What is a leader?"
 date: 2019-01-26 01:31:00 -0800
-categories: business leadership
+categories: leadership
 published: true
 description:
 ---
+
+I got a very important question today. What is a leader?
+
+![](/assets/images/2019-01-26-leadership.markdown/2020-11-24-16-59-47.png)
 
 # Leadership, team process and decision making
 

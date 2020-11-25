@@ -4,12 +4,12 @@ title: "Marketing management"
 date: 2019-04-21 11:56:00 -0800
 categories: business marketing
 published: true
-description: Marketing is the process by which individuals and groups obtain what the need and want through creatind and exchanging products and value with others.
+description: Marketing is the process by which individuals and groups obtain what the need and want through creating and exchanging products and value with others.
 ---
 
-## What is marketing?
+# What is marketing?
 
-Marketing is the process by which individuals and groups obtain what the need and want through creatind and exchanging products and value with others.
+Marketing is the process by which individuals and groups obtain what the need and want through creating and exchanging products and value with others.
 
 Marketing: Sustained delivery of customer satisfaction.
 
@@ -31,11 +31,21 @@ Marketing: Sustained delivery of customer satisfaction.
 
     "We don't want to satisfy our customers, we want to delight them." -Jeff Bezos
 
-    "Any business with delighted customers has a sales force they won't have to pay; You don't see them, but they are talking to poeple all the time" -Warren Buffet, 2016
+    "Any business with delighted customers has a sales force they won't have to pay; You don't see them, but they are talking to people all the time" -Warren Buffet, 2016
 
     "Creating shareholder wealth is not the purpose of the business. IT is the reward for creating customer value" -Michael Tracey & Fred Wiersema, FEO magazine
 
-## The marketing framework
+## FOUR ACTIONS FRAMEWORK
+Used to reconstruct buyer value elements in crafting a new value curve or strategic profile
+
+ * Raise
+ * Create
+ * Eliminate
+ * Reduce
+
+More on this: https://www.blueoceanstrategy.com/tools/four-actions-framework/
+
+# The marketing framework
 * Situation analysis
   * Customers
   * Competitors
@@ -54,8 +64,8 @@ Marketing: Sustained delivery of customer satisfaction.
   * Promotions
 
 Delight the customer.
-inmarket testing: slow, expensive.
-Marketing miopia
+in-market testing: slow, expensive.
+Marketing myopia
 
 What is our product? What do we supply?
 What is our market? (demand) Who do we sell our products to ?
@@ -70,12 +80,12 @@ Marketing Jobs:
 
 ### Demand analysis
 
-### Suply programs
+### Supply programs
 * Product line decision
-* Distribution decissions
+* Distribution decisions
 * Marketing mix
-* Price decissions
-* Communications decissions
+* Price decisions
+* Communications decisions
 
 ### Performance metric model
 
@@ -114,10 +124,10 @@ Marketing Jobs:
 [Art and Science of Management](https://www.referenceforbusiness.com/management/A-Bud/The-Art-and-Science-of-Management.html)
 
 
-Read more about Boston Consultin Group
+Read more about Boston Consulting Group
 
-
-![BCG matrix](http://www.netmba.com/images/strategy/matrix/bcg/growthshare.gif "BCG matrix")
+![](/assets/images/2019-04-21-marketing-management.markdown/2020-11-25-12-35-23.png "BCG matrix")
+Source: http://www.netmba.com/images/strategy/matrix/bcg/growthshare.gif
 
 Structured way to think creatively
 
@@ -126,13 +136,13 @@ Structured way to think creatively
 
 |                | Current Product | New product |
 | :------------: |:---------------:| :----------:|
-|  Current Market| Increase market share, Increase product usage, frequency of use, quantity, new applications |  Preoduct improvements, product line extenions, new prod for same market |
+|  Current Market| Increase market share, Increase product usage, frequency of use, quantity, new applications |  Product improvements, product line extenions, new prod for same market |
 |  New Market    | Expand market for existing prods. Geographic expansion. Target new segments | Vertical integration |
 
 * Market potentiation strategies
 * Product development strategies
 * Market development strategies
-* Diversitifaction strategies
+* Diversification strategies
 
 HHI = Market concentration
 
@@ -146,7 +156,7 @@ Amazon workspaces/Smartsheet/Coca-cola freestyle.
 
 {instert story about coca-cola freestyle}
 
-Phylosophy of innovation:
+Philosophy of innovation:
 * Who they hire
 * How the organize (no big teams)
 * Use AWS
@@ -166,12 +176,12 @@ Notes:
 * Start with the customer and work backwards
 * Focus on solutions, not features
 * Design meaningful differentiation
-* Be opinionantes and adaptable
+* Be opinionated and adaptable
 * Validate with **REAL** customers before you build
 * Ownership == Execution (single threaded ownership)
 
 
-### Dominos Pizza 
+### Domino's Pizza 
 
 great delivery company.
 
@@ -324,32 +334,32 @@ Unilever
 
 Glocal.. global and local combine.
 
-Balancing standarization with customization, while it can be tempting to use the same (global) stategy everywhere, localizing has produced succesful results.
+Balancing standardization with customization, while it can be tempting to use the same (global) strategy everywhere, localizing has produced successful results.
 
 BOP = bottom of the pyramid = developing countries
 poorest section of the population. often less than $2,000 us dollars per year.
 
-BOP pays high prices for daily necesities. contributing to the cyclical nature of their poverty.
+BOP pays high prices for daily necessities. contributing to the cyclical nature of their poverty.
 
 Unilever is re-targetting to BOP. They hire locals to assist in developing products, services and distribution, and othe infrastructure and improve economic conditions and the lives of the consumers.
 
 Firm can play a substantial role in addressing global poverty.
 
-Unilever pioneered serving the locals by providng to the local sensitivities.
+Unilever pioneered serving the locals by providing to the local sensitivities.
 
 Hindustan Lever (Unilevers Indian subsidiary) leader in
 
 
-## Segmentation, Targetting & Positioning
+## Segmentation, Targeting & Positioning
 
 Define these:
 A.  targeting
 B.  branding
-C.  positioning. Positioning is the act of designing a companyâs offering and image to occupy a distinctive place in the minds of the target market.
+C.  positioning. Positioning is the act of designing a companies offering and image to occupy a distinctive place in the minds of the target market.
 D.  segmentation
 E.  differentiation
 
-The value creation and delivery sequence consists of three phases. In the first phase, choosing the value, marketers segment the market, select the appropriate target, and develop the offeringâs value positioning.
+The value creation and delivery sequence consists of three phases. In the first phase, choosing the value, marketers segment the market, select the appropriate target, and develop the offerings value positioning.
 
 Perceptual maps are visual representations of consumer perceptions and preferences. By overlaying consumer preferences with brand perceptions, marketers can reveal "holes" or "openings" that suggest unmet consumer needs and marketing opportunities.
 
@@ -366,20 +376,18 @@ Book: [The Sneetches by Dr. Seuss](https://www.amazon.com/dp/B00ESF28YY/ref=dp-k
 
 Average JoeLinea: Traditionally we characterized the market by the needs of this mythical creature. Who or What is this? Does this beast exist?
 
-===
-
 I created a product for the average person, but the average person does not exist. (Average JoeLina.)
 
 By creating
 
-Need a more useful messsage.
+Need a more useful message.
 
-We are not all satisficed by the same things.
+We are not all satisfied by the same things.
 
 Diving a market into groups of potential buyers who have similar:
  * needs an wants
  * value perceptions
- * purchasing baheaviors
+ * purchasing behaviors
 
 ### Segments:
 
@@ -390,11 +398,11 @@ Charles curtis parlor (parlen prize, given by the ... , equivalent of the nobel 
 https://en.wikipedia.org/wiki/Curtis_Publishing_Company
 http://trashtidbits.blogspot.com/2008/03/campbell-soup-garbage.html
 
-"More than 125 years have passed since advertising pioneer N.W. Ayer conducted the first organized marketing research project in 1879. A second important milestone is the development of marketing research occurred 32 years later, when Charles C. Parlin organized the nation's first commercial research department at Curtis Publishing Co., publisher of The Saturday Evening Post.
+    "More than 125 years have passed since advertising pioneer N.W. Ayer conducted the first organized marketing research project in 1879. A second important milestone is the development of marketing research occurred 32 years later, when Charles C. Parlin organized the nation's first commercial research department at Curtis Publishing Co., publisher of The Saturday Evening Post.
 
-Parlin got his start as a marketing researcher by counting soup cans in Philadelphia's garbage. Here is what happened. Parlin, an ad salesman, was trying to convince the Campbell Soup Co. to advertise in The Saturday Evening Post. Campbell Soup resisted, believing that the Post reached primarily working-class readers, who preferred to make their own soup. Campbell Soup marketers were targeting higher income people who could afford to pay for the convenience of soup in a can. To prove Campbell wrong, Parlin began counting soup cans in the garbage collected from different neighborhoods. His research revealed that working-class families bought more canned soup than wealthy households, who had servants to cook for them. Campbell Soup soon became a regular Saturday Evening Post client. It is interesting to note that garbage remains a good source of information for marketing researchers even today. Prior to recent cutbacks in food service, some airlines studied the leftovers from on board meals to determine what to serve passengers."
+    Parlin got his start as a marketing researcher by counting soup cans in Philadelphia's garbage. Here is what happened. Parlin, an ad salesman, was trying to convince the Campbell Soup Co. to advertise in The Saturday Evening Post. Campbell Soup resisted, believing that the Post reached primarily working-class readers, who preferred to make their own soup. Campbell Soup marketers were targeting higher income people who could afford to pay for the convenience of soup in a can. To prove Campbell wrong, Parlin began counting soup cans in the garbage collected from different neighborhoods. His research revealed that working-class families bought more canned soup than wealthy households, who had servants to cook for them. Campbell Soup soon became a regular Saturday Evening Post client. It is interesting to note that garbage remains a good source of information for marketing researchers even today. Prior to recent cutbacks in food service, some airlines studied the leftovers from on board meals to determine what to serve passengers."
 
-For 60 years, campbells was a loyal ... customer after
+For 60 years, Campbell's was a loyal ... customer after
 
 (Source: Boone & Kurtz. Contemporary Marketing, 2006.)
 Saturday evening post. (THE magazine of the US)
@@ -553,7 +561,7 @@ Profitability Loyalty
 Customers -> Cash flows
 
 Customers are assets
-Not renewing subscriptin = churn
+Not renewing subscription = churn
 
 {insert Profit per customer from notebook}
 
@@ -794,11 +802,12 @@ Right brain:
 
 Focus on strategic issues. Focus on market. Competitive ennvironment.
 
-## Final words
+# Final words
+
 Reality of the new flux.
 
-"If we wait for all the waves to subside before we enter the ocean for a batn, then we will never be able to enter the ocean at all, brave the waves and enter the ocean"
-Ancent tamil proverb
+    "If we wait for all the waves to subside before we enter the ocean for a batn, then we will never be able to enter the ocean at all, brave the waves and enter the ocean"
+    Ancent tamil proverb
 
 - CEO&F
 
@@ -809,7 +818,7 @@ CEO&F === Friends and Family
 - Blend: CEO And 2Fs
 - Great FOE
 
-HAve a fascinatinr journey: don't be agraid to make mistakes, just make sure you learn from them.
+Have a fascinating journey: don't be afraid to make mistakes, just make sure you learn from them.
 
 Brand Development Index: https://en.wikipedia.org/wiki/Brand_development_index
 Category Development Index: 
@@ -823,7 +832,6 @@ For co-branding to succeed, the two brands separately must have brand equity (ad
 
 To organize:
 
-Summary:
 
 Segmentation
 Marketing framework !!!!
