@@ -45,6 +45,9 @@ Note: `HEAD~` means HEAD minus 1 commits, `HEAD~3` means HEAD minus 3 commits.
 
 git merge --squash users/alango/authz
 
+## Internals
+https://yurichev.com/news/20201220_git/
+
 ## References
 
 http://fabiensanglard.net/git_code_review/diff.php
