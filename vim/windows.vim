@@ -22,5 +22,5 @@ silent! iunmap <C-F>
 set runtimepath^=$VIMRUNTIME\..\bundle\vim-gitgutter
 
 " Start pathogen
-execute pathogen#infect()
-let g:mustache_abbreviations=1
+"execute pathogen#infect()
+"let g:mustache_abbreviations=1
