@@ -21,7 +21,8 @@
 
 
         { "command": "newTab", "keys": [ "ctrl+t" ] },
-        { "command": "closeTab", "keys": [ "ctrl+w" ] },
+        // This interfeers with my VIM workflow  (moving around tabs)
+        //{ "command": "closeTab", "keys": [ "ctrl+w" ] },
         { "command": "nextTab", "keys": [ "ctrl+tab" ] },
         { "command": "prevTab", "keys": [ "ctrl+shift+tab" ] },
 
@@ -77,7 +78,7 @@
         },
         {
             "name": "cmd",
-            "acrylicOpacity": 0.5,
+            "acrylicOpacity": 0.9,
             "backgroundImageOpacity": 0.55,
             "closeOnExit": true,
             "colorScheme": "Borland",
