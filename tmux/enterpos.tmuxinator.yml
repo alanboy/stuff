@@ -8,9 +8,6 @@ windows:
   - editor: vim /opt/pos-erp/
   - git: git status
   - logs: multitail --mergeall  /var/log/apache2/error.log /var/log/mx.caffeina.pos/access.log  /var/log/mysql/error.log
-  - tests:
-        layout: main-verticalp
-        panes:
-            - cd /opt/pos-erp/tests/phpunit
-            - logs: multitail --mergeall /var/log/apache2/error.log /var/log/mx.caffeina.pos/access.log  /var/log/apache2/access.log /var/log/mysql/error.log
-  - jekyll: /opt/pos-erp/build/rebuild-jekyll.sh
+  - tests: cd /opt/pos-erp/backend/tests/phpunit && echo phpunit ./
+  - jekyll: echo /opt/pos-erp/build/rebuild-jekyll.sh
+  - vsf: cd /opt/vue-storefront/ && echo sudo docker-compose up
