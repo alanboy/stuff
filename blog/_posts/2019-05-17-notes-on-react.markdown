@@ -113,7 +113,7 @@ A library for creating user interfaces. Renders UI in response to events.
 
 Building components, not templates.
 
-eparation of concerns:
+Separation of concerns:
 Reduce couple, increase cohesion.
 
 Templates encourage a poor separation of concerns.

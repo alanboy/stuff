@@ -7,7 +7,7 @@ published: true
 description:
 ---
 
-I got a very important question today. What is a leader?
+What is a leader?
 
 ![](/assets/images/2019-01-26-leadership.markdown/2020-11-24-16-59-47.png)
 

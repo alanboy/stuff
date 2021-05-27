@@ -7,7 +7,7 @@ published: false
 description:
 ---
 
-The principlles - consistency, reciprocation, social proof, authority, liking, and scarcity.
+The principles - consistency, reciprocation, social proof, authority, liking, and scarcity.
 
 ## Weapons of influence
 
