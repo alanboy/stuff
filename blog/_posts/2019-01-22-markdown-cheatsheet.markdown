@@ -15,3 +15,7 @@ description:
 
 ## mermaid
 https://mermaid-js.github.io/mermaid/#/flowchart
+
+```
+![](image.png#=927x712)
+```

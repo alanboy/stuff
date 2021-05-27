@@ -9,6 +9,11 @@ description: "Swagger Codegen can simplify your build process by generating serv
 
 # Swagger 3
 
+## Introduction
+
+* https://handlebarsjs.com/
+* http://mustache.github.io/mustache.5.html
+
 ## Creating a custom code generator for Slim
 
 Download current stable 3.x.x branch (OpenAPI version 3)
@@ -590,3 +595,24 @@ net.enterpos.swagger.SlimGenerator
 net.enterpos.swagger.SimpleGenerator
 net.enterpos.swagger.TypeScriptAngularClientCodegen
 ```
+
+## Handlebars helpers
+
+Override `addHandlebarHelpers` if you want to add custom handlebar helpers which extende the logic that you can run.
+
+```java
+    @Override
+    public void addHandlebarHelpers(Handlebars handlebars) {
+        handlebars.registerHelper(IsHelper.NAME, new IsHelper());
+        handlebars.registerHelper(HasHelper.NAME, new HasHelper());
+        handlebars.registerHelper(IsNotHelper.NAME, new IsNotHelper());
+        handlebars.registerHelper(HasNotHelper.NAME, new HasNotHelper());
+        handlebars.registerHelper(BracesHelper.NAME, new BracesHelper());
+        handlebars.registerHelper(BaseItemsHelper.NAME, new BaseItemsHelper());
+        handlebars.registerHelper(NotEmptyHelper.NAME, new NotEmptyHelper());
+        handlebars.registerHelpers(new StringUtilHelper());
+    }
+```
+
+# Reference
+* https://support.smartbear.com/swaggerhub/docs/enterprise/config/codegen-templates.html

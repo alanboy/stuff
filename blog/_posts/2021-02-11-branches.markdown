@@ -1,0 +1,14 @@
+---
+layout: post
+title: "branches"
+date: 2021-02-11 02:28:00 -0800
+categories: branches
+published: false
+description:
+---
+
+https://docs.microsoft.com/en-us/azure/devops/repos/tfvc/branch-strategically?view=azure-devops
+
+
+Real world usage of :
+https://docs.vuestorefront.io/v1/guide/basics/release-cycle.html#_3-release-phase

@@ -1,0 +1,30 @@
+---
+layout: post
+title: "ssl"
+date: 2021-01-28 07:40:00 -0800
+categories: ssl
+published: false
+description:
+---
+## Whas is SSL/TLS?
+
+## SSL Handshake
+
+•	https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-5.0
+•	https://docs.microsoft.com/en-us/windows/win32/secauthn/cipher-suites-in-schannel?redirectedfrom=MSDN
+•	https://forums.iis.net/t/1240563.aspx?How+to+upgrade+the+cipher+suite+to+a+Windows+Server+2012+R2+Standard
+•	https://global-root-g2.chain-demos.digicert.com/info/index.html
+•	https://noxxi.de/howto/ssl-debugging.html
+•	https://port135.com/the-missing-server-hello-in-tls-handshake-err_ssl_protocol_error/
+•	https://social.technet.microsoft.com/Forums/en-US/44f02720-ec1d-4ddd-a985-b1d1f23488ea/needed-2-ciphers-in-windows-7?forum=winserversecurity
+•	https://social.technet.microsoft.com/Forums/windows/en-US/d1a10844-18fb-4400-b649-60183c5f58c6/how-to-add-cipher-suite-to-windows-7-tlsrsawithaes128gcmsha256?forum=w7itprosecurity
+•	https://stackoverflow.com/questions/21767003/ssl-handshake-fails-after-clienthello
+•	https://stackoverflow.com/questions/30491716/how-to-specify-ssl-protocol-to-use-for-webclient-class
+•	https://stackoverflow.com/questions/43285736/how-to-install-a-cipher-suite-on-windows-server-2012
+•	https://stackoverflow.com/questions/48731089/tls-ecdhe-rsa-with-aes-256-gcm-sha384-in-windows-server-2012-r2
+•	https://stackoverflow.com/questions/51151879/enable-tls-1-2-for-specific-ciphers
+•	https://techcommunity.microsoft.com/t5/iis-support-blog/troubleshooting-tls-ssl-communication-problems-when-making-http/ba-p/481296
+•	https://www.digicert.com/kb/digicert-root-certificates.htm
+•	https://www.howtogeek.com/221080/how-to-update-your-windows-server-cipher-suite-for-better-security/
+•	https://www.ssllabs.com/ssltest/analyze.html?d=api.supplychain.microsoft.com&s=13.107.246.13
+•	https://www.ssllabs.com/ssltest/analyze.html?d=microsoftsupplychainprod.azure-api.net
