@@ -7,6 +7,15 @@ published: true
 description:
 ---
 
+https://en.wikipedia.org/wiki/Full_Range_Leadership_Model
+
+Leadership is not about changing the world.
+
+https://www.ted.com/talks/drew_dudley_everyday_leadership?language=en
+
+Everything ddealing with leadership, starts with context.
+
+
 What is a leader?
 
 ![](/assets/images/2019-01-26-leadership.markdown/2020-11-24-16-59-47.png)

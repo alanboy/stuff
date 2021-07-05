@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "ORM"
+description: 
+date:   2012-09-30 08:17:53 -0800
+categories: engineering
+tags: orm
+published: false
+---
+
+Automatic ORM generation from a MySQL database file. Lets say we have the following database: 
+
+```sql  
+CREATE TABLE IF NOT EXISTS `Message` (  
+ `message_id` int(11) NOT NULL AUTO_INCREMENT,  
+ `read` tinyint(1) NOT NULL DEFAULT '0',  
+ `sender_id` int(11) NOT NULL,  
+ `recipient_id` int(11) NOT NULL,  
+ `message` tinytext NOT NULL,  
+ `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,  
+ PRIMARY KEY (`message_id`), 
+  KEY `sender_id` (`sender_id`,`recipient_id`), 
+  KEY `fk_m_recipient_id` (`recipient_id`) 
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=’Sistema de mensajería dentro del sitio.’ AUTO_INCREMENT=1 ;
+```
+
+<div>After that we get a set of files:</div> <div></div> <div>now you have a class Messages.</div> <div></div> <div style="padding-left: 60px;">$m = new Message();</div> <div style="padding-left: 60px;">$m-&gt;setSenderId(44);</div> <div style="padding-left: 60px;">MessageDAO::save($m);</div> <div></div> <div>There are transactions:</div> <div></div> <div style="padding-left: 60px;">DAO::transStart();</div> <div style="padding-left: 60px;">$m = new Message();</div> <div style="padding-left: 60px;">$m-&gt;setSenderId(44);</div> <div style="padding-left: 60px;">MessageDAO::save($m);</div> <div style="padding-left: 60px;"></div> <div style="padding-left: 60px;">if($error)</div> <div style="padding-left: 60px;">{</div> <div style="padding-left: 60px;">DAO::transRollback();</div> <div style="padding-left: 60px;">}</div> <div style="padding-left: 60px;"></div> <div>Looking fot data:</div> <div>Bring by id:</div> <div>$message = MessageDAO::getByPK(23);</div> <div></div> <div>Search:</div> <div>$messagesForMe = new Message(  );</div> <div>$messagesForMe-&gt;setRecepientId(45);</div> <div>$messagesForMe-&gt;setRead(false);</div> <div></div> <div>$m_Inbox = MessagesDAO::search( $messagesForMe );</div> <div>foreach( $m_Inbox as $message )</div> <div>{</div> <div>print($message-&gt;getMessage());</div> <div>}</div> <div></div> <div>
+
+I find the above code easier to read/debug than 2 full lines of sql sentences.</div> <div></div> <div></div> <div style="padding-left: 60px;"></div> Download from here: <a title="orm download" href="http://labs2.caffeina.mx/public/apps/orm/orm-latest.zip">http://labs2.caffeina.mx/public/apps/orm/orm-latest.zip</a> Current version looks like this: [caption id="attachment_64" align="alignnone" width="653"]<a href="http://alanboy.net/blog/wp-content/uploads/2012/09/foo.png"><img class="size-full wp-image-64" alt="ORM software version 194" src="http://alanboy.net/blog/wp-content/uploads/2012/09/foo.png" width="653" height="586" /></a> ORM software version 194[/caption] <strong>Archivo de entrada:</strong> Insert your sql script looking for a file in disk, or just pasting the code in there. <strong>Archivo de salida:</strong> You must specify a directory where all of the files will be generated to. <strong>Generar como:</strong> All of the files will be documented and you can choose what to put in the @author tag via the <em>Autor </em>text field Choose the language you will be wanting your code to be, in this version supported languajes are PHP and Javascript. Hit <strong>Generar.</strong> First lets examine the PHP output: We will get a structure like this: dao |- base &nbsp; &nbsp; &nbsp;

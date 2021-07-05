@@ -27,11 +27,12 @@ Business activities:
 
 ### Variable costs
 
-
 * **Gross Profit** Total revenue minus the cost of making product/providing service
 * **Net Profit** Gross Profit minus sales, administrative and general expenses (SG&A)
 
-
+### Depreciation vs Amortization
+* Depreciation: Decline value of a long-term asset. In Tangigle assets.
+* Amortization: Decline value of a long-term asset. In Intangible assets.
 
 ## The four basic financial statements
 - Balance sheet:
@@ -62,7 +63,6 @@ TTM trailing
 ## The disclosure process
 
 SEC regulation FD, for "fair disclosure" requires that companies ..
-
 
 Good news = earnings per share.
 

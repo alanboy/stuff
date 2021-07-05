@@ -2,9 +2,9 @@
 layout: post
 title: "Making of a manager notes"
 date: 2021-05-13 01:58:00 -0800
-categories: making-of-a-manager
+categories: Leadership
 published: true
-description:
+description: If I asked you, 'What is the job of a soccer player?' would you say that it's to attend practices, pass the ball to their teammates, and attempt to score goals? No, of course not. You'd tell me why those activities matter in the first place. You'd say, 'The job of a soccer player is to win games.
 ---
 
 The following paragraphs are excerpts from [Julie Zhuo's "The Making of a Manager: What to Do When Everyone Looks to You"](https://www.amazon.com/dp/B079WNPRL2/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1).
@@ -23,15 +23,14 @@ The management aspect has nothing to do with employment status and everything to
 Andy Grove, founder and CEO of Intel and a legendary manager of his time, wrote that when it comes to evaluations, one should look at 'the output of the work unit and not simply the activity involved. Obviously, you measure a salesman by the orders he gets (output), not by the calls he makes (activity).
 
 The best employees don't tend to stick around for years and years under a boss who treats them poorly or whom they don't respect.
-
-**'My framework is quite simple.' Half of what he looked at was my team's results'did we achieve our aspirations in creating valuable, easy-to-use, and well-crafted design work? The other half was based on the strength and satisfaction of my team'did I do a good job hiring and developing individuals, and was my team happy and working well together? The first criterion looks at our team's present outcomes; the second criterion asks whether we're set up for great outcomes in the future.** (Chris Cox, Facebook's chief product officer oh how he evaluates a manager)
+**'My framework is quite simple.' Half of what he looked at was my team's results. Did we achieve our aspirations in creating valuable, easy-to-use, and well-crafted design work? The other half was based on the strength and satisfaction of my team. Did I do a good job hiring and developing individuals, and was my team happy and working well together? The first criterion looks at our team's present outcomes; the second criterion asks whether we're set up for great outcomes in the future.** (Chris Cox, Facebook's chief product officer oh how he evaluates a manager)
 
 Hackman's research describes five conditions that increase a team's odds of success:
 
 * having a real team (one with clear boundaries and stable membership),
 * a compelling direction,
 * an enabling structure,
-*  a supportive organizational context,
+* a supportive organizational context,
 * and expert coaching.
 
 My own observations are similar, and I've come to think of the multitude of tasks that fill up a manager's day as sorting neatly into three buckets: purpose, people, and process.

@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Fast Inverse Square Root"
+description: 
+date: 2013-12-15 08:26:37 -0800
+categories: engineering
+tags: 
+published: false
+---
+
+http://en.wikipedia.org/wiki/Fast_inverse_square_root &nbsp; <a href="http://en.wikipedia.org/wiki/File:OpenArena-Rocket.jpg"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/53/OpenArena-Rocket.jpg/300px-OpenArena-Rocket.jpg" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/53/OpenArena-Rocket.jpg/450px-OpenArena-Rocket.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/53/OpenArena-Rocket.jpg/600px-OpenArena-Rocket.jpg 2x" width="300" height="240" /></a> &nbsp; &nbsp; &nbsp; &nbsp; <div> <div>Random IRC chat led to the creation of this monster - a funny looking int-to-bin function in C/C++:</div> <div></div> <div><a href="https://plus.google.com/106947410088462854210" rel="nofollow">Gynvael Coldwind</a> <div></div> <div>Yesterday 11:48 PM <div><button id="gbpwm_3" title="Click to +1 this comment">1</button></div> </div> </div> <div>Reply <div tabindex="0" role="button"></div> </div> </div> <div> <div></div> <div>Actually it can be made even simpler, so that "c" variable is used only once.void to_bin(unsigned char c, char * out) { * (unsigned long long * )out = 3472328296227680304ULL + (((c * 9241421688590303745ULL) / 128) &amp; 72340172838076673ULL); }</div> </div> &nbsp;

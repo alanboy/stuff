@@ -7,6 +7,13 @@ published: false
 description:
 ---
 
+The values that form the basis for authentic leaderhip are derived from your beliefs and convictions, but you will not know what your true values are until they are tested under pressure.[1]
+
+Leadership principles are values translated into action. Having a solid base of values and testing them under fire enables you to develop the principles you will use in leading. For example, a value such as "concern for others" might be translated into a leadership principle such as "create a work environment where people are respected for their contributionbs, provied job security, and allowed to fulfill their potential".
+
+## Building Your Support Team
+Leaders cannot succeed on their own; Withou strong relationships to provide perspective, it is very easy to lose your way.  It starts with habing at least one person in you r life with whom you can be completely yourself, warts and all, and still be accepted unconditionally.
+
 ## Kindness
 Everything you do, do it with kindness. If you say yes, do it with kindness, when you say no, do it with kindness.
 
@@ -51,6 +58,8 @@ I don't know what it's like to be you and you don't know what it's like to be me
 
 We cannot choose to have a privilege, we can choose to share it. 
 
+Remove obstacles & provide resources.
+
 ## Other
 
 - Be someone that is prepared.
@@ -60,3 +69,5 @@ We cannot choose to have a privilege, we can choose to share it.
 * Ask and write documentation before answering?
 
 https://www.mckinsey.com/featured-insights/diversity-and-inclusion/diversity-wins-how-inclusion-matters#
+
+[1] Discovering your authentic leaderhip. Bill George, Peter Sims, Andrew N. McLean, Diana Mayer.
