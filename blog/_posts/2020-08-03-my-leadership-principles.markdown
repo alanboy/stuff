@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "my-leadership-principles"
+title: "My leadership principles"
 date: 2020-08-03 10:24:00 -0800
-categories: my-leadership-principles
+categories: leadership
 published: false
 description:
 ---
@@ -17,13 +17,15 @@ Leaders cannot succeed on their own; Withou strong relationships to provide pers
 ## Kindness
 Everything you do, do it with kindness. If you say yes, do it with kindness, when you say no, do it with kindness.
 
-I can be very pushy and demanding. Especially with my own managers.
 
 Embrace discomfort.
 
 ## Managing up
 Always considering what my manager cares for. Do I work for a bigger cause, or do I work for him/her?
 
+I can be very pushy and demanding. Especially with my own managers.
+
+The idea: **Treat your managers as your customers.**
 
 ## Considerations
 It's been difficult for me to stop considering alternatives and something definitive
