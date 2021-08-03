@@ -73,3 +73,7 @@ Remove obstacles & provide resources.
 https://www.mckinsey.com/featured-insights/diversity-and-inclusion/diversity-wins-how-inclusion-matters#
 
 [1] Discovering your authentic leaderhip. Bill George, Peter Sims, Andrew N. McLean, Diana Mayer.
+
+https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect
+https://twitter.com/shl/status/1394651350667907073?s=09
+

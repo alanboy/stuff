@@ -183,7 +183,7 @@ The answer lies in the northeast-southeast problem, and in the role that the hun
 
 For an organization to accomplish a task as complex as launching a new product, logic, energy, and impetus must all coalesce behind the effort. Hence, it is not just the customers of an established firm that hold it captive to their needs. Established firms are also captive to the financial structure and organizational culture inherent in the value network in which they compete'a captivity that can block any rationale for timely investment in the next wave of disruptive technology.
 
-    Sound managerial decisions are at the very root of their impending fall from industry leadership.
+> Sound managerial decisions are at the very root of their impending fall from industry leadership.
 
 ## MANAGING DISRUPTIVE TECHNOLOGICAL CHANGE
 
@@ -282,7 +282,7 @@ Most marketers, for example, have been schooled extensively, at universities and
 
 The Disk/Trend staff used the same methods to generate the forecasts for sustaining architectures as they did for disruptive ones: interviewing leading customers and industry experts, trend analysis, economic modeling, and so on. The techniques that worked so extraordinarily well when applied to sustaining technologies, however, clearly failed badly when applied to markets or applications that did not yet exist.
 
-HONDA'S INVASION OF THE NORTH AMERICAN MOTORCYCLE INDUSTRY
+### HONDA'S INVASION OF THE NORTH AMERICAN MOTORCYCLE INDUSTRY
 Note:Omg
 
 Honda's success in attacking and dominating the North American and European motorcycle markets has been cited as a superb example of clear strategic thinking coupled with aggressive and coherent execution.
@@ -318,7 +318,7 @@ The purpose of this chapter is to describe the theory that lies behind the empir
 
 ## AN ORGANIZATIONAL CAPABILITIES FRAMEWORK
 
-    Three classes of factors affect what an organization can and cannot do: its resources, its processes, and its values.
+> Three classes of factors affect what an organization can and cannot do: its resources, its processes, and its values.
 
 Resources include people, equipment, technology, product designs, brands, information, cash, and relationships with suppliers, distributors, and customers. Resources are usually things, or assets'they can be hired and fired, bought and sold, depreciated or enhanced.
 Organizations create value as employees transform inputs of resources' people, equipment, technology, product designs, brands, information, energy, and cash'into products and services of greater worth. The patterns of interaction, coordination, communication, and decision-making through which they accomplish these transformations are processes. 3 Processes include not just manufacturing processes, but those by which product development, procurement, market research, budgeting, planning, employee development and compensation, and resource allocation are accomplished.
