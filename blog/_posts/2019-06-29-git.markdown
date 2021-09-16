@@ -61,6 +61,24 @@ Note: `HEAD~` means HEAD minus 1 commits, `HEAD~3` means HEAD minus 3 commits.
 
 git merge --squash users/alango/authz
 
+## Github and credentials
+
+Install `gh`:
+```
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+sudo apt update
+sudo apt install gh
+```
+Then you can login using a PAT:
+```
+gh auth login
+```
+
+
+https://github.com/cli/cli/blob/trunk/docs/install_linux.md
+https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git
+
 ## Internals
 https://yurichev.com/news/20201220_git/
 
