@@ -1,0 +1,231 @@
+---
+layout: post
+title: "Adafruit Macropad"
+date: 2021-09-09 07:01:00 -0800
+categories: none
+published: false
+description:
+---
+
+## Blinking LED
+```
+# SPDX-FileCopyrightText: 2021 Kattni Rembor for Adafruit Industries
+#
+# SPDX-License-Identifier: Unlicense
+"""
+MacroPad tone demo. Plays a different tone for each key pressed and lights up each key a different
+color while the key is pressed.
+"""
+from rainbowio import colorwheel
+from adafruit_macropad import MacroPad
+
+macropad = MacroPad()
+
+#tones = [196, 220, 246, 262, 294, 330, 349, 392, 440, 494, 523, 587]
+tones = [196, 220, 246, 262, 294, 330, 349, 392, 440, 494, 523, 587]
+
+while True:
+    key_event = macropad.keys.events.get()
+    if key_event:
+        if key_event.pressed:
+            macropad.pixels[key_event.key_number] = colorwheel( int(255 / 12) * key_event.key_number)
+            macropad.start_tone(tones[key_event.key_number])
+
+        else:
+            macropad.pixels.fill((0, 0, 0))
+            macropad.stop_tone()
+```
+
+## Digital input
+```
+"""CircuitPython Digital Input example for MacroPad"""
+import board
+import digitalio
+
+led = digitalio.DigitalInOut(board.LED)
+led.direction = digitalio.Direction.OUTPUT
+
+button = digitalio.DigitalInOut(board.BUTTON)
+button.switch_to_input(pull=digitalio.Pull.UP)
+
+while True:
+    if not button.value:
+        led.value = True
+    else:
+        led.value = False
+```
+
+
+##
+```
+"""CircuitPython Digital Input example for MacroPad"""
+import board
+import digitalio
+
+led = digitalio.DigitalInOut(board.LED)
+led.direction = digitalio.Direction.OUTPUT
+
+button = digitalio.DigitalInOut(board.BUTTON)
+button.switch_to_input(pull=digitalio.Pull.UP)
+
+while True:
+    if not button.value:
+        led.value = True
+    else:
+        led.value = False
+```
+
+## Keypad and rotary encoder example for Adafruit MacroPad
+
+```
+
+"""Keypad and rotary encoder example for Adafruit MacroPad"""
+import board
+import digitalio
+import rotaryio
+import neopixel
+import keypad
+from rainbowio import colorwheel
+
+
+key_pins = (board.KEY1, board.KEY2, board.KEY3, board.KEY4, board.KEY5, board.KEY6,
+            board.KEY7, board.KEY8, board.KEY9, board.KEY10, board.KEY11, board.KEY12)
+keys = keypad.Keys(key_pins, value_when_pressed=False, pull=True)
+
+encoder = rotaryio.IncrementalEncoder(board.ROTA, board.ROTB)
+button = digitalio.DigitalInOut(board.BUTTON)
+button.switch_to_input(pull=digitalio.Pull.UP)
+
+pixels = neopixel.NeoPixel(board.NEOPIXEL, 12, brightness=0.2)
+
+last_position = None
+while True:
+    if not button.value:
+        pixels.brightness = 1.0
+    else:
+        pixels.brightness = 0.2
+
+    position = encoder.position
+    if last_position is None or position != last_position:
+        print("Rotary:", position)
+    last_position = position
+
+    color_value = (position * 2) % 255
+
+    event = keys.events.get()
+    if event:
+        print(event)
+        if event.pressed:
+            pixels[event.key_number] = colorwheel(color_value)
+        else:
+            pixels[event.key_number] = 0
+
+```
+
+## Simpletest demo for MacroPad
+```
+# SPDX-FileCopyrightText: Copyright (c) 2021 Kattni Rembor for Adafruit Industries
+#
+# SPDX-License-Identifier: Unlicense
+"""
+Simpletest demo for MacroPad. Displays the key pressed, the relative position of the rotary
+encoder, and the state of the rotary encoder switch to the built-in display. Note that the key
+pressed line does not appear until a key is pressed.
+"""
+from adafruit_macropad import MacroPad
+
+macropad = MacroPad()
+
+text_lines = macropad.display_text(title="MacroPad Info")
+
+while True:
+    key_event = macropad.keys.events.get()
+    if key_event and key_event.pressed:
+        text_lines[0].text = "Key {} pressed!".format(key_event.key_number)
+    text_lines[1].text = "Rotary encoder {}".format(macropad.encoder)
+    text_lines[2].text = "Encoder switch: {}".format(macropad.encoder_switch)
+    text_lines.show()
+```
+
+## Read a file
+```
+# SPDX-FileCopyrightText: Copyright (c) 2021 Kattni Rembor for Adafruit Industries
+#
+# SPDX-License-Identifier: Unlicense
+"""
+Simpletest demo for MacroPad. Displays the key pressed, the relative position of the rotary
+encoder, and the state of the rotary encoder switch to the built-in display. Note that the key
+pressed line does not appear until a key is pressed.
+"""
+from adafruit_macropad import MacroPad
+import digitalio
+
+macropad = MacroPad()
+list_of_lists = []
+
+with open('data.txt') as f:
+    for line in f:
+        inner_list = [elt.strip() for elt in line.split(',')]
+        # in alternative, if you need to use the file content as numbers
+        # inner_list = [int(elt.strip()) for elt in line.split(',')]
+        list_of_lists.append(line)
+
+text_lines = macropad.display_text(title="helo")
+
+while True:
+    key_event = macropad.keys.events.get()
+    if key_event and key_event.pressed:
+        text_lines[0].text = "Key {} pressed!".format(key_event.key_number)
+    text_lines[1].text = "Rotary encoder {}".format(macropad.encoder)
+    
+    #text_lines[2].text = "Encoder switch: {}".format(macropad.encoder_switch)
+    text_lines[2].text = list_of_lists[macropad.encoder]
+    
+    text_lines.show()
+
+```
+
+
+```
+
+from adafruit_macropad import MacroPad
+import digitalio
+
+macropad = MacroPad()
+import json
+
+f = open("data.json")
+content = f.read()
+parsedJson = json.loads(content)
+
+print(parsedJson)
+
+list_of_lists = []
+with open('data.txt') as f:
+    for line in f:
+        list_of_lists.append(line)
+
+text_lines = macropad.display_text(title="hello world")
+macropad.pixels.brightness = 0.1
+
+
+while True:
+    #macropad.pixels.fill((0, 255, 0))
+    key_event = macropad.keys.events.get()
+    
+    if macropad.encoder_switch:
+        macropad.play_file("examples_macropad_mp3_beats.mp3")
+        
+    if key_event and key_event.pressed:
+        text_lines[0].text = "Key {} pressed!".format(key_event.key_number)
+        macropad.pixels[key_event.key_number] = (0, 255, 0)
+
+    #text_lines[1].text = "Rotary encoder {}".format(macropad.encoder)
+    text_lines[1].text = parsedJson[macropad.encoder]["name"]
+
+    #text_lines[2].text = "Encoder switch: {}".format(macropad.encoder_switch)
+    #text_lines[2].text = list_of_lists[macropad.encoder]
+
+    text_lines.show()
+
+```

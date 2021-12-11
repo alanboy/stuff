@@ -5,7 +5,9 @@ date: 2020-08-03 10:24:00 -0800
 categories: leadership
 published: false
 description:
+published: true
 ---
+# My personal leadership principles
 
 The values that form the basis for authentic leaderhip are derived from your beliefs and convictions, but you will not know what your true values are until they are tested under pressure.[1]
 
@@ -15,7 +17,6 @@ Leadership principles are values translated into action. Having a solid base of 
 Leaders cannot succeed on their own; Withou strong relationships to provide perspective, it is very easy to lose your way.  It starts with habing at least one person in you r life with whom you can be completely yourself, warts and all, and still be accepted unconditionally.
 
 ## Kindness
-Everything you do, do it with kindness. If you say yes, do it with kindness, when you say no, do it with kindness.
 
 
 Embrace discomfort.
@@ -26,9 +27,18 @@ Always considering what my manager cares for. Do I work for a bigger cause, or d
 I can be very pushy and demanding. Especially with my own managers.
 
 The idea: **Treat your managers as your customers.**
+> Everything you do, do it with kindness. If you say yes, do it with kindness, when you say no, do it with kindness.
 
-## Considerations
+I can be very pushy and demanding. Especially with my managers.
+
+## Managing up
+
+Always considering what my manager cares for. Do I work for a bigger cause, or do I work for him/her?
+
+## Flexibility
+
 It's been difficult for me to stop considering alternatives and something definitive
+
 It's been difficult for me to take it easy and be more flexible
 
 My habit of being "Stand-offish" has annoyed people
@@ -39,6 +49,7 @@ When I've debated with friends, I've tended to press my arguments forcefully.
 I have gotten into trouble with people by being too intrusive and interfering.
 
 ## Clarity and shared understanding
+
 * Navigating ambiguity.
 * Times of distress. When people want to help but its hard because there it hard to get organized. Exacerbated by the stress.
 
@@ -77,3 +88,9 @@ https://www.mckinsey.com/featured-insights/diversity-and-inclusion/diversity-win
 https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect
 https://twitter.com/shl/status/1394651350667907073?s=09
 
+## Reference
+
+* https://www.amazon.jobs/en/principles
+* https://neuroleadership.com/your-brain-at-work/microsoft-culture-change-simple-not-simplistic/
+* https://www.uwb.edu/business/faculty/denis-trapido/profile
+* https://www.amazon.com/dp/B07PF6XTD8/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
