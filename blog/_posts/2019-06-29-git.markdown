@@ -2,7 +2,6 @@
 layout: post
 title: "Git notes"
 date: 2019-06-29 12:57:00 -0800
-tags: engineering
 tags: git software engineering reference
 published: true
 description:

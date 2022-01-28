@@ -7,37 +7,96 @@ published: true
 description: Customer Development
 ---
 
-We are doing extensive customer development interviews. We have divided it into two big phases, first problem discovery and product validation.
+## Customer Development
+Customer development is divided into two phases: problem discovery and product validation. Problem discovery is about understanding the customer's perspective and problems, after you've understood the problem, then you create a prototipe (or MVP) and then proceed with the product validation.
 
-Riskiest assumption?
+You must begin with a set of hypothesis, the process of customer development will validate or invalidate these. But the most important part of validating or invalidating the hypothesis is that it has to come from the potential customers, not you. 
 
-These are the different stages of our interview:
-  * Problem discovery:
-  * Product validation
+During this process, you also want to identify your **riskiest assumption**. What is that one assumption that if it were to fail, nothing else matters?
+
+Now the challenge is that during the initial phase, problem discovery, is that you must NOT talk about you, your problem, or your solution! This is for a number of reasons.
+
+* People are polite, and they will lie to protect you.
+* The problem you imagine they have might not be an actual problem for them.
+
+Here are some videos to help drive this point:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/M03K48LwGQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/P3QzFjjRJwg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![](2022-01-28-00-08-42.png)
+There are a few tools out there. Rob Fitzpatrick wrote a book called [the mom test](This pet store example), which it defines like this:
 
-### Problem Discovery
+* Talk about their life instead of your idea.
+* As about specifics in the past instead of generics or opinions about the future.
+* Talk less and listen more.
 
+Successful teams have reported 100-200 interviews. The goal is to interview until you start hearing the same themes over and over. 
 
-###  Product Validation
+## Finding people
 
+Start by creating a spreasheet like this:
 
-## Finding customers
+![](2022-01-28-09-41-31.png)
 
-Resources to find customers:
+Then go and find potential customers. Ideally you have an idea of who you want to talk to, so start drafting the different types of personas. Nothing fancy, just a blurb of the different types of individuals you'll find, then try to find them by using some of these resourrces:
+
 * Pitchbook
 * https://www.dnb.com/
-* 
+* https://www.userinterviews.com/
+* https://www.meetup.com/
 
-https://www.userinterviews.com/
+Now, go and look at their LinkedIn profiles and see if you have anything in common that might be useful to start the conversation. 
 
+This is not the "used car sales person", you are helping your customers solve problems! Do some customer research. 
 
-## Questions
+Build a list of Tier 1 prospects and Tier 2 prospects - Tier 1 are perfect fit and tier 2 are basic fits, spend more time with Tier 1. 
+
+## Getting the meeting
+
+This content is comming from /r/Startups, it was a talk imparted by Joe Benjamin (https://twitter.com/JoeBenjamin_)
+
+### Cold emailing
+* Subject line 3 words or less
+* Don't talk about yourself of your startup
+* Personalize the first sentence for tier 1 prospects - do your research.
+* Balance quality with quantity.
+* Make the email about them, touch on one pain per email.
+* Create curiosity, lead with an insight, create an insecurity
+* **Follow up emails are key!**
+* Multiple emails over two to three weeks works well.
+* Soft call to actions perform better: "Interested in learning more?" versus "How is Thursday at 3pm?"
+
+The goal should always be to book a meeting.
+
+### Cold calling
+Cold calling works, but it can be time consuming. For certain customer segments it's critical to make cold calls. Call people who open your emails multiple times if you're not focusing on cold calls.
+
+### LinkedIn
+
+Become an experte or known for something you help with.
+Post a lot about that - 1x a day, 7 days a week.
+Build your network.
+Make your profile a landing page more than a resume - header image, tagline, featured section, CTA
+Spend 15 minutes per day and you'll see results - engage with popular people in your space
+Hardes part is consitency.
+
+### Network
+Don't be shy. Ask for introductions. There are people who will help. Join relevant communities (Discord, Slack, Twitter) and add value. You'll eventually get business from it.
+
+## Problem Discovery
+
+## Product validation
+
+Find out what type of persona this is, based on the different personas that we have constructed. Normally, we conduct product validation interviews after we've done customer discovery. So you should already have an idea of the problem they have. If not, you have to do your homework and make sure you know they have a certain problem that our demo will solve.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i092Ya03sKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sJfiHWUODtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xpBw1GFOrD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## The interview questions
 
 Taken from https://mfishbein.com/the-ultimate-list-of-customer-development-questions/
 

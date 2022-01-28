@@ -61,6 +61,13 @@ Luck is opporunity meating preparation.
 
 ## Personality and Identity
 
+## Dogmatic vs Pragmatic
+
+## ad-libbed
+
+## https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect
+
+![](2021-10-01-10-30-32.png)
 ## Privilege
 
 Understand my privilege. See how i feel about various social identity dimensions.

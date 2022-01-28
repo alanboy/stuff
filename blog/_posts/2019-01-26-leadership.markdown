@@ -7,6 +7,16 @@ published: true
 description:
 ---
 
+
+responsibility without authority
+authority without responsibility
+
+
+psycological experiment of written based comunication
+can i run such experiment? communicating over email vs phone?
+
+
+
 https://en.wikipedia.org/wiki/Full_Range_Leadership_Model
 
 Leadership is not about changing the world.
