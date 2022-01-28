@@ -92,7 +92,7 @@ if has("gui_running")
   set guioptions+=b
   set lines=45
   set guitablabel=%F
-  set guifont=Consolas:h13
+  set guifont=Menlo:h18
   "set guitablabel=%F\ %t
   " Change font with Ctrl Up/Down
 else
