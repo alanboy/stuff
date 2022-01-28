@@ -15,6 +15,12 @@ These are the different stages of our interview:
   * Problem discovery:
   * Product validation
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M03K48LwGQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/P3QzFjjRJwg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+![](2022-01-28-00-08-42.png)
+
 ### Problem Discovery
 
 
