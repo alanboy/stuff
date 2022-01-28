@@ -87,6 +87,24 @@ https://imgur.com/a/r1BNN
  - https://www.duckychannel.com.tw/en/Ducky-One2-SF
  - https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=5461
 
+
+Ducky One 2 Horizon TKL Double Shot PBT Mechanical Keyboard
+https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=3537
+
+
+Ducky One 2 SF RGB LED 65% Double Shot PBT Mechanical Keyboard
+https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=5461
+
+
+https://www.duckychannel.com.tw/en/Ducky-One2-Horizon-TKL
+One 2 Horizon TKL
+
+
+
+https://www.duckychannel.com.tw/en/Ducky-One2-SF
+One 2 SF
+
+
 meh.
 https://drop.com/buy/drop-ctrl-mechanical-keyboard
 
