@@ -2,39 +2,34 @@
 layout: post
 title: "Customer Development"
 date: 2022-01-27 20:59:00 -0800
-categories: business
+categories: Business
 published: true
-description: 
+description: Customer Development
 ---
 
 We are doing extensive customer development interviews. We have divided it into two big phases, first problem discovery and product validation.
 
+Riskiest assumption?
+
 These are the different stages of our interview:
   * Problem discovery:
-    * Customer Segmentation
-    * Problem discovery
-    * Problem validation
-    * Product discovery
   * Product validation
-    * Product validation
-    * Product Optimization
 
-===== Problem Discovery =====
-
-Examples:
-  * [[https://drive.google.com/file/d/1_CxxEGE_xxDS_WNQaRH1MEK0oTtGiWjb/view?usp=sharing|Hugo, Software Engineer]]
-
-===== Product Validation =====
-We've created a prototype and are currently testing, [[https://www.youtube.com/watch?v=ZYntBQmxp9s&ab_channel=AlanGonzalez|here is one of those interviews]], and we have [[MVP Interview|set of questions]] we ask. 
+### Problem Discovery
 
 
-Examples:
-  * [[https://drive.google.com/file/d/1SReYeYYAPb0gBsTyMsY6ATJ8qEdY-RQD/view?usp=sharing|Daniela Espino, Software Enginer]]
+###  Product Validation
 
 
 ## Finding customers
 
+Resources to find customers:
+* Pitchbook
+* https://www.dnb.com/
+* 
+
 https://www.userinterviews.com/
+
 
 ## Questions
 
