@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Docker useful commands"
+date: 2023-02-28 14:47:00 -0800
+categories: none
+published: true
+description: Some stuff I find useful when working with Docker containers
+---
+
+# Docker useful fommands
+
+Starting a shell inside the container:
+
+```
+docker exec -it b403b7b43afe /bin/bash
+```
+
