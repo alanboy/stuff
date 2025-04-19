@@ -1,7 +1,0 @@
-
-
-Delete all lines that match a search query:
-    :g/matchingstring/d
-
-
-
