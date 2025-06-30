@@ -7,11 +7,13 @@ published: true
 description: Some stuff I find useful when working with Docker containers
 ---
 
-# Docker useful fommands
+Docker is a platform that lets you package applications and their dependencies into lightweight, portable containers that can run consistently across different environments. Here are some of the commands that I routinely use.
 
 Starting a shell inside the container:
 
-```
 docker exec -it b403b7b43afe /bin/bash
-```
 
+List all containers.
+====================
+
+docker ps
