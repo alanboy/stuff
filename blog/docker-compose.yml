@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  jekyll:
+    build: .
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/app
+      # Exclude node_modules and vendor directories from volume mounting
+      - /app/node_modules
+      - /app/vendor
+    environment:
+      - JEKYLL_ENV=development
+    command: bundle exec jekyll serve --host 0.0.0.0 --livereload

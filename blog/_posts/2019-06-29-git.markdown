@@ -7,6 +7,9 @@ published: true
 description:
 ---
 
+Amazing presentation:
+https://docs.google.com/presentation/d/1IQCRPHEIX-qKo7QFxsD3V62yhyGA9_5YsYXFOiBpgkk/view#slide=id.g4d6b1121f4_2_60
+
 https://github.com/git/git/tree/e83c5163316f89bfbde7d9ab23ca2e25604af290?s=09
 
 "git" can mean anything, depending on your mood.
