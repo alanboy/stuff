@@ -55,3 +55,7 @@ Thank you so much for meeting with me! That was really helpful. I will ask a cou
   * How would you describe your overall experience?
   * Was there anything that was confusing?
   * Do you have any questions for me?
+
+{% comment %}
+This is a note or comment that will not appear in the generated site.
+{% endcomment %}
