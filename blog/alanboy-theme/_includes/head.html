@@ -42,21 +42,6 @@
   <!-- Marked - Markdown parser (still needed for preview) -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   
-  <!-- Isomorphic Git and dependencies -->
-  <script src="https://unpkg.com/@isomorphic-git/lightning-fs@4.4.1/dist/lightning-fs.min.js"></script>
-
-<script src="https://unpkg.com/@isomorphic-git/lightning-fs"></script>
-<script src="https://unpkg.com/isomorphic-git"></script>
-<script type="module">
-import http from 'https://unpkg.com/isomorphic-git/http/web/index.js'
-// Initialize isomorphic-git with a file system
-window.fs = new LightningFS('fs')
-// I prefer using the Promisified version honestly
-window.pfs = window.fs.promises
-</script>
-  
- 
-
 
   <style type="text/css">
   .ui.fixed.inverted.menu,
@@ -64,49 +49,9 @@ window.pfs = window.fs.promises
     background-color: #00022E
   }
   
-  /* Editor.js styling */
-  .codex-editor {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 10px;
-    margin-bottom: 20px;
+  .categories-in-post {
+    margin-bottom: 1em;
   }
-  
-  .codex-editor__redactor {
-    padding: 10px 0;
-  }
-  
-  .ce-block__content {
-    max-width: 100% !important;
-    margin: 0;
-  }
-  
-  .ce-toolbar__content {
-    max-width: 100% !important;
-  }
-  
-  .ce-toolbar__plus {
-    color: #2185d0;
-  }
-  
-  .ce-toolbar__settings-btn {
-    color: #2185d0;
-  }
-  
-  .cdx-block {
-    padding: 0.5em 0;
-  }
-  
-  .cdx-quote {
-    padding: 1em;
-    border-left: 3px solid #2185d0;
-    background: #f8f8f8;
-  }
-  
-  .cdx-list__item {
-    padding: 0.2em 0;
-  }
-  
   ui inverted header
   .content > a {
     color: #02066F !important;

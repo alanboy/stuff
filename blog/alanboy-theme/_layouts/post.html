@@ -1,16 +1,6 @@
 ---
 layout: default
 ---
-<!--
-<div class="ui grid">
-  <div class="four wide column">
-    <img class="ui medium rounded image" src="/assets/mboy.jpg">
-  </div>
-
-  <div class="twelve wide column">
-  </div>
-</div>
--->
 
 <article class="ui basic segment" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -19,11 +9,6 @@ layout: default
     <h2 class="ui header">
       <div class="content">
         {{ page.title | escape }}
-
-        <!-- Edit Button -->
-        <button class="ui primary button edit-button" id="editButton">
-          <i class="edit icon"></i> Edit
-        </button>
 
         <div class="sub header">
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -37,6 +22,12 @@ layout: default
               {{ mdate | date: date_format }}
             </time>
           {%- endif -%}
+by
+          <a class="ui image label">
+            <img src="https://www.gravatar.com/avatar/b79b43bda78ac6f6ef530bd81235dc01">
+            Alan
+          </a>
+
           {%- if page.author -%}
             • {% for author in page.author %}
               <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -48,10 +39,15 @@ layout: default
       </div>
     </h2>
 
-    <div class="ui basic segment">
+    <div class="categories-in-post">
       {%- for category in page.categories -%}
         <div class="ui label">{{ category }}</div>
       {%- endfor -%}
+
+      <!-- Edit Button -->
+      <button class="mini ui primary button edit-button" id="editButton">
+        <i class="edit icon"></i> Edit
+      </button>
     </div>
 
     <header class="post-header">
