@@ -238,14 +238,34 @@ $(document).ready(function() {
       return;
     }
     
+    // Show confirmation dialog
+    if (!confirm('Are you sure you want to save changes to GitHub?')) {
+      return;
+    }
+    
     // Get content from editor
     var content = $('#markdownContent').summernote('code');
     
-    // Convert HTML back to markdown if needed
     try {
-      // This is a placeholder - you would need a HTML-to-Markdown converter
-      // For now, we'll use the HTML content directly
-      var markdownContent = content;
+      updateEditorStatus('Converting HTML to Markdown...', 'info');
+      
+      // Convert HTML back to markdown
+      // Use turndown library for HTML to Markdown conversion
+      const turndownService = new TurndownService();
+      var markdownContent = turndownService.turndown(content);
+      
+      // Get the original file to extract front matter
+      updateEditorStatus('Retrieving original file for metadata...', 'info');
+      const originalContent = await fetchGitHubFile(false, null, true);
+      
+      if (originalContent) {
+        // Extract front matter from original content
+        const frontMatterMatch = originalContent.match(/^---[\s\S]+?---\s*/);
+        if (frontMatterMatch && frontMatterMatch[0]) {
+          // Add front matter back to the markdown content
+          markdownContent = frontMatterMatch[0] + markdownContent;
+        }
+      }
       
       updateEditorStatus('Saving to GitHub...', 'info');
       
@@ -364,7 +384,7 @@ function updateGitHubStatus(message, type = 'info') {
  * @param {boolean} updateEditor - Whether to update the editor with the fetched content
  * @param {Element} statusElement - Element to update with status messages (optional)
  */
-async function fetchGitHubFile(updateEditor = false, statusElement = null) {
+async function fetchGitHubFile(updateEditor = false, statusElement = null, returnRawContent = false) {
   // Get the GitHub token from localStorage if it exists
   window.githubClient = null;
   const token = localStorage.getItem('github_token');
@@ -408,6 +428,10 @@ async function fetchGitHubFile(updateEditor = false, statusElement = null) {
     
     // GitHub API returns content as base64 encoded
     const content = atob(data.content);
+    
+    if (returnRawContent) {
+      return content;
+    }
     
     if (updateEditor) {
       // Process the content - remove YAML front matter

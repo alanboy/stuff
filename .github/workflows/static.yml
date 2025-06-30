@@ -30,13 +30,36 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2' # Choose a Ruby version that works with your Jekyll version
+          bundler-cache: true # Runs bundle install and caches installed gems automatically
+          working-directory: './blog'
+          
+      - name: Setup Jekyll
+        run: |
+          cd blog
+          gem install bundler
+          bundle install
+          
+      - name: Build with Jekyll
+        run: |
+          cd blog
+          bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+          
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload blog folder
-          path: 'blog'
+          # Upload Jekyll build output directory
+          path: 'blog/_site'
+          
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
