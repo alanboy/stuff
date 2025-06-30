@@ -16,3 +16,7 @@ docker exec -it b403b7b43afe /bin/bash
 List all containers.
 
 docker ps
+
+  
+
+Even mor eare here
