@@ -1,0 +1,16 @@
+---
+layout: post
+title: "LangChain JS"
+date: 2023-08-31 14:47:00 -0800
+categories: none
+published: false
+description: 
+---
+
+https://github.com/hwchase17/langchainjs
+https://github.com/hwchase17/langchainjs/blob/main/examples/src/models/chat/chat_cancellation.ts
+https://github.com/elizabethsiegle/seattlejs/blob/main/talk.js
+https://platform.openai.com/account/usage
+https://www.npmjs.com/package/langchain
+https://docs.google.com/presentation/d/1lE_e5oGZksRtBhZVUPbKnw4KJjA3dAah5mhm-lJ4agU/mobilepresent?pli=1&slide=id.g25aac47e629_0_283
+https://js.langchain.com/docs/modules/model_io/models/llms/

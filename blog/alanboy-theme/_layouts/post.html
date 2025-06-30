@@ -1,28 +1,16 @@
 ---
 layout: default
 ---
-<!--
-<div class="ui grid">
-  <div class="four wide column">
-    <img class="ui medium rounded image" src="/assets/mboy.jpg">
-  </div>
 
-  <div class="twelve wide column">
-  </div>
-</div>
--->
+<article class="ui basic segment" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <article class="ui basic segment" itemscope itemtype="http://schema.org/BlogPosting">
-
+  <!-- Post View Section -->
+  <div class="post-view" id="viewMode">
     <h2 class="ui header">
-      <!--
-      <img src="/images/icons/plugin.png">
-      -->
       <div class="content">
-          {{ page.title | escape }}
+        {{ page.title | escape }}
 
         <div class="sub header">
-
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
           <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
             {{ page.date | date: date_format }}
@@ -34,6 +22,12 @@ layout: default
               {{ mdate | date: date_format }}
             </time>
           {%- endif -%}
+by
+          <a class="ui image label">
+            <img src="https://www.gravatar.com/avatar/b79b43bda78ac6f6ef530bd81235dc01">
+            Alan
+          </a>
+
           {%- if page.author -%}
             • {% for author in page.author %}
               <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -42,27 +36,628 @@ layout: default
             {% endfor %}
           {%- endif -%}
         </div>
-
       </div>
     </h2>
-        <div class="ui basic segment">
-           {%- for category in page.categories -%}
-                <div class="ui label">{{ category }}</div>
-           {%- endfor -%}
+
+    <div class="categories-in-post">
+      {%- for category in page.categories -%}
+        <div class="ui label">{{ category }}</div>
+      {%- endfor -%}
+
+      <!-- Edit Button -->
+      <button class="mini ui primary button edit-button" id="editButton">
+        <i class="edit icon"></i> Edit
+      </button>
+    </div>
+
+    <header class="post-header">
+      <p class="post-meta"></p>
+    </header>
+
+    <div class="post-content e-content" itemprop="articleBody">
+      {{ content }}
+    </div>
+
+    {%- if site.disqus.shortname -%}
+      {%- include disqus_comments.html -%}
+    {%- endif -%}
+
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  </div>
+  
+  <!-- Post Editor Section -->
+  <div class="post-editor" id="editMode" style="display: none;">
+    <div class="ui top attached tabular menu">
+      <a class="item active" data-tab="preview">Preview</a>
+      <a class="item" data-tab="editor">Editor</a>
+      <a class="item" data-tab="notes">Notes</a>
+      <a class="item" data-tab="settings">Settings</a>
+    </div>
+    
+    <!-- Preview Tab -->
+    <div class="ui bottom attached tab segment active" data-tab="preview">
+      <h1 id="previewTitle">{{ page.title }}</h1>
+      <div id="previewContent"></div>
+    </div>
+    
+    <!-- Editor Tab -->
+    <div class="ui bottom attached tab segment" data-tab="editor">
+      <div class="ui form">
+        <div class="field">
+          <label>Title</label>
+          <input type="text" id="postTitle" value="{{ page.title }}">
         </div>
-      <header class="post-header">
-        <p class="post-meta">
-        </p>
-      </header>
-
-      <div class="post-content e-content" itemprop="articleBody">
-        {{ content }}
+        <div class="field">
+          <label>Content</label>
+          <textarea id="markdownContent"></textarea>
+          <div class="ui info message">
+            <p>Click "Fetch from GitHub" to load the content from GitHub.</p>
+          </div>
+        </div>
+        <div class="field">
+          <button id="fetchToEditorButton" class="ui primary button">
+            <i class="github icon"></i> Fetch from GitHub
+          </button>
+          <button id="saveButton" class="ui green button">
+            <i class="save icon"></i> Save to GitHub
+          </button>
+          <div id="editorGitStatus" class="ui small message" style="display: none;">
+            <p>Loading...</p>
+          </div>
+        </div>
       </div>
+    </div>
+    
+    <!-- Notes Tab -->
+    <div class="ui bottom attached tab segment" data-tab="notes">
+      <div class="ui form">
+        <div class="field">
+          <label>Notes (not part of the blog post)</label>
+          <textarea class="notes-textarea" id="postNotes"></textarea>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Settings Tab -->
+    <div class="ui bottom attached tab segment" data-tab="settings">
+      <div id="githubStatus" class="ui info message">
+        <div class="header">GitHub Integration</div>
+        <p>Enter your GitHub Personal Access Token to access files.</p>
+      </div>
+      
+      <div class="ui grid">
+        <div class="row">
+          <div class="column">
+            <div class="ui form">
+              <div class="field">
+                <label>GitHub Personal Access Token</label>
+                <div class="ui action input">
+                  <input type="password" id="githubToken" placeholder="Enter your GitHub PAT...">
+                  <button id="saveTokenButton" class="ui primary button">Save Token</button>
+                </div>
+                <div class="ui small message">
+                  <p>Your token will be stored in your browser's local storage.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <button id="clearTokenButton" class="ui button">Clear Token</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Save Button moved to editor tab -->
+  </div>
+</article>
 
-      {%- if site.disqus.shortname -%}
-        {%- include disqus_comments.html -%}
-      {%- endif -%}
+<script>
+$(document).ready(function() {
+  // Initialize tabs
+  $('.menu .item').tab();
+  
+  // Variables
+  var isEditing = false;
+  
+  // Initialize Summernote editor
+  function initEditor() {
+    try {
+      // Initialize Summernote with options
+      $('#markdownContent').summernote({
+        placeholder: 'Write your content here...',
+        height: 400,
+        toolbar: [
+          ['style', ['style']],
+          ['font', ['bold', 'underline', 'italic', 'clear']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['table', ['table']],
+          ['insert', ['link', 'picture', 'code']],
+          ['view', ['fullscreen', 'codeview', 'help']]
+        ],
+        callbacks: {
+          onChange: function() {
+            updatePreview($('#markdownContent').summernote('code'));
+          }
+        },
+        codemirror: { // codemirror options
+          theme: 'monokai'
+        }
+      });
+      
+      // Initial preview update
+      updatePreview($('#markdownContent').summernote('code'));
+    } catch (e) {
+      console.error('Error initializing editor:', e);
+      $('#markdownContent').after('<div class="ui negative message"><div class="header">Error initializing editor</div><p>' + e.message + '</p></div>');
+    }
+  }
+  
+  // Initial preview
+  try {
+    var initialMarkdown = $('#markdownContent').val();
+    var html = marked.parse(initialMarkdown);
+    $('#previewContent').html(html);
+  } catch (e) {
+    console.log('Error parsing initial markdown:', e);
+    $('#previewContent').html($('#markdownContent').val());
+  }
+  
+  // Toggle edit mode
+  $('#editButton').on('click', function() {
+    console.log('Edit button clicked');
+    isEditing = true;
+    $('#viewMode').hide();
+    $('#editMode').show();
+    
+    // Initialize editor if not already done
+    if (!$('#markdownContent').data('summernote')) {
+      initEditor();
+    }
+  });
+  
+  // Fetch from GitHub to editor button
+  $('#fetchToEditorButton').on('click', function() {
+    console.log('Fetch to editor button clicked');
+    fetchGitHubFile(true);
+  });
+  
+  // Save changes to GitHub and return to view mode
+  $('#saveButton').on('click', async function() {
+    console.log('Save button clicked');
+    
+    // Check if we have a token first
+    const token = localStorage.getItem('github_token');
+    if (!token) {
+      updateEditorStatus('GitHub token not found. Please set your token in the Settings tab.', 'error');
+      // Switch to settings tab to prompt the user to enter a token
+      $('.menu .item[data-tab="settings"]').click();
+      return;
+    }
+    
+    // Get content from editor
+    var content = $('#markdownContent').summernote('code');
+    
+    // Convert HTML back to markdown if needed
+    try {
+      // This is a placeholder - you would need a HTML-to-Markdown converter
+      // For now, we'll use the HTML content directly
+      var markdownContent = content;
+      
+      updateEditorStatus('Saving to GitHub...', 'info');
+      
+      // Commit and push to GitHub
+      const success = await commitToGitHub(markdownContent);
+      
+      if (success) {
+        // Update preview
+        updatePreview(content);
+        
+        // Return to view mode
+        isEditing = false;
+        $('#editMode').hide();
+        $('#viewMode').show();
+      }
+    } catch (error) {
+      console.error('Error saving to GitHub:', error);
+      updateEditorStatus(`Error saving: ${error.message}`, 'error');
+    }
+  });
 
-      <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-    </article>
+  function destroyEditor() {
+    if (isEditing) {
+      $('#markdownContent').summernote('destroy');
+      isEditing = false;
+    }
+  }
 
+  function updatePreview(markdown) {
+    try {
+      var html = marked.parse(markdown);
+      $('#previewContent').html(html);
+      
+      // Apply syntax highlighting to code blocks
+      document.querySelectorAll('pre code').forEach(function(block) {
+        hljs.highlightBlock(block);
+      });
+      
+      // Initialize mermaid diagrams if any
+      if (typeof mermaid !== 'undefined') {
+        mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+      }
+    } catch (e) {
+      console.log('Error updating preview:', e);
+      $('#previewContent').html('<p>Error rendering preview</p>');
+    }
+  }
+
+  // Handle tab changes
+  $('.menu .item').on('click', function() {
+    var tab = $(this).data('tab');
+    console.log('Tab clicked:', tab);
+    
+    if (tab === 'settings' && !window.githubClient) {
+      console.log('Initializing GitHub tab');
+      initGitHubTab();
+    }
+    
+    $('.menu .item').removeClass('active');
+    $(this).addClass('active');
+    $('.tab.segment').removeClass('active');
+    $(`.tab.segment[data-tab="${tab}"]`).addClass('active');
+  });
+  
+  // GitHub token handling
+  $('#saveTokenButton').on('click', function() {
+    const token = $('#githubToken').val().trim();
+    if (token) {
+      localStorage.setItem('github_token', token);
+      updateGitHubStatus('Token saved successfully!', 'success');
+      $('#githubToken').val('');
+    } else {
+      updateGitHubStatus('Please enter a valid token', 'warning');
+    }
+  });
+  
+  $('#clearTokenButton').on('click', function() {
+    localStorage.removeItem('github_token');
+    updateGitHubStatus('Token cleared', 'info');
+  });
+  
+  $('#fetchFileButton').on('click', function() {
+    const token = localStorage.getItem('github_token');
+    if (!token) {
+      updateGitHubStatus('Please save a GitHub token first', 'warning');
+      return;
+    }
+    
+    fetchGitHubFile();
+  });
+});
+
+// GitHub functionality - directly embedded in post.html
+// This ensures Jekyll processes it with the layout
+console.log('GitHub functionality loaded - version 1');
+
+/**
+ * Update the GitHub status message in the UI
+ */
+function updateGitHubStatus(message, type = 'info') {
+  console.log(`[GitHub Status] ${message}`);
+  
+  const statusElement = document.getElementById('githubStatus');
+  if (statusElement) {
+    statusElement.className = `ui ${type} message`;
+    const header = statusElement.querySelector('.header');
+    const content = statusElement.querySelector('p');
+    
+    if (header) header.textContent = 'GitHub Integration';
+    if (content) content.textContent = message;
+  }
+}
+
+/**
+ * Fetch a specific file from GitHub
+ * @param {boolean} updateEditor - Whether to update the editor with the fetched content
+ * @param {Element} statusElement - Element to update with status messages (optional)
+ */
+async function fetchGitHubFile(updateEditor = false, statusElement = null) {
+  // Get the GitHub token from localStorage if it exists
+  window.githubClient = null;
+  const token = localStorage.getItem('github_token');
+  if (!token) {
+    const message = 'GitHub token not found. Please save your token first.';
+    if (updateEditor) {
+      updateEditorStatus(message, 'error');
+    } else {
+      updateGitHubStatus(message, 'error');
+    }
+    return;
+  }
+  
+  // The specific file we want to fetch
+  const owner = 'alanboy';
+  const repo = 'stuff';
+  const path = 'blog/{{ page.path }}';
+  
+  if (updateEditor) {
+    updateEditorStatus('Fetching file from GitHub...', 'info');
+  } else {
+    updateGitHubStatus('Fetching file from GitHub...', 'info');
+  }
+  
+  try {
+    // First, we need to get the file content using the GitHub API
+    const url = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
+    
+    const response = await fetch(url, {
+      headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github.v3+json'
+      }
+    });
+    
+    if (!response.ok) {
+      throw new Error(`GitHub API error: ${response.status} ${response.statusText}`);
+    }
+    
+    const data = await response.json();
+    
+    // GitHub API returns content as base64 encoded
+    const content = atob(data.content);
+    
+    if (updateEditor) {
+      // Process the content - remove YAML front matter
+      let processedContent = content;
+      
+      // Remove YAML front matter (content between --- markers at the beginning)
+      const yamlFrontMatterRegex = /^---[\s\S]+?---\s*/;
+      processedContent = processedContent.replace(yamlFrontMatterRegex, '');
+      
+      // Ensure proper newline handling
+      processedContent = processedContent.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+      
+      console.log('Processed content for editor:', processedContent);
+      
+      // Update the editor with the content
+      if ($('#markdownContent').data('summernote')) {
+        // If Summernote is initialized, update it with HTML
+        // Convert markdown to HTML for the WYSIWYG editor
+        try {
+          const html = marked.parse(processedContent);
+          $('#markdownContent').summernote('code', html);
+        } catch (e) {
+          console.error('Error parsing markdown:', e);
+          // Fallback to raw content
+          $('#markdownContent').summernote('code', processedContent);
+        }
+      } else {
+        // Otherwise update the textarea directly with markdown
+        $('#markdownContent').val(processedContent);
+      }
+      
+      // Update the preview
+      updatePreview(processedContent);
+      
+      updateEditorStatus(`Successfully loaded ${data.name} into editor`, 'success');
+    } else {
+      // Display the content in the GitHub tab
+      const fileContentElement = document.getElementById('githubFileContent');
+      if (fileContentElement) {
+        // Format for display
+        fileContentElement.innerHTML = `
+          <h3>${data.name}</h3>
+          <p><strong>Path:</strong> ${data.path}</p>
+          <p><strong>Size:</strong> ${data.size} bytes</p>
+          <p><strong>SHA:</strong> ${data.sha}</p>
+          <hr>
+          <pre><code>${escapeHtml(content)}</code></pre>
+        `;
+        
+        // Apply syntax highlighting if available
+        if (window.hljs) {
+          document.querySelectorAll('#githubFileContent pre code').forEach((block) => {
+            hljs.highlightBlock(block);
+          });
+        }
+      }
+      
+      updateGitHubStatus(`Successfully loaded ${data.name}`, 'success');
+    }
+    
+    return content;
+  } catch (error) {
+    console.error('Error fetching file from GitHub:', error);
+    const message = `Error: ${error.message}`;
+    
+    if (updateEditor) {
+      updateEditorStatus(message, 'error');
+    } else {
+      updateGitHubStatus(message, 'error');
+    }
+    
+    return null;
+  }
+}
+
+/**
+ * Update the editor status message
+ */
+function updateEditorStatus(message, type = 'info') {
+  console.log(`[Editor GitHub Status] ${message}`);
+  
+  const statusElement = document.getElementById('editorGitStatus');
+  if (statusElement) {
+    statusElement.className = `ui ${type} small message`;
+    statusElement.style.display = 'block';
+    statusElement.innerHTML = `<p>${message}</p>`;
+    
+    // Hide the message after 5 seconds if it's a success message
+    if (type === 'success') {
+      setTimeout(() => {
+        statusElement.style.display = 'none';
+      }, 5000);
+    }
+  }
+}
+
+/**
+ * Helper function to escape HTML for safe display
+ */
+function escapeHtml(unsafe) {
+  return unsafe
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+/**
+ * Commit and push content to GitHub
+ * @param {string} content - The content to commit
+ * @returns {Promise<boolean>} - Whether the commit was successful
+ */
+async function commitToGitHub(content) {
+  const token = localStorage.getItem('github_token');
+  if (!token) {
+    updateEditorStatus('GitHub token not found. Please set your token in the Settings tab.', 'error');
+    return false;
+  }
+  
+  updateEditorStatus('Committing to GitHub...', 'info');
+  
+  // The specific file we want to update
+  const owner = 'alanboy';
+  const repo = 'stuff';
+  const path = 'blog/{{ page.path }}';
+  
+  try {
+    // First, we need to get the current file to get its SHA
+    const getUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
+    
+    const getResponse = await fetch(getUrl, {
+      headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github.v3+json'
+      }
+    });
+    
+    if (!getResponse.ok) {
+      throw new Error(`GitHub API error: ${getResponse.status} ${getResponse.statusText}`);
+    }
+    
+    const fileData = await getResponse.json();
+    const sha = fileData.sha;
+    
+    // Now we can update the file
+    const updateUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
+    
+    // Prepare the content - we need to encode it as base64
+    const encodedContent = btoa(content);
+    
+    const updateResponse = await fetch(updateUrl, {
+      method: 'PUT',
+      headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github.v3+json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        message: `Update ${path} via blog editor`,
+        content: encodedContent,
+        sha: sha
+      })
+    });
+    
+    if (!updateResponse.ok) {
+      throw new Error(`GitHub API error: ${updateResponse.status} ${updateResponse.statusText}`);
+    }
+    
+    const updateData = await updateResponse.json();
+    
+    updateEditorStatus(`Successfully committed to GitHub: ${updateData.commit.sha.substring(0, 7)}`, 'success');
+    return true;
+  } catch (error) {
+    console.error('Error committing to GitHub:', error);
+    updateEditorStatus(`Error: ${error.message}`, 'error');
+    return false;
+  }
+}
+
+/**
+ * Initialize the GitHub tab functionality
+ */
+function initGitHubTab() {
+  console.log('Initializing GitHub tab');
+  
+  // Check if we have a saved token
+  const token = localStorage.getItem('github_token');
+  if (token) {
+    updateGitHubStatus('GitHub token found. Ready to fetch files.', 'success');
+    // Mask the token input field if a token exists
+    $('#githubToken').val('********');
+  } else {
+    updateGitHubStatus('Please enter your GitHub Personal Access Token to get started.', 'info');
+  }
+  
+  // Set up event handlers if they don't already exist
+  const saveTokenButton = document.getElementById('saveTokenButton');
+  if (saveTokenButton && !saveTokenButton._hasClickListener) {
+    saveTokenButton._hasClickListener = true;
+    saveTokenButton.addEventListener('click', function() {
+      const token = document.getElementById('githubToken').value;
+      if (token && token !== '********') {
+        localStorage.setItem('github_token', token);
+        updateGitHubStatus('GitHub token saved successfully!', 'success');
+        // Mask the token for security
+        document.getElementById('githubToken').value = '********';
+      } else if (token === '********') {
+        // User didn't change the masked token, which is fine
+        updateGitHubStatus('Token already saved.', 'info');
+      } else {
+        updateGitHubStatus('Please enter a valid token.', 'warning');
+      }
+    });
+  }
+  
+  const clearTokenButton = document.getElementById('clearTokenButton');
+  if (clearTokenButton && !clearTokenButton._hasClickListener) {
+    clearTokenButton._hasClickListener = true;
+    clearTokenButton.addEventListener('click', function() {
+      localStorage.removeItem('github_token');
+      document.getElementById('githubToken').value = '';
+      updateGitHubStatus('GitHub token cleared.', 'info');
+    });
+  }
+  
+  const fetchFileButton = document.getElementById('fetchFileButton');
+  if (fetchFileButton && !fetchFileButton._hasClickListener) {
+    fetchFileButton._hasClickListener = true;
+    fetchFileButton.addEventListener('click', function() {
+      fetchGitHubFile();
+    });
+  }
+  
+  // Make the GitHub client available globally for debugging
+  window.githubClient = {
+    fetchFile: fetchGitHubFile
+  };
+}
+
+// Initialize GitHub tab when the page loads
+$(document).ready(function() {
+  // Call initGitHubTab when the settings tab is clicked
+  $('.menu .item[data-tab="settings"]').on('click', function() {
+    initGitHubTab();
+  });
+  
+  // Initialize GitHub tab if we're already on it
+  if ($('.menu .item[data-tab="settings"]').hasClass('active')) {
+    initGitHubTab();
+  }
+});
+</script>
