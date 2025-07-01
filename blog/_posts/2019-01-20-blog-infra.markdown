@@ -8,9 +8,9 @@ tags: azure
 published: true
 ---
 
-THIS blog is a git repo hosted in GitHub. Every push to master triggers a CI build in AzureDevops which builds the site using Jekyll and pushes the results to a Blob Storage account in Azure. The Blob Storage has HTTP access enabled with a custom domain.
+This blog is a git repo hosted in GitHub. Every push to master triggers a CI build in AzureDevops which builds the site using Jekyll and pushes the results to a Blob Storage account in Azure. The Blob Storage has HTTP access enabled with a custom domain.
 
-    this is some code
+    this is some code!
 
 Building the jekyll site:
 
