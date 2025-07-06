@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "domains"
+title: "Buying domains"
 date: 2022-09-20 01:52:00 -0800
-categories: domains
-published: false
+categories: engineering
+published: true
 description:
 ---
 
