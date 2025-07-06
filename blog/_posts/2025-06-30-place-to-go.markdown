@@ -7,7 +7,7 @@ published: true
 description:
 ---
 
-# Summer Fun With Baby!
+Things to do with small kids.
 
 ## Playgrounds/Parks
 - Tot lots [Google Maps](https://www.google.com/maps/place/Tot+Lot+Park/@47.6818535,-122.2074607,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgICyk8OOxgE!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAC9h4nqjAmSiC9KnzxMl-pDgntRYi2G1seEFUo9st2FRa5T2Z9gniO4a_hEhNyHCBcSG47AenMS26ZCwemLNNjqHyqHy4L7939CDM_ZBUbIYD3oQcZ8oxkbPIVNO4u1EFgqnxuLVn5lo5Q%3Dw203-h114-k-no!7i4032!8i2268!4m11!1m2!2m1!1sTot+lots!3m7!1s0x549012ef42950fef:0x5b9f1a68d2fad412!8m2!3d47.6818535!4d-122.2074607!10e5!15sCghUb3QgbG90c1oKIgh0b3QgbG90c5IBBHBhcmuqAT8QASoMIgh0b3QgbG90cygAMh8QASIbCeSkU8kHKrXl2vFLvwzi5TwZSxiXqJdzHypDMgwQAiIIdG90IGxvdHPgAQA!16s%2Fg%2F11b6cq2v3g?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D)
