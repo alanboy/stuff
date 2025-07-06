@@ -1,0 +1,23 @@
+---
+layout: post
+title: "domains"
+date: 2022-09-20 01:52:00 -0800
+categories: domains
+published: false
+description:
+---
+
+
+![](2022-09-20-13-53-58.png)
+
+![](2022-09-20-13-54-17.png)
+
+
+![](2022-09-20-13-54-32.png)
+
+
+addPeriod. The domain was registered very recently. This is a normal status for a recently registered domain, and nothing needs to be done. The domain has expired, and the registry has charged the registrar for an extra year of renewal
+
+![](2022-09-20-13-55-48.png)
+
+![](2022-09-20-13-56-33.png)
