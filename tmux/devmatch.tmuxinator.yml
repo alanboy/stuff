@@ -1,6 +1,7 @@
 
 name: devmatch
 root: /opt/
+root: /home/alan/code/DevMatch
 
 windows:
   - frontend:
@@ -19,7 +20,20 @@ windows:
        layout: main-vertical
        root: ~/code/turing/
        panes:
-         - echo claude 
+         - echo claude
          -
   - logs:
-
+#
+# windows:
+#   - frontend:
+#         layout: main-vertical
+#         panes:
+#             - cd frontend/developer-ui && yarn start
+#             - cd frontend/developer-ui && echo logs
+#   - backend:
+#         layout: main-vertical
+#         panes:
+#             - cd backend && yarn local
+#             - cd backend
+#   - vscode: cd vscode-server && docker compose -f docker-compose.local.yml --env-file .env.local  up --build
+#   - devmatcher: cd dev-matcher

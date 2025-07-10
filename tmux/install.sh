@@ -12,8 +12,8 @@ if [ ! -d ~/.tmuxinator/ ]; then
     mkdir ~/.tmuxinator
 fi
 
-if [ ! -f ~/.tmuxinator/omegaup.yml ]; then
-    ln -s  `pwd`/omegaup.tmuxinator.yml ~/.tmuxinator/omegaup.yml
+if [ ! -f ~/.tmuxinator/devmatch.yml ]; then
+    ln -s  `pwd`/devmatch.tmuxinator.yml ~/.tmuxinator/devmatch.yml
 fi
 
 if [ ! -f ~/.tmuxinator/enterpos.yml ]; then

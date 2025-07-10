@@ -84,7 +84,7 @@ set statusline+=%0*\ \ %m%r%w\ %P\ \                      "Modified? Readonly? T
 if has("gui_running")
 
   " Read more: https://www.linux.com/learn/using-spell-checking-vim
-  :setlocal spell spelllang=en_us
+  ":setlocal spell spelllang=en_us
 
   set cursorline cursorcolumn
   set guioptions=ic
@@ -92,7 +92,7 @@ if has("gui_running")
   set guioptions+=b
   set lines=45
   set guitablabel=%F
-  set guifont=Menlo:h18
+  "set guifont=Menlo:h18
   "set guitablabel=%F\ %t
   " Change font with Ctrl Up/Down
 else
