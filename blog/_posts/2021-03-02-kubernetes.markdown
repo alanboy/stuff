@@ -3,10 +3,17 @@ layout: post
 title: "kubernetes"
 date: 2021-03-02 05:31:00 -0800
 categories: kubernetes
-published: false
+published: true
 description:
 ---
+
 ## Definitions
+
+**Pod**	Smallest unit in Kubernetes. Can contain one or more containers.
+
+**A sidecar** is a container that runs alongside your main container in the same Pod in Kubernetes. It typically provides supporting functionality to the main application.
+
+
 * kubectl The Kubernetes command-line tool, kubectl, allows you to run commands against Kubernetes clusters. You can use kubectl to deploy applications, inspect and manage cluster resources, and view logs.
 * kind kind lets you run Kubernetes on your local computer. This tool requires that you have Docker installed and configured. 
 * minikube Like kind, minikube is a tool that lets you run Kubernetes locally. minikube runs a single-node Kubernetes cluster on your personal computer (including Windows, macOS and Linux PCs) so that you can try out Kubernetes, or for daily development work. Once you have minikube working, you can use it to run a sample application.

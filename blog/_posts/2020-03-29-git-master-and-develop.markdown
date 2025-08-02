@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Branching strategies"
+title: "git: branching strategies"
 date: 2020-03-29 06:08:00 -0800
 categories: software
 published: true

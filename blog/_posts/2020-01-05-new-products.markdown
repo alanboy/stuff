@@ -3,9 +3,10 @@ layout: post
 title: "New Product Management"
 date: 2020-01-05 12:40:00 -0800
 tags: business marketing innovation
-categories: business product-development
+categories: Entrepreneurship
 published: true
-description:
+description: A comprehensive guide to strategic product development, from opportunity identification to launch, focusing on creating customer and business value through behavioral changes
+
 ---
 
 Part of a series: New product development
@@ -18,22 +19,21 @@ The strategic elements of product development, Opportunity identification and se
 
 # New Product Management
 
-## 
-Outputs vs Outcomes
+## Outputs vs Outcomes
 
-Outome: 
-Chagne in hum beh that creates customer and business value
-
-
-Most good ideas failed to deliver real value due to uncertainty
-will the buy it?
-can they use it?
+Outcome: 
+Change in human behavior that creates customer and business value
 
 
-if features dont measure progress
+Most good ideas fail to deliver real value due to uncertainty:
+- Will they buy it?
+- Can they use it?
+
+
+If features don't measure progress...
 
 ## Features
-* dont intidate value
+* don't indicate value
 
 
 
@@ -50,10 +50,10 @@ if features dont measure progress
 
 ## CHEC-K Framework
 1) Map out business impact
-    What is the high level impact you are trying to achieve? Ex. Increase revenue
-    Who are the actors whose behaviours will change? Ex. Busy professionals, Shoppers, Suppliers
-    What behaviours can we encourage 
-    What can we do with our product to create these changes thourhg behaviours
+    What is the high-level impact you are trying to achieve? Ex. Increase revenue
+    Who are the actors whose behaviors will change? Ex. Busy professionals, Shoppers, Suppliers
+    What behaviors can we encourage?
+    What can we do with our product to create these changes through behaviors?
 
 2) Frame your future hypothesis
 3) Test your hypothesis
@@ -158,7 +158,7 @@ It is the new product team's strategy. It is for Products (not processes). It is
 * To set the teams goals and objectives.
 * To tell the team how it will play the game.
 
-Most firms do have a PIC, even if they don't call it by that name.  The more detailed and specific the PIC, the higher are the firm's innovation rates. The more specific the corporate mission and senior managment direciton is spelled out in the PIC, the better is the performance of the firms new products.
+Most firms do have a PIC, even if they don't call it by that name. The more detailed and specific the PIC, the higher are the firm's innovation rates. The more specific the corporate mission and senior management direction is spelled out in the PIC, the better is the performance of the firm's new products.
 
 Purposes:
 * Focus and integrate team effort
@@ -185,15 +185,15 @@ Purposes:
     * Short Term
     * Long Term
 * Guidelines 
-    * Any "rules of the road" requirements imposed by the situation or by upper-management. Innovativeness, order of market entry, time/quality/cost, miscellaneous.
+    * Any "rules of the road" requirements imposed by the situation or by upper management. Innovativeness, order of market entry, time/quality/cost, miscellaneous.
     * Make sure they are specific.
-    * Bugdetary limitations.
-    * Degrees of innovativeness
+    * Budgetary limitations.
+    * Degrees of innovativeness:
       * First to market
       * Adaptive product
       * Imitation (emulation)
-    * Timing
-        * Fist
+    * Timing:
+        * First
         * Quick second
         * Slow
         * Late
@@ -206,9 +206,9 @@ Purposes:
 ### Example of a PIC for iPad
 * Background: 
 * Focus: Technology strengths include Apple's OS, hardware, applications and services, product design and development skills. Marketing requirements include products on the "cutting edge" that offer seamless integration and high performance, yet are intuitive, simple and fun to use.
-* Goals: Revolutionary new products should also be platforms for future products, due to the cost of "really new" product development. New pproducts should occupy the leadership position in the market.
+* Goals: Revolutionary new products should also be platforms for future products, due to the cost of "really new" product development. New products should occupy the leadership position in the market.
 * Special guidelines: Apple aims to be the best, not necessarily the first, in new product categories.
-* The result: Apple's first "tablet compter", a revolutionary new product seen by many at the time as the "next big thing" No one table computer had established a dmoninant position yet, so Apple could be the standard bearer with the iPad. The plan for the future was to add capabilities and applications to future iPads.
+* The result: Apple's first "tablet computer", a revolutionary new product seen by many at the time as the "next big thing". No one tablet computer had established a dominant position yet, so Apple could be the standard bearer with the iPad. The plan for the future was to add capabilities and applications to future iPads.
 
 ## Product portfolio
 When building a new product, you are not going to build one single product. You want to make sure there is a balance of different types of products:
@@ -228,10 +228,10 @@ Portfolio of product types:
 * Product line extension
 * Incremental innovation
 
-Every single innovation does not need to be a break trough innovation.
+Every single innovation does not need to be a breakthrough innovation.
 
 ## Managing breakthrough innovation (new to the world)
-* Incubation stage contrains first to market problems
+* Incubation stage contains first-to-market problems
   * Tolerate failure but learn from it.
   * Longer and much more expensive.
 
@@ -240,10 +240,10 @@ Every single innovation does not need to be a break trough innovation.
 
 ## The role of the serial innovator
 * Mid-level, technical **employees who think and work differently** and follow their own new products process
-* **Critical to firms being able to launch radical innovations**  successfully and repeatedly over a long period of time.
+* **Critical to firms being able to launch radical innovations** successfully and repeatedly over a long period of time.
 * Challenge: **Identify, manage, and properly reward the serial innovator**.
-* Can bridte the gap between technology and market, in iterative fashion.
-* Begin by undesrstanding customer problem 
+* Can bridge the gap between technology and market, in iterative fashion.
+* Begin by understanding customer problems
 * Oscillate between customer need and technology solution.
 * Can also bring **market information** 
 
@@ -280,18 +280,18 @@ What is the problem we are trying to solve?
 
 > If I had an hour to solve a problem and my life depended on it, I would use the first 55 minutes determining the proper questions to ask. Albert E.
 
-> One doesn't just invent a finished product. An idea, yes, or perhaps a rather complete concept. It is important ot spend enough time on the idea-to-concept-to-product issue.
+> One doesn't just invent a finished product. An idea, yes, or perhaps a rather complete concept. It is important to spend enough time on the idea-to-concept-to-product issue.
 
 Roadblocks to creativity
 * "Who the hell wants to hear actors talk?"
 * "This 'telephone'
-* "Everything that can be invented has been invented" C.H. Duell, Commissioner, US Office of Patents
+* "Everything that can be invented has been invented" - C.H. Duell, Commissioner, US Office of Patents
 
-Obstancles to Idea generation
+Obstacles to Idea generation
 * Group think: We think we are being creative, when in reality we are only coming up with ideas that our group will find acceptable.
 * Targeting error: We keep going back to the same simple demographic targets.
-* Poor customer knowledge: 
-* Complexity: 
+* Poor customer knowledge
+* Complexity
 * Lack of empathy: These same managers are also well-educated, high-income individuals accustomed to an upscale lifestyle. They may simply not understand the "typical" customer.
 * Too many cooks: A small new product team works fine, but large companies especially are prone to internal competition for power and influence.
 
@@ -322,49 +322,49 @@ Some patterns in concept generation:
 * Firm envisions form
 
 ## A product concept
-A product concept is a verbal or prototype statemtn of :
+A product concept is a verbal or prototype statement of:
 * what is going to be changed
 and
-* how the customer stands to gain or loose
+* how the customer stands to gain or lose
 
 You need at least two of the three inputs to have a feasible new product concept, and all three to have a new product.
 
-MEthods for generating new product concepts:
+Methods for generating new product concepts:
 * Ready-made   
     * new products employees
     * end users
     * resellers, suppliers, vendors
 * Toolkit for user innovation:
-* Crowdsourcing as a Creative source
+* Crowdsourcing as a creative source
     * Open idea solicitation from customers
     * most likely to generate modest product improvements rather than new-to-the-world products.
 * Lead users as a creative source
     * They have the best understanding of the problems faced, and can gain from solutions to these problems.
 * Open innovation
     * Accept that "not all the smart people work for us"
-    * It is not outsorcing! The external sources are viewed as complementary to internal sources os that innovation can be more efficient.
+    * It is not outsourcing! The external sources are viewed as complementary to internal sources so that innovation can be more efficient.
     * Selecting the best partners is critical
 
 ## Finding and Solving Customers’ problems
 
-Problem based concept generation
+Problem-based concept generation
 
-Probelm analysis: General procedure
-* Determine product or activity category for your study.
+Problem analysis: General procedure
+* Determine product or activity category for your study
 * Identify heavy users
 * Gather set of problems associated with product strategy
 * Sort and rank the problems according to severity or importance
 
-Gethering the problems:
-* internal records (routine contacts with customers)
-* Direct inputs form technical and marketing departments
+Gathering the problems:
+* Internal records (routine contacts with customers)
+* Direct input from technical and marketing departments
 * Problem analysis with customers (ask them what are the problems with the current product, not what they want)
 
 The bothersomeness technique of scoring problems:
 
 ![My helpful screenshot](/assets/images/petowners.png)
 
-Typical questions fo problem analysis focus groups
+Typical questions for problem analysis focus groups
 
 Observation and role playing in problem analysis
 
@@ -372,13 +372,13 @@ Problem analysis in action
 
 
 ## Scenario analysis
-Extending vs leaping
-* Extending: 
-* Dynamic leap scenario: 
+Extending vs leaping:
+* Extending: Analyzing current trends and their future implications
+* Dynamic leap scenario: Envisioning future possibilities and working backwards
 
 
 Questions:
-* According to the lecture/book, which of the following statements is true of creative people?	
+* According to the lecture/book, which of the following statements is true of creative people?
  They tend to be creative throughout their lives and never become uncreative. (Correct) 
 
 * In the context of barriers to firm creativity, strong interpersonal ties between team members tend to lead to:
@@ -395,23 +395,23 @@ dynamic leap (Correct)
 ## Solving the problem
 
 Principles of brainstorming:
-* deferral of judgement
-* quantity breeds quality
+* Deferral of judgment
+* Quantity breeds quality
 
 Rules for a brainstorming session:
-* no criticism allowed
+* No criticism allowed
 * Freewheeling -- the wilder the better
-* Nothing should slow the session down.
+* Nothing should slow the session down
 * Combination and improvement of ideas
 
 Electronic brainstorming:
-* Supported by GSS (group support sytems) software.
-* can handle larger size groups
-* contributions are projected on screen and also recorded
+* Supported by GSS (group support systems) software
+* Can handle larger size groups
+* Contributions are projected on screen and also recorded
 
 Online communities
 
-## Analytical attribute approaces: Introduction and Perceptual mapping
+## Analytical attribute approaches: Introduction and Perceptual mapping
 Basic idea: products are made up of attributes -- a feature product change must involve one or more of these attributes.
 
 Theoretical sequence: feature permits a function which provides a benefit.

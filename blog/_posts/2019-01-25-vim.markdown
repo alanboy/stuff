@@ -4,7 +4,7 @@ title: "Vim"
 date: 2019-01-25 12:21:00 -0800
 categories: engineering
 published: true
-description:
+description: A collection of useful Vim commands and configurations including search, spelling, and encoding tips
 ---
 
 ## .vimrc

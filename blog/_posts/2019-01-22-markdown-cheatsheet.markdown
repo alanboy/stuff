@@ -4,7 +4,7 @@ title:  "Markdown cheat-sheet"
 date:   2019-01-22 00:00:00 -0800
 categories: engineering
 published: true
-description:
+description: A comprehensive reference guide for Markdown syntax and formatting
 ---
 
 ## Lists
