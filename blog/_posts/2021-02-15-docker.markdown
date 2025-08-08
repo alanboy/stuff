@@ -9,23 +9,7 @@ description: Some stuff I find useful when working with Docker containers
 
 Docker is a platform that lets you package applications and their dependencies into lightweight, portable containers that can run consistently across different environments. Here are some of the commands that I routinely use.
 
-## Azure
-Create a container:
-```
-az container create --resource-group enterpos --name mycontainer --image mcr.microsoft.com/azuredocs/aci-helloworld --dns-name-label aci-demo-alanboy --ports 80
-```
-
-```
-az container show --resource-group enterpos --name mycontainer --query "{FQDN:ipAddress.fqdn,ProvisioningState:provisioningState}" --out table
-```
-
-https://docs.microsoft.com/en-us/azure/container-instances/container-instances-quickstart
-
-## AWS
-https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html
-https://us-west-2.console.aws.amazon.com/ecs/home?region=us-west-2#/getStarted
-
-## Docker
+# Basic commands
 
 Build an image:
 ```
@@ -34,9 +18,13 @@ docker build -t alango/node-hello .
 
 Run the image:
 ```
-docker run -it --rm -d -p 8080:80 --name hello -e WHO="laura" alango/node-hello
+docker run -it 
+  --rm -d -p 8080:80 
+  --name hello 
+  -e WHO="laura" alango/node-hello
 ```
 
+"ssh" into the container:
 ```
 docker exec -t -i 7c21fb1cad24 /bin/bash
 ```
@@ -47,12 +35,6 @@ docker tag local-image:tagname new-repo:tagname
 docker push new-repo:tagname
 ```
 
-Deploying to Azure:
-```
-index.docker.io
-```
-
-
 Starting a shell inside the container:
 
     docker exec -it b403b7b43afe /bin/bash
@@ -60,6 +42,32 @@ Starting a shell inside the container:
 List all containers.
 
     docker ps
+
+
+# Docker on Azure
+Create a container:
+```
+az container create 
+  --resource-group enterpos 
+  --name mycontainer 
+  --image mcr.microsoft.com/azuredocs/aci-helloworld 
+  --dns-name-label aci-demo-alanboy 
+  --ports 80
+```
+
+```
+az container show 
+  --resource-group enterpos 
+  --name mycontainer 
+  --query "{FQDN:ipAddress.fqdn,ProvisioningState:provisioningState}" 
+  --out table
+```
+
+https://docs.microsoft.com/en-us/azure/container-instances/container-instances-quickstart
+
+# Docker on AWS
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html
+https://us-west-2.console.aws.amazon.com/ecs/home?region=us-west-2#/getStarted
 
 
 ## more
