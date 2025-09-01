@@ -36,19 +36,18 @@ Referente a las necesidades de ancho de banda, en promedio, se necesitan de 0.60
 
 En la siguiente gráfica se muestra el uso de ancho de banda por teddy.
 
- <p class="c21 c26">
-    <img alt="" src="2012-09-30-teddy-1.png" />
- </p> 
+![Visitas y pageview](/assets/images/2012-09-30-teddy-1.png)
  <p class="c21 c26"><span class="c23 c2">Visitas y pageviews</span></p> <p class="c21 c26">
  
  
- <img alt="" src="2012-09-30-teddy-2.png" /></p> 
+![Visitas y pageview](/assets/images/2012-09-30-teddy-2.png)
+
  <p class="c21 c26"><span class="c23 c2">Referencias</span></p> <p class="c0"><span>A continuación listo </span><span>las 10 palabras clave que los usuarios buscan para llegar a </span><span class="c13">teddy</span><span>. Nótese la palabra clave </span><span class="c13">itc</span><span>, en 4 de las 10 palabras.</span></p> <p class="c0">
  
- <img alt="" src="2012-09-30-teddy-3.png" /></p> 
+ ![Referencias](/assets/images/2012-09-30-teddy-3.png)
  
  
-  <table class="c8" cellspacing="0" cellpadding="0"> <tbody> <tr class="c34"> <td class="c9 c30"> <p class="c5"><span class="c15">Keyword</span></p> </td> <td class="c11"> <p class="c5"><span class="c15">Visitas</span></p> </td> </tr> <tr class="c12"> <td class="c9 c19"> <p class="c5"><span>(not provided)</span></p> </td> <td class="c17"> <p class="c5"><span class="c2">1,869</span></p> </td> </tr> <tr class="c12"> <td class="c9"> <p class="c5"><span class="c2">teddy itc</span></p> </td> <td class="c18"> <p class="c5"><span class="c2">1,509</span></p> </td> </tr> <tr class="c12"> <td class="c9 c19"> <p class="c5"><span class="c2">teddy</span></p> </td> <td class="c17"> <p class="c5"><span class="c2">998</span></p> </td> </tr> <tr class="c12"> <td class="c9"> <p class="c5"><span class="c2">teddy online</span></p> </td> <td class="c18"> <p class="c5"><span class="c2">910</span></p> </td> </tr> <tr class="c12"> <td class="c9 c19"> <p class="c5"><span class="c2">teddy online judge</span></p> </td> <td class="c17"> <p class="c5"><span class="c2">897</span></p> </td> </tr> <tr class="c12"> <td class="c9"> <p class="c5"><span class="c2">teddy programación</span></p> </td> <td class="c18"> <p class="c5"><span class="c2">358</span></p> </td> </tr> <tr class="c12"> <td class="c9 c19"> <p class="c5"><span class="c2">itc teddy</span></p> </td> <td class="c17"> <p class="c5"><span class="c2">352</span></p> </td> </tr> <tr class="c12"> <td class="c9"> <p class="c5"><span class="c2">teddy.itc.mx</span></p> </td> <td class="c18"> <p class="c5"><span class="c2">342</span></p> </td> </tr> <tr class="c12"> <td class="c9 c19"> <p class="c5"><span class="c2">teddy judge</span></p> </td> <td class="c17"> <p class="c5"><span class="c2">340</span></p> </td> </tr> <tr class="c12"> <td class="c9"> <p class="c5"><span class="c2">teddy.itc</span></p> </td> <td class="c18"> <p class="c5"><span class="c2">294</span></p> </td> </tr> </tbody> 
+  <table class="c8" cellspacing="0" cellpadding="0"> <tbody> <tr class="c34"> <td class="c9 c30"> <p class="c5"><span class="c15">Keyword</span></p> </td> <td class="c11"> <p class="c5"><span class="c15">Visitas</span></p> </td> </tr> <tr class="c12"> <td class="c9 c19"> <p class="c5"><span>(not provided)</span></p> </td> <td class="c17"> <p class="c5"><span class="c2">1,869</span></p> </td> </tr> <tr class="c12"> <td class="c9"> <p class="c5"><span class="c2">teddy itc</span></p> </td> <td class="c18"> <p class="c5"><span class="c2">1,509</span></p> </td> </tr> <tr class="c12"> <td class="c9 c19"> <p class="c5"><span class="c2">teddy</span></p> </td> <td class="c17"> <p class="c5"><span class="c2">998</span></p> </td> </tr> <tr class="c12"> <td class="c9"> <p class="c5"><span class="c2">teddy online</span></p> </td> <td class="c18"> <p class="c5"><span class="c2">910</span></p> </td> </tr> <tr class="c12"> <td class="c9 c19"> <p class="c5"><span class="c2">teddy online judge</span></p> </td> <td class="c17"> <p class="c5"><span class="c2">897</span></p> </td> </tr> <tr class="c12"> <td class="c9"> <p class="c5"><span class="c2">teddy programación</span></p> </td> <td class="c18"> <p class="c5"><span class="c2">358</span></p> </td> </tr> <tr class="c12"> <td class="c9 c19"> <p class="c5"><span class="c2">itc teddy</span></p> </td> <td class="c17"> <p class="c5"><span class="c2">352</span></p> </td> </tr> <tr class="c12"> <td class="c9"> <p class="c5"><span class="c2">teddy.itc.mx</span></p> </td> <td class="c18"> <p class="c5"><span class="c2">342</span></p> </td> </tr> <tr class="c12"> <td class="c9 c19"> <p class="c5"><span class="c2">teddy judge</span></p> </td> <td class="c17"> <p class="c5"><span class class="c2">340</span></p> </td> </tr> <tr class="c12"> <td class="c9"> <p class="c5"><span class="c2">teddy.itc</span></p> </td> <td class="c18"> <p class="c5"><span class="c2">294</span></p> </td> </tr> </tbody> 
   </table> 
   
   

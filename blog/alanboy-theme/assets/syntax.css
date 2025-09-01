@@ -1,0 +1,81 @@
+/* Code block styling */
+pre, code {
+  font-family: 'Consolas', 'Monaco', 'Menlo', monospace;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #282c34;
+  color: #abb2bf;
+}
+
+pre {
+  overflow-x: auto;
+}
+
+code {
+  padding: 2px 4px;
+}
+
+pre code {
+  border: 0;
+  padding: 0;
+  background: none;
+}
+
+/* Line numbers */
+.lineno {
+  color: #999;
+  display: inline-block;
+  padding: 0 5px;
+  border-right: 1px solid #e8e8e8;
+  margin-right: 10px;
+}
+
+/* Syntax highlighting */
+.highlight .c { color: #998; font-style: italic } /* Comment */
+.highlight .k { color: #000; font-weight: bold } /* Keyword */
+.highlight .o { color: #000; font-weight: bold } /* Operator */
+.highlight .cm { color: #998; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #999; font-weight: bold } /* Comment.Preproc */
+.highlight .c1 { color: #998; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #999; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #000; background-color: #fdd } /* Generic.Deleted */
+.highlight .gd .x { color: #000; background-color: #faa } /* Generic.Deleted.Specific */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #a00 } /* Generic.Error */
+.highlight .gh { color: #999 } /* Generic.Heading */
+.highlight .gi { color: #000; background-color: #dfd } /* Generic.Inserted */
+.highlight .gi .x { color: #000; background-color: #afa } /* Generic.Inserted.Specific */
+.highlight .go { color: #888 } /* Generic.Output */
+.highlight .gp { color: #555 } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #aaa } /* Generic.Subheading */
+.highlight .gt { color: #a00 } /* Generic.Traceback */
+.highlight .kc { color: #000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kp { color: #000; font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { color: #000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #458; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #099 } /* Literal.Number */
+.highlight .s { color: #d14 } /* Literal.String */
+.highlight .na { color: #008080 } /* Name.Attribute */
+.highlight .nb { color: #0086B3 } /* Name.Builtin */
+.highlight .nc { color: #458; font-weight: bold } /* Name.Class */
+.highlight .no { color: #008080 } /* Name.Constant */
+.highlight .ni { color: #800080 } /* Name.Entity */
+.highlight .ne { color: #900; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #900; font-weight: bold } /* Name.Function */
+.highlight .nn { color: #555 } /* Name.Namespace */
+.highlight .nt { color: #000080 } /* Name.Tag */
+.highlight .nv { color: #008080 } /* Name.Variable */
+.highlight .w { color: #bbb } /* Text.Whitespace */
+
+
+/* Atom One Dark theme overrides */
+pre code.hljs {
+    padding: 0 !important;
+}
+
+.hljs {
+    background-color: #282c34 !important;
+    color: #abb2bf !important;
+}

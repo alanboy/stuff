@@ -2,14 +2,14 @@
 layout: post
 title: "Running UX interviews"
 date: 2025-03-03 11:18:00 -0800
-categories: ux-interviews
+categories: entrepreneurship
 published: true
-description:
+description: "A comprehensive guide to conducting effective UX interviews, including best practices, sample questions, and interview scripts for gathering valuable user feedback"
 ---
 
 
 
-When creating a digital productwhether its an app, website, or software toolits easy to guess what users want. But guessing is risky. Thats where **UX interviews** come in.
+When creating a digital product, whether its an app, website, or software tool, its easy to guess what users want. But guessing is risky. Thats where **UX interviews** come in.
 
 ## What is a UX Interview?
 
@@ -34,7 +34,7 @@ Youre uncovering patterns, pain points, and workarounds that guide your product 
 - Record (with permission) so you can focus on listening
 - Start with open-ended, non-leading questions
 - Ask for stories or examples, not just opinions
-- Be quietsilence invites deeper responses
+- Be quiet, silence invites deeper responses
 - Always thank participants and close with a debrief
 
 

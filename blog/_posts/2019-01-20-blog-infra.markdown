@@ -8,9 +8,9 @@ tags: azure
 published: true
 ---
 
-This blog is a git repo hosted in GitHub. Every push to master triggers a CI build in AzureDevops which builds the site using Jekyll and pushes the results to a Blob Storage account in Azure. The Blob Storage has HTTP access enabled with a custom domain.
+# Infra
 
-    this is some code!
+This blog is a git repo hosted in GitHub. Every push to master triggers a CI build that compiles the site using Jekyll and pushes the results to a Blob Storage account in Azure. The Blob Storage has HTTP access enabled with a custom domain.
 
 Building the jekyll site:
 
@@ -19,7 +19,6 @@ Building the jekyll site:
     bundle exec jekyll build
     ls _site
     
-
 Uploading the files to storage account:
 
     #!/bin/bash
@@ -32,8 +31,7 @@ Uploading the files to storage account:
         && az storage blob upload --container-name $container_name --file ${f:2} --name ${f:2} ;
          done
     
-
-I created a custom Jekyll theme that uses SeleniumUI for the HTML elements.
+I created a custom Jekyll theme that uses SemanticUI for the HTML elements.
 
 For the search, during build-time we create a js file which contains metadata for all the posts and provide that as an input to the search element.
 
@@ -57,6 +55,41 @@ To include mermaid, do this:
       C -->|Three| F[fa:fa-car Car]
     </div>
     
+
+# Markdown
+
+# Header 1
+## Header 2
+### Header 3
+
+```java
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+```python
+def hello():
+    print("Hello, World!")
+```
+
+Quote:
+
+> A quote.
+
+A table:
+
+| Column 1 | Column 2 |
+| -------- | -------- |
+| Row 1    | Row 2    |
+
+Bullet points:
+
+*   Bullet point 1
+*   Bullet point 2
+
 
 Some helpful links in the process
 ---------------------------------

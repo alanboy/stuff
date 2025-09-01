@@ -2,8 +2,8 @@
 layout: post
 title: "New Product Management"
 date: 2020-01-05 12:40:00 -0800
-tags: business marketing innovation
-categories: Entrepreneurship
+tags: business innovation
+categories: entrepreneurship
 published: true
 description: A comprehensive guide to strategic product development, from opportunity identification to launch, focusing on creating customer and business value through behavioral changes
 
