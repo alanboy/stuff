@@ -1,0 +1,19 @@
+/* Post content styles */
+blockquote {
+    background-color: #f8f9fa;
+    border-left: 4px solid #dee2e6;
+    margin: 1.5em 0;
+    padding: 1em 1.2em;
+    font-size: 1.1em;
+    color: #495057;
+    border-radius: 0 4px 4px 0;
+}
+
+blockquote p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
