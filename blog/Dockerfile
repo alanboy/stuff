@@ -15,11 +15,21 @@ COPY alanboy-theme ./alanboy-theme
 # Install dependencies
 RUN bundle install
 
-# Copy the rest of the application
-COPY . .
+# Copy specific files and directories
+COPY _config.yml .
+COPY *.md .
+COPY *.html .
+COPY favicon.ico .
+COPY assets assets/
+
+# Create posts directory
+RUN mkdir -p _posts
+
+# Set up volume for _posts directory
+VOLUME ["/app/_posts"]
 
 # Expose port 4000 for Jekyll server
 EXPOSE 4000
 
 # Command to run when container starts
-CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0"]
+CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--incremental", "--watch"]

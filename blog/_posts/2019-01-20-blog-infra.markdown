@@ -8,7 +8,67 @@ tags: azure
 published: true
 ---
 
-# Infra
+
+# Markdown
+
+<!--
+<div class="ui segment">
+  <div class="ui right floated statistic">
+    <div class="value">
+      2,204
+    </div>
+    <div class="label">
+      Views
+    </div>
+  </div>
+  <p>Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.</p>
+   <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
+   <div class="ui left floated statistic">
+    <div class="value">
+      2,204
+    </div>
+    <div class="label">
+      Views
+    </div>
+  </div>
+  <p>Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id. Mei ut facer dolores adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo. Populo quodsi te eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per id.</p>
+   <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
+ </div>
+ -->
+
+# Header 1
+## Header 2
+### Header 3
+
+```java
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+```python
+def hello():
+    print("Hello, World!")
+```
+
+Quote:
+
+> A quote.
+
+A table:
+
+| Column 1 | Column 2 |
+| -------- | -------- |
+| Row 1    | Row 2    |
+
+Bullet points:
+
+*   Bullet point 1
+*   Bullet point 2
+
+# Basics
 
 This blog is a git repo hosted in GitHub. Every push to master triggers a CI build that compiles the site using Jekyll and pushes the results to a Blob Storage account in Azure. The Blob Storage has HTTP access enabled with a custom domain.
 
@@ -55,40 +115,6 @@ To include mermaid, do this:
       C -->|Three| F[fa:fa-car Car]
     </div>
     
-
-# Markdown
-
-# Header 1
-## Header 2
-### Header 3
-
-```java
-public class Hello {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-
-```python
-def hello():
-    print("Hello, World!")
-```
-
-Quote:
-
-> A quote.
-
-A table:
-
-| Column 1 | Column 2 |
-| -------- | -------- |
-| Row 1    | Row 2    |
-
-Bullet points:
-
-*   Bullet point 1
-*   Bullet point 2
 
 
 Some helpful links in the process

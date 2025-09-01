@@ -1,3 +1,5 @@
+/* version 8:13am */
+
 /* Code block styling */
 pre, code {
   font-family: 'Consolas', 'Monaco', 'Menlo', monospace;
@@ -71,11 +73,11 @@ pre code {
 
 
 /* Atom One Dark theme overrides */
-pre code.hljs {
+/*pre code.hljs {
     padding: 0 !important;
 }
 
 .hljs {
     background-color: #282c34 !important;
     color: #abb2bf !important;
-}
+}*/

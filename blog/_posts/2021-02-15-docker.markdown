@@ -2,7 +2,7 @@
 layout: post
 title: "Docker"
 date: 2021-02-15 11:48:00 -0800
-categories: Engineering
+categories: engineering
 published: true
 description: Some stuff I find useful when working with Docker containers
 ---

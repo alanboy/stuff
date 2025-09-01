@@ -4,7 +4,7 @@ title: "Git notes"
 date: 2019-06-29 12:57:00 -0800
 tags: git software engineering reference
 published: true
-description:
+description: A practical guide to Git commands and workflows, covering configuration, submodules, squashing commits, reset operations, and GitHub credentials management
 ---
 
 

@@ -2,9 +2,9 @@
 layout: post
 title: "kubernetes"
 date: 2021-03-02 05:31:00 -0800
-categories: kubernetes
+categories: software
 published: true
-description:
+description: A guide to Kubernetes fundamentals, including key concepts, installation steps, and basic tooling
 ---
 
 ## Definitions

@@ -2,7 +2,7 @@
 layout: post
 title: "Customer Development"
 date: 2022-01-27 20:59:00 -0800
-categories: Business
+categories: entrepreneurship
 published: true
 description: Customer Development
 ---

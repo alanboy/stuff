@@ -4,7 +4,7 @@ title: "Building Turing"
 date: 2021-09-11 23:05:00 -0800
 categories: none
 published: false
-description:
+description: Exploring Domain Specific Languages (DSLs), programming paradigms, and JVM-based languages with a focus on building fluent APIs
 ---
 
 # Introduction

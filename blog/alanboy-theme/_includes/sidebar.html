@@ -1,22 +1,46 @@
 <!-- sidebar.html -->
-<div class="ui segments"> 
-
-    <div class="ui segment">
-        <div class="ui bulleted list">
-            {% assign sorted_categories = site.categories | sort %}
-            {% for category in sorted_categories %}
-            <div class="item" >
-                <div >{{ category[0] | capitalize }}</div>
-
-                {% assign currentCategory = category[0] %}
-                <div class="list">
-                    {% for post in site.categories[currentCategory] %}
-                        <a class="item" href="{{ post.url }}">{{ post.title }}</a>
-                    {% endfor %}
-                </div>
-            </div>
-            {% endfor %}
-        </div>
+<div class="ui card" style="
+    width: 15rem;
+">
+  <div class="ui slide masked reveal image">
+    <img src="https://pbs.twimg.com/profile_images/1808978365/mboy_400x400.jpg" class="visible content">
+    
+  </div>
+  <div class="content">
+    <a class="header">Alan Gonzalez</a>
+    <div class="meta">
+      <span class="date">Created in Sep 2014</span>
     </div>
+  </div>
+  <div class="extra content">
+    <a>
+      <i class="users icon"></i>
+      2 Members
+    </a>
+  </div>
+</div>
+    <div class="ui vertical menu">
+  <div class="item">
+    <div class="header">Startups</div>
+    <div class="menu">
+      {% for post in site.categories.entrepreneurship %}
+        <a class="item" href="{{ post.url }}">{{ post.title }}</a>
+      {% endfor %}
+    </div>
+  </div>
+  {% assign sorted_categories = site.categories | sort %}
+  {% for category in sorted_categories %}
+    {% if category[0] != 'entrepreneurship' %}
+    <div class="item">
+      <div class="header">{{ category[0] | capitalize }}</div>
+      <div class="menu">
+        {% assign currentCategory = category[0] %}
+        {% for post in site.categories[currentCategory] %}
+          <a class="item" href="{{ post.url }}">{{ post.title }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
 </div>
 <!-- sidebar.html -->

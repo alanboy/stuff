@@ -6,7 +6,7 @@ layout: default
 
   <!-- Post View Section -->
   <div class="post-view" id="viewMode">
-    <h2 class="ui header">
+    <h2 class="ui header post-title">
       <div class="content">
         {{ page.title | escape }}
 
@@ -50,7 +50,14 @@ by
       <p class="post-meta"></p>
     </header>
 
-    <div class="post-content e-content" itemprop="articleBody">
+    <div class="post-content e-content" itemprop="articleBody" markdown="1">
+
+{%- if page.description -%}
+<div class="ui segment">
+  <p>{{ page.description }}</p>
+</div>
+{%- endif -%}
+
       {{ content }}
     </div>
 

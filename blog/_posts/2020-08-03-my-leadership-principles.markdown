@@ -4,7 +4,7 @@ title: "My leadership principles"
 date: 2020-08-03 10:24:00 -0800
 categories: leadership
 published: false
-description:
+description: Personal reflections on leadership values, including managing relationships, kindness in leadership, self-awareness, and understanding privilege
 published: true
 ---
 # My personal leadership principles
