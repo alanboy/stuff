@@ -10,6 +10,50 @@
     line-height: 1.6;
 }
 
+/* Semantic UI table styles for all tables in post content */
+.post-content table {
+    display: table;
+    width: 100%;
+    background: #fff;
+    margin: 1em 0;
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: .28571429rem;
+    text-align: left;
+    color: rgba(0,0,0,.87);
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 11px;
+}
+
+.post-content table th,
+.post-content table td {
+    cursor: auto;
+    text-align: inherit;
+    color: rgba(0,0,0,.87);
+    padding: .78571429em .78571429em;
+    vertical-align: inherit;
+    border-left: 1px solid rgba(34,36,38,.1);
+}
+
+.post-content table th {
+    background: #f9fafb;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(34,36,38,.1);
+}
+
+.post-content table tr td {
+    border-top: 1px solid rgba(34,36,38,.1);
+}
+
+.post-content table tr:first-child td {
+    border-top: none;
+}
+
+/* Add zebra striping for better readability */
+.post-content table tr:nth-child(even) {
+    background-color: rgba(0,0,50,.02);
+}
+
 .post-content h1 {
     font-size: 1.8rem !important;
     margin-top: 2rem !important;
