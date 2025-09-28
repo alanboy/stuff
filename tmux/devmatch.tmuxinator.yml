@@ -1,0 +1,25 @@
+
+name: devmatch
+root: /opt/
+
+windows:
+  - frontend:
+       layout: main-vertical
+       root: ~/code/turing/frontend/developer-ui
+       panes:
+         - echo npm run start:local
+         -
+  - backend:
+       layout: main-vertical
+       root: ~/code/turing/backend
+       panes:
+         - echo yarn local
+         -
+  - claude-code:
+       layout: main-vertical
+       root: ~/code/turing/
+       panes:
+         - echo claude 
+         -
+  - logs:
+
