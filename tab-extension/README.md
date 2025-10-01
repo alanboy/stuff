@@ -9,6 +9,7 @@ A Chrome extension for managing browser tabs and windows, inspired by Cluster Ta
 - **Tab Management**: 
   - Select multiple tabs with checkboxes
   - Close selected tabs in bulk
+  - Move selected tabs to another window in bulk
   - Close individual tabs
 - **Rich Tab Information**:
   - Full URL path (not just domain)

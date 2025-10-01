@@ -95,6 +95,9 @@ function createWindowCard(window) {
           <option value="title">Sort by Title</option>
           <option value="domain">Sort by Domain</option>
         </select>
+        <select class="move-to-dropdown" data-window-id="${window.id}" disabled>
+          <option value="">Move to...</option>
+        </select>
         <button class="btn btn-danger btn-close-selected" data-window-id="${window.id}" disabled>
           Close Selected
         </button>
@@ -142,14 +145,8 @@ function createTabRow(tab, windowId) {
     // Escape the favicon URL for use in HTML attribute
     const escapedFavicon = favicon.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
     
-    // Format metadata
+    // Format metadata (only icons, no time)
     let metaHtml = '<div class="tab-meta">';
-    
-    // Last accessed time (if available)
-    if (tab.lastAccessed) {
-      const timeAgo = getTimeAgo(tab.lastAccessed);
-      metaHtml += `<span class="tab-meta-item" title="Last accessed">🕐 ${timeAgo}</span>`;
-    }
     
     // Audible indicator
     if (tab.audible) {
@@ -163,6 +160,13 @@ function createTabRow(tab, windowId) {
     
     metaHtml += '</div>';
     
+    // Time ago for top right
+    let timeAgoHtml = '';
+    if (tab.lastAccessed) {
+      const timeAgo = getTimeAgo(tab.lastAccessed);
+      timeAgoHtml = `<span class="tab-time" title="Last accessed">${timeAgo}</span>`;
+    }
+    
     return `
       <div class="tab-row" data-tab-id="${tab.id}" data-window-id="${windowId}" draggable="true">
         <input type="checkbox" class="tab-checkbox" data-tab-id="${tab.id}">
@@ -172,6 +176,7 @@ function createTabRow(tab, windowId) {
           <div class="tab-url">${escapeHtml(urlPath)}</div>
           ${metaHtml}
         </div>
+        ${timeAgoHtml}
         <div class="tab-actions">
           <button class="tab-action-btn" data-action="close" data-tab-id="${tab.id}">✕</button>
         </div>
@@ -209,12 +214,31 @@ function setupWindowCardListeners(card, window) {
     sortTabs(windowId, e.target.value);
   });
   
+  // Move to dropdown - populate with other windows
+  const moveToDropdown = card.querySelector('.move-to-dropdown');
+  allWindows.forEach(w => {
+    if (w.id !== windowId) {
+      const option = document.createElement('option');
+      option.value = w.id;
+      option.textContent = w.id === currentWindowId ? 'Current Window' : `Window ${w.id}`;
+      moveToDropdown.appendChild(option);
+    }
+  });
+  
+  moveToDropdown.addEventListener('change', (e) => {
+    if (e.target.value) {
+      moveSelectedTabs(windowId, parseInt(e.target.value));
+      e.target.value = ''; // Reset dropdown
+    }
+  });
+  
   // Select all checkbox
   const selectAllCheckbox = card.querySelector('.select-all-checkbox');
   selectAllCheckbox.addEventListener('change', (e) => {
     const checkboxes = card.querySelectorAll('.tab-checkbox');
     checkboxes.forEach(cb => cb.checked = e.target.checked);
     updateCloseButton(windowId);
+    updateMoveToButton(windowId);
   });
   
   // Tab checkboxes
@@ -222,6 +246,7 @@ function setupWindowCardListeners(card, window) {
   tabCheckboxes.forEach(checkbox => {
     checkbox.addEventListener('change', () => {
       updateCloseButton(windowId);
+      updateMoveToButton(windowId);
       updateSelectAllCheckbox(windowId);
     });
   });
@@ -277,6 +302,14 @@ function updateCloseButton(windowId) {
   closeButton.disabled = checkboxes.length === 0;
 }
 
+// Update move to button state
+function updateMoveToButton(windowId) {
+  const card = document.querySelector(`[data-window-id="${windowId}"]`);
+  const checkboxes = card.querySelectorAll('.tab-checkbox:checked');
+  const moveToDropdown = card.querySelector('.move-to-dropdown');
+  moveToDropdown.disabled = checkboxes.length === 0;
+}
+
 // Update select all checkbox state
 function updateSelectAllCheckbox(windowId) {
   const card = document.querySelector(`[data-window-id="${windowId}"]`);
@@ -296,6 +329,20 @@ async function closeSelectedTabs(windowId) {
   
   if (tabIds.length > 0) {
     await chrome.tabs.remove(tabIds);
+    setTimeout(loadWindows, 100);
+  }
+}
+
+// Move selected tabs to another window
+async function moveSelectedTabs(fromWindowId, toWindowId) {
+  const card = document.querySelector(`[data-window-id="${fromWindowId}"]`);
+  const checkedCheckboxes = card.querySelectorAll('.tab-checkbox:checked');
+  const tabIds = Array.from(checkedCheckboxes).map(cb => parseInt(cb.dataset.tabId));
+  
+  if (tabIds.length > 0) {
+    for (const tabId of tabIds) {
+      await chrome.tabs.move(tabId, { windowId: toWindowId, index: -1 });
+    }
     setTimeout(loadWindows, 100);
   }
 }

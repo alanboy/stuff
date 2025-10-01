@@ -1,7 +1,10 @@
-
 <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="24" cy="24" r="22" fill="#10b981"/>
-  <path d="M 14.399999999999999 24 L 21.6 31.200000000000003 L 33.599999999999994 16.799999999999997" 
-        stroke="white" stroke-width="6" stroke-linecap="round" 
-        stroke-linejoin="round" fill="none"/>
+  <!-- Background -->
+  <rect width="48" height="48" fill="#10b981" rx="8"/>
+  
+  <!-- Window/Tab icon -->
+  <rect x="9" y="12" width="30" height="24" fill="white" rx="2"/>
+  <rect x="9" y="12" width="30" height="7" fill="#059669" rx="2"/>
+  <line x1="14" y1="24" x2="34" y2="24" stroke="#10b981" stroke-width="2"/>
+  <line x1="14" y1="29" x2="26" y2="29" stroke="#10b981" stroke-width="2"/>
 </svg>
