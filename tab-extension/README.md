@@ -4,15 +4,21 @@ A Chrome extension for managing browser tabs and windows, inspired by Cluster Ta
 
 ## Features
 
+- **Two-Column Layout**: View windows side-by-side for better space utilization
 - **Window Cards**: View all open windows in a clean card-based interface
 - **Tab Management**: 
   - Select multiple tabs with checkboxes
   - Close selected tabs in bulk
   - Close individual tabs
+- **Rich Tab Information**:
+  - Full URL path (not just domain)
+  - Memory usage per tab
+  - Last accessed time
+  - Audio/pinned indicators
 - **Drag & Drop**: 
   - Reorder tabs within a window by dragging them to new positions
   - Move tabs between windows by dragging to another window card
-- **Sorting**: Sort tabs by title or domain name
+- **Sorting**: Sort tabs by title or top-level domain
 - **Search**: Filter tabs across all windows
 - **Real-time Updates**: Interface updates automatically as you open/close tabs
 

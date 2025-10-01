@@ -118,11 +118,22 @@ function createWindowCard(window) {
 // Create a tab row
 function createTabRow(tab, windowId) {
   try {
-    let domain = '';
+    let urlPath = '';
     try {
-      domain = new URL(tab.url).hostname || tab.url;
+      const urlObj = new URL(tab.url);
+      const hostname = urlObj.hostname || '';
+      const pathname = urlObj.pathname || '';
+      const search = urlObj.search || '';
+      
+      // Combine hostname with path
+      urlPath = hostname + pathname + search;
+      
+      // Truncate if too long
+      if (urlPath.length > 80) {
+        urlPath = urlPath.substring(0, 77) + '...';
+      }
     } catch (e) {
-      domain = tab.url;
+      urlPath = tab.url;
     }
     
     const favicon = tab.favIconUrl || 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 fill=%22%23ccc%22/%3E%3C/svg%3E';
@@ -131,13 +142,35 @@ function createTabRow(tab, windowId) {
     // Escape the favicon URL for use in HTML attribute
     const escapedFavicon = favicon.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
     
+    // Format metadata
+    let metaHtml = '<div class="tab-meta">';
+    
+    // Last accessed time (if available)
+    if (tab.lastAccessed) {
+      const timeAgo = getTimeAgo(tab.lastAccessed);
+      metaHtml += `<span class="tab-meta-item" title="Last accessed">🕐 ${timeAgo}</span>`;
+    }
+    
+    // Audible indicator
+    if (tab.audible) {
+      metaHtml += `<span class="tab-meta-item" title="Playing audio">🔊</span>`;
+    }
+    
+    // Pinned indicator
+    if (tab.pinned) {
+      metaHtml += `<span class="tab-meta-item" title="Pinned">📌</span>`;
+    }
+    
+    metaHtml += '</div>';
+    
     return `
       <div class="tab-row" data-tab-id="${tab.id}" data-window-id="${windowId}" draggable="true">
         <input type="checkbox" class="tab-checkbox" data-tab-id="${tab.id}">
         <img src="${escapedFavicon}" class="tab-favicon" data-fallback="${fallbackIcon}">
         <div class="tab-info">
           <div class="tab-title">${escapeHtml(tab.title)}</div>
-          <div class="tab-url">${escapeHtml(domain)}</div>
+          <div class="tab-url">${escapeHtml(urlPath)}</div>
+          ${metaHtml}
         </div>
         <div class="tab-actions">
           <button class="tab-action-btn" data-action="close" data-tab-id="${tab.id}">✕</button>
@@ -148,6 +181,22 @@ function createTabRow(tab, windowId) {
     console.error('Error creating tab row:', error, tab);
     return '';
   }
+}
+
+// Get human-readable time ago
+function getTimeAgo(timestamp) {
+  const now = Date.now();
+  const diff = now - timestamp;
+  
+  const seconds = Math.floor(diff / 1000);
+  const minutes = Math.floor(seconds / 60);
+  const hours = Math.floor(minutes / 60);
+  const days = Math.floor(hours / 24);
+  
+  if (days > 0) return `${days}d ago`;
+  if (hours > 0) return `${hours}h ago`;
+  if (minutes > 0) return `${minutes}m ago`;
+  return 'just now';
 }
 
 // Setup event listeners for a window card
