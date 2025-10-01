@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-left">
+        <div class="logo">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="14" fill="#10b981" stroke="#059669" stroke-width="2"/>
+            <path d="M12 16L15 19L20 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h1>Tab Manager</h1>
+        </div>
+      </div>
+      <div class="header-right">
+        <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+      </div>
+    </header>
+
+    <div class="main-content">
+      <aside class="sidebar">
+        <nav>
+          <a href="#" class="nav-item active">Active Windows</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <div id="windowsContainer" class="windows-container">
+          <!-- Windows will be dynamically inserted here -->
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="manager.js"></script>
+</body>
+</html>
