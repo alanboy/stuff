@@ -7,8 +7,13 @@ published: true
 description: Customer Development
 ---
 
-## Customer Development
-Customer development is divided into two phases: problem discovery and product validation. Problem discovery is about understanding the customer's perspective and problems, after you've understood the problem, then you create a prototipe (or MVP) and then proceed with the product validation.
+If you are just about to run an interview, download a cheat sheet here.
+
+# What are Customer Development Interview?
+
+They are a way to understand the product and the market better.
+
+Customer development interviews are divided into two phases: **problem discovery** and **product validation**. Problem discovery is about understanding the customer's perspective and problems, after you've understood the problem, then you create a prototype (or MVP) and then proceed with the product validation.
 
 You must begin with a set of hypothesis, the process of customer development will validate or invalidate these. But the most important part of validating or invalidating the hypothesis is that it has to come from the potential customers, not you. 
 
@@ -35,7 +40,7 @@ Successful teams have reported 100-200 interviews. The goal is to interview unti
 
 ## Finding people
 
-Start by creating a spreasheet like this:
+Start by creating a spreadsheet like this:
 
 ![](2022-01-28-09-41-31.png)
 
