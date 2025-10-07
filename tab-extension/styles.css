@@ -41,6 +41,10 @@ header {
   gap: 12px;
 }
 
+.logo img {
+  border-radius: 6px;
+}
+
 .logo h1 {
   font-size: 16px;
   font-weight: 600;
@@ -126,7 +130,8 @@ header {
   align-items: center;
 }
 
-.sort-dropdown {
+.sort-dropdown,
+.move-to-dropdown {
   padding: 6px 12px;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
@@ -134,6 +139,14 @@ header {
   background: white;
   cursor: pointer;
   outline: none;
+  height: 32px;
+  line-height: 1.5;
+}
+
+.sort-dropdown:disabled,
+.move-to-dropdown:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .btn {
@@ -145,7 +158,9 @@ header {
   transition: all 0.2s;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
+  height: 32px;
+  line-height: 1.5;
 }
 
 .btn-icon {

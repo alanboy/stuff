@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate PNG Icons</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .instructions {
+      background: #e3f2fd;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 20px 0;
+      color: #1565c0;
+    }
+    .icons-preview {
+      display: flex;
+      gap: 30px;
+      margin: 30px 0;
+      align-items: flex-start;
+    }
+    .icon-item {
+      text-align: center;
+    }
+    .icon-item canvas {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    button {
+      background: #10b981;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    button:hover {
+      background: #059669;
+    }
+    .success {
+      background: #d4edda;
+      color: #155724;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 Tab Manager Icon Generator</h1>
+    <p>Generate PNG icons for your Chrome extension</p>
+    
+    <div class="instructions">
+      <strong>Instructions:</strong>
+      <ol>
+        <li>Click "Generate Icons" to create the PNG files</li>
+        <li>Click each "Download" button to save the icons</li>
+        <li>Save them in the <code>icons/</code> folder with the correct names</li>
+        <li>Reload your extension in Chrome</li>
+      </ol>
+    </div>
+
+    <button onclick="generateIcons()">Generate Icons</button>
+    
+    <div class="icons-preview" id="preview"></div>
+    
+    <div class="success" id="success">
+      ✓ Icons generated! Click the download buttons above to save them.
+    </div>
+  </div>
+
+  <script>
+    function drawIcon(canvas, size) {
+      const ctx = canvas.getContext('2d');
+      const scale = size / 48;
+      
+      ctx.scale(scale, scale);
+      
+      // Background with rounded corners
+      ctx.fillStyle = '#10b981';
+      roundRect(ctx, 0, 0, 48, 48, 8);
+      ctx.fill();
+      
+      // Window/Tab icon - white background
+      ctx.fillStyle = 'white';
+      roundRect(ctx, 9, 12, 30, 24, 2);
+      ctx.fill();
+      
+      // Top bar (header)
+      ctx.fillStyle = '#059669';
+      roundRect(ctx, 9, 12, 30, 7, 2);
+      ctx.fill();
+      
+      // Lines representing text
+      ctx.strokeStyle = '#10b981';
+      ctx.lineWidth = 2;
+      ctx.lineCap = 'round';
+      
+      // First line
+      ctx.beginPath();
+      ctx.moveTo(14, 24);
+      ctx.lineTo(34, 24);
+      ctx.stroke();
+      
+      // Second line (shorter)
+      ctx.beginPath();
+      ctx.moveTo(14, 29);
+      ctx.lineTo(26, 29);
+      ctx.stroke();
+    }
+    
+    function roundRect(ctx, x, y, width, height, radius) {
+      ctx.beginPath();
+      ctx.moveTo(x + radius, y);
+      ctx.lineTo(x + width - radius, y);
+      ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+      ctx.lineTo(x + width, y + height - radius);
+      ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+      ctx.lineTo(x + radius, y + height);
+      ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+      ctx.lineTo(x, y + radius);
+      ctx.quadraticCurveTo(x, y, x + radius, y);
+      ctx.closePath();
+    }
+    
+    function downloadCanvas(canvas, filename) {
+      canvas.toBlob(function(blob) {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        a.click();
+        URL.revokeObjectURL(url);
+      });
+    }
+    
+    function generateIcons() {
+      const preview = document.getElementById('preview');
+      preview.innerHTML = '';
+      
+      const sizes = [
+        { size: 16, name: 'icon16.png' },
+        { size: 48, name: 'icon48.png' },
+        { size: 128, name: 'icon128.png' }
+      ];
+      
+      sizes.forEach(({ size, name }) => {
+        const item = document.createElement('div');
+        item.className = 'icon-item';
+        
+        const canvas = document.createElement('canvas');
+        canvas.width = size;
+        canvas.height = size;
+        drawIcon(canvas, size);
+        
+        const label = document.createElement('div');
+        label.textContent = `${size}x${size}`;
+        label.style.fontWeight = 'bold';
+        label.style.marginBottom = '8px';
+        
+        const button = document.createElement('button');
+        button.textContent = `Download ${name}`;
+        button.onclick = () => downloadCanvas(canvas, name);
+        
+        item.appendChild(label);
+        item.appendChild(canvas);
+        item.appendChild(button);
+        preview.appendChild(item);
+      });
+      
+      document.getElementById('success').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

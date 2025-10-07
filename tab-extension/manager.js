@@ -99,6 +99,9 @@ function createWindowCard(window) {
           <option value="">Move to...</option>
         </select>
         <button class="btn btn-danger btn-close-selected" data-window-id="${window.id}" disabled>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
           Close Selected
         </button>
       </div>
@@ -379,7 +382,23 @@ async function sortTabs(windowId, sortType) {
     sortedTabs.sort((a, b) => {
       const domainA = getTopLevelDomain(a.url);
       const domainB = getTopLevelDomain(b.url);
-      return domainA.localeCompare(domainB);
+      
+      // First, compare by top-level domain
+      const domainCompare = domainA.localeCompare(domainB);
+      if (domainCompare !== 0) {
+        return domainCompare;
+      }
+      
+      // If top-level domains are the same, compare by full URL (hostname + path)
+      try {
+        const urlA = new URL(a.url);
+        const urlB = new URL(b.url);
+        const fullA = urlA.hostname + urlA.pathname;
+        const fullB = urlB.hostname + urlB.pathname;
+        return fullA.localeCompare(fullB);
+      } catch (e) {
+        return a.url.localeCompare(b.url);
+      }
     });
   } else {
     // Default order - no sorting needed
