@@ -2,6 +2,7 @@
 let allWindows = [];
 let currentWindowId = null;
 let searchQuery = '';
+let selectedTabIds = new Set(); // Track selected tab IDs across re-renders
 
 // Initialize the manager
 async function init() {
@@ -44,6 +45,9 @@ function setupEventListeners() {
 
 // Render all windows
 function renderWindows() {
+  // Save current checkbox selections before re-rendering
+  saveCheckboxSelections();
+  
   const container = document.getElementById('windowsContainer');
   container.innerHTML = '';
   
@@ -59,6 +63,9 @@ function renderWindows() {
     const windowCard = createWindowCard(window);
     container.appendChild(windowCard);
   });
+  
+  // Restore checkbox selections after re-rendering
+  restoreCheckboxSelections();
   
   if (filteredWindows.length === 0) {
     container.innerHTML = '<div class="empty-state">No windows found</div>';
@@ -239,7 +246,15 @@ function setupWindowCardListeners(card, window) {
   const selectAllCheckbox = card.querySelector('.select-all-checkbox');
   selectAllCheckbox.addEventListener('change', (e) => {
     const checkboxes = card.querySelectorAll('.tab-checkbox');
-    checkboxes.forEach(cb => cb.checked = e.target.checked);
+    checkboxes.forEach(cb => {
+      cb.checked = e.target.checked;
+      const tabId = parseInt(cb.dataset.tabId);
+      if (e.target.checked) {
+        selectedTabIds.add(tabId);
+      } else {
+        selectedTabIds.delete(tabId);
+      }
+    });
     updateCloseButton(windowId);
     updateMoveToButton(windowId);
   });
@@ -248,6 +263,12 @@ function setupWindowCardListeners(card, window) {
   const tabCheckboxes = card.querySelectorAll('.tab-checkbox');
   tabCheckboxes.forEach(checkbox => {
     checkbox.addEventListener('change', () => {
+      const tabId = parseInt(checkbox.dataset.tabId);
+      if (checkbox.checked) {
+        selectedTabIds.add(tabId);
+      } else {
+        selectedTabIds.delete(tabId);
+      }
       updateCloseButton(windowId);
       updateMoveToButton(windowId);
       updateSelectAllCheckbox(windowId);
@@ -269,6 +290,7 @@ function setupWindowCardListeners(card, window) {
       const tabId = parseInt(btn.dataset.tabId);
       
       if (action === 'close') {
+        selectedTabIds.delete(tabId); // Remove from selections
         chrome.tabs.remove(tabId);
         setTimeout(loadWindows, 100);
       }
@@ -331,6 +353,8 @@ async function closeSelectedTabs(windowId) {
   const tabIds = Array.from(checkedCheckboxes).map(cb => parseInt(cb.dataset.tabId));
   
   if (tabIds.length > 0) {
+    // Remove from selectedTabIds since we're closing them
+    tabIds.forEach(tabId => selectedTabIds.delete(tabId));
     await chrome.tabs.remove(tabIds);
     setTimeout(loadWindows, 100);
   }
@@ -346,6 +370,7 @@ async function moveSelectedTabs(fromWindowId, toWindowId) {
     for (const tabId of tabIds) {
       await chrome.tabs.move(tabId, { windowId: toWindowId, index: -1 });
     }
+    // Keep selections after moving (tabs still exist, just in different window)
     setTimeout(loadWindows, 100);
   }
 }
@@ -503,6 +528,48 @@ function handleDragEnd(e) {
   draggedElement = null;
   draggedTabId = null;
   draggedWindowId = null;
+}
+
+// Save checkbox selections before re-rendering
+function saveCheckboxSelections() {
+  const checkboxes = document.querySelectorAll('.tab-checkbox:checked');
+  checkboxes.forEach(checkbox => {
+    const tabId = parseInt(checkbox.dataset.tabId);
+    selectedTabIds.add(tabId);
+  });
+}
+
+// Restore checkbox selections after re-rendering
+function restoreCheckboxSelections() {
+  // Remove tab IDs that no longer exist
+  const allCurrentTabIds = new Set();
+  allWindows.forEach(window => {
+    window.tabs.forEach(tab => {
+      allCurrentTabIds.add(tab.id);
+    });
+  });
+  
+  // Clean up selectedTabIds - remove tabs that no longer exist
+  selectedTabIds.forEach(tabId => {
+    if (!allCurrentTabIds.has(tabId)) {
+      selectedTabIds.delete(tabId);
+    }
+  });
+  
+  // Restore checkboxes
+  selectedTabIds.forEach(tabId => {
+    const checkbox = document.querySelector(`.tab-checkbox[data-tab-id="${tabId}"]`);
+    if (checkbox) {
+      checkbox.checked = true;
+    }
+  });
+  
+  // Update button states for each window
+  allWindows.forEach(window => {
+    updateCloseButton(window.id);
+    updateMoveToButton(window.id);
+    updateSelectAllCheckbox(window.id);
+  });
 }
 
 // Utility function to escape HTML
