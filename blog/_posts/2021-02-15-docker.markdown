@@ -11,6 +11,8 @@ Docker is a platform that lets you package applications and their dependencies i
 
 # Basic Docker commands
 
+## Standalone containers
+
 Build an image:
 ```
 docker build -t alango/node-hello .
@@ -43,7 +45,17 @@ List all containers.
 
     docker ps
 
-# Azure
+## Docker Compose containers
+
+Rebuild + recreate only that service (don't touch others):
+
+```
+docker compose up -d --no-deps --build <service>
+```
+
+# Running containers in the cloud
+
+## Azure
 
 Deploying to Azure:
 ```
@@ -69,13 +81,8 @@ az container show                                       \
 
 https://docs.microsoft.com/en-us/azure/container-instances/container-instances-quickstart
 
-# AWS
-https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html
-https://us-west-2.console.aws.amazon.com/ecs/home?region=us-west-2#/getStarted
 
-
-
-# Docker on Azure
+### Az Cli commands
 Create a container:
 ```
 az container create 
@@ -94,9 +101,12 @@ az container show
   --out table
 ```
 
-https://docs.microsoft.com/en-us/azure/container-instances/container-instances-quickstart
 
-# Docker on AWS
+## AWS
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html
+https://us-west-2.console.aws.amazon.com/ecs/home?region=us-west-2#/getStarted
+
+https://docs.microsoft.com/en-us/azure/container-instances/container-instances-quickstart
 https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html
 https://us-west-2.console.aws.amazon.com/ecs/home?region=us-west-2#/getStarted
 
