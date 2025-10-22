@@ -297,6 +297,22 @@ function setupWindowCardListeners(card, window) {
     });
   });
   
+  // Click handler for tab titles
+  const tabTitles = card.querySelectorAll('.tab-title');
+  tabTitles.forEach(title => {
+    const tabRow = title.closest('.tab-row');
+    const tabId = parseInt(tabRow.dataset.tabId);
+    const windowId = parseInt(tabRow.dataset.windowId);
+    
+    title.addEventListener('click', (e) => {
+      e.stopPropagation();
+      // Switch to the tab
+      chrome.tabs.update(tabId, { active: true });
+      // Focus the window
+      chrome.windows.update(windowId, { focused: true });
+    });
+  });
+  
   // Drag and drop for tab rows
   const tabRows = card.querySelectorAll('.tab-row');
   tabRows.forEach(row => {
