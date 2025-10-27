@@ -35,6 +35,12 @@ header {
   gap: 24px;
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -208,6 +214,20 @@ header {
 .btn-danger:disabled {
   background: #fca5a5;
   cursor: not-allowed;
+}
+
+.btn-merge {
+  background: #10b981;
+  color: white;
+  font-weight: 500;
+}
+
+.btn-merge:hover {
+  background: #059669;
+}
+
+.btn-merge:active {
+  background: #047857;
 }
 
 .tabs-table {

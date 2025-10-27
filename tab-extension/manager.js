@@ -41,6 +41,9 @@ function setupEventListeners() {
     searchQuery = e.target.value.toLowerCase();
     renderWindows();
   });
+  
+  const mergeAllBtn = document.getElementById('mergeAllBtn');
+  mergeAllBtn.addEventListener('click', mergeAllWindows);
 }
 
 // Render all windows
@@ -388,6 +391,64 @@ async function moveSelectedTabs(fromWindowId, toWindowId) {
     }
     // Keep selections after moving (tabs still exist, just in different window)
     setTimeout(loadWindows, 100);
+  }
+}
+
+// Merge all tabs from all windows into the current window
+async function mergeAllWindows() {
+  if (allWindows.length <= 1) {
+    return; // Nothing to merge
+  }
+  
+  // Disable the button during merge
+  const mergeBtn = document.getElementById('mergeAllBtn');
+  mergeBtn.disabled = true;
+  mergeBtn.textContent = 'Merging...';
+  
+  try {
+    // Get all tabs from all windows except the current window
+    const tabsToMove = [];
+    
+    for (const window of allWindows) {
+      if (window.id !== currentWindowId) {
+        tabsToMove.push(...window.tabs.map(tab => tab.id));
+      }
+    }
+    
+    // Move all tabs to the current window
+    for (const tabId of tabsToMove) {
+      await chrome.tabs.move(tabId, { windowId: currentWindowId, index: -1 });
+    }
+    
+    // Close empty windows
+    for (const window of allWindows) {
+      if (window.id !== currentWindowId) {
+        try {
+          await chrome.windows.remove(window.id);
+        } catch (e) {
+          // Window might already be closed
+          console.log('Window already closed:', window.id);
+        }
+      }
+    }
+    
+    setTimeout(loadWindows, 200);
+  } finally {
+    // Re-enable the button
+    setTimeout(() => {
+      mergeBtn.disabled = false;
+      mergeBtn.innerHTML = `
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+          <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+          <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+          <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+          <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+          <line x1="12" y1="22.08" x2="12" y2="12"></line>
+        </svg>
+        Merge All
+      `;
+    }, 300);
   }
 }
 
