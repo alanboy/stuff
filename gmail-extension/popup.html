@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gmail Unread Counter</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Gmail Unread Messages</h1>
+      <div id="status-indicator"></div>
+    </div>
+    
+    <div id="login-container">
+      <button id="login">Sign in with Google</button>
+    </div>
+    
+    <div id="content" class="hidden">
+      <div id="stats">
+        <div class="stat-box">
+          <span id="unread-count">0</span>
+          <span class="label">Unread</span>
+        </div>
+      </div>
+      
+      <div id="senders-container">
+        <h2>Top Senders</h2>
+        <ul id="senders-list"></ul>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="footer-top">
+        <button id="refresh">Refresh</button>
+        <button id="logout" class="hidden">Sign Out</button>
+      </div>
+      <div class="account-info" id="account-info">
+        <span>Account: </span><span id="user-email">Not signed in</span>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

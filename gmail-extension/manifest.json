@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Unread Counter",
+  "version": "1.0",
+  "description": "Shows your unread Gmail messages",
+  "permissions": ["identity", "storage", "alarms"],
+  "host_permissions": ["https://www.googleapis.com/"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.svg"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "oauth2": {
+    "client_id": "916941878676-t21h7ltsco1kp9pkchmogkcnhd13m62m.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/gmail.readonly"]
+  },
+  "icons": {
+    "128": "icon.svg"
+  }
+}
