@@ -230,6 +230,25 @@ header {
   background: #047857;
 }
 
+.btn-close-duplicates {
+  background: #f59e0b;
+  color: white;
+  font-weight: 500;
+}
+
+.btn-close-duplicates:hover {
+  background: #d97706;
+}
+
+.btn-close-duplicates:active {
+  background: #b45309;
+}
+
+.btn-close-duplicates:disabled {
+  background: #fcd34d;
+  cursor: not-allowed;
+}
+
 .tabs-table {
   width: 100%;
 }
@@ -250,6 +269,20 @@ header {
 
 .tab-row.selected {
   background: #f0fdf4;
+}
+
+.tab-row.current-tab {
+  background: #dbeafe;
+  border-left: 4px solid #3b82f6;
+}
+
+.tab-row.current-tab:hover {
+  background: #bfdbfe;
+}
+
+.tab-row.current-tab .tab-title {
+  color: #1d4ed8;
+  font-weight: 600;
 }
 
 .tab-row:last-child {

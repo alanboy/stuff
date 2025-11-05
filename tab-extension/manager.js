@@ -1,12 +1,19 @@
 // State management
 let allWindows = [];
 let currentWindowId = null;
+let currentTabId = null;
 let searchQuery = '';
 let selectedTabIds = new Set(); // Track selected tab IDs across re-renders
 
 // Initialize the manager
 async function init() {
-  currentWindowId = (await chrome.windows.getCurrent()).id;
+  const currentWindow = await chrome.windows.getCurrent();
+  currentWindowId = currentWindow.id;
+  
+  // Get the current active tab
+  const [currentTab] = await chrome.tabs.query({ active: true, currentWindow: true });
+  currentTabId = currentTab ? currentTab.id : null;
+  
   await loadWindows();
   setupEventListeners();
   setupChromeListeners();
@@ -44,6 +51,9 @@ function setupEventListeners() {
   
   const mergeAllBtn = document.getElementById('mergeAllBtn');
   mergeAllBtn.addEventListener('click', mergeAllWindows);
+  
+  const closeDuplicatesBtn = document.getElementById('closeDuplicatesBtn');
+  closeDuplicatesBtn.addEventListener('click', closeDuplicateTabs);
 }
 
 // Render all windows
@@ -180,12 +190,15 @@ function createTabRow(tab, windowId) {
       timeAgoHtml = `<span class="tab-time" title="Last accessed">${timeAgo}</span>`;
     }
     
+    const isCurrentTab = tab.id === currentTabId;
+    const tabRowClass = isCurrentTab ? 'tab-row current-tab' : 'tab-row';
+    
     return `
-      <div class="tab-row" data-tab-id="${tab.id}" data-window-id="${windowId}" draggable="true">
+      <div class="${tabRowClass}" data-tab-id="${tab.id}" data-window-id="${windowId}" draggable="true">
         <input type="checkbox" class="tab-checkbox" data-tab-id="${tab.id}">
         <img src="${escapedFavicon}" class="tab-favicon" data-fallback="${fallbackIcon}">
         <div class="tab-info">
-          <div class="tab-title">${escapeHtml(tab.title)}</div>
+          <div class="tab-title">${escapeHtml(tab.title)}${isCurrentTab ? ' (Current)' : ''}</div>
           <div class="tab-url">${escapeHtml(urlPath)}</div>
           ${metaHtml}
         </div>
@@ -300,7 +313,39 @@ function setupWindowCardListeners(card, window) {
     });
   });
   
-  // Click handler for tab titles
+  // Click handler for tab rows - toggle checkbox when clicking empty space
+  const tabRows = card.querySelectorAll('.tab-row');
+  tabRows.forEach(row => {
+    const tabId = parseInt(row.dataset.tabId);
+    const windowId = parseInt(row.dataset.windowId);
+    const checkbox = row.querySelector('.tab-checkbox');
+    
+    row.addEventListener('click', (e) => {
+      // Don't handle clicks on interactive elements
+      if (e.target.closest('.tab-checkbox') || 
+          e.target.closest('.tab-action-btn') || 
+          e.target.closest('.tab-title')) {
+        return;
+      }
+      
+      // Toggle checkbox when clicking empty space
+      e.stopPropagation();
+      checkbox.checked = !checkbox.checked;
+      
+      // Update selected tabs
+      if (checkbox.checked) {
+        selectedTabIds.add(tabId);
+      } else {
+        selectedTabIds.delete(tabId);
+      }
+      
+      updateCloseButton(windowId);
+      updateMoveToButton(windowId);
+      updateSelectAllCheckbox(windowId);
+    });
+  });
+  
+  // Click handler for tab titles - only activate on actual text
   const tabTitles = card.querySelectorAll('.tab-title');
   tabTitles.forEach(title => {
     const tabRow = title.closest('.tab-row');
@@ -316,8 +361,7 @@ function setupWindowCardListeners(card, window) {
     });
   });
   
-  // Drag and drop for tab rows
-  const tabRows = card.querySelectorAll('.tab-row');
+  // Add drag and drop handlers to the existing tabRows
   tabRows.forEach(row => {
     row.addEventListener('dragstart', handleDragStart);
     row.addEventListener('dragover', handleDragOver);
@@ -391,6 +435,71 @@ async function moveSelectedTabs(fromWindowId, toWindowId) {
     }
     // Keep selections after moving (tabs still exist, just in different window)
     setTimeout(loadWindows, 100);
+  }
+}
+
+// Close duplicate tabs in each window (by URL)
+async function closeDuplicateTabs() {
+  if (allWindows.length === 0) {
+    return; // No windows to process
+  }
+  
+  // Disable the button during processing
+  const closeDuplicatesBtn = document.getElementById('closeDuplicatesBtn');
+  closeDuplicatesBtn.disabled = true;
+  closeDuplicatesBtn.textContent = 'Closing Duplicates...';
+  
+  try {
+    let totalClosed = 0;
+    
+    // Process each window separately
+    for (const window of allWindows) {
+      const tabsToClose = [];
+      const seenUrls = new Map(); // Map URL to first tab that has it
+      
+      // Go through tabs and identify duplicates
+      for (const tab of window.tabs) {
+        if (seenUrls.has(tab.url)) {
+          // This is a duplicate - but never close the current active tab
+          if (tab.id !== currentTabId) {
+            tabsToClose.push(tab.id);
+          }
+        } else {
+          // First time seeing this URL - keep it
+          seenUrls.set(tab.url, tab);
+        }
+      }
+      
+      // Close duplicate tabs in this window
+      if (tabsToClose.length > 0) {
+        // Remove from selectedTabIds since we're closing them
+        tabsToClose.forEach(tabId => selectedTabIds.delete(tabId));
+        await chrome.tabs.remove(tabsToClose);
+        totalClosed += tabsToClose.length;
+      }
+    }
+    
+    // Show a brief notification of how many duplicates were closed
+    if (totalClosed > 0) {
+      console.log(`Closed ${totalClosed} duplicate tabs`);
+    }
+    
+    setTimeout(loadWindows, 200);
+  } finally {
+    // Re-enable the button
+    setTimeout(() => {
+      closeDuplicatesBtn.disabled = false;
+      closeDuplicatesBtn.innerHTML = `
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 6h18"></path>
+          <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+          <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+          <line x1="10" y1="11" x2="10" y2="17"></line>
+          <line x1="14" y1="11" x2="14" y2="17"></line>
+        </svg>
+        Close Duplicates
+      `;
+    }, 300);
   }
 }
 
@@ -532,6 +641,14 @@ function handleDragStart(e) {
 function handleDragOver(e) {
   e.preventDefault();
   e.dataTransfer.dropEffect = 'move';
+  
+  // Clear all previous drag-over indicators first
+  document.querySelectorAll('.tab-row').forEach(row => {
+    row.classList.remove('drag-over');
+  });
+  document.querySelectorAll('.window-card').forEach(card => {
+    card.classList.remove('window-drag-over');
+  });
   
   const targetRow = e.target.closest('.tab-row');
   if (targetRow && targetRow !== draggedElement) {
