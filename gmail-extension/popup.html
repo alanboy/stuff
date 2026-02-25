@@ -8,8 +8,16 @@
 <body>
   <div class="container">
     <div class="header">
-      <h1>Gmail Unread Messages</h1>
-      <div id="status-indicator"></div>
+      <div class="header-left">
+        <h1>
+          Gmail Unread Messages
+          <span id="unread-count" class="unread-badge">0</span>
+        </h1>
+      </div>
+      <div class="header-right">
+        <div id="status-indicator"></div>
+        <button id="toggle-size" class="icon-button" title="Minimize/Maximize">▾</button>
+      </div>
     </div>
     
     <div id="login-container">
@@ -17,13 +25,6 @@
     </div>
     
     <div id="content" class="hidden">
-      <div id="stats">
-        <div class="stat-box">
-          <span id="unread-count">0</span>
-          <span class="label">Unread</span>
-        </div>
-      </div>
-      
       <div id="senders-container">
         <h2>Top Senders</h2>
         <ul id="senders-list"></ul>
@@ -38,6 +39,7 @@
       <div class="account-info" id="account-info">
         <span>Account: </span><span id="user-email">Not signed in</span>
       </div>
+      <div class="build-info" id="build-info"></div>
     </div>
   </div>
   <script src="popup.js"></script>

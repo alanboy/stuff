@@ -1,5 +1,17 @@
 // Background script for Gmail Unread Counter extension
 
+// Handle extension icon click - open Gmail
+chrome.action.onClicked.addListener((tab) => {
+  // Check if current tab is already Gmail
+  if (tab.url && tab.url.includes('mail.google.com')) {
+    // Already on Gmail, just reload to ensure content script is injected
+    chrome.tabs.reload(tab.id);
+  } else {
+    // Open Gmail in a new tab
+    chrome.tabs.create({ url: 'https://mail.google.com/mail/u/0/#inbox' });
+  }
+});
+
 // Check for unread emails and update badge
 function checkUnreadEmails() {
   chrome.storage.local.get(['token'], function(result) {
@@ -51,9 +63,50 @@ function updateBadge(text) {
 
 
 
-// Listen for messages from popup
+// Listen for messages from content script
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  if (message.action === 'refreshUnreadCount') {
+  if (message.action === 'authenticate') {
+    // Handle authentication request from content script
+    chrome.identity.getAuthToken({ interactive: message.interactive || false }, function(token) {
+      const lastError = chrome.runtime.lastError;
+      
+      if (lastError) {
+        console.error('Chrome identity error:', lastError);
+        sendResponse({ 
+          success: false, 
+          error: lastError.message,
+          extensionId: chrome.runtime.id
+        });
+      } else if (token) {
+        console.log('Successfully obtained auth token');
+        chrome.storage.local.set({ token: token }, function() {
+          sendResponse({ success: true, token: token });
+        });
+      } else {
+        console.error('Failed to get auth token');
+        sendResponse({ 
+          success: false, 
+          error: 'Failed to get auth token',
+          extensionId: chrome.runtime.id
+        });
+      }
+    });
+    return true; // Required for async sendResponse
+  } else if (message.action === 'clearAuth') {
+    // Handle logout request from content script
+    chrome.identity.clearAllCachedAuthTokens(function() {
+      chrome.storage.local.remove(['token', 'userEmail'], function() {
+        sendResponse({ success: true });
+      });
+    });
+    return true;
+  } else if (message.action === 'removeCachedToken') {
+    // Remove a specific cached token
+    chrome.identity.removeCachedAuthToken({ token: message.token }, function() {
+      sendResponse({ success: true });
+    });
+    return true;
+  } else if (message.action === 'refreshUnreadCount') {
     checkUnreadEmails();
     sendResponse({ success: true });
   } else if (message.action === 'openGmail') {
@@ -80,10 +133,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         chrome.tabs.update(tabs[0].id, { url: `https://mail.google.com/mail/u/0/#search/from%3A${query}` });
       }
     });
-    sendResponse({ success: true });
-  } else if (message.action === 'keepPopupOpen') {
-    // This is used to keep the popup open when interacting with Gmail
-    // We'll implement a special handling for this in the popup.js
     sendResponse({ success: true });
   }
   return true; // Required for async sendResponse

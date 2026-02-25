@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const loginButton = document.getElementById('login');
   const logoutButton = document.getElementById('logout');
   const refreshButton = document.getElementById('refresh');
+  const toggleSizeButton = document.getElementById('toggle-size');
+  const buildInfo = document.getElementById('build-info');
   const loginContainer = document.getElementById('login-container');
   const contentContainer = document.getElementById('content');
   const statusIndicator = document.getElementById('status-indicator');
@@ -15,9 +17,26 @@ document.addEventListener('DOMContentLoaded', function() {
   let resetTimeout = null;
 
   console.log('Popup loaded')
+
+  try {
+    const manifest = chrome.runtime.getManifest();
+    const stamp = manifest.version_name || manifest.version;
+    if (buildInfo) {
+      buildInfo.textContent = `Build: ${stamp}`;
+      buildInfo.title = `Build: ${stamp}`;
+    }
+  } catch (e) {
+    // ignore
+  }
   
   // Keep popup open when clicking on Gmail
   setupPopupBehavior();
+
+  // Minimize/maximize the popup UI
+  toggleSizeButton?.addEventListener('click', () => {
+    const isCollapsed = document.body.classList.toggle('collapsed');
+    toggleSizeButton.textContent = isCollapsed ? '▸' : '▾';
+  });
 
   // Check if user is authenticated
   checkAuthStatus();
@@ -447,12 +466,14 @@ document.addEventListener('DOMContentLoaded', function() {
                   // Find From header
                   const fromHeader = message.payload.headers.find(h => h.name === 'From');
                   if (fromHeader) {
-                    const sender = fromHeader.value;
-                    // Count senders
-                    if (senders[sender]) {
-                      senders[sender]++;
-                    } else {
-                      senders[sender] = 1;
+                    const parsedSender = parseSender(fromHeader.value);
+                    const key = parsedSender.email;
+                    if (!senders[key]) {
+                      senders[key] = { count: 0, names: new Set() };
+                    }
+                    senders[key].count += 1;
+                    if (parsedSender.name && parsedSender.name !== parsedSender.email) {
+                      senders[key].names.add(parsedSender.name);
                     }
                   }
                 } catch (e) {
@@ -527,17 +548,27 @@ document.addEventListener('DOMContentLoaded', function() {
       query: email
     });
   }
+
+  // Search for unread email in Gmail
+  function searchUnreadInGmail(email) {
+    chrome.runtime.sendMessage({
+      action: 'searchGmail',
+      query: `${email} is:unread`
+    });
+  }
   
   // Update the senders list
   function updateSendersList(senders) {
     // Convert to array and sort by count
     const sortedSenders = Object.entries(senders)
-      .sort((a, b) => b[1] - a[1]);
+      .sort((a, b) => (b[1]?.count || 0) - (a[1]?.count || 0));
     
     sendersList.innerHTML = '';
     
-    sortedSenders.forEach(([sender, count]) => {
-      const parsedSender = parseSender(sender);
+    sortedSenders.forEach(([email, senderData]) => {
+      const count = senderData?.count || 0;
+      const names = senderData?.names ? Array.from(senderData.names) : [];
+      const namesText = names.join(', ');
       const li = document.createElement('li');
       
       // Create sender info container
@@ -547,13 +578,16 @@ document.addEventListener('DOMContentLoaded', function() {
       // Add sender name
       const nameSpan = document.createElement('div');
       nameSpan.className = 'sender-name';
-      nameSpan.textContent = parsedSender.name;
+      nameSpan.textContent = email;
       senderInfo.appendChild(nameSpan);
       
       // Add sender email
       const emailSpan = document.createElement('div');
       emailSpan.className = 'sender-email';
-      emailSpan.textContent = parsedSender.email;
+      emailSpan.textContent = namesText;
+      if (namesText) {
+        emailSpan.title = namesText;
+      }
       senderInfo.appendChild(emailSpan);
       
       // Add sender info to list item
@@ -565,23 +599,23 @@ document.addEventListener('DOMContentLoaded', function() {
       countSpan.textContent = count;
       li.appendChild(countSpan);
       
-      // Add copy button
-      const copyButton = document.createElement('button');
-      copyButton.className = 'copy-button';
-      copyButton.textContent = 'Copy';
-      copyButton.addEventListener('click', function() {
-        copyToClipboard(parsedSender.email, this);
-      });
-      li.appendChild(copyButton);
-      
       // Add search button
       const searchButton = document.createElement('button');
       searchButton.className = 'search-button';
       searchButton.textContent = 'Search';
       searchButton.addEventListener('click', function() {
-        searchInGmail(parsedSender.email);
+        searchInGmail(email);
       });
       li.appendChild(searchButton);
+
+      // Add search unread button
+      const searchUnreadButton = document.createElement('button');
+      searchUnreadButton.className = 'search-unread-button';
+      searchUnreadButton.textContent = 'Search unread';
+      searchUnreadButton.addEventListener('click', function() {
+        searchUnreadInGmail(email);
+      });
+      li.appendChild(searchUnreadButton);
       
       // Add to list
       sendersList.appendChild(li);
