@@ -2,3 +2,34 @@
 layout: default
 ---
 
+<header class="post-header">
+  <h1 class="post-title">{{ page.category | capitalize }}</h1>
+  <p class="post-subtitle">Posts in <em>{{ page.category }}</em></p>
+</header>
+
+{%- assign posts_in_category = site.categories[page.category] -%}
+
+{%- if posts_in_category.size > 0 -%}
+  <div class="ui divided items">
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    {%- for post in posts_in_category -%}
+      {% if post.published != false %}
+        <div class="item">
+          <div class="content">
+            <a href="{{ post.url | relative_url }}" class="header">{{ post.title | escape }}</a>
+            <div class="meta">
+              <span class="cinema">{{ post.date | date: date_format }}</span>
+            </div>
+            {% if post.description %}
+              <div class="description">
+                <p>{{ post.description }}</p>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    {%- endfor -%}
+  </div>
+{%- else -%}
+  <p style="color: #888;">No posts in this category yet.</p>
+{%- endif -%}
