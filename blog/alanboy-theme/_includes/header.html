@@ -1,42 +1,22 @@
-
-  <div class="ui fixed inverted menu" >
-    <div class="ui container">
-      <a href="/" class="header item">
-        <!--<img class="logo" src="assets/images/logo.png">-->
-        Home
-      </a>
-      <div class="ui simple dropdown item">
-        Categories <i class="dropdown icon"></i>
-        <div class="menu">
-
-         <!--
-          <div class="item">
-            <i class="dropdown icon"></i>
-            Sub Menu
-            <div class="menu">
-              <a class="item" href="#">Link Item</a>
-              <a class="item" href="#">Link Item</a>
-            </div>
-          </div>
-         -->
-          {% assign sorted_categories = site.categories | sort %}
-          {% for category in sorted_categories %}
-              <a class="item" href="/category/{{ category[0] }}">{{ category[0] }}</a>
-          {% endfor %}
-
-        </div>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="site-title-link">
+      <h1 class="site-title">Alan Gonzalez</h1>
+      <p class="site-tagline">notes on software, startups, and life</p>
+    </a>
+    <nav class="site-nav">
+      <a href="/category/engineering/">Engineering</a>
+      <a href="/category/business/">Business</a>
+      <a href="/category/software/">Software</a>
+      <a href="/category/entrepreneurship/">Entrepreneurship</a>
+      <a href="/about">About</a>
+    </nav>
+    <div class="site-search ui search">
+      <div class="ui icon input">
+        <input class="prompt" type="text" placeholder="Press / to search…">
+        <i class="search icon"></i>
       </div>
-
-      <div class="right menu">
-          <div class="ui right aligned inverted category search item">
-            <div class="ui icon input">
-              <input class="prompt" type="text" placeholder="Press '/' to focus search...">
-              <i class="search link icon"></i>
-            </div>
-            <div class="results"></div>
-          </div>
-        </div>
-      </div>
-
+      <div class="results"></div>
     </div>
   </div>
+</header>

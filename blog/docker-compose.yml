@@ -7,6 +7,14 @@ services:
       - "4000:4000"
     volumes:
       - ./_posts:/app/_posts
+      - ./alanboy-theme:/app/alanboy-theme
+      - ./assets:/app/assets
+      - ./category:/app/category
+      - ./_config.yml:/app/_config.yml
+      - ./index.md:/app/index.md
+      - ./about.md:/app/about.md
+      - ./search.md:/app/search.md
+      - ./404.html:/app/404.html
     environment:
       - JEKYLL_ENV=development
     command: bundle exec jekyll serve --host 0.0.0.0 --incremental --watch

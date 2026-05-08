@@ -28,6 +28,10 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/message.css">
   <link rel="stylesheet"                 href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/container.min.css"/>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap">
+
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
@@ -43,44 +47,286 @@
   
 
   <style type="text/css">
-  .ui.fixed.inverted.menu,
-  .ui.inverted.vertical.footer.segment{
-    background-color: #00022E
+  @font-face {
+    font-family: "Geist Fallback";
+    src: local("Arial");
+    ascent-override: 95.94%;
+    descent-override: 28.16%;
+    line-gap-override: 0%;
+    size-adjust: 104.76%;
   }
-  
-  .categories-in-post {
-    margin-bottom: 1em;
+  @font-face {
+    font-family: "Geist Mono Fallback";
+    src: local("Menlo"), local("Consolas"), local("Courier New");
+    ascent-override: 68%;
+    descent-override: 18%;
+    line-gap-override: 0%;
+    size-adjust: 100%;
   }
-  ui inverted header
-  .content > a {
-    color: #02066F !important;
+  body,
+  .ui.menu,
+  .ui.header,
+  .ui.container,
+  .ui.list,
+  .ui.list .item,
+  .ui.button,
+  h1, h2, h3, h4, h5, h6,
+  p, li, a, span, div {
+    font-family: "Geist", "Geist Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   }
-  .categories-in-post>.ui.label {
-    background-color: #FF073A;
-    color: white;
+  code, pre, kbd, samp, tt,
+  .hljs {
+    font-family: "Geist Mono", "Geist Mono Fallback", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace !important;
   }
   body {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
+    color: #1a1a1a;
   }
-  img {
-    max-width: 500px;
+
+  /* === Site header (centered, Coding Horror style) === */
+  .site-header {
+    border-bottom: 1px solid #eaeaea;
+    padding: 0.5rem 1rem 1.5rem;
+    text-align: center;
   }
-  .ui.menu .item img.logo {
-    margin-right: 1.5em;
+  .site-header-inner {
+    max-width: 720px;
+    margin: 0 auto;
   }
-  .main.container {
-    margin-top: 5em;
-    /*width: 70%;*/
+  .site-title-link {
+    display: inline-block;
+    text-decoration: none !important;
+    color: inherit;
   }
-  .wireframe {
-    margin-top: 2em;
+  .site-title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0;
+    color: #111;
   }
-  .ui.footer.segment {
-    margin: 5em 0em 0em;
-    padding: 5em 0em;
+  .site-tagline {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0.25rem 0 0;
+    font-weight: 400;
+  }
+  .site-nav {
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .site-nav a {
+    color: #333 !important;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  .site-nav a:hover {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+
+  /* Subtle search input in header */
+  .site-search {
+    width: 240px;
+    margin: 1rem auto 0;
+    position: relative;
+  }
+  .site-search .ui.icon.input {
+    width: 100%;
+  }
+  .site-search .ui.icon.input > input {
+    font-size: 0.85rem !important;
+    padding: 0.5em 2em 0.5em 0.85em !important;
+    border-radius: 6px !important;
+    border: 1px solid #eaeaea !important;
+    background: #fafafa !important;
+    color: #333 !important;
+    box-shadow: none !important;
+  }
+  .site-search .ui.icon.input > input:focus {
+    border-color: #ccc !important;
+    background: #fff !important;
+  }
+  .site-search .ui.icon.input > input::placeholder {
+    color: #aaa;
+    font-size: 0.85rem;
+  }
+  .site-search .ui.icon.input > i.icon {
+    color: #bbb;
+    opacity: 1;
+  }
+  .site-search .results {
+    text-align: left;
+  }
+
+  /* === Main content column === */
+  .site-main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+  }
+
+  /* === Post header (centered, matches site header style) === */
+  .post-article {
+    background: transparent;
+  }
+  .post-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .post-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin: 0 0 0.5rem;
+    color: #111;
+  }
+  .post-subtitle {
+    font-size: 1.05rem;
+    color: #666;
+    margin: 0 0 1.25rem;
+    font-weight: 400;
+  }
+  .post-byline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin-top: 0.5rem;
+  }
+  .post-byline-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    max-width: none;
+  }
+  .post-byline-text {
+    text-align: left;
+    line-height: 1.25;
+  }
+  .post-byline-author {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #222;
+  }
+  .post-byline-meta {
+    font-size: 0.8rem;
+    color: #777;
+  }
+  .post-byline-meta a {
+    color: #777;
+    text-decoration: none;
+  }
+  .post-byline-meta a:hover {
+    color: #111;
+    text-decoration: underline;
+  }
+  .post-byline-sep {
+    margin: 0 0.4rem;
+    color: #bbb;
+  }
+
+  .post-content {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: #1a1a1a;
+  }
+  .post-content p {
+    margin: 0 0 1.25rem;
+  }
+  .post-content img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* === Related posts === */
+  .related-posts {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eaeaea;
+  }
+  .related-posts-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #666;
+    margin: 0 0 1.25rem;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .related-posts-title em {
+    color: #111;
+    font-style: normal;
+  }
+  .related-posts-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .related-post-item {
+    margin: 0;
+    padding: 0;
+  }
+  .related-post-item + .related-post-item {
+    border-top: 1px solid #f0f0f0;
+  }
+  .related-post-link {
+    display: block;
+    padding: 1rem 0;
+    text-decoration: none !important;
+    color: inherit;
+  }
+  .related-post-link:hover .related-post-title {
+    color: #000;
+    text-decoration: underline;
+  }
+  .related-post-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 0.25rem;
+    line-height: 1.35;
+  }
+  .related-post-meta {
+    font-size: 0.85rem;
+    color: #888;
+    line-height: 1.45;
+  }
+
+  /* === Site footer (clean, minimal) === */
+  .site-footer {
+    border-top: 1px solid #eaeaea;
+    margin-top: 5rem;
+    padding: 1.5rem 1.25rem;
+    font-size: 0.85rem;
+    color: #888;
+  }
+  .site-footer-inner {
+    max-width: 680px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .site-footer a {
+    color: #888;
+    text-decoration: none;
+  }
+  .site-footer a:hover {
+    color: #111;
+    text-decoration: underline;
+  }
+  .site-footer-sep {
+    margin: 0 0.4rem;
+    color: #ccc;
   }
   .ui.segment {
-    font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+    font: 400 16px/1.5 "Geist", "Geist Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
     color: #111;
     font-size: 16px !important;
   }

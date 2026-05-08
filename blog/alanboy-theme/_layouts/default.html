@@ -7,16 +7,9 @@
     {%- include header.html -%}
     {%- include search.html -%}
 
-    <div class="ui main container">
-      <div class="ui grid">
-        <div class="eleven wide column">
-          {{ content }}
-        </div>
-        <div class="four wide column">
-          {%- include sidebar.html -%}
-        </div>
-      </div>
-    </div>
+    <main class="site-main">
+      {{ content }}
+    </main>
 
     {%- include footer.html -%}
   </body>
