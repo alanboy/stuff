@@ -61,6 +61,18 @@ Note: `HEAD~` means `HEAD` minus 1 commits, `HEAD~3` means `HEAD` minus 3 commit
 git merge --squash users/alango/authz
 ```
 
+## Rebase from origin main without switching branches
+
+You can rebase your current branch on top of the latest `origin/main` without checking out `main` locally:
+
+```
+git fetch origin
+git rebase origin/main
+git push --force-with-lease
+```
+
+Prefer `--force-with-lease` over `--force`: it refuses to overwrite the remote if someone else pushed to your branch since your last fetch, so you won't accidentally clobber a teammate's commits.
+
 ## Github and credentials
 
 Install `gh`:
@@ -84,12 +96,9 @@ https://yurichev.com/news/20201220_git/
 
 ## References
 
-**Amazing presentation**:
-https://docs.google.com/presentation/d/1IQCRPHEIX-qKo7QFxsD3V62yhyGA9_5YsYXFOiBpgkk/view#slide=id.g4d6b1121f4_2_60
-
-
-https://stackoverflow.com/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head
-http://fabiensanglard.net/git_code_review/diff.php
-https://github.com/HerCerM/ManualDefinitivoGit/blob/master/Parte2_Profundizando.md
-https://pre-commit.com/
-https://www.youtube.com/watch?v=Flho9VgaZ_g&ab_channel=javaM%C3%A9xico
+- **Amazing presentation**: [Google Slides](https://docs.google.com/presentation/d/1IQCRPHEIX-qKo7QFxsD3V62yhyGA9_5YsYXFOiBpgkk/view#slide=id.g4d6b1121f4_2_60)
+- [Reset local repository branch to be just like remote repository HEAD](https://stackoverflow.com/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head)
+- [Git code review diff](http://fabiensanglard.net/git_code_review/diff.php)
+- [Manual Definitivo Git - Parte 2](https://github.com/HerCerM/ManualDefinitivoGit/blob/master/Parte2_Profundizando.md)
+- [pre-commit](https://pre-commit.com/)
+- [java México - YouTube](https://www.youtube.com/watch?v=Flho9VgaZ_g&ab_channel=javaM%C3%A9xico)
