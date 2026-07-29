@@ -73,6 +73,16 @@ git push --force-with-lease
 
 Prefer `--force-with-lease` over `--force`: it refuses to overwrite the remote if someone else pushed to your branch since your last fetch, so you won't accidentally clobber a teammate's commits.
 
+## Search the commit history for a string
+
+To find every commit that added or removed a given string (a "pickaxe" search):
+
+```
+git log -S"foo" --format='%h %an %ad %s' --date=short
+```
+
+This is great for figuring out when something was introduced or deleted, and who did it. The `-S` flag matches commits where the number of occurrences of `foo` changed, and the `--format`/`--date` options print a compact one-line summary (short hash, author, date, subject).
+
 ## Github and credentials
 
 Install `gh`:
