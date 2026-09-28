@@ -5,6 +5,12 @@ let currentTabId = null;
 let searchQuery = '';
 let selectedTabIds = new Set(); // Track selected tab IDs across re-renders
 
+const SORT_ORDERS = ['default', 'title', 'domain'];
+const SORT_LABELS = { default: 'Default Order', title: 'Sort by Title', domain: 'Sort by Domain' };
+
+// windowId of the currently open compact "move to" popup menu, if any
+let openMoveToMenuId = null;
+
 // Initialize the manager
 async function init() {
   const currentWindow = await chrome.windows.getCurrent();
@@ -22,16 +28,81 @@ async function init() {
 // Setup Chrome API listeners for real-time updates
 function setupChromeListeners() {
   // Listen for tab changes
-  chrome.tabs.onCreated.addListener(() => loadWindows());
-  chrome.tabs.onRemoved.addListener(() => loadWindows());
-  chrome.tabs.onUpdated.addListener(() => loadWindows());
-  chrome.tabs.onMoved.addListener(() => loadWindows());
-  chrome.tabs.onAttached.addListener(() => loadWindows());
-  chrome.tabs.onDetached.addListener(() => loadWindows());
-  
+  chrome.tabs.onCreated.addListener(() => scheduleReload());
+  chrome.tabs.onRemoved.addListener(() => scheduleReload());
+  chrome.tabs.onUpdated.addListener(() => scheduleReload());
+  chrome.tabs.onMoved.addListener(() => scheduleReload());
+  chrome.tabs.onAttached.addListener(() => scheduleReload());
+  chrome.tabs.onDetached.addListener(() => scheduleReload());
+
   // Listen for window changes
-  chrome.windows.onCreated.addListener(() => loadWindows());
-  chrome.windows.onRemoved.addListener(() => loadWindows());
+  chrome.windows.onCreated.addListener(() => scheduleReload());
+  chrome.windows.onRemoved.addListener(() => scheduleReload());
+
+  // Re-render (if one was deferred) as soon as the user is done
+  // interacting with a dropdown, instead of leaving it stale.
+  document.addEventListener('focusout', (e) => {
+    if (e.target.tagName === 'SELECT') {
+      // Let focus settle in case it moved to another dropdown.
+      setTimeout(maybeFlushPendingRender, 0);
+    }
+  }, true);
+
+  // Close the compact "move to" popup when clicking outside it, or on Escape.
+  document.addEventListener('click', (e) => {
+    if (openMoveToMenuId !== null && !e.target.closest('.move-to-compact')) {
+      closeMoveToMenu();
+    }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && openMoveToMenuId !== null) {
+      closeMoveToMenu();
+    }
+  });
+}
+
+// Re-render now if one was deferred and the user is no longer mid-interaction
+// with a dropdown or the compact move-to popup.
+function maybeFlushPendingRender() {
+  if (renderPending && !isUserInteractingWithDropdown()) {
+    renderWindows();
+  }
+}
+
+// Toggle the compact "move to" popup menu for a window, closing any other open one.
+function toggleMoveToMenu(windowId, menuEl) {
+  if (openMoveToMenuId === windowId) {
+    closeMoveToMenu();
+    return;
+  }
+  closeMoveToMenu();
+  menuEl.classList.add('open');
+  openMoveToMenuId = windowId;
+}
+
+function closeMoveToMenu() {
+  if (openMoveToMenuId === null) return;
+  const openMenu = document.querySelector('.move-to-menu.open');
+  if (openMenu) openMenu.classList.remove('open');
+  openMoveToMenuId = null;
+  maybeFlushPendingRender();
+}
+
+// Coalesce bursts of tab events (e.g. a page rapidly changing its title
+// or favicon) into a single reload instead of one per event.
+let reloadTimeout = null;
+function scheduleReload() {
+  clearTimeout(reloadTimeout);
+  reloadTimeout = setTimeout(loadWindows, 300);
+}
+
+// True while the user has a sort/move dropdown focused, or the compact
+// move-to popup open. Used to avoid tearing down and rebuilding the DOM
+// (which would close them) out from under them mid-interaction.
+function isUserInteractingWithDropdown() {
+  const active = document.activeElement;
+  if (active && active.tagName === 'SELECT') return true;
+  return openMoveToMenuId !== null;
 }
 
 // Load all windows and tabs
@@ -57,7 +128,16 @@ function setupEventListeners() {
 }
 
 // Render all windows
+let renderPending = false;
 function renderWindows() {
+  // Don't yank the DOM out from under an open dropdown - it would close
+  // it and drop the interaction. Defer until the user is done with it.
+  if (isUserInteractingWithDropdown()) {
+    renderPending = true;
+    return;
+  }
+  renderPending = false;
+
   // Save current checkbox selections before re-rendering
   saveCheckboxSelections();
   
@@ -76,13 +156,82 @@ function renderWindows() {
     const windowCard = createWindowCard(window);
     container.appendChild(windowCard);
   });
-  
+
   // Restore checkbox selections after re-rendering
   restoreCheckboxSelections();
-  
+
   if (filteredWindows.length === 0) {
     container.innerHTML = '<div class="empty-state">No windows found</div>';
+    container.style.height = '';
+    return;
   }
+
+  layoutMasonry();
+}
+
+// Masonry layout: pack window cards into columns like Tetris, so a short
+// card doesn't leave a tall gap under it just because its row neighbor is tall.
+const MASONRY_MIN_COL_WIDTH = 420;
+const MASONRY_GAP = 16;
+
+function layoutMasonry() {
+  const container = document.getElementById('windowsContainer');
+  const cards = Array.from(container.children).filter(el => el.classList.contains('window-card'));
+  if (cards.length === 0) {
+    container.style.height = '';
+    return;
+  }
+
+  const containerWidth = container.clientWidth;
+  const columns = Math.max(1, Math.floor((containerWidth + MASONRY_GAP) / (MASONRY_MIN_COL_WIDTH + MASONRY_GAP)));
+  const colWidth = (containerWidth - MASONRY_GAP * (columns - 1)) / columns;
+  const colHeights = new Array(columns).fill(0);
+
+  cards.forEach(card => {
+    // Place each card in whichever column is currently shortest.
+    let col = 0;
+    for (let i = 1; i < columns; i++) {
+      if (colHeights[i] < colHeights[col]) col = i;
+    }
+    card.style.width = `${colWidth}px`;
+    card.style.left = `${col * (colWidth + MASONRY_GAP)}px`;
+    card.style.top = `${colHeights[col]}px`;
+    colHeights[col] += card.offsetHeight + MASONRY_GAP;
+  });
+
+  container.style.height = `${Math.max(...colHeights) - MASONRY_GAP}px`;
+}
+
+// Re-run the masonry layout on resize (debounced) without refetching tab data.
+let masonryResizeTimeout = null;
+window.addEventListener('resize', () => {
+  clearTimeout(masonryResizeTimeout);
+  masonryResizeTimeout = setTimeout(layoutMasonry, 100);
+});
+
+// Turn a 0-based index into a spreadsheet-style label: A, B, ... Z, AA, AB, ...
+function indexToLetters(index) {
+  let n = index + 1;
+  let label = '';
+  while (n > 0) {
+    const rem = (n - 1) % 26;
+    label = String.fromCharCode(65 + rem) + label;
+    n = Math.floor((n - 1) / 26);
+  }
+  return label;
+}
+
+// Chrome's window ids are long and arbitrary, which crowded out the header
+// controls. Show a short, stable label instead (based on ascending window
+// id, so it doesn't reshuffle just from re-rendering or filtering).
+function getWindowLabel(windowId) {
+  if (windowId === currentWindowId) return 'Current';
+  const otherIds = allWindows
+    .map(w => w.id)
+    .filter(id => id !== currentWindowId)
+    .sort((a, b) => a - b);
+  const idx = otherIds.indexOf(windowId);
+  return idx === -1 ? 'Window' : indexToLetters(idx);
 }
 
 // Create a window card
@@ -90,10 +239,11 @@ function createWindowCard(window) {
   const card = document.createElement('div');
   card.className = 'window-card';
   card.dataset.windowId = window.id;
-  
+
   const isCurrentWindow = window.id === currentWindowId;
-  const windowTitle = isCurrentWindow ? 'Current Window' : `Window ${window.id}`;
-  
+  if (isCurrentWindow) card.classList.add('current-window');
+  const windowTitle = getWindowLabel(window.id);
+
   const filteredTabs = window.tabs.filter(tab => {
     if (!searchQuery) return true;
     return tab.title.toLowerCase().includes(searchQuery) || 
@@ -103,10 +253,7 @@ function createWindowCard(window) {
   card.innerHTML = `
     <div class="window-header">
       <div class="window-title">
-        <svg class="window-title-icon" viewBox="0 0 20 20" fill="${isCurrentWindow ? '#10b981' : '#6b7280'}">
-          <circle cx="10" cy="10" r="10"/>
-        </svg>
-        <span class="window-title-text">${windowTitle}</span>
+        <span class="window-title-text" title="Window ID: ${window.id}">${windowTitle}</span>
         <span class="window-title-count">(${filteredTabs.length})</span>
       </div>
       <div class="window-actions">
@@ -115,14 +262,33 @@ function createWindowCard(window) {
           <option value="title">Sort by Title</option>
           <option value="domain">Sort by Domain</option>
         </select>
+        <button class="btn btn-icon sort-icon-btn" data-window-id="${window.id}" data-sort="default" title="Sort: Default Order">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 5h10"></path>
+            <path d="M11 9h7"></path>
+            <path d="M11 13h4"></path>
+            <path d="m3 17 3 3 3-3"></path>
+            <path d="M6 18V4"></path>
+          </svg>
+        </button>
+
         <select class="move-to-dropdown" data-window-id="${window.id}" disabled>
           <option value="">Move to...</option>
         </select>
-        <button class="btn btn-danger btn-close-selected" data-window-id="${window.id}" disabled>
+        <div class="move-to-compact">
+          <button class="btn btn-icon move-to-icon-btn" data-window-id="${window.id}" disabled title="Move to...">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+          <div class="move-to-menu" data-window-id="${window.id}"></div>
+        </div>
+
+        <button class="btn btn-danger btn-close-selected" data-window-id="${window.id}" disabled title="Close Selected">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
           </svg>
-          Close Selected
         </button>
       </div>
     </div>
@@ -238,24 +404,59 @@ function setupWindowCardListeners(card, window) {
   const sortDropdown = card.querySelector('.sort-dropdown');
   sortDropdown.addEventListener('change', (e) => {
     sortTabs(windowId, e.target.value);
+    // The choice is committed and the popup is already closed at this
+    // point, so release focus rather than holding up the next re-render.
+    e.target.blur();
   });
-  
+
+  // Compact sort button - cycles through the same sort orders, for narrow cards
+  const sortIconBtn = card.querySelector('.sort-icon-btn');
+  sortIconBtn.addEventListener('click', () => {
+    const nextIndex = (SORT_ORDERS.indexOf(sortIconBtn.dataset.sort) + 1) % SORT_ORDERS.length;
+    const next = SORT_ORDERS[nextIndex];
+    sortIconBtn.dataset.sort = next;
+    sortIconBtn.title = `Sort: ${SORT_LABELS[next]}`;
+    sortDropdown.value = next; // keep the wide dropdown in sync
+    sortTabs(windowId, next);
+  });
+
   // Move to dropdown - populate with other windows
   const moveToDropdown = card.querySelector('.move-to-dropdown');
+  const moveToMenu = card.querySelector('.move-to-menu');
   allWindows.forEach(w => {
     if (w.id !== windowId) {
+      const label = getWindowLabel(w.id);
+
       const option = document.createElement('option');
       option.value = w.id;
-      option.textContent = w.id === currentWindowId ? 'Current Window' : `Window ${w.id}`;
+      option.textContent = label;
       moveToDropdown.appendChild(option);
+
+      const menuItem = document.createElement('button');
+      menuItem.type = 'button';
+      menuItem.className = 'move-to-menu-item';
+      menuItem.textContent = label;
+      menuItem.addEventListener('click', () => {
+        moveSelectedTabs(windowId, w.id);
+        closeMoveToMenu();
+      });
+      moveToMenu.appendChild(menuItem);
     }
   });
-  
+
   moveToDropdown.addEventListener('change', (e) => {
     if (e.target.value) {
       moveSelectedTabs(windowId, parseInt(e.target.value));
       e.target.value = ''; // Reset dropdown
     }
+  });
+
+  // Compact move-to button - opens a popup menu instead of a native select
+  const moveToIconBtn = card.querySelector('.move-to-icon-btn');
+  moveToIconBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (moveToIconBtn.disabled) return;
+    toggleMoveToMenu(windowId, moveToMenu);
   });
   
   // Select all checkbox
@@ -385,6 +586,7 @@ function setupWindowCardListeners(card, window) {
 // Update close button state
 function updateCloseButton(windowId) {
   const card = document.querySelector(`[data-window-id="${windowId}"]`);
+  if (!card) return; // window's card may be filtered out by search
   const checkboxes = card.querySelectorAll('.tab-checkbox:checked');
   const closeButton = card.querySelector('.btn-close-selected');
   closeButton.disabled = checkboxes.length === 0;
@@ -393,14 +595,18 @@ function updateCloseButton(windowId) {
 // Update move to button state
 function updateMoveToButton(windowId) {
   const card = document.querySelector(`[data-window-id="${windowId}"]`);
+  if (!card) return; // window's card may be filtered out by search
   const checkboxes = card.querySelectorAll('.tab-checkbox:checked');
   const moveToDropdown = card.querySelector('.move-to-dropdown');
   moveToDropdown.disabled = checkboxes.length === 0;
+  const moveToIconBtn = card.querySelector('.move-to-icon-btn');
+  moveToIconBtn.disabled = checkboxes.length === 0;
 }
 
 // Update select all checkbox state
 function updateSelectAllCheckbox(windowId) {
   const card = document.querySelector(`[data-window-id="${windowId}"]`);
+  if (!card) return; // window's card may be filtered out by search
   const allCheckboxes = card.querySelectorAll('.tab-checkbox');
   const checkedCheckboxes = card.querySelectorAll('.tab-checkbox:checked');
   const selectAllCheckbox = card.querySelector('.select-all-checkbox');
