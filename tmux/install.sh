@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo apt-get install tmuxinator
+#sudo apt-get install tmuxinator
 
 export EDITOR='vim'
 
